@@ -70,8 +70,8 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(44, 95, 45, 0.7), rgba(74, 124, 89, 0.7)), 
-                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23e8f5e9" width="1200" height="400"/><path fill="%23c8e6c9" d="M0 200L50 190L100 210L150 195L200 205L250 185L300 200L350 210L400 190L450 200L500 195L550 205L600 190L650 200L700 210L750 195L800 185L850 200L900 210L950 190L1000 200L1050 195L1100 205L1150 190L1200 200V400H0V200Z"/><circle cx="100" cy="100" r="40" fill="%234caf50" opacity="0.3"/><circle cx="300" cy="150" r="30" fill="%2366bb6a" opacity="0.3"/><circle cx="500" cy="80" r="50" fill="%234caf50" opacity="0.3"/><circle cx="700" cy="120" r="35" fill="%2381c784" opacity="0.3"/><circle cx="900" cy="90" r="45" fill="%234caf50" opacity="0.3"/><circle cx="1100" cy="140" r="40" fill="%2366bb6a" opacity="0.3"/></svg>');
+            background: linear-gradient(rgba(44, 95, 45, 0.7), rgba(74, 124, 89, 0.7)),
+                        url('img/header.jpg');
             background-size: cover;
             background-position: center;
             padding: 4rem 2rem;
@@ -268,6 +268,62 @@
             font-size: 1.5rem;
         }
         
+        /* Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0 3rem;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item h3 {
+            padding: 1rem 1.5rem 0.5rem;
+            color: #2c5f2d;
+            font-size: 1.2rem;
+        }
+
+        .gallery-item p {
+            padding: 0 1.5rem 1.5rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .heritage-quote {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .heritage-quote blockquote {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #2c5f2d;
+            margin: 0;
+        }
+
+        .heritage-quote cite {
+            display: block;
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #666;
+            font-style: normal;
+        }
+
         /* Action Cards */
         .action-cards {
             display: grid;
@@ -444,7 +500,7 @@
         <!-- About Section -->
         <section id="about" class="section">
             <h2>Why We Must Save Birchanger</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem;">City & Country, working with award-winning architects Feilden Clegg Bradley Studios, proposes a massive development on the land between Stansted Mountfitchet and Birchanger. This development, marketed under the guise of providing "much-needed homes," threatens to destroy our precious Green Belt land and merge Birchanger, Stansted, and Bishop's Stortford into one continuous urban sprawl.</p>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">City & Country proposes a massive development on the land between Stansted Mountfitchet and Birchanger. This development, marketed under the guise of providing "much-needed homes," threatens to destroy our precious Green Belt land and merge Birchanger, Stansted, and Bishop's Stortford into one continuous urban sprawl.</p>
             
             <div class="grid">
                 <div class="card">
@@ -565,26 +621,54 @@
             </div>
         </section>
 
-        <!-- Alternative Vision -->
-        <section class="section">
-            <h2>An Alternative Vision</h2>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem;">We're not just saying "no" - we have positive alternatives that would benefit our community without destroying it:</p>
-            
-            <div class="grid">
-                <div class="card">
-                    <h3>🌾 Protect Agricultural Heritage</h3>
-                    <p>Maintain and enhance our farming land, supporting local food production, rural employment, and food security for future generations.</p>
+        <!-- Birchanger -->
+        <section class="section birchanger-showcase">
+            <h2>Birchanger</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Birchanger is more than just a place on the map - it's a historic Essex village with a unique character, stunning countryside views, and a strong community spirit that has thrived for centuries. This is what we're fighting to preserve:</p>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="img/church.jpg" alt="Historic Church" style="width: 100%; height: 250px; object-fit: cover;">
+                    <h3>Historic St Mary's Church</h3>
+                    <p>Our beautiful 12th-century church stands as a testament to Birchanger's long history, with its Anglo-Saxon origins and peaceful churchyard providing a sanctuary for both worship and wildlife.</p>
                 </div>
-                
-                <div class="card">
-                    <h3>🌳 Create a Country Park</h3>
-                    <p>Transform parts of the land into accessible green space for recreation, wildlife, and wellbeing - benefiting residents without destroying the Green Belt.</p>
+
+                <div class="gallery-item">
+                    <img src="img/Woods.jpg" alt="Ancient Woodland" style="width: 100%; height: 250px; object-fit: cover;">
+                    <h3>Birchanger Wood</h3>
+                    <p>Our 69-acre ancient woodland is rich in wildlife and birch trees. The name 'Birchanger' itself means 'wooded slope with birch trees' - a heritage spanning over 1000 years.</p>
                 </div>
-                
-                <div class="card">
-                    <h3>🏘️ Brownfield First</h3>
-                    <p>Prioritize development on already-developed brownfield sites across Uttlesford, protecting our countryside while meeting genuine housing needs.</p>
+
+                <div class="gallery-item">
+                    <img src="img/village green.jpg" alt="Village Green" style="width: 100%; height: 250px; object-fit: cover;">
+                    <h3>The Village Green</h3>
+                    <p>The heart of our community, where village fêtes, cricket matches, and gatherings have taken place for generations. This precious open space defines our village character.</p>
                 </div>
+
+                <div class="gallery-item">
+                    <img src="img/Fields.jpg" alt="Rolling Fields" style="width: 100%; height: 250px; object-fit: cover;">
+                    <h3>Countryside Views</h3>
+                    <p>The rolling fields and hedgerows surrounding Birchanger have shaped our landscape for centuries, providing food, employment, and the rural character that makes our village special.</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img/ThreeWillows.jpg" alt="Three Willows Pub" style="width: 100%; height: 250px; object-fit: cover;">
+                    <h3>The Three Willows</h3>
+                    <p>Our historic village pub serves as a focal point of community life, representing the traditional Essex village character and social heritage we're fighting to preserve.</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img/Walks.jpg" alt="Village Walks" style="width: 100%; height: 250px; object-fit: cover;">
+                    <h3>Historic Footpaths</h3>
+                    <p>Our network of ancient footpaths and bridleways connects communities and provides peaceful routes through beautiful countryside - a precious resource for health and wellbeing.</p>
+                </div>
+            </div>
+
+            <div class="heritage-quote">
+                <blockquote>
+                    <p>"Birchanger is one of Essex's hidden gems - a village that has retained its rural character and community spirit despite being so close to major towns. Once it's lost, we can never get it back."</p>
+                    <cite>- Long-time Birchanger Resident</cite>
+                </blockquote>
             </div>
         </section>
 
