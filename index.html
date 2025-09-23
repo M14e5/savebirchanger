@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Birchanger - Protect Our Green Belt Village</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a7c59 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo::before {
+            content: "🌳";
+            font-size: 1.8rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 95, 45, 0.7), rgba(74, 124, 89, 0.7)), 
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23e8f5e9" width="1200" height="400"/><path fill="%23c8e6c9" d="M0 200L50 190L100 210L150 195L200 205L250 185L300 200L350 210L400 190L450 200L500 195L550 205L600 190L650 200L700 210L750 195L800 185L850 200L900 210L950 190L1000 200L1050 195L1100 205L1150 190L1200 200V400H0V200Z"/><circle cx="100" cy="100" r="40" fill="%234caf50" opacity="0.3"/><circle cx="300" cy="150" r="30" fill="%2366bb6a" opacity="0.3"/><circle cx="500" cy="80" r="50" fill="%234caf50" opacity="0.3"/><circle cx="700" cy="120" r="35" fill="%2381c784" opacity="0.3"/><circle cx="900" cy="90" r="45" fill="%234caf50" opacity="0.3"/><circle cx="1100" cy="140" r="40" fill="%2366bb6a" opacity="0.3"/></svg>');
+            background-size: cover;
+            background-position: center;
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #ff6b6b;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #2c5f2d;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: transparent;
+            color: white;
+        }
+        
+        /* Alert Banner */
+        .alert-banner {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .alert-banner h3 {
+            color: #856404;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .alert-banner h3::before {
+            content: "⚠️";
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .section {
+            margin-bottom: 4rem;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            color: #2c5f2d;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #4a7c59;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .card h3 {
+            color: #2c5f2d;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 3rem 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .stat-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff6b6b;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        /* Impact Section */
+        .impact-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .impact-list li {
+            padding: 1rem 0 1rem 3rem;
+            position: relative;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .impact-list li::before {
+            content: "❌";
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+        }
+        
+        /* Action Cards */
+        .action-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .action-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .action-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .action-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .action-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Newsletter Signup */
+        .newsletter {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .newsletter h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .newsletter h2::after {
+            background: white;
+            margin: 0 auto;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 2rem auto 0;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+        }
+        
+        .newsletter-form button {
+            padding: 1rem 2rem;
+            background: #ffd93d;
+            color: #333;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .newsletter-form button:hover {
+            background: #ffcd00;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c5f2d;
+            color: white;
+            padding: 3rem 2rem 1rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section a {
+            color: #a7c4a7;
+            text-decoration: none;
+            display: block;
+            padding: 0.25rem 0;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #4a7c59;
+            color: #a7c4a7;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Save Birchanger</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#action">Take Action</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Save Birchanger</h1>
+        <p class="subtitle">Protect Our Green Belt. Preserve Our Village Identity.</p>
+        <div class="cta-buttons">
+            <a href="#petition" class="btn btn-primary">Sign the Petition</a>
+            <a href="#action" class="btn btn-secondary">Get Involved</a>
+        </div>
+    </div>
+
+    <!-- Alert Banner -->
+    <div class="alert-banner">
+        <h3>Urgent: City & Country's Second Consultation Now Open</h3>
+        <p>The developer is now conducting their second round of engagement on updated proposals for massive development between Stansted Mountfitchet and Birchanger. This "grey belt" development threatens to merge our distinct villages into one urban sprawl. <strong>Your voice matters - respond to the consultation now!</strong></p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>Why We Must Save Birchanger</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">City & Country, working with award-winning architects Feilden Clegg Bradley Studios, proposes a massive development on the land between Stansted Mountfitchet and Birchanger. This development, marketed under the guise of providing "much-needed homes," threatens to destroy our precious Green Belt land and merge Birchanger, Stansted, and Bishop's Stortford into one continuous urban sprawl.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🏘️</div>
+                    <h3>Village Identity at Risk</h3>
+                    <p>The development would destroy the distinct character of Birchanger, turning our historic village into a suburb. The green spaces that define our community and separate us from neighboring towns would be lost forever.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">🌳</div>
+                    <h3>Green Belt Under Attack</h3>
+                    <p>The developer is exploiting the new "grey belt" designation to build on protected Green Belt land. This sets a dangerous precedent that could see further erosion of our countryside protections.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">🚗</div>
+                    <h3>Infrastructure Overload</h3>
+                    <p>Our roads, schools, GP surgeries, and public services are already stretched to capacity. This development would bring thousands more residents without adequate infrastructure improvements.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <div class="stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">2,000+</span>
+                    <span class="stat-label">New Houses Proposed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100s</span>
+                    <span class="stat-label">Acres of Green Belt at Risk</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5,000+</span>
+                    <span class="stat-label">Additional Cars on Our Roads</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Villages Merged into One</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Impact Section -->
+        <section id="impact" class="section">
+            <h2>The Devastating Impact</h2>
+            <p style="margin-bottom: 2rem;">This isn't just about houses - it's about the fundamental change to our way of life and environment. Here's what we stand to lose:</p>
+            
+            <ul class="impact-list">
+                <li><strong>Loss of Agricultural Land:</strong> Productive farmland that has sustained our community for generations will be concreted over, affecting local food production and rural economy.</li>
+                <li><strong>Wildlife Habitat Destruction:</strong> The development threatens local wildlife corridors and habitats, including those of protected species that rely on these green spaces.</li>
+                <li><strong>Increased Flooding Risk:</strong> Converting permeable land to concrete will exacerbate existing drainage problems and increase flood risk for current residents.</li>
+                <li><strong>Traffic Chaos:</strong> Already congested roads will become gridlocked, with increased pollution and safety concerns, especially near schools.</li>
+                <li><strong>Loss of Community:</strong> The unique character and close-knit nature of Birchanger will be lost as we're absorbed into an urban sprawl.</li>
+                <li><strong>Precedent for Further Development:</strong> Once this "grey belt" development is approved, it opens the door for more Green Belt destruction across Essex.</li>
+            </ul>
+        </section>
+
+        <!-- The "Grey Belt" Deception -->
+        <section class="section">
+            <h2>The "Grey Belt" Deception</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Don't be fooled by the term "grey belt" - this is Green Belt land that has protected our countryside for decades. The government's new policy is being exploited by developers to build on previously protected land. They claim to offer 50% affordable housing, but at what cost to our environment and community?</p>
+            
+            <div class="card" style="background: #fff3cd; border-left: 5px solid #ffc107;">
+                <h3 style="color: #856404;">The Truth About "Grey Belt"</h3>
+                <p>The developer claims this land doesn't meet Green Belt purposes, but it clearly:</p>
+                <ul style="list-style: disc; padding-left: 2rem; margin-top: 1rem;">
+                    <li>Prevents urban sprawl between Birchanger, Stansted, and Bishop's Stortford</li>
+                    <li>Safeguards the countryside from encroachment</li>
+                    <li>Preserves the setting and character of historic villages</li>
+                    <li>Assists in urban regeneration by encouraging development elsewhere</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Take Action Section -->
+        <section id="action" class="section">
+            <h2>Take Action Now</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Time is running out. We need your help to stop this development and protect Birchanger for future generations.</p>
+            
+            <div class="action-cards">
+                <div class="action-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="icon">✍️</div>
+                    <h3>Sign Our Petition</h3>
+                    <p>Add your voice to thousands opposing this development. Every signature counts in showing the council the strength of local opposition.</p>
+                </div>
+                
+                <div class="action-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="icon">📧</div>
+                    <h3>Contact Your Councillor</h3>
+                    <p>Write to your local councillors and MP. Let them know you oppose the destruction of our Green Belt and the merger of our villages.</p>
+                </div>
+                
+                <div class="action-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <div class="icon">📢</div>
+                    <h3>Spread the Word</h3>
+                    <p>Share our campaign on social media, talk to your neighbors, and help raise awareness about what's at stake for Birchanger.</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="icon">🤝</div>
+                    <h3>Join Our Group</h3>
+                    <p>Become an active member of Save Birchanger. Attend meetings, volunteer for events, and help coordinate our resistance.</p>
+                </div>
+                
+                <div class="action-card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <div class="icon">💰</div>
+                    <h3>Donate</h3>
+                    <p>Help fund our campaign. Every pound helps us fight this development through legal challenges, publicity, and expert consultations.</p>
+                </div>
+                
+                <div class="action-card" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                    <div class="icon">📝</div>
+                    <h3>Respond to Consultation</h3>
+                    <p>Submit your objections to the City & Country consultation. We've prepared template responses to help you make your voice heard.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alternative Vision -->
+        <section class="section">
+            <h2>An Alternative Vision</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">We're not just saying "no" - we have positive alternatives that would benefit our community without destroying it:</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>🌾 Protect Agricultural Heritage</h3>
+                    <p>Maintain and enhance our farming land, supporting local food production, rural employment, and food security for future generations.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🌳 Create a Country Park</h3>
+                    <p>Transform parts of the land into accessible green space for recreation, wildlife, and wellbeing - benefiting residents without destroying the Green Belt.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🏘️ Brownfield First</h3>
+                    <p>Prioritize development on already-developed brownfield sites across Uttlesford, protecting our countryside while meeting genuine housing needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <div class="newsletter">
+            <h2>Stay Informed</h2>
+            <p>Join our mailing list for campaign updates, action alerts, and important developments.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Get In Touch</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>📧 Email Us</h3>
+                    <p>info@savebirchanger.org</p>
+                    <p style="margin-top: 1rem;">For general inquiries, volunteering opportunities, or to share your concerns about the development.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>📱 Follow Us</h3>
+                    <p>Stay updated on social media:</p>
+                    <p style="margin-top: 1rem;">
+                        Facebook: @SaveBirchanger<br>
+                        Twitter/X: @SaveBirchanger<br>
+                        Instagram: @SaveBirchangerEssex
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h3>🏛️ Attend Meetings</h3>
+                    <p>Join us at Birchanger Village Hall</p>
+                    <p style="margin-top: 1rem;">Public meetings held monthly - check our social media for dates and times.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Save Birchanger</h3>
+                <p>We are a community action group dedicated to protecting Birchanger's Green Belt, preserving our village identity, and fighting unsustainable development.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#petition">Sign Petition</a>
+                <a href="#donate">Make a Donation</a>
+                <a href="#volunteer">Volunteer</a>
+                <a href="#resources">Resources</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Campaign Partners</h3>
+                <a href="#">Birchanger Parish Council</a>
+                <a href="#">CPRE Essex</a>
+                <a href="#">Local Wildlife Trust</a>
+                <a href="#">Residents' Association</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="#">Planning Documents</a>
+                <a href="#">Consultation Response Guide</a>
+                <a href="#">Campaign Materials</a>
+                <a href="#">Press Coverage</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Save Birchanger. Together we can protect our Green Belt and preserve our village for future generations.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Newsletter form handler
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing! We\'ll keep you updated on the campaign.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
