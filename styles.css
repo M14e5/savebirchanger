@@ -40,8 +40,20 @@ nav {
 }
 
 .logo::before {
-    content: "🌳";
-    font-size: 1.8rem;
+    content: "";
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    background-image: url('icons/Green-Belt-Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-links {
