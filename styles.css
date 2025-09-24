@@ -542,6 +542,168 @@ footer {
     cursor: pointer;
 }
 
+/* Horizontal Timeline Styles */
+.timeline-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 3rem 0;
+    padding: 2rem 0;
+    position: relative;
+    overflow-x: auto;
+    gap: 2rem;
+}
+
+.timeline-horizontal::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b 0%, #4a7c59 100%);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.timeline-phase {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-marker {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border: 4px solid #4a7c59;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c5f2d;
+    margin: 0 auto 1rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-phase.active .timeline-marker {
+    background: #ff6b6b;
+    border-color: #ff6b6b;
+    color: white;
+    animation: pulse 2s infinite;
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 8px rgba(255, 107, 107, 0.4);
+    }
+    50% {
+        box-shadow: 0 8px 20px rgba(255, 107, 107, 0.8);
+    }
+    100% {
+        box-shadow: 0 4px 8px rgba(255, 107, 107, 0.4);
+    }
+}
+
+.timeline-phase-content {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-phase:hover .timeline-phase-content {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.timeline-phase.active .timeline-phase-content {
+    background: #fff5f5;
+    border: 2px solid #ff6b6b;
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.timeline-phase-content h4 {
+    color: #2c5f2d;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.timeline-status {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-ref {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-phase-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+}
+
+.timeline-phase-content li {
+    font-size: 0.9rem;
+    padding: 0.25rem 0;
+    color: #666;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.timeline-phase-content li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #4a7c59;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.timeline-key-message {
+    background: linear-gradient(135deg, #2c5f2d 0%, #4a7c59 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.timeline-key-message h3 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.timeline-key-message p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
@@ -578,5 +740,52 @@ footer {
 
     .village-cards {
         grid-template-columns: 1fr;
+    }
+
+    /* Timeline mobile adjustments */
+    .timeline-horizontal {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .timeline-horizontal::before {
+        top: 0;
+        left: 30px;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, #ff6b6b 0%, #4a7c59 100%);
+    }
+
+    .timeline-phase {
+        margin-left: 20px;
+        padding-left: 40px;
+    }
+
+    .timeline-marker {
+        position: absolute;
+        left: -20px;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .timeline-phase.active .timeline-marker {
+        width: 50px;
+        height: 50px;
+        left: -25px;
+    }
+
+    .timeline-phase-content {
+        padding: 1rem;
+    }
+
+    .timeline-phase-content h4 {
+        font-size: 1rem;
+    }
+
+    .timeline-phase-content li {
+        font-size: 0.85rem;
     }
 }

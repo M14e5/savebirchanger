@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Process Timeline - Save Our Villages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c5f2d;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        /* Timeline Styles */
+        .timeline-container {
+            position: relative;
+            padding: 2rem 0;
+            margin: 3rem 0;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #ff6b6b 0%, #4a7c59 100%);
+            opacity: 0.3;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            max-width: 600px;
+        }
+
+        .timeline-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .timeline-item.active {
+            border: 3px solid #ff6b6b;
+            background: #fff5f5;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 6px rgba(255, 107, 107, 0.4);
+            }
+            50% {
+                box-shadow: 0 8px 16px rgba(255, 107, 107, 0.6);
+            }
+            100% {
+                box-shadow: 0 4px 6px rgba(255, 107, 107, 0.4);
+            }
+        }
+
+        .timeline-item.upcoming {
+            opacity: 0.9;
+            border-left: 5px solid #4a7c59;
+        }
+
+        .timeline-item.warning {
+            border-left: 5px solid #ffc107;
+            background: #fffbf0;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #2c5f2d;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .timeline-content h3 {
+            color: #2c5f2d;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .timeline-content p {
+            margin: 0.5rem 0;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .timeline-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .timeline-content li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #666;
+        }
+
+        .timeline-content li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #4a7c59;
+            font-weight: bold;
+        }
+
+        .timeline-action {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-action:hover {
+            transform: scale(1.05);
+        }
+
+        .alert-banner {
+            background: #2c5f2d;
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .alert-banner h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .alert-banner p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Connector dots */
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border: 4px solid #4a7c59;
+            border-radius: 50%;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .timeline-item.active::after {
+            background: #ff6b6b;
+            border-color: #ff6b6b;
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .timeline-container::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                margin-left: 40px;
+                margin-right: 0;
+                padding: 1.5rem;
+            }
+
+            .timeline-item::after {
+                left: -20px;
+                transform: translateX(0);
+            }
+
+            .timeline-item::before {
+                content: '';
+                position: absolute;
+                left: -26px;
+                top: 2rem;
+                width: 12px;
+                height: 12px;
+                background: #4a7c59;
+                border-radius: 50%;
+                border: 3px solid white;
+            }
+
+            .timeline-item.active::before {
+                background: #ff6b6b;
+                width: 16px;
+                height: 16px;
+                left: -28px;
+            }
+
+            .timeline-date {
+                font-size: 0.9rem;
+            }
+
+            .timeline-content h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What Happens Next? The Planning Process Timeline</h1>
+        <p class="subtitle">Understanding the process helps us fight effectively at each stage</p>
+
+        <div class="timeline-container">
+            <!-- Phase 1: Current -->
+            <div class="timeline-item active">
+                <div class="timeline-date">NOW - Oct 2, 2025</div>
+                <div class="timeline-content">
+                    <h3>🔴 PUBLIC CONSULTATION</h3>
+                    <p><strong>Status: ACTIVE - YOUR INPUT NEEDED!</strong></p>
+                    <ul>
+                        <li>City & Country's 2nd round consultation</li>
+                        <li>Closes October 2, 2025</li>
+                        <li>This is YOUR chance to influence what they submit</li>
+                    </ul>
+                    <a href="#" class="timeline-action">Submit Your Opposition →</a>
+                </div>
+            </div>
+
+            <!-- Phase 2: EIA -->
+            <div class="timeline-item upcoming">
+                <div class="timeline-date">Sept/Oct 2025</div>
+                <div class="timeline-content">
+                    <h3>📋 EIA SCOPING OPINION</h3>
+                    <p><strong>Reference: UTT/25/2203/SO</strong></p>
+                    <ul>
+                        <li>Council defines environmental studies required</li>
+                        <li>Traffic, ecology, flooding assessments mandated</li>
+                        <li>Due within 5 weeks of Aug 18 request</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 3: Application -->
+            <div class="timeline-item upcoming">
+                <div class="timeline-date">Late 2025 - Early 2026</div>
+                <div class="timeline-content">
+                    <h3>📝 PLANNING APPLICATION</h3>
+                    <p><strong>Critical Stage - Mass Opposition Needed</strong></p>
+                    <ul>
+                        <li>Outline application submitted to Uttlesford</li>
+                        <li>21-day statutory public consultation</li>
+                        <li>13-16 week decision timeline</li>
+                        <li>Every objection counts!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 4: Local Plan -->
+            <div class="timeline-item upcoming">
+                <div class="timeline-date">Early 2026</div>
+                <div class="timeline-content">
+                    <h3>🛡️ LOCAL PLAN ADOPTION</h3>
+                    <p><strong>Our Protection: No Green Belt Development</strong></p>
+                    <ul>
+                        <li>Uttlesford's plan keeps Green Belt intact</li>
+                        <li>No allocation for this site</li>
+                        <li>Strengthens our case against development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 5: Decision -->
+            <div class="timeline-item upcoming">
+                <div class="timeline-date">Mid 2026</div>
+                <div class="timeline-content">
+                    <h3>⚖️ PLANNING DECISION</h3>
+                    <p><strong>Planning Committee Public Meeting</strong></p>
+                    <ul>
+                        <li>Council must prove "very special circumstances" to approve</li>
+                        <li>Public can speak at committee (register early!)</li>
+                        <li>If refused, developer can appeal</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 6: Possible Appeal -->
+            <div class="timeline-item warning">
+                <div class="timeline-date">If Refused: 2026+</div>
+                <div class="timeline-content">
+                    <h3>⚠️ POSSIBLE APPEAL</h3>
+                    <p><strong>Fight Continues if Developer Appeals</strong></p>
+                    <ul>
+                        <li>Planning Inspectorate review</li>
+                        <li>Can add months to process</li>
+                        <li>Community input still vital</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-summary">
+            <div class="alert-banner">
+                <h3>🎯 KEY TAKEAWAY: THIS IS NOT A DONE DEAL!</h3>
+                <p>No permission exists. The developer faces high hurdles to build on Green Belt.
+                With strong community opposition at every stage, we can stop this.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
