@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates - Save Birchanger Green Belt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c5f2d;
+        }
+
+        .logo::before {
+            content: "";
+            display: inline-block;
+            width: 65px;
+            height: 65px;
+            background-image: url('icons/Green-Belt-Logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin-right: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 1.5rem;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2c5f2d;
+        }
+
+        .nav-links a.active {
+            color: #2c5f2d;
+            font-weight: bold;
+        }
+
+        .templates-hero {
+            background: linear-gradient(135deg, #2c5f2d, #4a7c59);
+            color: white;
+            padding: 120px 20px 80px;
+            text-align: center;
+        }
+
+        .templates-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .templates-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .templates-nav {
+            background-color: #f7f9f8;
+            padding: 1rem 0;
+            position: sticky;
+            top: 80px;
+            z-index: 100;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .templates-nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .templates-nav h2 {
+            color: #2c5f2d;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .templates-nav ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 0.3rem;
+        }
+
+        .templates-nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 0.3rem 0.5rem;
+            display: block;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .templates-nav a:hover {
+            background-color: #e8f5e9;
+            color: #2c5f2d;
+        }
+
+        .templates-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .template-section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .template-section h2 {
+            color: #2c5f2d;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #4a7c59;
+        }
+
+        .template-section h3 {
+            color: #2c5f2d;
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .template-section h4 {
+            color: #4a7c59;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.5rem;
+            font-weight: 600;
+        }
+
+        .template-content {
+            background-color: #f7f9f8;
+            padding: 1.5rem;
+            border-left: 4px solid #4a7c59;
+            border-radius: 4px;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+        }
+
+        .copy-button {
+            background-color: #4a7c59;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .copy-button:hover {
+            background-color: #2c5f2d;
+        }
+
+        .copy-button:active {
+            transform: scale(0.98);
+        }
+
+        .tips-box {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tips-box h3 {
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+
+        .tips-box ul {
+            list-style-position: inside;
+            color: #856404;
+        }
+
+        .tips-box li {
+            margin: 0.5rem 0;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #4a7c59;
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+            z-index: 999;
+        }
+
+        .back-to-top:hover {
+            background-color: #2c5f2d;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .templates-hero h1 {
+                font-size: 2rem;
+            }
+
+            .templates-nav ul {
+                grid-template-columns: 1fr;
+            }
+
+            .template-content {
+                font-size: 0.9rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Save Birchanger</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#action">Take Action</a></li>
+                <li><a href="templates.html" class="active">Templates</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="templates-hero">
+        <h1>Response Templates</h1>
+        <p>Ready-to-use templates for consultations, objections, and campaigning. Copy, customize with your details, and submit to make your voice heard.</p>
+    </div>
+
+    <!-- Templates Navigation -->
+    <div class="templates-nav">
+        <div class="templates-nav-container">
+            <h2>Quick Navigation</h2>
+            <ul>
+                <li><a href="#developer-consultation">A) Developer Consultation Response</a></li>
+                <li><a href="#planning-objection">B) Planning Objection</a></li>
+                <li><a href="#appeal-representation">C) Appeal Representation</a></li>
+                <li><a href="#local-plan">D) Local Plan Representation</a></li>
+                <li><a href="#petition">E) Petition Text</a></li>
+                <li><a href="#email-representatives">F) Email Councillors/MP</a></li>
+                <li><a href="#committee-speech">G) Planning Committee Speech</a></li>
+                <li><a href="#foi-request">H) FOI/EIR Request</a></li>
+                <li><a href="#campaign-block">I) Campaign Page Block</a></li>
+                <li><a href="#notes-tips">Notes & Tips</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Templates Container -->
+    <div class="templates-container">
+
+        <!-- Section A: Developer Consultation -->
+        <section id="developer-consultation" class="template-section">
+            <h2>A) Developer (Pre-application) Consultation Response</h2>
+            <p><strong>For City & Country – deadline 2 October 2025</strong></p>
+
+            <h3>A1. Ultra-quick "survey form" answers</h3>
+            <p>Copy/paste into webform boxes:</p>
+
+            <h4>Q: What do you think of our proposals?</h4>
+            <div class="template-content">I oppose building homes on this Green Belt site at [SITE NAME]. The land does strongly serve Green Belt purposes: it checks sprawl, helps keep settlements separate, and contributes to the setting of [HISTORIC AREA/ASSETS]. Labeling it "grey belt" is not evidenced. The scheme harms openness, landscape character, and local ecology, and is not a sustainably located extension.</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+
+            <h4>Q: What are your priorities for the area?</h4>
+            <div class="template-content">Protect the Green Belt's openness and settlement gaps; focus new homes on brownfield and truly sustainable locations first; secure genuinely additional affordable housing (not just re-badged numbers), safe walking/cycling routes, and infrastructure that actually arrives before occupation.</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+
+            <h4>Q: What type of homes are needed locally?</h4>
+            <div class="template-content">If more homes are needed, they should be delivered on brownfield or non-Green Belt sites within or immediately next to existing centres, with family-sized rentals, social rent, and key-worker homes—not by releasing functioning Green Belt.</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+
+            <h4>Q: Any other comments?</h4>
+            <div class="template-content">The "grey belt" claim is unproven. The site makes a high/clear contribution to Green Belt purposes; no defensible boundary exists; and the proposal relies on car travel. The "Golden Rules" (extra affordable, new green space, infrastructure, biodiversity) are not evidenced to be deliverable or secured. Please withdraw and pursue brownfield alternatives.</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+
+            <h3>A2. Email/letter to the developer's consultation team</h3>
+            <div class="template-content">Subject: Objection to [SITE NAME] – City & Country consultation (deadline 2 Oct 2025)
+
+Dear Consultation Team,
+
+I am writing to object to City & Country's proposals at [SITE NAME / GRID / POSTCODE].
+
+Not "grey belt": The land strongly contributes to Green Belt purposes by (i) preventing sprawl beyond a clear settlement edge, (ii) maintaining separation between [SETTLEMENT A] and [SETTLEMENT B], and (iii) contributing to the setting of [LISTED BUILDINGS/CONSERVATION AREA/LANDSCAPE].
+
+Openness & character: Proposed massing, heights and earthworks would erode perceived and spatial openness, adversely affecting [named views/valley/plateau].
+
+Sustainable access: The site is car-dependent. Distances/gradients to [station/centre/schools] exceed inclusive walking/cycling norms; public transport is infrequent.
+
+"Golden Rules" not met/evidenced: The headline affordable uplift is not proven (no transparent viability), the green space offered replaces functional countryside with maintained amenity (net loss of tranquillity), and BNG relies on off-site measures with uncertain delivery.
+
+Reasonable alternatives: The council has brownfield capacity and non-Green-Belt options that should be prioritised.
+
+Please record this as a formal objection to the consultation and keep me informed.
+
+Yours faithfully,
+[NAME]
+[ADDRESS / POSTCODE]
+[EMAIL]
+[OPTIONAL: attach photos or a sketch of key views/paths]</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section B: Planning Objection -->
+        <section id="planning-objection" class="template-section">
+            <h2>B) Statutory Planning Objection</h2>
+            <p>To the Council when an application is lodged</p>
+
+            <div class="template-content">Subject: OBJECTION – [APPLICATION REF], [SITE NAME]
+
+Summary
+I object because the site is not "grey belt" and the proposal causes unacceptable harm to Green Belt openness and to [landscape/heritage/highways]. The applicant has not demonstrated that the "Golden Rules" are met and secured, nor that very special circumstances exist in the alternative.
+
+1. Green Belt – not grey belt
+
+The land strongly serves Green Belt purposes (set out evidence on: sprawl, town-gap, historic setting).
+
+Defensible boundaries: The new edge would be exposed/weak (e.g., back gardens, minor hedges), inviting future encroachment.
+
+Openness: Quantum/height/earthworks materially reduce both spatial and visual openness (reference viewpoints and photomontages if provided).
+
+2. Location & transport
+
+Trips are car-led. [X] km to [centre/station], [gradient/lighting/safety] issues on routes; bus [headway]/first-last services are inadequate.
+
+3. "Golden Rules" & deliverability
+
+Affordable housing: Claimed uplift is not evidenced (no open-book viability), tenure mix lacks social rent; no binding phasing to deliver early.
+
+Green/blue infrastructure: Proposed SANG/green space does not compensate for loss of open countryside function; maintenance & public access are uncertain.
+
+Biodiversity Net Gain: Over-reliance on off-site units/time-lag risks non-delivery; onsite habitats are fragmented by roads.
+
+Infrastructure: [School places/GP capacity/junctions/drainage] capacity shortfalls; mitigation is not secured via enforceable s106/conditions.
+
+4. Alternatives
+
+The applicant has not robustly assessed reasonable alternatives, including brownfield and non-Green-Belt sites.
+
+Conclusion
+Refuse permission. If the authority is minded to approve, please impose robust conditions/obligations (see Annex).
+
+Annex – Suggested conditions/obligations (if approved despite objections)
+
+Minimum [X]% on-site affordable with social rent priority, delivered in Phase 1, with review mechanisms only to adjust upwards.
+
+A fixed habitat management plan (30+ years) and BNG secured before commencement; no occupation until [junction/school/health] delivered.
+
+A Design Code locking maximum heights, ridge lines, buffers and dark corridor protections.
+
+Your details: [Name, address, email]
+Attachments: [Photos, annotated plan, route audits]</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section C: Appeal Representation -->
+        <section id="appeal-representation" class="template-section">
+            <h2>C) Appeal (Planning Inspectorate) Representation</h2>
+            <p>If the application is refused and appealed, or if the developer appeals non-determination</p>
+
+            <div class="template-content">Subject: Representation – [PINS REF], [SITE], [LPA]
+
+Who I am: Local resident of [X years] at [postcode]; regular user of [paths/lanes/views] affected.
+
+Key points (succinct):
+
+Not grey belt: Evidence of strong contribution to Green Belt purposes (sprawl check, settlement gap, historic setting).
+
+Openness: The appellant underplays earthworks/massing; photomontages from [VP refs] show marked visual harm.
+
+Sustainability: [Route quality/headways/traffic data] show car reliance; claimed active-travel improvements are theoretical.
+
+Golden Rules: The uplift in affordable is not secured; BNG dependent on off-site units with delivery risk; SANG is not additional.
+
+Planning balance: Benefits are generic; harms to Green Belt carry substantial weight.
+
+Ask: Dismiss the appeal. If allowed, apply stringent conditions/obligations (see suggested set in my LPA objection).
+
+Attachments: [Your earlier objection; photos; route audits]</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section D: Local Plan -->
+        <section id="local-plan" class="template-section">
+            <h2>D) Local Plan (Reg 18 / Reg 19) Representation</h2>
+            <p><em>When the council proposes allocating the site through the plan</em></p>
+
+            <div class="template-content">Subject: Representation on [Local Plan name] – Policy [XX] [SITENAME]
+
+Soundness tests: The allocation is unsound – not justified, not effective, and inconsistent with national policy on Green Belt.
+
+Points to make:
+
+Grey-belt mapping/methodology: The council's method down-weights key contribution factors (e.g., coalescence risk, historic setting, long views), wrongly classing this site as "grey belt."
+
+Alternatives: The reasonable alternatives (including named brownfield sites/densification options) are not fairly assessed.
+
+Infrastructure/transport: Evidence base (IDP, transport modelling) shows deficits or unfunded items.
+
+Policy ask: Delete the allocation or replace with a brownfield-first package; if retained, cap numbers, fix a permanent landscape buffer, and require on-site social rent and BNG >10%.</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section E: Petition -->
+        <section id="petition" class="template-section">
+            <h2>E) Petition Text</h2>
+            <p>For your website/Change.org/Council e-petition</p>
+
+            <div class="template-content">Title: Stop building on [SITE NAME] Green Belt – say NO to "grey belt" here
+
+Summary (2–3 sentences):
+We call on [COUNCIL NAME] and City & Country to stop plans for [X] homes on [SITE NAME]. This land is not "grey belt": it strongly protects against sprawl, maintains the gap between [A] and [B], and supports the setting of [heritage/landscape]. Build brownfield-first and protect our countryside.
+
+Why this matters:
+
+• Permanent loss of openness, views and wildlife corridors.
+• Car-dependent location; extra congestion on [roads].
+• "Golden Rules" promises are uncertain and not secured.
+
+What we want:
+
+• Council to refuse allocation/permission and reject "grey belt" classification here.
+• Developer to withdraw and bring forward brownfield alternatives.
+
+Call to action:
+
+• Sign and share before [KEY MILESTONE DATE].
+• Submit your consultation objection by 2 Oct 2025 (see template on our site).
+• Email your councillors (template below).</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section F: Email Representatives -->
+        <section id="email-representatives" class="template-section">
+            <h2>F) Email Your Ward Councillors / MP</h2>
+            <p>Use for supporters to contact representatives politely</p>
+
+            <div class="template-content">Subject: Please oppose "grey belt" building on [SITE NAME] Green Belt
+
+Dear Cllr/MP [NAME],
+
+I'm a resident of [AREA]. Please oppose housing at [SITE NAME]. The site isn't "grey belt": it does prevent sprawl, maintains the [A–B] gap, and contributes to [historic setting/landscape]. The scheme is car-dependent, and the touted "Golden Rules" (extra affordable, new green space, biodiversity) are not transparently secured.
+
+Please:
+
+• Urge the council to refuse/withdraw this site.
+• Press the developer to focus on brownfield.
+• Keep me informed of meetings and votes.
+
+Yours sincerely,
+[NAME, ADDRESS, POSTCODE]</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section G: Committee Speech -->
+        <section id="committee-speech" class="template-section">
+            <h2>G) Planning Committee Speech (≈2 minutes)</h2>
+
+            <div class="template-content">Chair, Members,
+
+This is not a "grey belt" site. It does the Green Belt's job: it prevents sprawl, maintains the gap between [A] and [B], and frames [heritage/landscape]. The proposal harms openness through bulk, earthworks and urbanising effects.
+
+The location is car-dependent; the promised bus/cycle improvements are aspirational, not secured. The "Golden Rules" are not evidenced: the affordable uplift lacks enforceable delivery and the green space is a managed park replacing countryside. BNG relies on off-site units.
+
+Planning balance: benefits are generic and do not outweigh the Green Belt harm. Please refuse.
+
+Thank you.</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section H: FOI Request -->
+        <section id="foi-request" class="template-section">
+            <h2>H) Freedom of Information (FOI) / EIR Request</h2>
+            <p>To obtain the council's "grey belt" assessments and inputs</p>
+
+            <div class="template-content">Subject: EIR request – Grey Belt assessment for [SITE NAME]
+
+Dear [LPA],
+
+Under the Environmental Information Regulations, please provide:
+
+1. Any site-specific Green Belt or "grey belt" assessment for [SITE NAME] since [DATE];
+2. The methodology, scoring matrices and boundary maps used;
+3. Correspondence with the applicant/promoter relating to "grey belt" status;
+4. Evidence of reasonable alternatives assessment and any viability inputs supporting the claimed affordable uplift.
+
+Please supply as searchable PDFs/CSV shapefiles.
+
+Yours faithfully,
+[NAME]</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section I: Campaign Block -->
+        <section id="campaign-block" class="template-section">
+            <h2>I) Campaign Page Block for Your Website/Newsletter</h2>
+
+            <div class="template-content">Heading: Respond to Consultation – Deadline 2 October 2025
+
+What to do (takes 5 minutes):
+
+1. Open the consultation: [LINK].
+2. Paste the short answers provided above (make them your own).
+3. Add any personal evidence: photos of views/paths/wildlife.
+4. Click Submit.
+5. Tell 3 neighbours (forward this link).
+
+Key points to include:
+
+• This is not "grey belt" – it does serve Green Belt purposes.
+• Real risk to openness, wildlife and settlement gap.
+• Car-dependent; weak public transport.
+• "Golden Rules" promises are uncertain and not secured.
+• Brownfield-first alternatives exist.</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Notes & Tips -->
+        <section id="notes-tips" class="template-section">
+            <h2>Notes & Tips</h2>
+            <p><strong>Keep supporters on solid ground</strong></p>
+
+            <div class="tips-box">
+                <h3>✅ Stick to material planning issues:</h3>
+                <ul>
+                    <li>Green Belt purposes, openness, landscape/heritage</li>
+                    <li>Transport, ecology, flooding</li>
+                    <li>Design, infrastructure, policy conflict</li>
+                    <li>Alternatives assessment</li>
+                </ul>
+            </div>
+
+            <div class="tips-box">
+                <h3>❌ Avoid non-material points:</h3>
+                <ul>
+                    <li>House prices</li>
+                    <li>Developer profits</li>
+                    <li>Who lives there</li>
+                    <li>Loss of a private view</li>
+                </ul>
+            </div>
+
+            <div class="tips-box">
+                <h3>💡 Best Practices:</h3>
+                <ul>
+                    <li>Be polite and factual</li>
+                    <li>Add local specifics (photos, measurements, route timings)</li>
+                    <li>If you cite stats, reference the source or keep it qualitative</li>
+                    <li>Customize templates with your personal observations and evidence</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">↑</a>
+
+    <!-- JavaScript -->
+    <script>
+        // Copy to clipboard function
+        function copyToClipboard(button) {
+            const templateContent = button.previousElementSibling;
+            const textToCopy = templateContent.textContent;
+
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                button.style.backgroundColor = '#28a745';
+
+                setTimeout(function() {
+                    button.textContent = originalText;
+                    button.style.backgroundColor = '#4a7c59';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 120; // Account for fixed navbar and templates nav
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 500) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
