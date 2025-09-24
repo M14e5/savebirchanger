@@ -298,8 +298,9 @@
         <div class="newsletter">
             <h2>Stay Informed</h2>
             <p>Get updates on the campaign, action alerts, and important developments for both communities.</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Your email address" required>
+            <form class="newsletter-form" action="https://formspree.io/f/xldpewza" method="POST">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email address" required>
                 <button type="submit">Subscribe</button>
             </form>
         </div>
@@ -393,11 +394,8 @@
             });
         });
 
-        // Newsletter form
-        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for subscribing! We\'ll keep you updated on the campaign.');
-            this.reset();
+        // Newsletter form - removed preventDefault to allow Formspree submission
+        // Form now submits directly to Formspree
         });
     </script>
 </body>
