@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Save Birchanger - Protect Our Village Identity</title>
+    <title>Save Birchanger - Protect Our Historic Village from Green Belt Development</title>
+    <meta name="description" content="Preserve Birchanger's 1000-year heritage from City & Country's 520-home development. Protect our 12th-century church, ancient woodland, and village community.">
+    <meta name="keywords" content="Birchanger, historic village, Green Belt, St Mary's Church, ancient woodland, Essex heritage, village identity">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav>
-            <div class="logo">Save Birchanger</div>
+            <div class="logo">Save Our Villages</div>
             <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -28,7 +30,7 @@
         <h1>Save Birchanger</h1>
         <p class="subtitle">Protect Our Historic Village. Preserve Our Rural Identity.</p>
         <div class="cta-buttons">
-            <a href="#petition" class="btn btn-primary">Sign the Petition</a>
+            <a href="https://www.change.org/p/save-birchanger-stansted-green-belt" class="btn btn-primary" target="_blank">Sign the Petition</a>
             <a href="#action" class="btn btn-secondary">Get Involved</a>
         </div>
     </div>
@@ -74,12 +76,12 @@
             <div class="stats">
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Population Increase</span>
+                        <span class="stat-number">~1,300</span>
+                        <span class="stat-label">New Residents</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">1,000+</span>
-                        <span class="stat-label">Houses in Our Village</span>
+                        <span class="stat-number">520</span>
+                        <span class="stat-label">New Houses Proposed</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">Zero</span>
@@ -261,10 +263,12 @@
         <div class="newsletter">
             <h2>Birchanger Campaign Updates</h2>
             <p>Get village-specific news, meeting reminders, and action alerts.</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Your email address" required>
+            <form class="newsletter-form" action="https://formspree.io/f/xldpewza" method="POST">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email address" required>
                 <button type="submit">Subscribe</button>
             </form>
+            <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">We'll only use your email for campaign updates. View our <a href="index.html#privacy-notice" style="color: #ffd93d; text-decoration: underline;">Privacy Notice</a>.</p>
         </div>
 
         <!-- Contact Section -->
@@ -310,7 +314,7 @@
                 <h3>Quick Links</h3>
                 <a href="index.html">Campaign Home</a>
                 <a href="stansted.html">Save Stansted</a>
-                <a href="#petition">Sign Petition</a>
+                <a href="https://www.change.org/p/save-birchanger-stansted-green-belt" target="_blank">Sign Petition</a>
                 <a href="#action">Take Action</a>
             </div>
 

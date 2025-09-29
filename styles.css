@@ -704,6 +704,218 @@ footer {
     opacity: 0.95;
 }
 
+/* Footnotes and Citations */
+.footnote-ref {
+    font-size: 0.85rem;
+    background: #4a7c59;
+    color: white;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-left: 0.2rem;
+    transition: background 0.3s;
+}
+
+.footnote-ref:hover {
+    background: #2c5f2d;
+    color: white;
+}
+
+.footnotes-section {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 3rem 0;
+    border-top: 3px solid #4a7c59;
+}
+
+.footnotes-section h3 {
+    color: #2c5f2d;
+    margin-bottom: 1rem;
+}
+
+.footnotes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footnotes-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footnotes-list li:last-child {
+    border-bottom: none;
+}
+
+.footnote-id {
+    background: #4a7c59;
+    color: white;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.methodology-box {
+    background: #e8f5e9;
+    border: 2px solid #4a7c59;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.methodology-box h4 {
+    color: #2c5f2d;
+    margin-bottom: 1rem;
+}
+
+.methodology-box p {
+    color: #2c5f2d;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+/* Impact badges */
+.impact-badges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.impact-badge {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-left: 4px solid #ff6b6b;
+    text-align: center;
+}
+
+.impact-badge .badge-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.impact-badge .badge-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Evidence Gallery */
+.evidence-tabs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.evidence-tab {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.evidence-tab:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.evidence-tab.active {
+    border-color: #4a7c59;
+    background: #e8f5e9;
+}
+
+.evidence-tab h3 {
+    color: #2c5f2d;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.evidence-tab p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.evidence-content {
+    margin-top: 2rem;
+}
+
+.evidence-panel {
+    display: none;
+}
+
+.evidence-panel.active {
+    display: block;
+}
+
+.evidence-panel h3 {
+    color: #2c5f2d;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.evidence-panel h4 {
+    color: #4a7c59;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2c5f2d;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: none;
+}
+
+.cookie-banner.show {
+    display: block;
+}
+
+.cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cookie-accept-btn {
+    background: #4a7c59;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+.cookie-accept-btn:hover {
+    background: #ff6b6b;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
