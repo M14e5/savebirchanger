@@ -411,7 +411,7 @@ nav {
 /* Action Cards */
 .action-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -999,5 +999,9 @@ footer {
 
     .timeline-phase-content li {
         font-size: 0.85rem;
+    }
+
+    .action-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
