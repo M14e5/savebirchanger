@@ -17,6 +17,100 @@
             line-height: 1.6;
         }
 
+        /* Password Protection Overlay */
+        #password-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a7c59 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+        }
+
+        #password-overlay.hidden {
+            display: none;
+        }
+
+        .password-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .password-box h2 {
+            color: #2c5f2d;
+            margin-bottom: 1rem;
+        }
+
+        .password-box p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .password-box input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .password-box input[type="password"]:focus {
+            outline: none;
+            border-color: #4a7c59;
+        }
+
+        .password-box button {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            background-color: #4a7c59;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .password-box button:hover {
+            background-color: #2c5f2d;
+        }
+
+        .password-error {
+            color: #ff6b6b;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .password-error.show {
+            display: block;
+        }
+
+        .main-content {
+            display: none;
+        }
+
+        .main-content.unlocked {
+            display: block;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+            20%, 40%, 60%, 80% { transform: translateX(10px); }
+        }
+
         .navbar {
             background-color: #fff;
             padding: 1rem 0;
@@ -271,6 +365,19 @@
     </style>
 </head>
 <body>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay">
+        <div class="password-box">
+            <h2>🔒 Protected Content</h2>
+            <p>This page contains template resources. Please enter the password to continue.</p>
+            <input type="password" id="password-input" placeholder="Enter password" autocomplete="off">
+            <button onclick="checkPassword()">Access Templates</button>
+            <div class="password-error" id="password-error">Incorrect password. Please try again.</div>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden until password entered) -->
+    <div class="main-content" id="main-content">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-container">
@@ -618,8 +725,52 @@ Key points to include:
 
     <!-- Back to top button -->
     <a href="#" class="back-to-top">↑</a>
+    </div><!-- End of main-content -->
 
     <!-- JavaScript -->
+    <script>
+        // Password Protection
+        const CORRECT_PASSWORD = '6tXb6hfq1nQ68f';
+
+        // Check if user already entered password in this session
+        window.addEventListener('load', function() {
+            if (sessionStorage.getItem('templatesUnlocked') === 'true') {
+                unlockContent();
+            }
+
+            // Allow Enter key to submit password
+            document.getElementById('password-input').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    checkPassword();
+                }
+            });
+        });
+
+        function checkPassword() {
+            const input = document.getElementById('password-input');
+            const errorMsg = document.getElementById('password-error');
+
+            if (input.value === CORRECT_PASSWORD) {
+                sessionStorage.setItem('templatesUnlocked', 'true');
+                unlockContent();
+            } else {
+                errorMsg.classList.add('show');
+                input.value = '';
+                input.focus();
+
+                // Shake animation
+                input.style.animation = 'shake 0.5s';
+                setTimeout(() => {
+                    input.style.animation = '';
+                }, 500);
+            }
+        }
+
+        function unlockContent() {
+            document.getElementById('password-overlay').classList.add('hidden');
+            document.getElementById('main-content').classList.add('unlocked');
+        }
+    </script>
     <script>
         // Copy to clipboard function
         function copyToClipboard(button) {
