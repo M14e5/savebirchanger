@@ -96,37 +96,45 @@ function buildPrompt(templateType, answers, baseTemplate) {
     }
   });
 
-  const systemPrompt = `You are helping a local resident write a ${templateInfo.name} for a planning campaign. Your task is to create a personalized, authentic letter that sounds like a real person wrote it - not AI-generated.
+  const systemPrompt = `You are helping a local resident write a ${templateInfo.name} for official submission to planning authorities. Your task is to create a personalized, professionally-written representation that sounds authentic and credible.
 
 CRITICAL STYLE REQUIREMENTS:
-- Write in a natural, sincere, conversational voice
-- Vary sentence structure - use short and long sentences naturally
-- DO NOT use AI clichés: avoid "delve", "moreover", "furthermore", "it is important to note", "in conclusion"
-- DO NOT use overly formal or corporate language
+- Write in a formal but sincere voice appropriate for official planning submissions
+- Use clear, direct language - be professional but not overly legalistic
+- Vary sentence structure naturally while maintaining formality
+- DO NOT use AI clichés: avoid "delve", "moreover", "it is important to note", "in conclusion", "stakeholders"
 - DO NOT use flowery or elaborate descriptions
-- DO sound passionate but respectful and factual
-- DO use the person's specific details naturally throughout the text
-- DO keep paragraphs concise and focused
+- DO maintain a respectful, factual tone throughout
+- DO use the person's specific details naturally woven into the formal structure
+- DO keep paragraphs focused and well-organized
+- DO use appropriate planning terminology when relevant (e.g., "Green Belt purposes", "openness", "material considerations")
 
-Think of this as a concerned neighbor writing to their council, not a lawyer or corporate communications department.`;
+Think of this as a resident making a serious, well-reasoned representation to planning authorities - professional, credible, and grounded in their genuine concerns.`;
 
   const userPrompt = `Write a personalized ${templateInfo.name} for someone with these details:
 
 ${userDetails}
 
-Base your response on this structure, but adapt it to incorporate their personal details naturally:
+Use this template as a STYLE GUIDE for structure and tone, but make the final output unique and personalized:
 
 ${baseTemplate}
 
-IMPORTANT:
-- Weave their specific details throughout the letter naturally
-- Replace placeholder text like [SITE NAME], [AREA], etc. with contextually appropriate references to "the site", "this Green Belt land", "our area", etc.
-- Keep the tone authentic and personal
-- Make it unique to this person's perspective and experience
-- Aim for 250-400 words for emails, 150-250 for consultation responses
-- DO NOT include placeholder text or bracketed instructions
+CRITICAL REQUIREMENTS:
+- Follow the formal, professional tone of the template above
+- Incorporate their specific details naturally throughout (NOT just at the start)
+- Use their answers to add substance and credibility - these are their genuine observations
+- Replace generic placeholder text with contextually appropriate references:
+  - Instead of [SITE NAME]: "this Green Belt land", "the proposed site", "the land in question"
+  - Instead of [AREA]: "our village", "this area", "the local community"
+  - Be specific where they gave specifics, general where appropriate
+- Maintain the template's logical structure (opening, substantive points, conclusion)
+- Keep the same level of formality and professionalism as the template
+- Make each sentence unique - do not copy template sentences verbatim
+- Aim for 250-400 words for formal letters/objections, 150-250 for consultation responses
+- DO NOT include placeholder text like [NAME], [ADDRESS] - omit signature blocks entirely
+- DO NOT add a subject line - start directly with the letter content
 
-Write only the letter/response content, nothing else.`;
+Write only the body of the letter/response. Make it professional, credible, and grounded in their specific situation.`;
 
   return { systemPrompt, userPrompt };
 }
@@ -216,10 +224,10 @@ async function generateTemplate(templateType, answers, apiKey) {
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userPrompt }
         ],
-        temperature: 0.8, // Higher temperature for more natural variation
+        temperature: 0.7, // Balanced - unique but consistent with formal tone
         max_tokens: 1000,
-        presence_penalty: 0.6, // Reduce repetition
-        frequency_penalty: 0.3
+        presence_penalty: 0.5, // Reduce repetition while maintaining coherence
+        frequency_penalty: 0.4
       })
     });
 
