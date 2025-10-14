@@ -344,6 +344,284 @@
             background-color: #2c5f2d;
         }
 
+        /* AI Template Generator Styles */
+        .ai-generator-section {
+            background: linear-gradient(135deg, #f0f9f0 0%, #e8f5e9 100%);
+            border: 3px solid #4a7c59;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .ai-generator-section h2 {
+            color: #2c5f2d;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .ai-generator-section .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .ai-generator-section .highlight-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .ai-generator-section .highlight-box p {
+            margin: 0;
+            color: #856404;
+            font-size: 0.95rem;
+        }
+
+        .generator-step {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .generator-step h3 {
+            color: #2c5f2d;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .generator-step h3::before {
+            content: attr(data-step);
+            background: #4a7c59;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.75rem;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .template-type-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .template-type-option {
+            position: relative;
+        }
+
+        .template-type-option input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .template-type-option label {
+            display: block;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .template-type-option label:hover {
+            border-color: #4a7c59;
+            background: #f7f9f8;
+        }
+
+        .template-type-option input[type="radio"]:checked + label {
+            border-color: #4a7c59;
+            background: #e8f5e9;
+            font-weight: 600;
+        }
+
+        .template-type-option label .type-name {
+            color: #2c5f2d;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .template-type-option label .type-desc {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        .questions-container {
+            display: none;
+            margin-top: 1rem;
+        }
+
+        .questions-container.active {
+            display: block;
+        }
+
+        .question-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .question-group label {
+            display: block;
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .question-group input[type="text"],
+        .question-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .question-group input[type="text"]:focus,
+        .question-group textarea:focus {
+            outline: none;
+            border-color: #4a7c59;
+        }
+
+        .question-group textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .question-group small {
+            display: block;
+            color: #666;
+            margin-top: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .generate-button {
+            background: #4a7c59;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .generate-button:hover:not(:disabled) {
+            background: #2c5f2d;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .generate-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .generate-button .spinner {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        .generate-button.loading .spinner {
+            display: block;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .result-container {
+            display: none;
+            margin-top: 2rem;
+        }
+
+        .result-container.active {
+            display: block;
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .result-header h4 {
+            color: #2c5f2d;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .result-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .regenerate-button {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .regenerate-button:hover {
+            background: #ff5252;
+        }
+
+        .error-message {
+            background: #fee;
+            border: 2px solid #fcc;
+            color: #c33;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .error-message.active {
+            display: block;
+        }
+
+        .disclaimer {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #1565c0;
+        }
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -360,6 +638,20 @@
             .template-content {
                 font-size: 0.9rem;
                 padding: 1rem;
+            }
+
+            .ai-generator-section {
+                padding: 1.5rem;
+            }
+
+            .template-type-selector {
+                grid-template-columns: 1fr;
+            }
+
+            .result-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
             }
         }
     </style>
@@ -420,6 +712,88 @@
 
     <!-- Templates Container -->
     <div class="templates-container">
+
+        <!-- AI Template Generator Section -->
+        <section class="ai-generator-section" id="ai-generator">
+            <h2>🤖 AI Template Generator</h2>
+            <p class="subtitle">Answer a few questions to create a personalized letter that sounds authentic and unique</p>
+
+            <div class="highlight-box">
+                <p><strong>Save time while staying personal:</strong> This tool creates a custom template based on your specific situation. Review and adjust the result before submitting to ensure it truly reflects your voice.</p>
+            </div>
+
+            <!-- Step 1: Select Template Type -->
+            <div class="generator-step">
+                <h3 data-step="1">Choose Your Template Type</h3>
+                <div class="template-type-selector">
+                    <div class="template-type-option">
+                        <input type="radio" id="type-dev-consult" name="template-type" value="developer-consultation">
+                        <label for="type-dev-consult">
+                            <span class="type-name">Developer Consultation</span>
+                            <span class="type-desc">Respond to pre-application consultation (deadline: 2 Oct 2025)</span>
+                        </label>
+                    </div>
+                    <div class="template-type-option">
+                        <input type="radio" id="type-planning" name="template-type" value="planning-objection">
+                        <label for="type-planning">
+                            <span class="type-name">Planning Objection</span>
+                            <span class="type-desc">Formal objection when application is lodged</span>
+                        </label>
+                    </div>
+                    <div class="template-type-option">
+                        <input type="radio" id="type-email" name="template-type" value="email-representatives">
+                        <label for="type-email">
+                            <span class="type-name">Email Councillors/MP</span>
+                            <span class="type-desc">Contact your local representatives</span>
+                        </label>
+                    </div>
+                    <div class="template-type-option">
+                        <input type="radio" id="type-appeal" name="template-type" value="appeal-representation">
+                        <label for="type-appeal">
+                            <span class="type-name">Appeal Representation</span>
+                            <span class="type-desc">If application is refused and appealed</span>
+                        </label>
+                    </div>
+                    <div class="template-type-option">
+                        <input type="radio" id="type-local-plan" name="template-type" value="local-plan">
+                        <label for="type-local-plan">
+                            <span class="type-name">Local Plan Response</span>
+                            <span class="type-desc">When council proposes allocating the site</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Answer Questions (Dynamic) -->
+            <div class="generator-step" id="questions-step" style="display: none;">
+                <h3 data-step="2">Tell Us About Your Situation</h3>
+                <form id="generator-form">
+                    <div id="questions-container" class="questions-container"></div>
+                    <button type="submit" class="generate-button" id="generate-btn">
+                        <span class="btn-text">Generate My Template</span>
+                        <span class="spinner"></span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Error Message -->
+            <div class="error-message" id="error-message"></div>
+
+            <!-- Step 3: Results -->
+            <div class="result-container" id="result-container">
+                <div class="result-header">
+                    <h4>Your Personalized Template</h4>
+                    <div class="result-actions">
+                        <button class="regenerate-button" id="regenerate-btn">Try Again</button>
+                        <button class="copy-button" id="copy-result-btn">Copy Text</button>
+                    </div>
+                </div>
+                <div class="template-content" id="generated-content"></div>
+                <div class="disclaimer">
+                    <strong>⚠️ Important:</strong> Please review and personalize this template before submitting. Add specific details, check all facts, and ensure it reflects your authentic voice and concerns.
+                </div>
+            </div>
+        </section>
 
         <!-- Section A: Developer Consultation -->
         <section id="developer-consultation" class="template-section">
@@ -815,6 +1189,316 @@ Key points to include:
             } else {
                 backToTop.style.display = 'none';
             }
+        });
+    </script>
+
+    <!-- AI Template Generator JavaScript -->
+    <script>
+        // IMPORTANT: Update this URL to your deployed Cloudflare Worker URL
+        // After deploying with: wrangler deploy
+        const WORKER_API_URL = 'https://template-generator.martinssolver.workers.dev';
+
+        // Template questions configuration (must match worker)
+        const TEMPLATE_QUESTIONS = {
+            'developer-consultation': [
+                {
+                    label: 'What is your relationship to the area?',
+                    placeholder: 'e.g., Resident for 15 years, work nearby, use local paths regularly',
+                    type: 'text'
+                },
+                {
+                    label: 'What specific views, landmarks, or features of this Green Belt land matter to you?',
+                    placeholder: 'e.g., View of church from Grove Hill, ancient hedgerows, wildlife corridor',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What is your main concern about this development?',
+                    placeholder: 'e.g., Loss of countryside character, increased traffic, infrastructure strain',
+                    type: 'text'
+                },
+                {
+                    label: 'How do you currently use or value this space?',
+                    placeholder: 'e.g., Daily dog walks, wildlife watching, cycling routes',
+                    type: 'text'
+                },
+                {
+                    label: 'Do you have any specific evidence to share? (optional)',
+                    placeholder: 'e.g., Have photos of wildlife, measured walking distances, observed flooding',
+                    type: 'textarea',
+                    optional: true
+                }
+            ],
+            'planning-objection': [
+                {
+                    label: 'How long have you lived or worked in this area?',
+                    placeholder: 'e.g., Lived in Birchanger for 20 years',
+                    type: 'text'
+                },
+                {
+                    label: 'What specific Green Belt purposes does this land serve in your view?',
+                    placeholder: 'e.g., Prevents sprawl, maintains gap between villages, protects historic views',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What are your main concerns about the impact?',
+                    placeholder: 'e.g., Transport congestion, lack of schools, harm to wildlife, flooding risk',
+                    type: 'textarea'
+                },
+                {
+                    label: 'Have you observed any specific issues with local infrastructure or services?',
+                    placeholder: 'e.g., GP appointments full, school places limited, roads already congested',
+                    type: 'text'
+                },
+                {
+                    label: 'What makes this location unsuitable for development in your experience?',
+                    placeholder: 'e.g., Poor bus service, steep hills, no safe walking routes to shops',
+                    type: 'textarea'
+                }
+            ],
+            'email-representatives': [
+                {
+                    label: 'How long have you been a resident or worked in this area?',
+                    placeholder: 'e.g., 12 years',
+                    type: 'text'
+                },
+                {
+                    label: 'What does this Green Belt land personally mean to you?',
+                    placeholder: 'e.g., Where my children play, beautiful countryside I walk daily',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What is your top concern about the proposed development?',
+                    placeholder: 'e.g., Loss of village character and community identity',
+                    type: 'text'
+                },
+                {
+                    label: 'What would you like your representative to do?',
+                    placeholder: 'e.g., Vote against the proposal, press for brownfield alternatives',
+                    type: 'text'
+                }
+            ],
+            'appeal-representation': [
+                {
+                    label: 'How long have you lived in or used this area?',
+                    placeholder: 'e.g., 18 years as a resident',
+                    type: 'text'
+                },
+                {
+                    label: 'What specific views or paths do you regularly use that would be affected?',
+                    placeholder: 'e.g., Footpath along the valley, view from my garden toward the church',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What evidence can you provide about the site\'s Green Belt contribution?',
+                    placeholder: 'e.g., It maintains clear separation between settlements, prevents sprawl',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What are your concerns about the claimed "sustainability" of this location?',
+                    placeholder: 'e.g., No reliable bus service, nearest shops 2km away, steep hills',
+                    type: 'textarea'
+                }
+            ],
+            'local-plan': [
+                {
+                    label: 'What is your connection to this area?',
+                    placeholder: 'e.g., Long-time resident, local business owner',
+                    type: 'text'
+                },
+                {
+                    label: 'Why do you believe this site should not be classified as "grey belt"?',
+                    placeholder: 'e.g., It serves clear Green Belt purposes, prevents coalescence',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What alternative sites or approaches should the council consider?',
+                    placeholder: 'e.g., Brownfield sites in town centre, higher density near station',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What specific policy concerns do you have about this allocation?',
+                    placeholder: 'e.g., Inconsistent with national Green Belt policy, infrastructure deficit',
+                    type: 'textarea'
+                }
+            ]
+        };
+
+        let selectedTemplateType = null;
+
+        // Template type selection handler
+        document.querySelectorAll('input[name="template-type"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                selectedTemplateType = this.value;
+                showQuestionsForTemplate(selectedTemplateType);
+            });
+        });
+
+        // Show questions based on selected template
+        function showQuestionsForTemplate(templateType) {
+            const questionsStep = document.getElementById('questions-step');
+            const questionsContainer = document.getElementById('questions-container');
+            const resultContainer = document.getElementById('result-container');
+            const errorMessage = document.getElementById('error-message');
+
+            // Hide results and errors
+            resultContainer.classList.remove('active');
+            errorMessage.classList.remove('active');
+
+            // Clear previous questions
+            questionsContainer.innerHTML = '';
+
+            // Get questions for this template type
+            const questions = TEMPLATE_QUESTIONS[templateType];
+
+            // Generate question inputs
+            questions.forEach((q, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.className = 'question-group';
+
+                const label = document.createElement('label');
+                label.htmlFor = `question-${index}`;
+                label.textContent = q.label + (q.optional ? ' (optional)' : '');
+
+                const input = q.type === 'textarea'
+                    ? document.createElement('textarea')
+                    : document.createElement('input');
+
+                input.id = `question-${index}`;
+                input.name = `question-${index}`;
+                input.placeholder = q.placeholder;
+
+                if (q.type === 'text') {
+                    input.type = 'text';
+                }
+
+                if (!q.optional) {
+                    input.required = true;
+                }
+
+                questionDiv.appendChild(label);
+                questionDiv.appendChild(input);
+                questionsContainer.appendChild(questionDiv);
+            });
+
+            // Show questions step
+            questionsContainer.classList.add('active');
+            questionsStep.style.display = 'block';
+
+            // Scroll to questions
+            questionsStep.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Form submission handler
+        document.getElementById('generator-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            if (!selectedTemplateType) {
+                showError('Please select a template type first.');
+                return;
+            }
+
+            // Collect answers
+            const answers = [];
+            const questions = TEMPLATE_QUESTIONS[selectedTemplateType];
+
+            questions.forEach((q, index) => {
+                const input = document.getElementById(`question-${index}`);
+                answers.push(input.value.trim());
+            });
+
+            // Validate at least one answer is provided
+            const hasAnswers = answers.some(answer => answer.length > 0);
+            if (!hasAnswers) {
+                showError('Please answer at least one question.');
+                return;
+            }
+
+            // Show loading state
+            const generateBtn = document.getElementById('generate-btn');
+            const btnText = generateBtn.querySelector('.btn-text');
+            generateBtn.disabled = true;
+            generateBtn.classList.add('loading');
+            btnText.textContent = 'Generating...';
+
+            // Hide previous results/errors
+            document.getElementById('result-container').classList.remove('active');
+            document.getElementById('error-message').classList.remove('active');
+
+            try {
+                // Call Cloudflare Worker
+                const response = await fetch(WORKER_API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        templateType: selectedTemplateType,
+                        answers: answers
+                    })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.error || 'Failed to generate template');
+                }
+
+                // Show result
+                displayResult(data.content);
+
+            } catch (error) {
+                console.error('Error:', error);
+                showError(error.message || 'Failed to generate template. Please try again.');
+            } finally {
+                // Reset button
+                generateBtn.disabled = false;
+                generateBtn.classList.remove('loading');
+                btnText.textContent = 'Generate My Template';
+            }
+        });
+
+        // Display generated result
+        function displayResult(content) {
+            const resultContainer = document.getElementById('result-container');
+            const generatedContent = document.getElementById('generated-content');
+
+            generatedContent.textContent = content;
+            resultContainer.classList.add('active');
+
+            // Scroll to result
+            resultContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Show error message
+        function showError(message) {
+            const errorMessage = document.getElementById('error-message');
+            errorMessage.textContent = message;
+            errorMessage.classList.add('active');
+            errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Copy result button
+        document.getElementById('copy-result-btn').addEventListener('click', function() {
+            const content = document.getElementById('generated-content').textContent;
+            navigator.clipboard.writeText(content).then(() => {
+                const originalText = this.textContent;
+                this.textContent = 'Copied!';
+                this.style.backgroundColor = '#28a745';
+
+                setTimeout(() => {
+                    this.textContent = originalText;
+                    this.style.backgroundColor = '#4a7c59';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                showError('Failed to copy to clipboard');
+            });
+        });
+
+        // Regenerate button
+        document.getElementById('regenerate-btn').addEventListener('click', function() {
+            // Re-submit the form
+            document.getElementById('generator-form').dispatchEvent(new Event('submit'));
         });
     </script>
 </body>

@@ -1,0 +1,24 @@
+name = "template-generator"
+main = "workers/template-generator.js"
+compatibility_date = "2024-01-01"
+
+# Account ID - you'll need to add your Cloudflare account ID here
+# Find it at: https://dash.cloudflare.com/ (in the URL or sidebar)
+account_id = "3661915b96149c595241723b8c45518d"
+
+# Worker configuration
+workers_dev = true
+
+# Environment variables (secrets)
+# DO NOT put your actual API key here!
+# Set it using: wrangler secret put OPENAI_API_KEY
+# Then paste your NEW OpenAI API key when prompted
+
+[env.production]
+name = "template-generator"
+# routes = ["savebirchanger.org/api/generate-template"] # Uncomment and update with your domain
+
+# For local development
+# Run with: wrangler dev
+[env.dev]
+name = "template-generator-dev"
