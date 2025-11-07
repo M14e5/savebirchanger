@@ -91,7 +91,11 @@
                         redirected_from_404: true,
                         actual_landing_url: landingData.url,
                         original_timestamp: landingData.timestamp,
-                        current_timestamp: new Date().toISOString()
+                        current_timestamp: new Date().toISOString(),
+                        // Override PostHog's automatic URL capture with the original landing URL
+                        $current_url: landingData.url,
+                        $pathname: landingData.path,
+                        $referrer: landingData.referrer
                     };
 
                     // Clear the 404 data
@@ -106,7 +110,10 @@
                         utm_medium: urlParams.get('utm_medium') || null,
                         utm_campaign: urlParams.get('utm_campaign') || null,
                         redirected_from_404: false,
-                        timestamp: new Date().toISOString()
+                        timestamp: new Date().toISOString(),
+                        // Set PostHog's automatic properties explicitly
+                        $current_url: window.location.href,
+                        $pathname: window.location.pathname
                     };
                 }
 
