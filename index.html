@@ -26,6 +26,27 @@
             persistence: 'localStorage'
         });
 
+        // Function to capture landing page data to PostHog (only after consent)
+        function captureLandingPageToPostHog() {
+            try {
+                // Check if we have pending landing page data
+                const pendingLandingData = sessionStorage.getItem('pendingLandingPageData');
+
+                if (pendingLandingData && window.posthog) {
+                    const landingData = JSON.parse(pendingLandingData);
+                    console.log('Sending landing page data to PostHog:', landingData);
+
+                    posthog.capture('landing_page_view', landingData);
+
+                    // Clear the pending data after sending
+                    sessionStorage.removeItem('pendingLandingPageData');
+                    console.log('Landing page data sent and cleared');
+                }
+            } catch (e) {
+                console.error('Error capturing landing page to PostHog:', e);
+            }
+        }
+
         // Check for existing consent on page load and restore opt-in state
         (function() {
             try {
@@ -35,6 +56,11 @@
                     if (consent.analytics === true) {
                         posthog.opt_in_capturing();
                         console.log('PostHog opt-in restored from saved consent');
+
+                        // User has already consented - send any pending landing page data
+                        setTimeout(function() {
+                            captureLandingPageToPostHog();
+                        }, 1000);
                     } else if (consent.analytics === false) {
                         posthog.opt_out_capturing();
                         console.log('PostHog opt-out maintained from saved consent');
@@ -45,36 +71,34 @@
             }
         })();
 
-        // Capture landing page information (before consent decision)
-        // This is GDPR-compliant as PostHog is in opt-out mode
+        // Store landing page information (DON'T send to PostHog yet - wait for consent)
         window.addEventListener('load', function() {
             try {
                 // First check if we have stored landing page data from a 404 redirect
                 const stored404Data = sessionStorage.getItem('landingPageData');
+
+                let landingPageData;
 
                 if (stored404Data) {
                     // User came from a 404 page - use that data
                     const landingData = JSON.parse(stored404Data);
                     console.log('Found 404 landing page data:', landingData);
 
-                    // Capture the 404 landing page event with the original URL
-                    posthog.capture('landing_page_view', {
+                    landingPageData = {
                         path: landingData.path,
                         referrer: landingData.referrer,
                         redirected_from_404: true,
                         actual_landing_url: landingData.url,
                         original_timestamp: landingData.timestamp,
                         current_timestamp: new Date().toISOString()
-                    });
+                    };
 
-                    // Clear the stored data after capturing
+                    // Clear the 404 data
                     sessionStorage.removeItem('landingPageData');
-                    console.log('404 landing page tracked and data cleared');
                 } else {
                     // Normal landing page (no 404 redirect)
-                    // Extract UTM parameters
                     const urlParams = new URLSearchParams(window.location.search);
-                    const landingPageData = {
+                    landingPageData = {
                         path: window.location.pathname,
                         referrer: document.referrer || 'direct',
                         utm_source: urlParams.get('utm_source') || null,
@@ -83,13 +107,14 @@
                         redirected_from_404: false,
                         timestamp: new Date().toISOString()
                     };
-
-                    // Capture landing page event (will be queued until opt-in decision)
-                    posthog.capture('landing_page_view', landingPageData);
-                    console.log('Landing page tracked:', landingPageData);
                 }
+
+                // Store for later (will be sent after cookie consent)
+                sessionStorage.setItem('pendingLandingPageData', JSON.stringify(landingPageData));
+                console.log('Landing page data stored (pending consent):', landingPageData);
+
             } catch (e) {
-                console.error('Error capturing landing page:', e);
+                console.error('Error storing landing page:', e);
             }
         });
     </script>
@@ -752,6 +777,11 @@
             // Enable PostHog tracking (PostHog is already loaded)
             posthog.opt_in_capturing();
             console.log('PostHog tracking enabled - landing page and future events will be tracked');
+
+            // Send any pending landing page data now that we have consent
+            setTimeout(function() {
+                captureLandingPageToPostHog();
+            }, 500);
         }
 
         function rejectCookies() {
