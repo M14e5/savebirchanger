@@ -49,20 +49,45 @@
         // This is GDPR-compliant as PostHog is in opt-out mode
         window.addEventListener('load', function() {
             try {
-                // Extract UTM parameters
-                const urlParams = new URLSearchParams(window.location.search);
-                const landingPageData = {
-                    path: window.location.pathname,
-                    referrer: document.referrer || 'direct',
-                    utm_source: urlParams.get('utm_source') || null,
-                    utm_medium: urlParams.get('utm_medium') || null,
-                    utm_campaign: urlParams.get('utm_campaign') || null,
-                    timestamp: new Date().toISOString()
-                };
+                // First check if we have stored landing page data from a 404 redirect
+                const stored404Data = sessionStorage.getItem('landingPageData');
 
-                // Capture landing page event (will be queued until opt-in decision)
-                posthog.capture('landing_page_view', landingPageData);
-                console.log('Landing page tracked:', landingPageData);
+                if (stored404Data) {
+                    // User came from a 404 page - use that data
+                    const landingData = JSON.parse(stored404Data);
+                    console.log('Found 404 landing page data:', landingData);
+
+                    // Capture the 404 landing page event with the original URL
+                    posthog.capture('landing_page_view', {
+                        path: landingData.path,
+                        referrer: landingData.referrer,
+                        redirected_from_404: true,
+                        actual_landing_url: landingData.url,
+                        original_timestamp: landingData.timestamp,
+                        current_timestamp: new Date().toISOString()
+                    });
+
+                    // Clear the stored data after capturing
+                    sessionStorage.removeItem('landingPageData');
+                    console.log('404 landing page tracked and data cleared');
+                } else {
+                    // Normal landing page (no 404 redirect)
+                    // Extract UTM parameters
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const landingPageData = {
+                        path: window.location.pathname,
+                        referrer: document.referrer || 'direct',
+                        utm_source: urlParams.get('utm_source') || null,
+                        utm_medium: urlParams.get('utm_medium') || null,
+                        utm_campaign: urlParams.get('utm_campaign') || null,
+                        redirected_from_404: false,
+                        timestamp: new Date().toISOString()
+                    };
+
+                    // Capture landing page event (will be queued until opt-in decision)
+                    posthog.capture('landing_page_view', landingPageData);
+                    console.log('Landing page tracked:', landingPageData);
+                }
             } catch (e) {
                 console.error('Error capturing landing page:', e);
             }
