@@ -471,7 +471,7 @@
                 <input type="email" name="email" placeholder="Your email address" required>
                 <button type="submit">Subscribe</button>
             </form>
-            <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">We'll only use your email for campaign updates. View our <a href="#privacy-notice" style="color: #ffd93d; text-decoration: underline;">Privacy Notice</a>.</p>
+            <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">We'll only use your email for campaign updates. View our <a href="#" id="newsletter-privacy-link" style="color: #ffd93d; text-decoration: underline;">Privacy Notice</a>.</p>
         </div>
 
         <!-- Why Para 155 Fails -->
@@ -616,67 +616,6 @@
         </section>
 
 
-        <!-- Privacy Notice -->
-        <section id="privacy-notice" class="section">
-            <div class="card" style="background: #f8f9fa;">
-                <h2>Privacy Notice</h2>
-
-                <p><strong>Data Controller:</strong> Save Birchanger Campaign Committee<br>
-                Contact: bsgreenbeltpreservation@gmail.com | 07368 501136</p>
-
-                <h3 style="margin-top: 1.5rem;">Newsletter Data Collection</h3>
-                <p><strong>What we collect:</strong> Email addresses and names via our newsletter signup form.</p>
-                <p><strong>Legal basis:</strong> Consent (GDPR Article 6(1)(a))</p>
-                <p><strong>Purpose:</strong> To send campaign updates and action alerts.</p>
-                <p><strong>Data processor:</strong> Formspree.io processes form submissions on our behalf.</p>
-                <p><strong>Data use:</strong> Your email will only be used for campaign-related communications. We won't share your data with third parties for marketing.</p>
-                <p><strong>Data retention:</strong> We retain email addresses until you unsubscribe or the campaign ends.</p>
-
-                <h3 style="margin-top: 1.5rem;">Analytics Tracking (PostHog)</h3>
-                <p><strong>What we collect:</strong> We use PostHog for analytics with the following privacy-first approach:</p>
-
-                <h4 style="margin-top: 1rem; color: #2c5f2d;">Before You Make a Choice (Landing Page Only)</h4>
-                <p>When you first visit our site, we collect minimal anonymous information about your landing page:</p>
-                <ul style="margin-left: 2rem; margin-top: 0.5rem;">
-                    <li>The page URL you landed on (e.g., /index.html, /birchanger.html)</li>
-                    <li>Referrer source (where you came from, e.g., Google, Facebook, or direct)</li>
-                    <li>Campaign tracking parameters (if you clicked a campaign link)</li>
-                    <li>Timestamp of your visit</li>
-                </ul>
-                <p><strong>Why:</strong> This helps us understand which pages bring visitors to our campaign and whether our outreach efforts are effective. This data is collected in opt-out mode (no cookies stored) and only sent to PostHog servers if you accept analytics tracking.</p>
-
-                <h4 style="margin-top: 1rem; color: #2c5f2d;">After You Accept Analytics</h4>
-                <p>If you consent to analytics cookies, we additionally collect:</p>
-                <ul style="margin-left: 2rem; margin-top: 0.5rem;">
-                    <li>All pages you visit on our website</li>
-                    <li>Device type and browser information</li>
-                    <li>Approximate location (country/city level)</li>
-                    <li>IP address (anonymized)</li>
-                    <li>How you navigate through our site</li>
-                </ul>
-
-                <p style="margin-top: 1rem;"><strong>Legal basis:</strong> Consent (GDPR Article 6(1)(a))</p>
-                <p><strong>Purpose:</strong> To understand how visitors use our site and improve the campaign website.</p>
-                <p><strong>Data processor:</strong> PostHog Inc. (EU-hosted servers at eu.i.posthog.com)</p>
-                <p><strong>Your choice:</strong> You can accept or reject analytics cookies via our cookie banner. If you reject, the landing page data will not be sent to PostHog servers, and no future tracking will occur. Rejecting will not affect your ability to use the site.</p>
-                <p><strong>PostHog Privacy Policy:</strong> <a href="https://posthog.com/privacy" target="_blank" style="color: #2c5f2d; text-decoration: underline;">https://posthog.com/privacy</a></p>
-
-                <h3 style="margin-top: 1.5rem;">Your Rights Under UK GDPR</h3>
-                <p>You have the right to:</p>
-                <ul style="margin-left: 2rem; margin-top: 0.5rem;">
-                    <li><strong>Access:</strong> Request a copy of your personal data</li>
-                    <li><strong>Rectification:</strong> Correct inaccurate data</li>
-                    <li><strong>Erasure:</strong> Request deletion of your data</li>
-                    <li><strong>Withdraw consent:</strong> Unsubscribe from emails or change cookie preferences at any time</li>
-                    <li><strong>Data portability:</strong> Receive your data in a portable format</li>
-                    <li><strong>Object:</strong> Object to processing of your data</li>
-                </ul>
-
-                <p style="margin-top: 1rem;"><strong>To exercise your rights or for privacy questions:</strong><br>
-                Email: bsgreenbeltpreservation@gmail.com<br>
-                Phone: 07368 501136</p>
-            </div>
-        </section>
     </div>
 
     <!-- Cookie Banner -->
@@ -725,8 +664,74 @@
         <div class="footer-bottom">
             <p>&copy; 2025 Save Our Villages. Protecting Birchanger and Stansted Mountfitchet for future generations.</p>
             <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.8;">Photography &copy; 2025 Dale Crowson. All rights reserved.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+                <a href="#" id="privacy-policy-link" style="color: #a7c4a7; text-decoration: underline;">Privacy Policy</a>
+            </p>
         </div>
     </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Privacy Notice</h2>
+
+            <p><strong>Data Controller:</strong> Save Birchanger Campaign Committee<br>
+            Contact: bsgreenbeltpreservation@gmail.com | 07368 501136</p>
+
+            <h3 style="margin-top: 1.5rem;">Newsletter Data Collection</h3>
+            <p><strong>What we collect:</strong> Email addresses and names via our newsletter signup form.</p>
+            <p><strong>Legal basis:</strong> Consent (GDPR Article 6(1)(a))</p>
+            <p><strong>Purpose:</strong> To send campaign updates and action alerts.</p>
+            <p><strong>Data processor:</strong> Formspree.io processes form submissions on our behalf.</p>
+            <p><strong>Data use:</strong> Your email will only be used for campaign-related communications. We won't share your data with third parties for marketing.</p>
+            <p><strong>Data retention:</strong> We retain email addresses until you unsubscribe or the campaign ends.</p>
+
+            <h3 style="margin-top: 1.5rem;">Analytics Tracking (PostHog)</h3>
+            <p><strong>What we collect:</strong> We use PostHog for analytics with the following privacy-first approach:</p>
+
+            <h4 style="margin-top: 1rem; color: #2c5f2d;">Before You Make a Choice (Landing Page Only)</h4>
+            <p>When you first visit our site, we collect minimal anonymous information about your landing page:</p>
+            <ul style="margin-left: 2rem; margin-top: 0.5rem;">
+                <li>The page URL you landed on (e.g., /index.html, /birchanger.html)</li>
+                <li>Referrer source (where you came from, e.g., Google, Facebook, or direct)</li>
+                <li>Campaign tracking parameters (if you clicked a campaign link)</li>
+                <li>Timestamp of your visit</li>
+            </ul>
+            <p><strong>Why:</strong> This helps us understand which pages bring visitors to our campaign and whether our outreach efforts are effective. This data is collected in opt-out mode (no cookies stored) and only sent to PostHog servers if you accept analytics tracking.</p>
+
+            <h4 style="margin-top: 1rem; color: #2c5f2d;">After You Accept Analytics</h4>
+            <p>If you consent to analytics cookies, we additionally collect:</p>
+            <ul style="margin-left: 2rem; margin-top: 0.5rem;">
+                <li>All pages you visit on our website</li>
+                <li>Device type and browser information</li>
+                <li>Approximate location (country/city level)</li>
+                <li>IP address (anonymized)</li>
+                <li>How you navigate through our site</li>
+            </ul>
+
+            <p style="margin-top: 1rem;"><strong>Legal basis:</strong> Consent (GDPR Article 6(1)(a))</p>
+            <p><strong>Purpose:</strong> To understand how visitors use our site and improve the campaign website.</p>
+            <p><strong>Data processor:</strong> PostHog Inc. (EU-hosted servers at eu.i.posthog.com)</p>
+            <p><strong>Your choice:</strong> You can accept or reject analytics cookies via our cookie banner. If you reject, the landing page data will not be sent to PostHog servers, and no future tracking will occur. Rejecting will not affect your ability to use the site.</p>
+            <p><strong>PostHog Privacy Policy:</strong> <a href="https://posthog.com/privacy" target="_blank" style="color: #2c5f2d; text-decoration: underline;">https://posthog.com/privacy</a></p>
+
+            <h3 style="margin-top: 1.5rem;">Your Rights Under UK GDPR</h3>
+            <p>You have the right to:</p>
+            <ul style="margin-left: 2rem; margin-top: 0.5rem;">
+                <li><strong>Access:</strong> Request a copy of your personal data</li>
+                <li><strong>Rectification:</strong> Correct inaccurate data</li>
+                <li><strong>Erasure:</strong> Request deletion of your data</li>
+                <li><strong>Withdraw consent:</strong> Unsubscribe from emails or change cookie preferences at any time</li>
+                <li><strong>Data portability:</strong> Receive your data in a portable format</li>
+                <li><strong>Object:</strong> Object to processing of your data</li>
+            </ul>
+
+            <p style="margin-top: 1rem;"><strong>To exercise your rights or for privacy questions:</strong><br>
+            Email: bsgreenbeltpreservation@gmail.com<br>
+            Phone: 07368 501136</p>
+        </div>
+    </div>
 
     <script>
         // Mobile menu toggle
@@ -805,6 +810,48 @@
 
         // Show cookie banner on page load
         window.addEventListener('load', showCookieBanner);
+
+        // Privacy Policy Modal functionality
+        const privacyModal = document.getElementById('privacy-modal');
+        const privacyPolicyLink = document.getElementById('privacy-policy-link');
+        const newsletterPrivacyLink = document.getElementById('newsletter-privacy-link');
+        const modalClose = document.querySelector('.modal-close');
+
+        // Open modal when privacy policy link is clicked
+        privacyPolicyLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            privacyModal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+
+        // Open modal when newsletter privacy link is clicked
+        newsletterPrivacyLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            privacyModal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+
+        // Close modal when X is clicked
+        modalClose.addEventListener('click', function() {
+            privacyModal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        });
+
+        // Close modal when clicking outside the modal content
+        window.addEventListener('click', function(event) {
+            if (event.target === privacyModal) {
+                privacyModal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && privacyModal.style.display === 'block') {
+                privacyModal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+        });
     </script>
 </body>
 </html>
