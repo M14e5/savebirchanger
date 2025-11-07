@@ -17,13 +17,13 @@
         // Load PostHog immediately with opt-out by default for GDPR compliance
         !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init fi Cr Or ci Tr Ir capture Mi calculateEventProperties Ar register register_once register_for_session unregister unregister_for_session Nr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty jr Mr createPersonProfile Lr kr Ur opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Fr debug M Dr getPageViewId captureTraceFeedback captureTraceMetric $r".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
 
-        // Initialize PostHog with opt-out by default
+        // Initialize PostHog - TESTING: Removed opt-out to test if sequencing is the issue
         // Using Cloudflare reverse proxy to prevent ad-blocker blocking
         posthog.init('phc_bapf3RKKWohziv8014UqPW1ySks6p6NFHLbLZRPGJfz', {
             api_host: 'https://ph.saveourvillages.co.uk',
             defaults: '2025-05-24',
             person_profiles: 'identified_only',
-            opt_out_capturing_by_default: true,
+            opt_out_capturing_by_default: false,  // TESTING: Changed to false
             persistence: 'localStorage'
         });
 
@@ -72,7 +72,7 @@
             }
         })();
 
-        // Store landing page information (DON'T send to PostHog yet - wait for consent)
+        // TESTING: Capture landing page information immediately (no consent wait)
         window.addEventListener('load', function() {
             try {
                 // First check if we have stored landing page data from a 404 redirect
@@ -110,12 +110,15 @@
                     };
                 }
 
-                // Store for later (will be sent after cookie consent)
-                sessionStorage.setItem('pendingLandingPageData', JSON.stringify(landingPageData));
-                console.log('Landing page data stored (pending consent):', landingPageData);
+                // TESTING: Send immediately to PostHog (no consent wait)
+                console.log('TESTING: Sending landing page data immediately:', landingPageData);
+                if (window.posthog) {
+                    posthog.capture('landing_page_view', landingPageData);
+                    console.log('Landing page data sent to PostHog immediately');
+                }
 
             } catch (e) {
-                console.error('Error storing landing page:', e);
+                console.error('Error capturing landing page:', e);
             }
         });
     </script>
@@ -775,14 +778,8 @@
             localStorage.setItem('cookieConsent', JSON.stringify(consent));
             document.getElementById('cookie-banner').classList.remove('show');
 
-            // Enable PostHog tracking (PostHog is already loaded)
-            posthog.opt_in_capturing();
-            console.log('PostHog tracking enabled - landing page and future events will be tracked');
-
-            // Send any pending landing page data now that we have consent
-            setTimeout(function() {
-                captureLandingPageToPostHog();
-            }, 500);
+            // TESTING: PostHog is already capturing, just log the acceptance
+            console.log('TESTING: User accepted cookies - PostHog already capturing');
         }
 
         function rejectCookies() {
