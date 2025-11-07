@@ -901,6 +901,23 @@ footer {
     gap: 1rem;
 }
 
+.cookie-reject-btn {
+    background: #1e4020;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    white-space: nowrap;
+    opacity: 0.8;
+}
+
+.cookie-reject-btn:hover {
+    background: #2c5f2d;
+    opacity: 1;
+}
+
 .cookie-accept-btn {
     background: #4a7c59;
     color: white;
