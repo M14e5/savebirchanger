@@ -836,6 +836,13 @@
 
                 // Update page title
                 document.title = `${post.fields.title} - Save Our Villages Blog`;
+
+                // Capture post data for admin mode (after a short delay to ensure render)
+                setTimeout(() => {
+                    if (typeof capturePostData === 'function') {
+                        capturePostData();
+                    }
+                }, 500);
             } catch (error) {
                 console.error('Error loading blog post:', error);
                 console.error('Error details:', error.message, error.stack);
@@ -923,7 +930,20 @@
             if (isActive) {
                 panel.classList.remove('active');
                 localStorage.setItem('adminModeEnabled', 'false');
+                showHint('Admin mode deactivated');
             } else {
+                // Capture post data if not already set
+                if (!currentPostData) {
+                    capturePostData();
+                }
+
+                // Check if we're on a single post page
+                const postSlug = getUrlParameter('post');
+                if (!postSlug) {
+                    showHint('Admin mode only works on individual blog posts');
+                    return;
+                }
+
                 panel.classList.add('active');
                 localStorage.setItem('adminModeEnabled', 'true');
                 updateAdminPanel();
@@ -934,15 +954,20 @@
         // Keyboard shortcut listener (Ctrl+Shift+A)
         document.addEventListener('keydown', function(e) {
             // Ctrl+Shift+A (or Cmd+Shift+A on Mac)
-            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'A') {
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
                 e.preventDefault();
+                console.log('Admin mode keyboard shortcut triggered');
                 toggleAdminMode();
             }
         });
 
         // Update admin panel with current post data
         function updateAdminPanel() {
-            if (!currentPostData) return;
+            if (!currentPostData) {
+                const preview = document.getElementById('admin-post-preview');
+                preview.textContent = 'Loading post data...';
+                return;
+            }
 
             const { title, excerpt, blogUrl } = currentPostData;
             const postText = formatPostForFacebook(title, excerpt, blogUrl);
@@ -1019,52 +1044,41 @@
             }, 3000);
         }
 
-        // Update the loadSinglePost function to store post data for admin mode
-        const originalLoadSinglePost = loadSinglePost;
-        loadSinglePost = async function(slug) {
-            await originalLoadSinglePost(slug);
+        // Function to capture post data for admin mode
+        function capturePostData() {
+            try {
+                const titleElement = document.querySelector('.blog-post-full-title');
+                const bodyElement = document.querySelector('.blog-post-full-body');
 
-            // After post is loaded, get the rendered post data
-            setTimeout(() => {
-                try {
-                    const titleElement = document.querySelector('.blog-post-full-title');
-                    const bodyElement = document.querySelector('.blog-post-full-body');
+                if (titleElement) {
+                    const title = titleElement.textContent;
 
-                    if (titleElement) {
-                        const title = titleElement.textContent;
-
-                        // Get first paragraph as excerpt
-                        let excerpt = '';
-                        const firstParagraph = bodyElement?.querySelector('p');
-                        if (firstParagraph) {
-                            excerpt = firstParagraph.textContent.substring(0, 200);
-                            if (firstParagraph.textContent.length > 200) {
-                                excerpt += '...';
-                            }
+                    // Get first paragraph as excerpt
+                    let excerpt = '';
+                    const firstParagraph = bodyElement?.querySelector('p');
+                    if (firstParagraph) {
+                        excerpt = firstParagraph.textContent.substring(0, 200);
+                        if (firstParagraph.textContent.length > 200) {
+                            excerpt += '...';
                         }
-
-                        const blogUrl = window.location.href;
-
-                        // Store for admin panel
-                        currentPostData = { title, excerpt, blogUrl };
-
-                        // Update admin panel if it's active
-                        updateAdminPanel();
-
-                        // Check if admin mode should be shown
-                        checkAdminMode();
                     }
-                } catch (error) {
-                    console.error('Error setting up admin mode:', error);
-                }
-            }, 500);
-        };
 
-        // Initialize on page load
-        window.addEventListener('DOMContentLoaded', function() {
-            // Check admin mode after a short delay to ensure post is loaded
-            setTimeout(checkAdminMode, 1000);
-        });
+                    const blogUrl = window.location.href;
+
+                    // Store for admin panel
+                    currentPostData = { title, excerpt, blogUrl };
+                    console.log('Post data captured:', currentPostData);
+
+                    // Update admin panel if it's active
+                    updateAdminPanel();
+
+                    // Check if admin mode should be shown
+                    checkAdminMode();
+                }
+            } catch (error) {
+                console.error('Error capturing post data:', error);
+            }
+        }
 
     </script>
 </body>
