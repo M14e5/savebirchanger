@@ -145,60 +145,72 @@ Write only the body of the letter/response. Make it professional, credible, and 
 function getBaseTemplate(templateType) {
   // Base templates - simplified versions for the AI to adapt
   const templates = {
-    'developer-consultation': `I am writing to object to the proposed development at this Green Belt site.
+    'developer-consultation': `I am writing to object to City & Country's proposed development of 480 homes (180 in Birchanger, 300 in Stansted) on Green Belt land.
 
-This land is not "grey belt" - it strongly serves Green Belt purposes by preventing sprawl, maintaining settlement separation, and contributing to the local landscape and setting.
+This is NOT "grey belt" under NPPF Paragraph 155 - the land STRONGLY serves Green Belt purposes by preventing coalescence between Birchanger and Stansted, safeguarding St Mary's Church 12th-century setting, and maintaining the separation gap from Bishop's Stortford.
 
-The development would harm the openness and character of this area. The site is car-dependent with inadequate public transport and walking/cycling routes.
+The site FAILS the NPPF Para 155 sustainability test. It is 2.1km from Stansted station with NO continuous footway (fails DfT 800m walkability standard). Bus route 308 runs hourly Mon-Sat only (last bus 6:30pm, NO Sunday service). This is car-dependent development (~1,180 daily car trips, ~712 extra cars), NOT a sustainable location.
 
-The claimed "Golden Rules" benefits are not transparently secured - the affordable housing uplift lacks clear evidence, and the green space and biodiversity measures appear uncertain.
+The "Golden Rules" are UNDELIVERABLE without legally binding Section 106 agreements. The developer offers school LAND but who funds the actual buildings, teachers, and equipment? Highway mitigation is listed as vague "s106 contribution" - how much, when, and is it legally binding before occupation? BNG relies on off-site units with delivery risk.
+
+Infrastructure is already at capacity: Forest Hall School is oversubscribed with no sixth form, GP surgeries are overwhelmed, and B1383/Cambridge Road are gridlocked at peak times.
 
 Please record this as a formal objection and keep me informed.`,
 
-    'planning-objection': `I am writing to object to this planning application.
+    'planning-objection': `I object to this application for 480 homes (180 Birchanger, 300 Stansted) because: (1) this is NOT "grey belt" under NPPF Para 155 - it strongly serves Green Belt purposes; (2) it FAILS the Para 155 sustainability test - car-dependent with inadequate public transport; (3) the "Golden Rules" are undeliverable without legally binding Section 106 agreements.
 
-The site is not "grey belt" and the proposal causes unacceptable harm to Green Belt openness and local character.
+NPPF Para 155 Test 1 FAILS: Land must NOT strongly serve Green Belt - THIS FAILS. The land DOES strongly serve Green Belt: prevents Birchanger-Stansted coalescence, safeguards St Mary's Church 12th-century setting, maintains Bishop's Stortford separation gap.
 
-Green Belt concerns: This land serves important Green Belt purposes. The development would harm both spatial and visual openness.
+NPPF Para 155 Test 2 FAILS: Must be sustainable location - THIS FAILS. Site is 2.1km from station with NO footway (fails DfT 800m standard). Bus 308: hourly Mon-Sat only, last bus 6:30pm, NO Sundays. Car-dependent: ~1,180 daily trips, ~712 cars.
 
-Location and transport: The site is car-dependent with poor public transport and inadequate walking/cycling infrastructure.
+"Golden Rules" Undeliverable: Developer offers school LAND but who funds buildings/teachers? Highway mitigation is vague "s106 contribution" - how much? When? Legally binding? BNG off-site with delivery risk.
 
-"Golden Rules" concerns: The claimed benefits are not evidenced or secured through enforceable conditions.
+Infrastructure Crisis: Forest Hall oversubscribed (no sixth form) - where will ~370 children go? GP surgeries overwhelmed. B1383/Cambridge Road gridlock - NO funded upgrades.
 
-Please refuse this application.`,
+REFUSE. Not "grey belt" - strongly serves Green Belt, fails Para 155 sustainability. "Golden Rules" undeliverable without enforceable Section 106 requiring delivery BEFORE occupation.`,
 
-    'email-representatives': `I am writing to ask you to oppose the proposed housing development on Green Belt land at this site.
+    'email-representatives': `I am writing to ask you to oppose City & Country's application for 480 homes (180 Birchanger, 300 Stansted) on Green Belt land. This is NOT "grey belt" under NPPF Para 155:
 
-This is not "grey belt" - the land prevents sprawl, maintains settlement separation, and contributes to our local landscape and heritage.
-
-The development is car-dependent and the "Golden Rules" benefits are not transparently secured.
+• NPPF Para 155 test 1 FAILS: Land STRONGLY serves Green Belt purposes (prevents Birchanger-Stansted coalescence, protects St Mary's Church 12th-century setting, maintains Bishop's Stortford separation gap).
+• NPPF Para 155 test 2 FAILS: Site is car-dependent (2.1km from station with NO footway, bus 308 hourly Mon-Sat only, last bus 6:30pm, NO Sundays) - NOT sustainable location.
+• "Golden Rules" UNDELIVERABLE: Developer offers school LAND but not funded buildings. No legally binding Section 106 securing infrastructure delivery BEFORE occupation.
+• Infrastructure CRISIS: Forest Hall School oversubscribed, GP surgeries overwhelmed, B1383/Cambridge Road gridlock - NO funded expansion. ~1,180 daily car trips, ~712 extra cars, ~370 school-age children with NO plan.
 
 Please:
-- Urge the council to refuse this proposal
-- Press the developer to focus on brownfield sites
-- Keep me informed of meetings and votes
+• Urge Uttlesford Council to REFUSE this application and reject "grey belt" classification
+• Press City & Country to focus on brownfield alternatives
+• Demand enforceable Section 106 agreements requiring infrastructure BEFORE occupation if approved
+• Keep me informed of planning committee meetings and votes
 
 Thank you for your attention to this important matter.`,
 
-    'appeal-representation': `I am writing as a local resident to ask that this appeal be dismissed.
+    'appeal-representation': `I am writing as a local resident to ask that this appeal for 480 homes (180 Birchanger, 300 Stansted) be dismissed.
 
-This is not a "grey belt" site - it makes a strong contribution to Green Belt purposes including preventing sprawl and maintaining settlement separation.
+NPPF Para 155 Test FAILS: This is NOT "grey belt" - the land STRONGLY serves Green Belt purposes (prevents Birchanger-Stansted coalescence, safeguards St Mary's Church 12th-century setting, maintains Bishop's Stortford separation gap).
 
-The development would harm openness through its scale and visual impact. The location is car-dependent despite claims of sustainability.
+Sustainability Test FAILS: Site is 2.1km from Stansted station with NO continuous footway (fails DfT 800m walkability standard). Bus 308: hourly Mon-Sat only, last bus 6:30pm, NO Sundays. This is car-dependent development (~1,180 daily trips, ~712 cars), NOT sustainable location required by NPPF Para 155.
 
-The "Golden Rules" benefits are not secured or evidenced adequately.
+"Golden Rules" Undeliverable: 50% affordable uplift not secured via binding Section 106; BNG dependent on off-site units with delivery risk; infrastructure (school buildings, highway upgrades) listed as vague "contributions" not legally tied to occupation triggers.
 
-The planning harm significantly outweighs any claimed benefits. Please dismiss this appeal.`,
+Infrastructure Capacity: Forest Hall School oversubscribed (no sixth form), GP surgeries overwhelmed, B1383/Cambridge Road gridlock - NO funded mitigation secured before development.
 
-    'local-plan': `I am writing to object to the proposed allocation of this site in the Local Plan.
+Planning balance: Generic benefits do not outweigh Green Belt harm, sustainability failures, and infrastructure crisis.
 
-The allocation is unsound - it is not justified and is inconsistent with national Green Belt policy.
+DISMISS the appeal. If allowed (despite these objections), apply stringent conditions/obligations requiring delivery BEFORE occupation.`,
 
-The council's "grey belt" methodology incorrectly classifies this site, underweighting its contribution to preventing coalescence and protecting local character.
+    'local-plan': `I am writing to object to the proposed allocation of Land at Birchanger and Stansted (480 homes) in the Local Plan.
 
-Reasonable alternatives including brownfield sites have not been fairly assessed.
+The allocation is UNSOUND - not justified, not effective, inconsistent with national policy on Green Belt and NPPF Para 155.
 
-Please delete this allocation and prioritize brownfield development.`
+NPPF Para 155 "grey belt" methodology FLAWED: The council's method down-weights key Green Belt contribution factors (coalescence risk between Birchanger-Stansted, St Mary's Church historic setting, Bishop's Stortford separation gap), wrongly classing this site as "grey belt." The land STRONGLY serves Green Belt purposes - Para 155 test 1 FAILS.
+
+Sustainability assessment FLAWED: Site is 2.1km from station with NO footway (fails DfT 800m standard), bus 308 hourly Mon-Sat only (last bus 6:30pm, NO Sundays) - this is car-dependent location, NOT sustainable as required by Para 155 test 2. Transport modelling ignores ~1,180 daily car trips, ~712 extra cars.
+
+"Golden Rules" undeliverable: Evidence base lacks open-book viability proving 50% affordable housing is economically deliverable. No commitment to school BUILDINGS (only land offer). Highway mitigation unfunded. BNG relies on off-site units. Infrastructure Delivery Plan shows deficits/unfunded items.
+
+Alternatives not fairly assessed: Brownfield sites within Bishop's Stortford and Stansted, densification near station, not robustly assessed as reasonable alternatives.
+
+DELETE the allocation - replace with brownfield-first package. If retained (despite unsoundness), cap at 240 homes maximum, require permanent landscape buffer protecting Green Belt function, on-site social rent minimum 25%, BNG >20% secured on-site, school buildings funded before occupation, highway upgrades delivered before occupation.`
   };
 
   return templates[templateType] || templates['email-representatives'];
