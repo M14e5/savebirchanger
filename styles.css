@@ -23,43 +23,52 @@ header {
 }
 
 nav {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-shrink: 0;
 }
 
 .logo::before {
     content: "";
     display: inline-block;
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     background-image: url('icons/Green-Belt-Logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     vertical-align: middle;
-    margin-right: 15px;
+    margin-right: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    padding: 10px;
+    padding: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    white-space: nowrap;
 }
 
 .nav-links a {
@@ -67,6 +76,9 @@ nav {
     text-decoration: none;
     transition: opacity 0.3s;
     font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    display: block;
 }
 
 .nav-links a:hover {
@@ -75,7 +87,7 @@ nav {
 
 .nav-links .active {
     border-bottom: 2px solid white;
-    padding-bottom: 2px;
+    padding-bottom: calc(0.5rem - 2px);
 }
 
 /* Hero Section */
@@ -977,6 +989,26 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    nav {
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .logo::before {
+        width: 45px;
+        height: 45px;
+    }
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
@@ -984,6 +1016,25 @@ footer {
 
     .hero .subtitle {
         font-size: 1.2rem;
+    }
+
+    header {
+        padding: 0.75rem 0;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .logo::before {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        padding: 6px;
     }
 
     .nav-links {
@@ -996,6 +1047,28 @@ footer {
         flex-direction: column;
         padding: 1rem;
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        gap: 0;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .nav-links .active {
+        background: rgba(255, 255, 255, 0.1);
+        border-bottom: none;
+        padding: 1rem;
     }
 
     .nav-links.active {
