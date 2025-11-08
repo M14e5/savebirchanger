@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Blog - Save Our Villages</title>
+    <meta name="description" content="Latest updates, news, and insights from the Save Our Villages campaign against Green Belt development.">
+    <meta name="keywords" content="Birchanger, Stansted Mountfitchet, Green Belt, campaign blog, development news">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- PostHog Analytics -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init fi Cr Or ci Tr Ir capture Mi calculateEventProperties Ar register register_once register_for_session unregister unregister_for_session Nr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty jr Mr createPersonProfile Lr kr Ur opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Fr debug M Dr getPageViewId captureTraceFeedback captureTraceMetric $r".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+
+        posthog.init('phc_bapf3RKKWohziv8014UqPW1ySks6p6NFHLbLZRPGJfz', {
+            api_host: 'https://ph.saveourvillages.co.uk',
+            defaults: '2025-05-24',
+            person_profiles: 'identified_only',
+            opt_out_capturing_by_default: false,
+            persistence: 'localStorage'
+        });
+
+        (function() {
+            try {
+                const consentData = localStorage.getItem('cookieConsent');
+                if (consentData) {
+                    const consent = JSON.parse(consentData);
+                    if (consent.analytics === true) {
+                        posthog.opt_in_capturing();
+                    } else if (consent.analytics === false) {
+                        posthog.opt_out_capturing();
+                    }
+                }
+            } catch (e) {
+                console.error('Error checking cookie consent:', e);
+            }
+        })();
+    </script>
+
+    <style>
+        /* Blog-specific styles */
+        .blog-hero {
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a7c59 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .blog-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .blog-post-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .blog-post-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .blog-post-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+        }
+
+        .blog-post-content {
+            padding: 1.5rem;
+        }
+
+        .blog-post-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .blog-post-date {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .blog-post-category {
+            background: #4a7c59;
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        .blog-post-title {
+            color: #2c5f2d;
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+
+        .blog-post-excerpt {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post-read-more {
+            color: #4a7c59;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s;
+        }
+
+        .blog-post-read-more:hover {
+            gap: 0.8rem;
+        }
+
+        .blog-loading {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #666;
+        }
+
+        .blog-loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #e0e0e0;
+            border-top: 4px solid #4a7c59;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .blog-error {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+            color: #856404;
+        }
+
+        .blog-empty {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #666;
+        }
+
+        .blog-empty-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Full blog post view */
+        .blog-post-full {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .blog-post-full-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+        }
+
+        .blog-post-full-content {
+            padding: 3rem;
+        }
+
+        .blog-post-full-title {
+            color: #2c5f2d;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .blog-post-full-body {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .blog-post-full-body p {
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-post-full-body h2 {
+            color: #2c5f2d;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post-full-body h3 {
+            color: #4a7c59;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .blog-post-full-body ul,
+        .blog-post-full-body ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .blog-post-full-body li {
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #4a7c59;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            transition: gap 0.3s;
+        }
+
+        .blog-back-button:hover {
+            gap: 0.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-post-full-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .blog-post-full-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Save Our Villages</div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="birchanger.html">Save Birchanger</a></li>
+                <li><a href="stansted.html">Save Stansted</a></li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="index.html#action">Take Action</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blog Hero -->
+    <div class="blog-hero">
+        <h1>Campaign Blog</h1>
+        <p>Latest updates, news, and insights from our fight to protect Green Belt land</p>
+    </div>
+
+    <!-- Blog Container -->
+    <div class="blog-container">
+        <!-- Loading State -->
+        <div id="blog-loading" class="blog-loading">
+            <div class="blog-loading-spinner"></div>
+            <p>Loading blog posts...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="blog-error" class="blog-error" style="display: none;">
+            <h3>Unable to load blog posts</h3>
+            <p>We're having trouble connecting to our blog. Please try again later or contact us at <a href="mailto:admin@saveourvillages.co.uk">admin@saveourvillages.co.uk</a></p>
+        </div>
+
+        <!-- Empty State -->
+        <div id="blog-empty" class="blog-empty" style="display: none;">
+            <div class="blog-empty-icon">📝</div>
+            <h2>No blog posts yet</h2>
+            <p>Check back soon for updates from our campaign!</p>
+        </div>
+
+        <!-- Blog Grid -->
+        <div id="blog-grid" class="blog-grid" style="display: none;">
+            <!-- Blog posts will be dynamically inserted here -->
+        </div>
+
+        <!-- Single Post View -->
+        <div id="blog-post-view" style="display: none;">
+            <a href="blog.html" class="blog-back-button">← Back to all posts</a>
+            <div id="blog-post-content"></div>
+        </div>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>We use essential cookies to make our site work, and would like to use analytics cookies to understand how visitors use our site. <a href="index.html#privacy-notice" style="color: #4a7c59; text-decoration: underline;">View our Privacy Notice</a></p>
+            <div style="display: flex; gap: 10px; margin-top: 10px;">
+                <button onclick="rejectCookies()" class="cookie-reject-btn">Reject Analytics</button>
+                <button onclick="acceptCookies()" class="cookie-accept-btn">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About the Campaign</h3>
+                <p>A joint effort by residents of Birchanger and Stansted Mountfitchet to protect our communities from inappropriate development.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="birchanger.html">Save Birchanger</a>
+                <a href="stansted.html">Save Stansted</a>
+                <a href="blog.html">Campaign Blog</a>
+                <a href="index.html#action">Take Action</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Campaign Partners</h3>
+                <a href="https://www.birchanger.com/">Birchanger Parish Council</a>
+                <a href="#">Stansted Mountfitchet PC</a>
+                <a href="https://cpressex.org.uk/">CPRE Essex</a>
+                <a href="#">Residents' Associations</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="documentation.html">Planning Documents</a>
+                <a href="templates.html">Templates</a>
+                <a href="#">Campaign Materials</a>
+                <a href="#">Media Coverage</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Save Our Villages. Protecting Birchanger and Stansted Mountfitchet for future generations.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.8;">Photography &copy; 2025 Dale Crowson. All rights reserved.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+                <a href="index.html#privacy-policy-link" style="color: #a7c4a7; text-decoration: underline;">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Contentful SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+    <script>
+        // Contentful configuration
+        const CONTENTFUL_SPACE_ID = 'njsy5rg8z2nk';
+        const CONTENTFUL_ACCESS_TOKEN = 'Gh7x2YIuhlG-PpVo-kdPDE84diWzjgIS0MY2YmGqdLQ';
+
+        // Initialize Contentful client
+        const client = contentful.createClient({
+            space: CONTENTFUL_SPACE_ID,
+            accessToken: CONTENTFUL_ACCESS_TOKEN
+        });
+
+        // Get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            const results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Format date
+        function formatDate(dateString) {
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return new Date(dateString).toLocaleDateString('en-GB', options);
+        }
+
+        // Create excerpt from text
+        function createExcerpt(text, maxLength = 150) {
+            if (!text) return '';
+            if (text.length <= maxLength) return text;
+            return text.substr(0, maxLength).trim() + '...';
+        }
+
+        // Render blog post card
+        function renderBlogPostCard(post) {
+            const { title, slug, excerpt, featuredImage, publishDate, category } = post.fields;
+
+            const imageUrl = featuredImage?.fields?.file?.url
+                ? 'https:' + featuredImage.fields.file.url
+                : '';
+
+            const categoryTag = category ? `<span class="blog-post-category">${category}</span>` : '';
+
+            return `
+                <article class="blog-post-card" onclick="window.location.href='blog.html?post=${slug}'">
+                    ${imageUrl ? `<img src="${imageUrl}" alt="${title}" class="blog-post-image">` : '<div class="blog-post-image"></div>'}
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span class="blog-post-date">📅 ${formatDate(publishDate || post.sys.createdAt)}</span>
+                            ${categoryTag}
+                        </div>
+                        <h2 class="blog-post-title">${title}</h2>
+                        <p class="blog-post-excerpt">${excerpt || createExcerpt(title)}</p>
+                        <a href="blog.html?post=${slug}" class="blog-post-read-more">Read more →</a>
+                    </div>
+                </article>
+            `;
+        }
+
+        // Render full blog post
+        function renderFullBlogPost(post) {
+            const { title, body, featuredImage, publishDate, category } = post.fields;
+
+            const imageUrl = featuredImage?.fields?.file?.url
+                ? 'https:' + featuredImage.fields.file.url
+                : '';
+
+            const categoryTag = category ? `<span class="blog-post-category">${category}</span>` : '';
+
+            // Convert body text to HTML (simple paragraph formatting)
+            const bodyHtml = body ? body.split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('') : '';
+
+            return `
+                <article class="blog-post-full">
+                    ${imageUrl ? `<img src="${imageUrl}" alt="${title}" class="blog-post-full-image">` : '<div class="blog-post-full-image"></div>'}
+                    <div class="blog-post-full-content">
+                        <div class="blog-post-meta" style="margin-bottom: 1.5rem;">
+                            <span class="blog-post-date">📅 ${formatDate(publishDate || post.sys.createdAt)}</span>
+                            ${categoryTag}
+                        </div>
+                        <h1 class="blog-post-full-title">${title}</h1>
+                        <div class="blog-post-full-body">
+                            ${bodyHtml}
+                        </div>
+                    </div>
+                </article>
+            `;
+        }
+
+        // Load all blog posts
+        async function loadBlogPosts() {
+            try {
+                const response = await client.getEntries({
+                    content_type: 'blogPost',
+                    order: '-fields.publishDate,-sys.createdAt',
+                    limit: 100
+                });
+
+                if (response.items.length === 0) {
+                    document.getElementById('blog-loading').style.display = 'none';
+                    document.getElementById('blog-empty').style.display = 'block';
+                    return;
+                }
+
+                const blogGrid = document.getElementById('blog-grid');
+                blogGrid.innerHTML = response.items.map(renderBlogPostCard).join('');
+
+                document.getElementById('blog-loading').style.display = 'none';
+                document.getElementById('blog-grid').style.display = 'grid';
+            } catch (error) {
+                console.error('Error loading blog posts:', error);
+                document.getElementById('blog-loading').style.display = 'none';
+                document.getElementById('blog-error').style.display = 'block';
+            }
+        }
+
+        // Load single blog post
+        async function loadSinglePost(slug) {
+            try {
+                const response = await client.getEntries({
+                    content_type: 'blogPost',
+                    'fields.slug': slug,
+                    limit: 1
+                });
+
+                if (response.items.length === 0) {
+                    document.getElementById('blog-loading').style.display = 'none';
+                    document.getElementById('blog-error').style.display = 'block';
+                    return;
+                }
+
+                const post = response.items[0];
+                const blogPostContent = document.getElementById('blog-post-content');
+                blogPostContent.innerHTML = renderFullBlogPost(post);
+
+                document.getElementById('blog-loading').style.display = 'none';
+                document.getElementById('blog-post-view').style.display = 'block';
+
+                // Update page title
+                document.title = `${post.fields.title} - Save Our Villages Blog`;
+            } catch (error) {
+                console.error('Error loading blog post:', error);
+                document.getElementById('blog-loading').style.display = 'none';
+                document.getElementById('blog-error').style.display = 'block';
+            }
+        }
+
+        // Initialize
+        window.addEventListener('DOMContentLoaded', function() {
+            const postSlug = getUrlParameter('post');
+
+            if (postSlug) {
+                loadSinglePost(postSlug);
+            } else {
+                loadBlogPosts();
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Cookie banner functionality
+        function showCookieBanner() {
+            const consent = localStorage.getItem('cookieConsent');
+            if (!consent) {
+                document.getElementById('cookie-banner').classList.add('show');
+            }
+        }
+
+        function acceptCookies() {
+            const consent = {
+                essential: true,
+                analytics: true,
+                timestamp: new Date().toISOString()
+            };
+            localStorage.setItem('cookieConsent', JSON.stringify(consent));
+            document.getElementById('cookie-banner').classList.remove('show');
+            if (window.posthog) {
+                posthog.opt_in_capturing();
+            }
+        }
+
+        function rejectCookies() {
+            const consent = {
+                essential: true,
+                analytics: false,
+                timestamp: new Date().toISOString()
+            };
+            localStorage.setItem('cookieConsent', JSON.stringify(consent));
+            document.getElementById('cookie-banner').classList.remove('show');
+            if (window.posthog) {
+                posthog.opt_out_capturing();
+            }
+        }
+
+        window.addEventListener('load', showCookieBanner);
+    </script>
+</body>
+</html>
