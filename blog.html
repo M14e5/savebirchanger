@@ -277,6 +277,152 @@
                 font-size: 2rem;
             }
         }
+
+        /* Admin Mode Styles */
+        .admin-panel {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            border: 2px solid #2c5f2d;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-width: 400px;
+            z-index: 10000;
+            display: none;
+        }
+
+        .admin-panel.active {
+            display: block;
+            animation: slideInUp 0.3s ease;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .admin-panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .admin-panel-header h3 {
+            margin: 0;
+            color: #2c5f2d;
+            font-size: 1.1rem;
+        }
+
+        .admin-panel-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .admin-panel-close:hover {
+            color: #ff6b6b;
+        }
+
+        .admin-panel-content {
+            margin-bottom: 1rem;
+        }
+
+        .admin-post-preview {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #333;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .admin-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .admin-btn {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .admin-btn-copy {
+            background: #4a7c59;
+            color: white;
+        }
+
+        .admin-btn-copy:hover {
+            background: #2c5f2d;
+        }
+
+        .admin-btn-copy.copied {
+            background: #27ae60;
+        }
+
+        .admin-btn-share {
+            background: #1877f2;
+            color: white;
+        }
+
+        .admin-btn-share:hover {
+            background: #165ecc;
+        }
+
+        .admin-hint {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(44, 95, 45, 0.9);
+            color: white;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            z-index: 9999;
+            animation: fadeInOut 3s ease;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; }
+            10%, 90% { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .admin-panel {
+                left: 20px;
+                right: 20px;
+                max-width: none;
+                bottom: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -344,6 +490,28 @@
             <div style="display: flex; gap: 10px; margin-top: 10px;">
                 <button onclick="rejectCookies()" class="cookie-reject-btn">Reject Analytics</button>
                 <button onclick="acceptCookies()" class="cookie-accept-btn">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel (Hidden by default, activated with Ctrl+Shift+A) -->
+    <div id="admin-panel" class="admin-panel">
+        <div class="admin-panel-header">
+            <h3>🔧 Admin Tools</h3>
+            <button class="admin-panel-close" onclick="toggleAdminMode()">×</button>
+        </div>
+        <div class="admin-panel-content">
+            <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #666;">Share this post to Facebook Group:</p>
+            <div id="admin-post-preview" class="admin-post-preview">
+                <!-- Post preview will be inserted here -->
+            </div>
+            <div class="admin-buttons">
+                <button class="admin-btn admin-btn-copy" onclick="copyPostText()">
+                    📋 Copy Text
+                </button>
+                <button class="admin-btn admin-btn-share" onclick="openFacebookGroup()">
+                    📢 Open Facebook
+                </button>
             </div>
         </div>
     </div>
@@ -728,6 +896,176 @@
         }
 
         window.addEventListener('load', showCookieBanner);
+
+        // ============================================
+        // ADMIN MODE FUNCTIONALITY
+        // ============================================
+
+        let currentPostData = null;  // Store current post data for sharing
+
+        // Check if admin mode should be enabled on page load
+        function checkAdminMode() {
+            const adminEnabled = localStorage.getItem('adminModeEnabled') === 'true';
+            if (adminEnabled) {
+                const postSlug = getUrlParameter('post');
+                if (postSlug) {
+                    // Only show on single post pages, not list view
+                    document.getElementById('admin-panel').classList.add('active');
+                }
+            }
+        }
+
+        // Toggle admin mode on/off
+        function toggleAdminMode() {
+            const panel = document.getElementById('admin-panel');
+            const isActive = panel.classList.contains('active');
+
+            if (isActive) {
+                panel.classList.remove('active');
+                localStorage.setItem('adminModeEnabled', 'false');
+            } else {
+                panel.classList.add('active');
+                localStorage.setItem('adminModeEnabled', 'true');
+                updateAdminPanel();
+                showHint('Admin mode activated! Press Ctrl+Shift+A again to hide.');
+            }
+        }
+
+        // Keyboard shortcut listener (Ctrl+Shift+A)
+        document.addEventListener('keydown', function(e) {
+            // Ctrl+Shift+A (or Cmd+Shift+A on Mac)
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'A') {
+                e.preventDefault();
+                toggleAdminMode();
+            }
+        });
+
+        // Update admin panel with current post data
+        function updateAdminPanel() {
+            if (!currentPostData) return;
+
+            const { title, excerpt, blogUrl } = currentPostData;
+            const postText = formatPostForFacebook(title, excerpt, blogUrl);
+
+            const preview = document.getElementById('admin-post-preview');
+            preview.textContent = postText;
+        }
+
+        // Format post text for Facebook
+        function formatPostForFacebook(title, excerpt, url) {
+            let text = title + '\n\n';
+            if (excerpt) {
+                text += excerpt + '\n\n';
+            }
+            text += 'Read more: ' + url;
+            return text;
+        }
+
+        // Copy post text to clipboard
+        async function copyPostText() {
+            if (!currentPostData) {
+                showHint('No post data available');
+                return;
+            }
+
+            const { title, excerpt, blogUrl } = currentPostData;
+            const postText = formatPostForFacebook(title, excerpt, blogUrl);
+
+            try {
+                await navigator.clipboard.writeText(postText);
+
+                // Visual feedback
+                const btn = document.querySelector('.admin-btn-copy');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '✓ Copied!';
+                btn.classList.add('copied');
+
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.remove('copied');
+                }, 2000);
+
+                showHint('Post text copied to clipboard!');
+            } catch (error) {
+                console.error('Failed to copy:', error);
+                showHint('Failed to copy. Please copy manually from the preview.');
+            }
+        }
+
+        // Open Facebook Group in new tab
+        function openFacebookGroup() {
+            const groupUrl = 'https://www.facebook.com/groups/2568902686636114';
+            window.open(groupUrl, '_blank', 'noopener,noreferrer');
+            showHint('Facebook Group opened! Paste your copied text and post.');
+        }
+
+        // Show temporary hint message
+        function showHint(message) {
+            // Remove existing hint if any
+            const existingHint = document.querySelector('.admin-hint');
+            if (existingHint) {
+                existingHint.remove();
+            }
+
+            // Create new hint
+            const hint = document.createElement('div');
+            hint.className = 'admin-hint';
+            hint.textContent = message;
+            document.body.appendChild(hint);
+
+            // Remove after animation
+            setTimeout(() => {
+                hint.remove();
+            }, 3000);
+        }
+
+        // Update the loadSinglePost function to store post data for admin mode
+        const originalLoadSinglePost = loadSinglePost;
+        loadSinglePost = async function(slug) {
+            await originalLoadSinglePost(slug);
+
+            // After post is loaded, get the rendered post data
+            setTimeout(() => {
+                try {
+                    const titleElement = document.querySelector('.blog-post-full-title');
+                    const bodyElement = document.querySelector('.blog-post-full-body');
+
+                    if (titleElement) {
+                        const title = titleElement.textContent;
+
+                        // Get first paragraph as excerpt
+                        let excerpt = '';
+                        const firstParagraph = bodyElement?.querySelector('p');
+                        if (firstParagraph) {
+                            excerpt = firstParagraph.textContent.substring(0, 200);
+                            if (firstParagraph.textContent.length > 200) {
+                                excerpt += '...';
+                            }
+                        }
+
+                        const blogUrl = window.location.href;
+
+                        // Store for admin panel
+                        currentPostData = { title, excerpt, blogUrl };
+
+                        // Update admin panel if it's active
+                        updateAdminPanel();
+
+                        // Check if admin mode should be shown
+                        checkAdminMode();
+                    }
+                } catch (error) {
+                    console.error('Error setting up admin mode:', error);
+                }
+            }, 500);
+        };
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            // Check admin mode after a short delay to ensure post is loaded
+            setTimeout(checkAdminMode, 1000);
+        });
+
     </script>
 </body>
 </html>
