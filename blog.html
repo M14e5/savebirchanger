@@ -511,19 +511,46 @@
         // Load single blog post
         async function loadSinglePost(slug) {
             try {
-                const response = await client.getEntries({
+                console.log('Loading post with slug:', slug);
+
+                // Try the direct query first
+                let response = await client.getEntries({
                     content_type: 'blogPost',
                     'fields.slug': slug,
                     limit: 1
                 });
 
-                if (response.items.length === 0) {
-                    document.getElementById('blog-loading').style.display = 'none';
-                    document.getElementById('blog-error').style.display = 'block';
-                    return;
+                console.log('Contentful response:', response);
+
+                // If no results, try fetching all and filtering in JS (fallback)
+                if (!response || !response.items || response.items.length === 0) {
+                    console.log('Direct query returned no results, trying fallback method');
+
+                    const allPosts = await client.getEntries({
+                        content_type: 'blogPost',
+                        limit: 100
+                    });
+
+                    console.log('All posts fetched:', allPosts.items.length);
+
+                    const matchingPost = allPosts.items.find(item =>
+                        item.fields.slug === slug
+                    );
+
+                    if (!matchingPost) {
+                        console.error('No blog post found with slug:', slug);
+                        document.getElementById('blog-loading').style.display = 'none';
+                        document.getElementById('blog-error').style.display = 'block';
+                        return;
+                    }
+
+                    // Create a response-like object
+                    response = { items: [matchingPost] };
                 }
 
                 const post = response.items[0];
+                console.log('Found post:', post);
+
                 const blogPostContent = document.getElementById('blog-post-content');
                 blogPostContent.innerHTML = renderFullBlogPost(post);
 
@@ -534,6 +561,7 @@
                 document.title = `${post.fields.title} - Save Our Villages Blog`;
             } catch (error) {
                 console.error('Error loading blog post:', error);
+                console.error('Error details:', error.message, error.stack);
                 document.getElementById('blog-loading').style.display = 'none';
                 document.getElementById('blog-error').style.display = 'block';
             }
