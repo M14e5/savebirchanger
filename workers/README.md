@@ -1,6 +1,11 @@
-# AI Template Generator - Setup Guide
+# Cloudflare Workers - Setup Guide
 
-This guide will help you deploy the AI template generator feature securely using Cloudflare Workers.
+This directory contains two Cloudflare Workers for the Save Birchanger campaign:
+
+1. **Template Generator** - AI-powered campaign letter generation
+2. **Facebook Cross-Poster** - Automatic blog-to-Facebook Group posting
+
+Choose the section relevant to your setup needs.
 
 ## 🚨 Critical Security Steps
 
@@ -314,3 +319,140 @@ wrangler secret list
 ---
 
 **Questions?** Check the troubleshooting section above or review the Cloudflare Workers documentation.
+
+---
+
+# Facebook Cross-Poster - Setup Guide
+
+## Overview
+
+The Facebook Cross-Poster automatically posts new blog posts to your Facebook Group when they're published in Contentful CMS.
+
+**Flow:**
+1. Publish blog post in Contentful
+2. Contentful sends webhook to Cloudflare Worker
+3. Worker formats and posts to Facebook Group
+4. Done! ✅
+
+## Quick Start
+
+See **`docs/facebook-crosspost-quickstart.md`** for a step-by-step checklist.
+
+See **`docs/facebook-crosspost-setup.md`** for detailed instructions.
+
+## Prerequisites
+
+- Admin/Moderator access to Facebook Group
+- Cloudflare account (already configured)
+- Contentful access (Space ID: njsy5rg8z2nk)
+- Wrangler CLI installed (`npm install -g wrangler`)
+
+## Setup Summary
+
+### 1. Create Facebook App & Get Credentials
+
+1. Create app at [Meta for Developers](https://developers.facebook.com/)
+2. Get Facebook Group ID: `2568902686636114`
+3. Generate access token with `publish_to_groups` permission
+4. Convert to long-lived token (60 days)
+
+### 2. Deploy Worker
+
+```bash
+# Set secrets
+wrangler secret put FACEBOOK_ACCESS_TOKEN --config wrangler-facebook.toml
+wrangler secret put FACEBOOK_GROUP_ID --config wrangler-facebook.toml
+wrangler secret put CONTENTFUL_WEBHOOK_SECRET --config wrangler-facebook.toml
+
+# Deploy
+wrangler deploy --config wrangler-facebook.toml --env production
+```
+
+### 3. Configure Contentful Webhook
+
+1. Go to Contentful → Settings → Webhooks
+2. Add webhook:
+   - URL: `https://saveourvillages.co.uk/api/facebook-webhook`
+   - Triggers: **Entry.publish** for **blogPost** content type
+   - Secret: Same as `CONTENTFUL_WEBHOOK_SECRET`
+
+### 4. Test
+
+1. Create test blog post in Contentful
+2. Publish it
+3. Check Facebook Group for new post
+4. ✅ Done!
+
+## Monitoring
+
+```bash
+# View live logs
+wrangler tail --config wrangler-facebook.toml --env production
+
+# Test webhook manually
+curl -X POST https://saveourvillages.co.uk/api/facebook-webhook \
+  -H "Content-Type: application/json" \
+  -H "X-Contentful-Topic: ContentManagement.Entry.publish" \
+  -d '{"sys":{"contentType":{"sys":{"id":"blogPost"}}},"fields":{"title":{"en-US":"Test"},"slug":{"en-US":"test"},"excerpt":{"en-US":"Test excerpt"}}}'
+```
+
+## Maintenance
+
+### Token Refresh (Every 60 Days)
+
+Facebook tokens expire after 60 days. Set a calendar reminder:
+
+```bash
+# 1. Generate new token in Graph API Explorer
+# 2. Convert to long-lived token
+# 3. Update secret:
+wrangler secret put FACEBOOK_ACCESS_TOKEN --config wrangler-facebook.toml --env production
+```
+
+## Troubleshooting
+
+| Issue | Fix |
+|-------|-----|
+| Post not appearing | Check Contentful webhook activity log |
+| "Invalid signature" | Verify secret matches in both systems |
+| "Token expired" | Refresh access token |
+| "Permission denied" | Regenerate token with `publish_to_groups` permission |
+
+**View logs:**
+```bash
+wrangler tail --config wrangler-facebook.toml --env production
+```
+
+## Cost
+
+**Total: $0/month** ✅
+- Cloudflare Workers: Free tier
+- Facebook Graph API: Free
+- Contentful Webhooks: Free
+
+## Files
+
+- `facebook-crosspost.js` - Worker code
+- `wrangler-facebook.toml` - Worker configuration
+- `docs/facebook-crosspost-setup.md` - Detailed setup guide
+- `docs/facebook-crosspost-quickstart.md` - Quick reference
+
+---
+
+## Both Workers - Common Commands
+
+```bash
+# Template Generator
+wrangler deploy                                    # Deploy
+wrangler tail                                      # View logs
+wrangler secret put OPENAI_API_KEY                 # Update API key
+
+# Facebook Cross-Poster
+wrangler deploy --config wrangler-facebook.toml --env production    # Deploy
+wrangler tail --config wrangler-facebook.toml --env production      # View logs
+wrangler secret put FACEBOOK_ACCESS_TOKEN --config wrangler-facebook.toml  # Update token
+```
+
+---
+
+**Need help?** See the detailed documentation in the `docs/` directory.

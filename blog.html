@@ -394,7 +394,7 @@
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 
     <!-- Contentful Rich Text Renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/@contentful/rich-text-html-renderer@latest/dist/rich-text-html-renderer.es5.min.js"></script>
+    <script src="https://unpkg.com/@contentful/rich-text-html-renderer@16.5.2/dist/rich-text-html-renderer.es5.js"></script>
 
     <script>
         // Contentful configuration
@@ -406,6 +406,79 @@
             space: CONTENTFUL_SPACE_ID,
             accessToken: CONTENTFUL_ACCESS_TOKEN
         });
+
+        // Fallback Rich Text renderer (in case external library doesn't load)
+        function basicRichTextToHtml(document) {
+            if (!document || !document.content) return '';
+
+            function nodeToHtml(node) {
+                if (!node) return '';
+
+                switch (node.nodeType) {
+                    case 'document':
+                        return node.content.map(nodeToHtml).join('');
+
+                    case 'paragraph':
+                        return `<p>${node.content.map(nodeToHtml).join('')}</p>`;
+
+                    case 'heading-1':
+                        return `<h1>${node.content.map(nodeToHtml).join('')}</h1>`;
+
+                    case 'heading-2':
+                        return `<h2>${node.content.map(nodeToHtml).join('')}</h2>`;
+
+                    case 'heading-3':
+                        return `<h3>${node.content.map(nodeToHtml).join('')}</h3>`;
+
+                    case 'unordered-list':
+                        return `<ul>${node.content.map(nodeToHtml).join('')}</ul>`;
+
+                    case 'ordered-list':
+                        return `<ol>${node.content.map(nodeToHtml).join('')}</ol>`;
+
+                    case 'list-item':
+                        return `<li>${node.content.map(nodeToHtml).join('')}</li>`;
+
+                    case 'text':
+                        let text = node.value || '';
+                        if (node.marks && node.marks.length > 0) {
+                            node.marks.forEach(mark => {
+                                switch (mark.type) {
+                                    case 'bold':
+                                        text = `<strong>${text}</strong>`;
+                                        break;
+                                    case 'italic':
+                                        text = `<em>${text}</em>`;
+                                        break;
+                                    case 'underline':
+                                        text = `<u>${text}</u>`;
+                                        break;
+                                    case 'code':
+                                        text = `<code>${text}</code>`;
+                                        break;
+                                }
+                            });
+                        }
+                        return text;
+
+                    case 'hyperlink':
+                        const url = node.data?.uri || '#';
+                        return `<a href="${url}" target="_blank" rel="noopener">${node.content.map(nodeToHtml).join('')}</a>`;
+
+                    case 'hr':
+                        return '<hr>';
+
+                    case 'blockquote':
+                        return `<blockquote>${node.content.map(nodeToHtml).join('')}</blockquote>`;
+
+                    default:
+                        console.warn('Unknown node type:', node.nodeType);
+                        return node.content ? node.content.map(nodeToHtml).join('') : '';
+                }
+            }
+
+            return nodeToHtml(document);
+        }
 
         // Get URL parameters
         function getUrlParameter(name) {
@@ -471,10 +544,22 @@
                 if (typeof body === 'object' && body.nodeType === 'document') {
                     // Rich Text field - use the renderer
                     try {
-                        bodyHtml = window.RichTextHtmlRenderer.documentToHtmlString(body);
+                        // Try different possible global variable names for the Rich Text renderer
+                        const renderer = window.contentfulRichTextHtmlRenderer ||
+                                       window.richTextHtmlRenderer ||
+                                       window.RichTextHtmlRenderer;
+
+                        if (renderer && renderer.documentToHtmlString) {
+                            console.log('Using external Rich Text renderer');
+                            bodyHtml = renderer.documentToHtmlString(body);
+                        } else {
+                            // Use fallback renderer
+                            console.log('Using fallback Rich Text renderer');
+                            bodyHtml = basicRichTextToHtml(body);
+                        }
                     } catch (error) {
-                        console.error('Error rendering Rich Text:', error);
-                        bodyHtml = '<p>Error displaying blog content. Please contact us if this persists.</p>';
+                        console.error('Error rendering Rich Text, trying fallback:', error);
+                        bodyHtml = basicRichTextToHtml(body);
                     }
                 } else if (typeof body === 'string') {
                     // Plain text field - simple paragraph formatting
@@ -508,7 +593,8 @@
                 const response = await client.getEntries({
                     content_type: 'blogPost',
                     order: '-fields.publishDate,-sys.createdAt',
-                    limit: 100
+                    limit: 100,
+                    include: 2  // Include linked assets (featured images)
                 });
 
                 if (response.items.length === 0) {
@@ -538,7 +624,8 @@
                 let response = await client.getEntries({
                     content_type: 'blogPost',
                     'fields.slug': slug,
-                    limit: 1
+                    limit: 1,
+                    include: 2  // Include linked assets (featured images)
                 });
 
                 console.log('Contentful response:', response);
@@ -549,7 +636,8 @@
 
                     const allPosts = await client.getEntries({
                         content_type: 'blogPost',
-                        limit: 100
+                        limit: 100,
+                        include: 2  // Include linked assets (featured images)
                     });
 
                     console.log('All posts fetched:', allPosts.items.length);
