@@ -561,6 +561,17 @@
     <!-- Contentful SDK -->
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 
+    <!-- Fix for "exports is not defined" error -->
+    <script>
+        // Polyfill for CommonJS modules in browser
+        if (typeof exports === 'undefined') {
+            var exports = {};
+        }
+        if (typeof module === 'undefined') {
+            var module = { exports: exports };
+        }
+    </script>
+
     <!-- Contentful Rich Text Renderer -->
     <script src="https://unpkg.com/@contentful/rich-text-html-renderer@16.5.2/dist/rich-text-html-renderer.es5.js"></script>
 
@@ -947,14 +958,14 @@
                 panel.classList.add('active');
                 localStorage.setItem('adminModeEnabled', 'true');
                 updateAdminPanel();
-                showHint('Admin mode activated! Press Ctrl+Shift+A again to hide.');
+                showHint('Admin mode activated! Press Ctrl+Alt+S again to hide.');
             }
         }
 
-        // Keyboard shortcut listener (Ctrl+Shift+A)
+        // Keyboard shortcut listener (Ctrl+Alt+S)
         document.addEventListener('keydown', function(e) {
-            // Ctrl+Shift+A (or Cmd+Shift+A on Mac)
-            if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
+            // Ctrl+Alt+S (or Cmd+Alt+S on Mac) - S for "Share"
+            if ((e.ctrlKey || e.metaKey) && e.altKey && (e.key === 'S' || e.key === 's')) {
                 e.preventDefault();
                 console.log('Admin mode keyboard shortcut triggered');
                 toggleAdminMode();
