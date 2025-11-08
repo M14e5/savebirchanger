@@ -393,6 +393,9 @@
     <!-- Contentful SDK -->
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 
+    <!-- Contentful Rich Text Renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/@contentful/rich-text-html-renderer@latest/dist/rich-text-html-renderer.es5.min.js"></script>
+
     <script>
         // Contentful configuration
         const CONTENTFUL_SPACE_ID = 'njsy5rg8z2nk';
@@ -461,8 +464,26 @@
 
             const categoryTag = category ? `<span class="blog-post-category">${category}</span>` : '';
 
-            // Convert body text to HTML (simple paragraph formatting)
-            const bodyHtml = body ? body.split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('') : '';
+            // Convert body to HTML - handle both Rich Text and plain text
+            let bodyHtml = '';
+            if (body) {
+                // Check if body is a Rich Text object (has nodeType property)
+                if (typeof body === 'object' && body.nodeType === 'document') {
+                    // Rich Text field - use the renderer
+                    try {
+                        bodyHtml = window.RichTextHtmlRenderer.documentToHtmlString(body);
+                    } catch (error) {
+                        console.error('Error rendering Rich Text:', error);
+                        bodyHtml = '<p>Error displaying blog content. Please contact us if this persists.</p>';
+                    }
+                } else if (typeof body === 'string') {
+                    // Plain text field - simple paragraph formatting
+                    bodyHtml = body.split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+                } else {
+                    console.warn('Unknown body format:', typeof body, body);
+                    bodyHtml = '<p>Content format not supported.</p>';
+                }
+            }
 
             return `
                 <article class="blog-post-full">
