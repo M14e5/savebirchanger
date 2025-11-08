@@ -933,6 +933,49 @@ footer {
     background: #ff6b6b;
 }
 
+/* Documentation Cards */
+.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.doc-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.doc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-color: #4a7c59;
+}
+
+.doc-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.doc-card h4 {
+    color: #2c5f2d;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.doc-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
@@ -1027,6 +1070,10 @@ footer {
         max-width: 95%;
         padding: 1.5rem;
         max-height: 90vh;
+    }
+
+    .docs-grid {
+        grid-template-columns: 1fr;
     }
 }
 

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Documentation - Save Our Villages</title>
+    <meta name="description" content="Access all planning documents related to City & Country's proposed development in Birchanger and Stansted, including statutory consultee responses and planning authority reports.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Save Our Villages</div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="birchanger.html">Save Birchanger</a></li>
+                <li><a href="stansted.html">Save Stansted</a></li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="documentation.html" class="active">Documentation</a></li>
+                <li><a href="index.html#action">Take Action</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: linear-gradient(rgba(44, 95, 45, 0.7), rgba(74, 124, 89, 0.7)), url('images/Birchanger/Fields/IMG-20251011-WA0031.jpg');">
+        <h1>Planning Documentation</h1>
+        <p class="subtitle">All documents found so far in relation to the proposal</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Introduction -->
+        <section class="section">
+            <p style="font-size: 1.2rem; margin-bottom: 3rem; text-align: center;">This page contains all planning documents, statutory consultee responses, and planning authority reports related to City & Country's proposed development. Click any document to view or download.</p>
+        </section>
+
+        <!-- Planning Authority Documents -->
+        <section class="section">
+            <h2>Planning Authority Documents</h2>
+            <div class="docs-grid">
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/LPA_DECSION_LETTER-4608687.pdf', 'LPA Decision Letter')">
+                    <div class="doc-icon">📋</div>
+                    <h4>LPA Decision Letter</h4>
+                    <p>Local Planning Authority's official decision letter on the application</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/LPA_REPORT-4602021.pdf', 'LPA Report')">
+                    <div class="doc-icon">📄</div>
+                    <h4>LPA Report</h4>
+                    <p>Detailed planning officer's report analyzing the proposal</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/ADDITIONAL_INFORMATION-4594388.pdf', 'Additional Information')">
+                    <div class="doc-icon">📑</div>
+                    <h4>Additional Information</h4>
+                    <p>Supplementary information submitted by the applicant</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Stansted Planning Update - 4-Nov-2025.pdf', 'Planning Update Nov 2025')">
+                    <div class="doc-icon">🔄</div>
+                    <h4>Planning Update - Nov 2025</h4>
+                    <p>Latest update on the planning application status</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statutory Consultees -->
+        <section class="section">
+            <h2>Statutory Consultee Responses</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Responses from government agencies and statutory bodies required to be consulted on major planning applications.</p>
+            <div class="docs-grid">
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/NATIONAL_HIGHWAYS_-_RESPONSE-4595536.pdf', 'National Highways Response')">
+                    <div class="doc-icon">🛣️</div>
+                    <h4>National Highways</h4>
+                    <p>Response regarding impact on strategic road network</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/ENVIRONMENT_AGENCY_-_RESPONSE-4578777.pdf', 'Environment Agency Response')">
+                    <div class="doc-icon">🌊</div>
+                    <h4>Environment Agency</h4>
+                    <p>Assessment of flood risk and environmental impacts</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/NATUTAL_ENGLAND_-_RESPONSE-4577513.pdf', 'Natural England Response')">
+                    <div class="doc-icon">🌿</div>
+                    <h4>Natural England</h4>
+                    <p>Response on protected species and habitat impacts</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/HISTORIC_ENGLAND_-_RESPONSE-4575005.pdf', 'Historic England Response')">
+                    <div class="doc-icon">🏛️</div>
+                    <h4>Historic England</h4>
+                    <p>Assessment of impact on heritage assets</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/SPORT_ENGLAND_-_RESPONSE-4567869.pdf', 'Sport England Response')">
+                    <div class="doc-icon">⚽</div>
+                    <h4>Sport England</h4>
+                    <p>Response regarding sports facilities and recreation</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/ACTIVE_TRAVEL_ENGLAND_-_RESPONSE-4569022.pdf', 'Active Travel England Response')">
+                    <div class="doc-icon">🚴</div>
+                    <h4>Active Travel England</h4>
+                    <p>Assessment of walking and cycling infrastructure</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/NHS_PLANNING_-_RESPONSE-4571822.pdf', 'NHS Planning Response')">
+                    <div class="doc-icon">🏥</div>
+                    <h4>NHS Planning</h4>
+                    <p>Healthcare infrastructure capacity assessment</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/THAMES_WATERS_-_RESPONSE-4570074.pdf', 'Thames Water Response')">
+                    <div class="doc-icon">💧</div>
+                    <h4>Thames Water</h4>
+                    <p>Water supply and sewerage infrastructure response</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/AFFINITY_WTAER_-_RESPONSE-4567269.pdf', 'Affinity Water Response')">
+                    <div class="doc-icon">💧</div>
+                    <h4>Affinity Water</h4>
+                    <p>Water company response on supply capacity</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Local Authority Responses -->
+        <section class="section">
+            <h2>Local Authority Consultee Responses</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Responses from county and district council departments on various aspects of the proposal.</p>
+            <div class="docs-grid">
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/ECC_HIGHWAYS_-_RESPONSE-4578404.pdf', 'ECC Highways Response')">
+                    <div class="doc-icon">🚗</div>
+                    <h4>Essex County Council - Highways</h4>
+                    <p>Traffic impact and highway safety assessment</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/ECC_SUDS_-_RESPONSE-4574411.pdf', 'ECC SUDS Response')">
+                    <div class="doc-icon">🌧️</div>
+                    <h4>Essex County Council - SUDS</h4>
+                    <p>Sustainable drainage systems assessment</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/EDUCATION_INFRASTRUCTURE_EEC_-_COMMENTS_-_COMMENTS-4573548.pdf', 'Education Infrastructure Comments')">
+                    <div class="doc-icon">🎓</div>
+                    <h4>Education Infrastructure (ECC)</h4>
+                    <p>School capacity and education provision comments</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/ESSEX_POLICE_DESIGN_OUT_CRIME_-_RESPONSE-4573415.pdf', 'Essex Police Design Out Crime Response')">
+                    <div class="doc-icon">👮</div>
+                    <h4>Essex Police - Design Out Crime</h4>
+                    <p>Crime prevention and community safety response</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/ESSEX_POLICE_STRATEGIC_PLANNING_-_RESPONSE-4570365.pdf', 'Essex Police Strategic Planning Response')">
+                    <div class="doc-icon">🚔</div>
+                    <h4>Essex Police - Strategic Planning</h4>
+                    <p>Strategic policing infrastructure requirements</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/UDC_URBAN_DESIGN_-_COMMENTS-4575693.pdf', 'UDC Urban Design Comments')">
+                    <div class="doc-icon">🏗️</div>
+                    <h4>Uttlesford DC - Urban Design</h4>
+                    <p>Design quality and placemaking assessment</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/UDC_ENVIRONMENTAL_HEALTH_-_RESPONSE-4577884.pdf', 'UDC Environmental Health Response')">
+                    <div class="doc-icon">🏭</div>
+                    <h4>Uttlesford DC - Environmental Health</h4>
+                    <p>Air quality, noise and contamination assessment</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/UDC_INTERNAL_HOUSING_-_RESPONSE-4569045.pdf', 'UDC Internal Housing Response')">
+                    <div class="doc-icon">🏘️</div>
+                    <h4>Uttlesford DC - Housing</h4>
+                    <p>Affordable housing and housing mix assessment</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Consultees -->
+        <section class="section">
+            <h2>Other Consultee Responses</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Responses from parish councils and other interested parties.</p>
+            <div class="docs-grid">
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/STANSTED_PARISH_COUNCIL_-_RESPONSE-4577723.pdf', 'Stansted Parish Council Response')">
+                    <div class="doc-icon">🏛️</div>
+                    <h4>Stansted Parish Council</h4>
+                    <p>Parish council's formal response to the proposal</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/ARCHAEOLOGY_PLACE_SERVICES_-_COMMENTS-4575690.pdf', 'Archaeology Comments')">
+                    <div class="doc-icon">⚱️</div>
+                    <h4>Archaeology Place Services</h4>
+                    <p>Archaeological heritage impact assessment</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/AERODROME_SAFEGUARDING_-_RESPONSE-4579403.pdf', 'Aerodrome Safeguarding Response')">
+                    <div class="doc-icon">✈️</div>
+                    <h4>Aerodrome Safeguarding</h4>
+                    <p>Stansted Airport safeguarding assessment</p>
+                </div>
+                <div class="doc-card" onclick="openDocModal('Documentation/Responses/NATS_-_COMMENTS-4566887.pdf', 'NATS Comments')">
+                    <div class="doc-icon">📡</div>
+                    <h4>NATS (Air Traffic Control)</h4>
+                    <p>Air navigation services safeguarding comments</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Section -->
+        <section class="section">
+            <div style="background: linear-gradient(135deg, #2c5f2d 0%, #4a7c59 100%); color: white; padding: 3rem 2rem; border-radius: 15px; text-align: center;">
+                <h2 style="color: white; margin-bottom: 1rem;">Need Help Understanding These Documents?</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">These technical planning documents can be complex. Contact us if you need help understanding any aspect of the proposal or consultee responses.</p>
+                <a href="mailto:admin@saveourvillages.co.uk" class="btn btn-primary" style="text-decoration: none;">Get Help</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Document Viewer Modal -->
+    <div id="doc-modal" class="modal">
+        <div class="modal-content" style="max-width: 95%; width: 1200px; max-height: 90vh;">
+            <span class="modal-close" onclick="closeDocModal()">&times;</span>
+            <h2 id="doc-modal-title">Document Viewer</h2>
+            <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a id="doc-download-btn" href="#" download class="btn btn-primary" style="text-decoration: none;">📥 Download PDF</a>
+                <button onclick="closeDocModal()" class="btn btn-secondary">Close</button>
+            </div>
+            <div style="margin-top: 1.5rem; height: calc(90vh - 200px); border: 2px solid #e0e0e0; border-radius: 10px; overflow: hidden;">
+                <iframe id="doc-iframe" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About the Campaign</h3>
+                <p>A joint effort by residents of Birchanger and Stansted Mountfitchet to protect our communities from inappropriate development.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="birchanger.html">Save Birchanger</a>
+                <a href="stansted.html">Save Stansted</a>
+                <a href="index.html#action">Take Action</a>
+                <a href="documentation.html">Documentation</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Campaign Partners</h3>
+                <a href="https://www.birchanger.com/">Birchanger Parish Council</a>
+                <a href="#">Stansted Mountfitchet PC</a>
+                <a href="https://cpressex.org.uk/">CPRE Essex</a>
+                <a href="#">Residents' Associations</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="documentation.html">Planning Documents</a>
+                <a href="templates.html">Templates</a>
+                <a href="#">Campaign Materials</a>
+                <a href="#">Media Coverage</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Save Our Villages. Protecting Birchanger and Stansted Mountfitchet for future generations.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.8;">Photography &copy; 2025 Dale Crowson. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Document Modal Functions
+        function openDocModal(docPath, docTitle) {
+            const docModal = document.getElementById('doc-modal');
+            const docIframe = document.getElementById('doc-iframe');
+            const docModalTitle = document.getElementById('doc-modal-title');
+            const docDownloadBtn = document.getElementById('doc-download-btn');
+
+            // Set the title
+            docModalTitle.textContent = docTitle;
+
+            // Set the iframe source to the PDF
+            docIframe.src = docPath;
+
+            // Set the download button
+            docDownloadBtn.href = docPath;
+            docDownloadBtn.download = docPath.split('/').pop(); // Get filename from path
+
+            // Show the modal
+            docModal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeDocModal() {
+            const docModal = document.getElementById('doc-modal');
+            const docIframe = document.getElementById('doc-iframe');
+
+            // Hide the modal
+            docModal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+
+            // Clear the iframe to stop loading
+            docIframe.src = '';
+        }
+
+        // Close doc modal when clicking outside
+        window.addEventListener('click', function(event) {
+            const docModal = document.getElementById('doc-modal');
+            if (event.target === docModal) {
+                closeDocModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            const docModal = document.getElementById('doc-modal');
+            if (event.key === 'Escape' && docModal.style.display === 'block') {
+                closeDocModal();
+            }
+        });
+    </script>
+</body>
+</html>
