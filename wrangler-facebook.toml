@@ -1,0 +1,28 @@
+name = "facebook-crosspost"
+main = "workers/facebook-crosspost.js"
+compatibility_date = "2024-01-01"
+
+# Account ID - using existing Cloudflare account
+account_id = "3661915b96149c595241723b8c45518d"
+
+# Worker configuration
+workers_dev = true
+
+# Environment variables (secrets)
+# DO NOT put your actual secrets here!
+# Set them using:
+#   wrangler secret put FACEBOOK_ACCESS_TOKEN --config wrangler-facebook.toml
+#   wrangler secret put FACEBOOK_GROUP_ID --config wrangler-facebook.toml
+#   wrangler secret put CONTENTFUL_WEBHOOK_SECRET --config wrangler-facebook.toml
+
+# Production environment with custom route
+[env.production]
+name = "facebook-crosspost"
+routes = [
+  { pattern = "saveourvillages.co.uk/api/facebook-webhook", custom_domain = true }
+]
+
+# For local development
+# Run with: wrangler dev --config wrangler-facebook.toml
+[env.dev]
+name = "facebook-crosspost-dev"
