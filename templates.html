@@ -87,7 +87,7 @@
         .templates-hero {
             background: linear-gradient(135deg, #2c5f2d, #4a7c59);
             color: white;
-            padding: 120px 20px 80px;
+            padding: 150px 20px 80px;
             text-align: center;
         }
 
@@ -324,6 +324,43 @@
         .template-type-option label .type-desc {
             color: #666;
             font-size: 0.85rem;
+        }
+
+        /* Priority badge styling */
+        .priority-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-left: 0.5rem;
+            box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(255, 107, 107, 0.5);
+            }
+        }
+
+        /* Highlight the planning objection option */
+        #type-planning + label {
+            border: 3px solid #ff6b6b !important;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%) !important;
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+        }
+
+        #type-planning:checked + label {
+            border-color: #ff6b6b !important;
+            background: linear-gradient(135deg, #ffe8e8 0%, #ffd4d4 100%) !important;
         }
 
         .questions-container {
@@ -566,7 +603,7 @@
                     <div class="template-type-option">
                         <input type="radio" id="type-planning" name="template-type" value="planning-objection">
                         <label for="type-planning">
-                            <span class="type-name">Planning Objection</span>
+                            <span class="type-name">Planning Objection<span class="priority-badge">🔴 CURRENT PRIORITY</span></span>
                             <span class="type-desc">Formal objection when application is lodged</span>
                         </label>
                     </div>
