@@ -648,7 +648,7 @@
         <!-- AI Template Generator Section -->
         <section class="ai-generator-section" id="ai-generator">
             <h2>🤖 Template Generator</h2>
-            <p class="subtitle">Answer a few questions to create a personalized letter that sounds authentic and unique</p>
+            <p class="subtitle">Answer a few questions to create a personalized letter that is authentic and unique</p>
 
             <div class="highlight-box">
                 <p><strong>Save time while staying personal:</strong> This tool creates a custom template based on your specific situation. Review and adjust the result before submitting to ensure it truly reflects your voice.</p>
@@ -1776,7 +1776,7 @@ Make it personal, make it factual, make it COUNT!</div>
 
         // Store original letter content when generated
         const originalDisplayResult = displayResult;
-        function displayResult(content) {
+        displayResult = function(content) {
             rawLetterContent = content;
             originalDisplayResult(content);
 
@@ -1784,7 +1784,7 @@ Make it personal, make it factual, make it COUNT!</div>
             nameInput.value = '';
             addressInput.value = '';
             postcodeInput.value = '';
-        }
+        };
     </script>
 </body>
 </html>
