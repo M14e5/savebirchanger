@@ -1414,7 +1414,7 @@ Make it personal, make it factual, make it COUNT!</div>
 
                         // Click anywhere on the div to toggle checkbox
                         checkboxDiv.addEventListener('click', function(e) {
-                            if (e.target !== checkbox) {
+                            if (e.target !== checkbox && e.target !== checkboxLabel) {
                                 checkbox.click();
                             }
                         });
