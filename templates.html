@@ -541,7 +541,45 @@
 
         /* Print-friendly styles */
         @media print {
-            /* Hide everything except the letter content */
+            /* Hide EVERYTHING by default */
+            body * {
+                visibility: hidden;
+            }
+
+            /* Only show the letter content and its parent containers */
+            #generated-content,
+            #generated-content * {
+                visibility: visible;
+            }
+
+            /* Position the letter content at the top of the page */
+            #generated-content {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                margin: 0;
+                padding: 1in;
+                border: none;
+                background: white;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 12pt;
+                line-height: 1.6;
+                white-space: pre-wrap;
+                box-shadow: none;
+            }
+
+            /* Remove page breaks within the letter if possible */
+            #generated-content {
+                page-break-inside: avoid;
+            }
+
+            /* Clean background and remove all decorations */
+            body {
+                background: white;
+            }
+
+            /* Ensure all navigation, forms, buttons, and UI elements are hidden */
             .navbar,
             .templates-hero,
             .back-to-top,
@@ -550,35 +588,31 @@
             .disclaimer,
             .regenerate-button,
             .copy-button,
+            .generator-step,
+            .ai-generator-section,
+            .template-section,
             button,
-            #postcode-suggestions {
+            nav,
+            header,
+            footer,
+            form,
+            #postcode-suggestions,
+            #questions-step,
+            #error-message,
+            .highlight-box,
+            .question-group,
+            a[href],
+            div[style*="Submit Your Objection"],
+            div[style*="How to Submit"],
+            .templates-container > div:not(.result-container) {
                 display: none !important;
+                visibility: hidden !important;
             }
 
-            /* Show only the generated content */
-            body {
-                background: white;
-            }
-
-            .result-container {
-                padding: 0;
-                margin: 0;
-            }
-
-            .template-content {
-                border: none;
-                background: white;
-                padding: 1in;
-                font-family: 'Times New Roman', Times, serif;
-                font-size: 12pt;
-                line-height: 1.5;
-                white-space: pre-wrap;
-                box-shadow: none;
-            }
-
-            /* Hide the personalization form when printing */
-            .result-container > div[style*="background: linear-gradient"] {
+            /* Hide all divs except the generated content */
+            .result-container > div:not(#generated-content) {
                 display: none !important;
+                visibility: hidden !important;
             }
         }
 
@@ -722,6 +756,13 @@
                     </div>
                 </div>
 
+                <!-- Instructional text -->
+                <div style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;">
+                    <p style="margin: 0; color: #856404; font-size: 0.95rem; text-align: center;">
+                        <strong>📄 How to use your letter:</strong> Click <strong>"Print Letter"</strong> to print directly to your printer, or click <strong>"Copy Text"</strong> to paste into your email or the online planning portal.
+                    </p>
+                </div>
+
                 <!-- Now Make It Yours Section -->
                 <div style="background: linear-gradient(135deg, #f0f9f0 0%, #e8f5e9 100%); border: 3px solid #4a7c59; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem;">
                     <h4 style="color: #2c5f2d; margin-bottom: 1rem; text-align: center;">✍️ Now Make It Yours</h4>
@@ -747,6 +788,13 @@
                 </div>
 
                 <div class="template-content" id="generated-content"></div>
+
+                <!-- Duplicate action buttons at bottom -->
+                <div style="display: flex; gap: 0.5rem; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap;">
+                    <button class="copy-button" id="copy-result-btn-bottom">📋 Copy Text</button>
+                    <button class="copy-button" id="print-btn-bottom">🖨️ Print Letter</button>
+                </div>
+
                 <div class="disclaimer">
                     <strong>⚠️ Important:</strong> Please review and personalize this template before submitting. Add specific details, check all facts, and ensure it reflects your authentic voice and concerns.
                 </div>
@@ -1674,12 +1722,30 @@ Make it personal, make it factual, make it COUNT!</div>
             errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
-        // Copy result button
+        // Copy result button (top)
         document.getElementById('copy-result-btn').addEventListener('click', function() {
             const content = document.getElementById('generated-content').textContent;
             navigator.clipboard.writeText(content).then(() => {
                 const originalText = this.textContent;
                 this.textContent = 'Copied!';
+                this.style.backgroundColor = '#28a745';
+
+                setTimeout(() => {
+                    this.textContent = originalText;
+                    this.style.backgroundColor = '#4a7c59';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                showError('Failed to copy to clipboard');
+            });
+        });
+
+        // Copy result button (bottom)
+        document.getElementById('copy-result-btn-bottom').addEventListener('click', function() {
+            const content = document.getElementById('generated-content').textContent;
+            navigator.clipboard.writeText(content).then(() => {
+                const originalText = this.textContent;
+                this.textContent = '✅ Copied!';
                 this.style.backgroundColor = '#28a745';
 
                 setTimeout(() => {
@@ -1877,8 +1943,13 @@ Make it personal, make it factual, make it COUNT!</div>
             generatedContent.textContent = letterHeader + rawLetterContent;
         }
 
-        // Print button functionality
+        // Print button functionality (top)
         document.getElementById('print-btn').addEventListener('click', function() {
+            window.print();
+        });
+
+        // Print button functionality (bottom)
+        document.getElementById('print-btn-bottom').addEventListener('click', function() {
             window.print();
         });
 
