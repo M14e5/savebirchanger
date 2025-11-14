@@ -541,6 +541,12 @@
 
         /* Print-friendly styles */
         @media print {
+            /* Remove browser default headers and footers */
+            @page {
+                margin: 0;
+                size: auto;
+            }
+
             /* Reset everything */
             body {
                 background: white !important;
@@ -628,18 +634,34 @@
                 page-break-inside: avoid !important;
             }
 
-            /* Remove all borders from containers and letter */
+            /* Remove all borders, outlines, and shadows from everything */
+            *,
+            *::before,
+            *::after,
+            body,
+            html,
+            .templates-container,
+            #ai-generator,
             .result-container,
             .template-content,
+            #generated-content,
             #generated-content.template-content,
             div.template-content {
-                border: none !important;
-                border-left: none !important;
-                border-right: none !important;
-                border-top: none !important;
-                border-bottom: none !important;
-                outline: none !important;
+                border: 0 !important;
+                border-style: none !important;
+                border-width: 0 !important;
+                border-color: transparent !important;
+                border-left: 0 none transparent !important;
+                border-right: 0 none transparent !important;
+                border-top: 0 none transparent !important;
+                border-bottom: 0 none transparent !important;
+                outline: 0 none transparent !important;
+                outline-width: 0 !important;
+                outline-style: none !important;
+                outline-offset: 0 !important;
                 box-shadow: none !important;
+                -webkit-box-shadow: none !important;
+                -moz-box-shadow: none !important;
             }
         }
 
@@ -1734,7 +1756,16 @@ Make it personal, make it factual, make it COUNT!</div>
             const resultContainer = document.getElementById('result-container');
             const generatedContent = document.getElementById('generated-content');
 
-            generatedContent.textContent = content;
+            // Get today's date in British format
+            const today = new Date().toLocaleDateString('en-GB', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+
+            // Add formal signoff to the letter with pre-filled date
+            const signoff = "\n\nYours sincerely,\n\n\nSigned: _____________________________\n\nDate: " + today;
+            generatedContent.textContent = content + signoff;
             resultContainer.classList.add('active');
 
             // Scroll to result
@@ -2106,18 +2137,21 @@ Make it personal, make it factual, make it COUNT!</div>
             const address = addressInput.value.trim();
             const generatedContent = document.getElementById('generated-content');
 
-            // If no personalization yet, use raw content
-            if (!name && !address) {
-                generatedContent.textContent = rawLetterContent;
-                return;
-            }
-
-            // Build formal letter header
+            // Build formal letter header with date
             const today = new Date().toLocaleDateString('en-GB', {
                 day: 'numeric',
                 month: 'long',
                 year: 'numeric'
             });
+
+            // Formal signoff with pre-filled date
+            const signoff = "\n\nYours sincerely,\n\n\nSigned: _____________________________\n\nDate: " + today;
+
+            // If no personalization yet, use raw content with signoff
+            if (!name && !address) {
+                generatedContent.textContent = rawLetterContent + signoff;
+                return;
+            }
 
             let letterHeader = '';
 
@@ -2133,8 +2167,8 @@ Make it personal, make it factual, make it COUNT!</div>
                 letterHeader += '\n' + today + '\n\n';
             }
 
-            // Combine header with original letter content
-            generatedContent.textContent = letterHeader + rawLetterContent;
+            // Combine header with original letter content and signoff
+            generatedContent.textContent = letterHeader + rawLetterContent + signoff;
         }
 
         // Print button functionality (top)
