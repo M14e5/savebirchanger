@@ -1766,8 +1766,27 @@ Make it personal, make it factual, make it COUNT!</div>
         const addressInput = document.getElementById('user-address');
         const nameInput = document.getElementById('user-name');
 
+        console.log('=== Address Autocomplete Initialization ===');
+        console.log('postcodeInput found:', !!postcodeInput, postcodeInput);
+        console.log('postcodeSuggestions found:', !!postcodeSuggestions, postcodeSuggestions);
+        console.log('addressInput found:', !!addressInput, addressInput);
+        console.log('nameInput found:', !!nameInput, nameInput);
+
+        // Only attach listeners if elements exist
+        if (!postcodeInput || !postcodeSuggestions || !addressInput || !nameInput) {
+            console.error('⚠️ REQUIRED ELEMENTS NOT FOUND! Cannot initialize address autocomplete.');
+            console.error('Missing elements:', {
+                postcodeInput: !postcodeInput,
+                postcodeSuggestions: !postcodeSuggestions,
+                addressInput: !addressInput,
+                nameInput: !nameInput
+            });
+        }
+
         // Debounced address search
-        postcodeInput.addEventListener('input', function() {
+        if (postcodeInput) {
+            console.log('✅ Attaching input event listener to postcode field');
+            postcodeInput.addEventListener('input', function() {
             const query = this.value.trim().toUpperCase();
             console.log('Postcode input changed:', query);
 
@@ -1848,6 +1867,9 @@ Make it personal, make it factual, make it COUNT!</div>
                 }
             }, 400);
         });
+        } else {
+            console.error('❌ postcodeInput element not found - event listener not attached');
+        }
 
         // Display address suggestions
         function displayAddressSuggestions(addresses) {
@@ -1888,6 +1910,13 @@ Make it personal, make it factual, make it COUNT!</div>
 
         // When user selects an address from the dropdown
         async function selectAddress(address) {
+            console.log('selectAddress called with:', address);
+
+            if (!postcodeInput || !addressInput || !postcodeSuggestions) {
+                console.error('selectAddress called but required elements not found');
+                return;
+            }
+
             // Set the postcode input to the selected postcode
             if (address.postcode) {
                 postcodeInput.value = address.postcode;
@@ -1933,17 +1962,35 @@ Make it personal, make it factual, make it COUNT!</div>
         }
 
         // Hide suggestions when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!postcodeInput.contains(e.target) && !postcodeSuggestions.contains(e.target)) {
-                postcodeSuggestions.style.display = 'none';
-            }
-        });
+        if (postcodeInput && postcodeSuggestions) {
+            document.addEventListener('click', function(e) {
+                if (!postcodeInput.contains(e.target) && !postcodeSuggestions.contains(e.target)) {
+                    postcodeSuggestions.style.display = 'none';
+                }
+            });
+        }
 
         // Real-time letter preview update
-        nameInput.addEventListener('input', updateLetterPreview);
-        addressInput.addEventListener('input', updateLetterPreview);
+        if (nameInput) {
+            console.log('✅ Attaching input event listener to name field');
+            nameInput.addEventListener('input', updateLetterPreview);
+        } else {
+            console.error('❌ nameInput element not found');
+        }
+
+        if (addressInput) {
+            console.log('✅ Attaching input event listener to address field');
+            addressInput.addEventListener('input', updateLetterPreview);
+        } else {
+            console.error('❌ addressInput element not found');
+        }
 
         function updateLetterPreview() {
+            if (!nameInput || !addressInput) {
+                console.error('updateLetterPreview called but inputs not found');
+                return;
+            }
+
             const name = nameInput.value.trim();
             const address = addressInput.value.trim();
             const generatedContent = document.getElementById('generated-content');
