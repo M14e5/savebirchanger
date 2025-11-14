@@ -1806,61 +1806,35 @@ Make it personal, make it factual, make it COUNT!</div>
             postcodeSearchTimeout = setTimeout(async () => {
                 console.log('Searching for addresses with query:', query);
                 try {
-                    // Try findaddress.io first for house-level address data
-                    console.log('Trying findaddress.io...');
-                    let response = await fetch(`https://api.findaddress.io/autocomplete?query=${encodeURIComponent(query)}&limit=20`);
+                    // Call findaddress.io API with API key
+                    console.log('Calling findaddress.io API...');
+                    const response = await fetch(`https://api.findaddress.io/autocomplete?query=${encodeURIComponent(query)}&limit=20`, {
+                        headers: {
+                            'Authorization': 'Bearer aaabadc946b2df14b885aa0e6aa590439d67d40c8ee4dbb23b6ca3e11b8a60cc'
+                        }
+                    });
+
+                    console.log('API response status:', response.status);
 
                     if (response.ok) {
                         const data = await response.json();
                         console.log('findaddress.io response:', data);
 
                         if (data.addresses && data.addresses.length > 0) {
-                            console.log('Found', data.addresses.length, 'addresses from findaddress.io');
+                            console.log('✅ Found', data.addresses.length, 'addresses from findaddress.io');
                             currentAddresses = data.addresses;
                             displayAddressSuggestions(data.addresses);
                             return;
                         } else {
-                            console.log('No addresses found from findaddress.io');
+                            console.log('No addresses found for this query');
+                            postcodeSuggestions.style.display = 'none';
                         }
                     } else {
-                        console.log('findaddress.io request failed:', response.status);
+                        console.error('findaddress.io request failed with status:', response.status);
+                        const errorText = await response.text();
+                        console.error('Error response:', errorText);
+                        postcodeSuggestions.style.display = 'none';
                     }
-
-                    // Fallback to postcodes.io for basic postcode lookup
-                    // Extract just the postcode part (e.g., "CM23 5EH" from "CM23 5EH 18")
-                    console.log('Trying postcodes.io fallback...');
-                    const postcodeMatch = query.match(/^([A-Z]{1,2}[0-9]{1,2}[A-Z]?\s?[0-9][A-Z]{2})/);
-                    if (postcodeMatch) {
-                        const postcode = postcodeMatch[1].replace(/\s/g, '');
-                        console.log('Extracted postcode:', postcode);
-                        response = await fetch(`https://api.postcodes.io/postcodes/${postcode}`);
-
-                        if (response.ok) {
-                            const data = await response.json();
-                            console.log('postcodes.io response:', data);
-                            if (data.result) {
-                                // Create a basic address from postcode data
-                                const addresses = [{
-                                    postcode: data.result.postcode,
-                                    town: data.result.admin_district,
-                                    county: data.result.admin_county,
-                                    country: data.result.country,
-                                    formatted: data.result.postcode
-                                }];
-                                console.log('Created address from postcodes.io:', addresses);
-                                currentAddresses = addresses;
-                                displayAddressSuggestions(addresses);
-                                return;
-                            }
-                        } else {
-                            console.log('postcodes.io request failed:', response.status);
-                        }
-                    } else {
-                        console.log('No valid postcode pattern found in query');
-                    }
-
-                    console.log('No results from any API, hiding suggestions');
-                    postcodeSuggestions.style.display = 'none';
                 } catch (error) {
                     console.error('Address lookup error:', error);
                     postcodeSuggestions.style.display = 'none';
