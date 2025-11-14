@@ -541,25 +541,20 @@
 
         /* Print-friendly styles */
         @media print {
-            /* Hide everything except the letter */
+            /* Reset everything */
             body {
-                background: white;
-                margin: 0;
-                padding: 0;
+                background: white !important;
+                margin: 0 !important;
+                padding: 0 !important;
             }
 
-            /* Hide all page elements */
+            /* Hide ALL page elements */
             .navbar,
             .templates-hero,
             .back-to-top,
             .result-header,
             .result-actions,
             .disclaimer,
-            .regenerate-button,
-            .copy-button,
-            .generator-step,
-            .ai-generator-section,
-            .template-section,
             button,
             nav,
             header,
@@ -568,39 +563,83 @@
             #postcode-suggestions,
             #questions-step,
             #error-message,
-            .highlight-box,
-            .question-group,
             a,
+            .template-section,
+            .generator-step,
+            .question-group,
+            .ai-generator-section > h2,
+            .ai-generator-section > .subtitle,
+            .ai-generator-section > p,
+            .highlight-box,
+            h2,
+            h3,
+            h4,
+            h5 {
+                display: none !important;
+            }
+
+            /* Hide everything in templates-container except ai-generator */
             .templates-container > *:not(#ai-generator) {
                 display: none !important;
             }
 
+            /* Ensure containers are visible */
+            .templates-container,
+            #ai-generator,
+            .result-container,
+            .result-container.active {
+                display: block !important;
+                visibility: visible !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                background: white !important;
+            }
+
             /* Hide everything in result container except the letter */
-            .result-container > *:not(#generated-content) {
+            .result-container > *:not(#generated-content),
+            .result-container > * ~ * {
                 display: none !important;
             }
 
-            /* Style the letter for printing */
-            .result-container {
-                display: block !important;
-                margin: 0;
-                padding: 0;
+            /* Hide all divs after generated-content */
+            #generated-content ~ * {
+                display: none !important;
             }
 
+            /* Ensure the letter is visible */
+            .result-container #generated-content {
+                display: block !important;
+            }
+
+            /* Style the letter for printing */
             #generated-content {
                 display: block !important;
-                visibility: visible !important;
-                position: static !important;
-                margin: 0;
-                padding: 0.5in;
-                border: none;
-                background: white;
-                font-family: 'Times New Roman', Times, serif;
-                font-size: 12pt;
-                line-height: 1.6;
-                white-space: pre-wrap;
-                box-shadow: none;
-                color: black;
+                margin: 0 !important;
+                padding: 0.75in !important;
+                border: none !important;
+                outline: none !important;
+                background: white !important;
+                font-family: 'Times New Roman', Times, serif !important;
+                font-size: 12pt !important;
+                line-height: 1.6 !important;
+                white-space: pre-wrap !important;
+                box-shadow: none !important;
+                color: black !important;
+                page-break-inside: avoid !important;
+            }
+
+            /* Remove all borders from containers and letter */
+            .result-container,
+            .template-content,
+            #generated-content.template-content,
+            div.template-content {
+                border: none !important;
+                border-left: none !important;
+                border-right: none !important;
+                border-top: none !important;
+                border-bottom: none !important;
+                outline: none !important;
+                box-shadow: none !important;
             }
         }
 
@@ -1805,14 +1844,56 @@ Make it personal, make it factual, make it COUNT!</div>
             // Debounce API calls (wait 400ms after user stops typing)
             postcodeSearchTimeout = setTimeout(async () => {
                 console.log('Searching for addresses with query:', query);
+
+                // Parse the query to extract house number and postcode
+                // Expected formats: "CM23 5EH", "CM235EH", "CM23 5EH 18", "CM235EH 18", "18 CM23 5EH"
+                let house = 'NULL';
+                let postcode = '';
+
+                // Remove extra spaces and split
+                const parts = query.trim().split(/\s+/);
+
+                // Check if first part is a number (house number at start)
+                if (parts.length > 1 && /^\d+[A-Z]?$/.test(parts[0])) {
+                    house = parts[0];
+                    postcode = parts.slice(1).join('');
+                } else if (parts.length > 1 && /^\d+[A-Z]?$/.test(parts[parts.length - 1])) {
+                    // House number at end
+                    house = parts[parts.length - 1];
+                    postcode = parts.slice(0, -1).join('');
+                } else {
+                    // No house number, just postcode
+                    postcode = parts.join('');
+                }
+
+                // Format postcode - add space if missing (e.g., CM235EH -> CM23 5EH)
+                const postcodePattern = /^([A-Z]{1,2}\d{1,2}[A-Z]?)(\d[A-Z]{2})$/;
+                const match = postcode.match(postcodePattern);
+                if (match) {
+                    postcode = match[1] + ' ' + match[2];
+                }
+
+                // Replace spaces with + for URL (as per docs)
+                const postcodeForUrl = postcode.replace(/\s/g, '+');
+
+                console.log('Parsed - House:', house, 'Postcode:', postcode);
+
                 try {
-                    // Call findaddress.io API with API key
-                    console.log('Calling findaddress.io API...');
-                    const response = await fetch(`https://api.findaddress.io/autocomplete?query=${encodeURIComponent(query)}&limit=20`, {
+                    // Call findaddress.io API with correct format: /API/{house}/{postcode}
+                    const apiUrl = `https://findaddress.io/API/${house}/${postcodeForUrl}`;
+                    console.log('Calling findaddress.io API:', apiUrl);
+
+                    const response = await fetch(apiUrl, {
+                        method: 'GET',
                         headers: {
-                            'Authorization': 'Bearer aaabadc946b2df14b885aa0e6aa590439d67d40c8ee4dbb23b6ca3e11b8a60cc'
+                            'x-api-key': 'aaabadc946b2df14b885aa0e6aa590439d67d40c8ee4dbb23b6ca3e11b8a60cc',
+                            'content-type': 'application/json',
+                            'cache-control': 'no-cache',
+                            'referer': window.location.origin
                         }
                     });
+
+                    console.log('Using referer:', window.location.origin);
 
                     console.log('API response status:', response.status);
 
@@ -1820,11 +1901,31 @@ Make it personal, make it factual, make it COUNT!</div>
                         const data = await response.json();
                         console.log('findaddress.io response:', data);
 
-                        if (data.addresses && data.addresses.length > 0) {
-                            console.log('✅ Found', data.addresses.length, 'addresses from findaddress.io');
-                            currentAddresses = data.addresses;
-                            displayAddressSuggestions(data.addresses);
+                        // Check if the API returned success or partial match
+                        if (data && (data.result === 'Success' || data.result === 'Partial match') && data.expandedAddress) {
+                            console.log('✅ Found address from findaddress.io:', data.result);
+
+                            // Convert the single result to array format for our display function
+                            const addresses = [{
+                                house: data.expandedAddress.house,
+                                street: data.expandedAddress.street,
+                                locality: data.expandedAddress.locality,
+                                town: data.expandedAddress.town,
+                                district: data.expandedAddress.district,
+                                county: data.expandedAddress.county,
+                                postcode: data.expandedAddress.pCode,
+                                csvAddress: data.csvAddress,
+                                latitude: data.latitude,
+                                longitude: data.longitude,
+                                isPartialMatch: data.result === 'Partial match'
+                            }];
+
+                            currentAddresses = addresses;
+                            displayAddressSuggestions(addresses);
                             return;
+                        } else if (data && data.result === 'Failure') {
+                            console.log('❌ API returned failure:', data.errorMsg);
+                            postcodeSuggestions.style.display = 'none';
                         } else {
                             console.log('No addresses found for this query');
                             postcodeSuggestions.style.display = 'none';
@@ -1848,15 +1949,35 @@ Make it personal, make it factual, make it COUNT!</div>
         // Display address suggestions
         function displayAddressSuggestions(addresses) {
             console.log('Displaying suggestions:', addresses.length, 'addresses');
+            console.log('First address structure:', addresses[0]);
             postcodeSuggestions.innerHTML = '';
 
             addresses.slice(0, 15).forEach((address, index) => {
                 const div = document.createElement('div');
                 div.className = 'postcode-suggestion';
 
-                // Format the address display
-                const addressText = address.formatted || formatAddressFromParts(address);
-                console.log('Address suggestion:', addressText);
+                // Format the address display - findaddress.io might use different field names
+                let addressText = '';
+                if (typeof address === 'string') {
+                    addressText = address;
+                } else if (address.address) {
+                    // If there's an 'address' field with the full address
+                    addressText = address.address;
+                } else if (address.formatted) {
+                    addressText = address.formatted;
+                } else {
+                    // Build from parts
+                    addressText = formatAddressFromParts(address);
+                }
+
+                // Add partial match indicator if needed
+                if (address.isPartialMatch) {
+                    addressText += ' (Partial match - some details may be missing)';
+                    div.style.fontStyle = 'italic';
+                    div.style.opacity = '0.8';
+                }
+
+                console.log('Address suggestion', index, ':', addressText);
                 div.textContent = addressText;
 
                 div.addEventListener('click', () => {
@@ -1872,14 +1993,23 @@ Make it personal, make it factual, make it COUNT!</div>
 
         // Format address from individual parts if needed
         function formatAddressFromParts(address) {
+            console.log('Formatting address from parts:', address);
             const parts = [];
-            if (address.building_number) parts.push(address.building_number);
-            if (address.building_name) parts.push(address.building_name);
-            if (address.street) parts.push(address.street);
+
+            // Try common field names (findaddress.io uses 'house', others use 'building_number')
+            if (address.house) parts.push(address.house);
+            if (address.building_number || address.buildingNumber) parts.push(address.building_number || address.buildingNumber);
+            if (address.building_name || address.buildingName) parts.push(address.building_name || address.buildingName);
+            if (address.street || address.thoroughfare) parts.push(address.street || address.thoroughfare);
             if (address.locality) parts.push(address.locality);
-            if (address.town) parts.push(address.town);
+            if (address.town || address.postTown) parts.push(address.town || address.postTown);
+            if (address.district) parts.push(address.district);
+            if (address.county) parts.push(address.county);
             if (address.postcode) parts.push(address.postcode);
-            return parts.filter(p => p).join(', ');
+
+            const formatted = parts.filter(p => p).join(', ');
+            console.log('Formatted address:', formatted);
+            return formatted || address.csvAddress || 'Address';
         }
 
         // When user selects an address from the dropdown
@@ -1901,8 +2031,9 @@ Make it personal, make it factual, make it COUNT!</div>
             // Build formatted address for the address textarea
             const addressLines = [];
 
-            // Line 1: Building number and street
+            // Line 1: House number/name and street (handle both findaddress.io and other formats)
             let line1 = '';
+            if (address.house) line1 += address.house + ' ';
             if (address.building_number) line1 += address.building_number + ' ';
             if (address.building_name) line1 += address.building_name + ' ';
             if (address.street) line1 += address.street;
@@ -1913,23 +2044,29 @@ Make it personal, make it factual, make it COUNT!</div>
                 addressLines.push(address.locality);
             }
 
-            // Line 3: Town/City
+            // Line 3: District (if present and different from town)
+            if (address.district && address.district !== address.town) {
+                addressLines.push(address.district);
+            }
+
+            // Line 4: Town/City
             if (address.town) {
                 addressLines.push(address.town);
             }
 
-            // Line 4: County
+            // Line 5: County
             if (address.county) {
                 addressLines.push(address.county);
             }
 
-            // Line 5: Postcode
+            // Line 6: Postcode
             if (address.postcode) {
                 addressLines.push(address.postcode);
             }
 
             // Fill the address textarea
             addressInput.value = addressLines.join('\n');
+            console.log('Address filled into textarea:', addressLines.join('\n'));
 
             // Trigger letter update
             updateLetterPreview();
