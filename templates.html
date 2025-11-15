@@ -1581,29 +1581,70 @@ Make it personal, make it factual, make it COUNT!</div>
                         });
 
                         checkboxContainer.appendChild(checkboxDiv);
-
-                        // If this is the "Other" option, add a text input
-                        if (q.hasOther && (option === 'Other' || option === 'Other reason' || option === 'Other issue' || option === 'Other concern' || option === 'Other problem')) {
-                            const otherInput = document.createElement('textarea');
-                            otherInput.id = `question-${index}-other`;
-                            otherInput.placeholder = 'Please specify...';
-                            otherInput.style.width = '100%';
-                            otherInput.style.marginTop = '0.5rem';
-                            otherInput.style.padding = '0.5rem';
-                            otherInput.style.border = '2px solid #e0e0e0';
-                            otherInput.style.borderRadius = '4px';
-                            otherInput.style.display = 'none';
-                            otherInput.rows = 2;
-
-                            checkbox.addEventListener('change', function() {
-                                otherInput.style.display = this.checked ? 'block' : 'none';
-                            });
-
-                            checkboxDiv.appendChild(otherInput);
-                        }
                     });
 
                     questionDiv.appendChild(checkboxContainer);
+
+                    // If this question has an "Other" option, create a full-width text box below all checkboxes
+                    if (q.hasOther) {
+                        const otherInputContainer = document.createElement('div');
+                        otherInputContainer.style.display = 'none';
+                        otherInputContainer.style.marginTop = '1rem';
+                        otherInputContainer.id = `question-${index}-other-container`;
+
+                        const otherLabel = document.createElement('label');
+                        otherLabel.textContent = 'Please specify:';
+                        otherLabel.style.display = 'block';
+                        otherLabel.style.marginBottom = '0.5rem';
+                        otherLabel.style.fontWeight = '500';
+                        otherLabel.style.color = '#2c5f2d';
+
+                        const otherInput = document.createElement('textarea');
+                        otherInput.id = `question-${index}-other`;
+                        otherInput.placeholder = 'Please tell us more...';
+                        otherInput.style.width = '100%';
+                        otherInput.style.padding = '0.75rem';
+                        otherInput.style.border = '2px solid #e0e0e0';
+                        otherInput.style.borderRadius = '6px';
+                        otherInput.style.fontSize = '1rem';
+                        otherInput.style.fontFamily = 'inherit';
+                        otherInput.style.transition = 'border-color 0.3s';
+                        otherInput.rows = 3;
+
+                        otherInput.addEventListener('focus', function() {
+                            this.style.borderColor = '#4a7c59';
+                        });
+
+                        otherInput.addEventListener('blur', function() {
+                            this.style.borderColor = '#e0e0e0';
+                        });
+
+                        otherInputContainer.appendChild(otherLabel);
+                        otherInputContainer.appendChild(otherInput);
+                        questionDiv.appendChild(otherInputContainer);
+
+                        // Show/hide the "Other" text box when any "Other" checkbox is toggled
+                        checkboxContainer.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                            const isOtherOption = cb.value.includes('Other');
+                            if (isOtherOption) {
+                                cb.addEventListener('change', function() {
+                                    if (this.checked) {
+                                        otherInputContainer.style.display = 'block';
+                                        // Focus the text box for better UX
+                                        setTimeout(() => otherInput.focus(), 100);
+                                    } else {
+                                        // Check if any other "Other" checkbox is still checked
+                                        const anyOtherChecked = Array.from(checkboxContainer.querySelectorAll('input[type="checkbox"]'))
+                                            .some(checkbox => checkbox.value.includes('Other') && checkbox.checked);
+                                        if (!anyOtherChecked) {
+                                            otherInputContainer.style.display = 'none';
+                                            otherInput.value = ''; // Clear the text when hiding
+                                        }
+                                    }
+                                });
+                            }
+                        });
+                    }
 
                     // Add helper text
                     const helperText = document.createElement('small');
