@@ -7,6 +7,124 @@
     <meta name="description" content="Preserve Birchanger's 1000-year heritage from City & Country's 180-home development claiming 'grey belt' status under NPPF Paragraph 155. Protect our 12th-century church, ancient woodland, and village community.">
     <meta name="keywords" content="Birchanger, historic village, Green Belt, St Mary's Church, ancient woodland, Essex heritage, village identity">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- PostHog Analytics - Loaded immediately with opt-out by default -->
+    <script>
+        // Load PostHog immediately with opt-out by default for GDPR compliance
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init fi Cr Or ci Tr Ir capture Mi calculateEventProperties Ar register register_once register_for_session unregister unregister_for_session Nr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty jr Mr createPersonProfile Lr kr Ur opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Fr debug M Dr getPageViewId captureTraceFeedback captureTraceMetric $r".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+
+        // Initialize PostHog - TESTING: Removed opt-out to test if sequencing is the issue
+        // Using Cloudflare reverse proxy to prevent ad-blocker blocking
+        posthog.init('phc_bapf3RKKWohziv8014UqPW1ySks6p6NFHLbLZRPGJfz', {
+            api_host: 'https://ph.saveourvillages.co.uk',
+            defaults: '2025-05-24',
+            person_profiles: 'identified_only',
+            opt_out_capturing_by_default: false,  // TESTING: Changed to false
+            persistence: 'localStorage'
+        });
+
+        // Function to capture landing page data to PostHog (only after consent)
+        function captureLandingPageToPostHog() {
+            try {
+                // Check if we have pending landing page data
+                const pendingLandingData = sessionStorage.getItem('pendingLandingPageData');
+
+                if (pendingLandingData && window.posthog) {
+                    const landingData = JSON.parse(pendingLandingData);
+                    console.log('Sending landing page data to PostHog:', landingData);
+
+                    posthog.capture('landing_page_view', landingData);
+
+                    // Clear the pending data after sending
+                    sessionStorage.removeItem('pendingLandingPageData');
+                    console.log('Landing page data sent and cleared');
+                }
+            } catch (e) {
+                console.error('Error capturing landing page to PostHog:', e);
+            }
+        }
+
+        // Check for existing consent on page load and restore opt-in state
+        (function() {
+            try {
+                const consentData = localStorage.getItem('cookieConsent');
+                if (consentData) {
+                    const consent = JSON.parse(consentData);
+                    if (consent.analytics === true) {
+                        posthog.opt_in_capturing();
+                        console.log('PostHog opt-in restored from saved consent');
+
+                        // User has already consented - send any pending landing page data
+                        setTimeout(function() {
+                            captureLandingPageToPostHog();
+                        }, 1000);
+                    } else if (consent.analytics === false) {
+                        posthog.opt_out_capturing();
+                        console.log('PostHog opt-out maintained from saved consent');
+                    }
+                }
+            } catch (e) {
+                console.error('Error checking cookie consent:', e);
+            }
+        })();
+
+        // TESTING: Capture landing page information immediately (no consent wait)
+        window.addEventListener('load', function() {
+            try {
+                // First check if we have stored landing page data from a 404 redirect
+                const stored404Data = sessionStorage.getItem('landingPageData');
+
+                let landingPageData;
+
+                if (stored404Data) {
+                    // User came from a 404 page - use that data
+                    const landingData = JSON.parse(stored404Data);
+                    console.log('Found 404 landing page data:', landingData);
+
+                    landingPageData = {
+                        path: landingData.path,
+                        referrer: landingData.referrer,
+                        redirected_from_404: true,
+                        actual_landing_url: landingData.url,
+                        original_timestamp: landingData.timestamp,
+                        current_timestamp: new Date().toISOString(),
+                        // Override PostHog's automatic URL capture with the original landing URL
+                        $current_url: landingData.url,
+                        $pathname: landingData.path,
+                        $referrer: landingData.referrer
+                    };
+
+                    // Clear the 404 data
+                    sessionStorage.removeItem('landingPageData');
+                } else {
+                    // Normal landing page (no 404 redirect)
+                    const urlParams = new URLSearchParams(window.location.search);
+                    landingPageData = {
+                        path: window.location.pathname,
+                        referrer: document.referrer || 'direct',
+                        utm_source: urlParams.get('utm_source') || null,
+                        utm_medium: urlParams.get('utm_medium') || null,
+                        utm_campaign: urlParams.get('utm_campaign') || null,
+                        redirected_from_404: false,
+                        timestamp: new Date().toISOString(),
+                        // Set PostHog's automatic properties explicitly
+                        $current_url: window.location.href,
+                        $pathname: window.location.pathname
+                    };
+                }
+
+                // TESTING: Send immediately to PostHog (no consent wait)
+                console.log('TESTING: Sending landing page data immediately:', landingPageData);
+                if (window.posthog) {
+                    posthog.capture('landing_page_view', landingPageData);
+                    console.log('Landing page data sent to PostHog immediately');
+                }
+
+            } catch (e) {
+                console.error('Error capturing landing page:', e);
+            }
+        });
+    </script>
 </head>
 <body>
     <!-- Header -->
