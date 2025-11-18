@@ -19,7 +19,8 @@
             defaults: '2025-05-24',
             person_profiles: 'identified_only',
             opt_out_capturing_by_default: false,  // TESTING: Changed to false
-            persistence: 'localStorage'
+            persistence: 'localStorage',
+            disable_toolbar: true  // Hide PostHog toolbar from visitors
         });
 
         // Function to capture landing page data to PostHog (only after consent)
