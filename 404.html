@@ -96,7 +96,10 @@
             person_profiles: 'identified_only',
             opt_out_capturing_by_default: false,  // TESTING: Changed to false
             persistence: 'localStorage',
-            disable_toolbar: true  // Hide PostHog toolbar from visitors
+            disable_toolbar: true,  // Hide PostHog toolbar from visitors
+            disable_surveys: true,  // Disable survey popups
+            disable_session_recording: true,  // Disable session recording UI
+            advanced_disable_decide: true  // Disable feature flags/surveys from server
         });
 
         // Function to capture landing page data to PostHog (only after consent)
