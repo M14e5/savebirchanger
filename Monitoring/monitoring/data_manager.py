@@ -28,13 +28,60 @@ METADATA_PATH = DATA_DIR / 'metadata.json'
 # Ensure data directory exists
 DATA_DIR.mkdir(exist_ok=True)
 
+def validate_scrape_results(results):
+    """
+    Validate scrape results before saving
+
+    Returns:
+        tuple: (is_valid, error_message)
+    """
+    # Check if all scrapes failed
+    all_failed = all(not data['success'] for data in results.values())
+    if all_failed:
+        return False, "All scrapes failed - refusing to save zero counts"
+
+    # Check against previous data if it exists
+    if JSON_PATH.exists():
+        try:
+            with open(JSON_PATH, 'r') as f:
+                prev_data = json.load(f)
+
+            for app_id, data in results.items():
+                if data['success']:
+                    prev_app = prev_data.get('applications', {}).get(app_id, {})
+                    prev_total = prev_app.get('total', 0)
+                    new_total = data['total_count']
+
+                    # Objection counts should never decrease
+                    if prev_total > 0 and new_total < prev_total:
+                        return False, f"Objection count for {app_id} decreased from {prev_total} to {new_total} - data integrity check failed"
+
+                    # Warn if count is zero when previous had data
+                    if prev_total > 0 and new_total == 0:
+                        return False, f"Objection count for {app_id} is zero but was previously {prev_total} - refusing to overwrite"
+
+        except Exception as e:
+            logger.warning(f"Could not validate against previous data: {e}")
+            # Continue anyway if we can't read previous data
+
+    return True, None
+
 def save_scrape_results(results):
     """
     Save scrape results to both CSV timeseries and JSON snapshot
 
     Args:
         results: Dict from scraper.scrape_all_applications()
+
+    Returns:
+        bool: True if saved successfully, False otherwise
     """
+    # Validate before saving
+    is_valid, error_msg = validate_scrape_results(results)
+    if not is_valid:
+        logger.error(f"Validation failed: {error_msg}")
+        return False
+
     timestamp = datetime.now().isoformat()
 
     try:

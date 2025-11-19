@@ -72,7 +72,7 @@ def scrape_application(app_id, url, app_name):
     }
 
     try:
-        response = requests.get(url, headers=headers, timeout=30)
+        response = requests.get(url, headers=headers, timeout=60)
         response.raise_for_status()
 
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -226,13 +226,21 @@ def print_summary(results):
     print("="*80 + "\n")
 
 if __name__ == "__main__":
+    import sys
+
     results = scrape_all_applications()
     print_summary(results)
 
     # Save results to data files
     try:
         from data_manager import save_scrape_results
-        save_scrape_results(results)
-        logger.info("Results saved successfully")
+        saved = save_scrape_results(results)
+        if saved:
+            logger.info("Results saved successfully")
+            sys.exit(0)
+        else:
+            logger.error("Results validation failed - data not saved")
+            sys.exit(1)
     except Exception as e:
         logger.error(f"Failed to save results: {e}")
+        sys.exit(1)

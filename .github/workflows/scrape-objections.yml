@@ -39,16 +39,19 @@ jobs:
           pip install -r Monitoring/requirements_monitoring.txt
 
       - name: Run scraper
+        id: scraper
         run: |
           cd Monitoring/monitoring
           python scraper.py
 
       - name: Configure git
+        if: success()
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
 
       - name: Commit and push if changes
+        if: success()
         run: |
           git add monitoring_data/
           if git diff --staged --quiet; then
