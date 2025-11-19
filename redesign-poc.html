@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Our Villages - Redesign POC</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a7c59 100%);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section - REDESIGNED */
+        .hero {
+            background: linear-gradient(rgba(44, 95, 45, 0.8), rgba(74, 124, 89, 0.8)),
+                        url('img/header.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 3rem 2rem 5rem;
+            position: relative;
+            color: white;
+        }
+
+        .hero-badge {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+            animation: badgePulse 2s infinite;
+        }
+
+        @keyframes badgePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            max-width: 900px;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.95;
+        }
+
+        /* Hero Progress Tracker */
+        .hero-progress {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 1.5rem 2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .hero-progress-count {
+            color: #ffd93d;
+            font-size: 1.1rem;
+        }
+
+        .hero-progress-bar-container {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            height: 35px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: width 1s ease;
+            min-width: 60px;
+        }
+
+        .hero-progress-percentage {
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-progress-stat {
+            text-align: center;
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        /* Hero Action Buttons */
+        .hero-action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 auto 1.5rem;
+            max-width: 800px;
+        }
+
+        .hero-action-btn {
+            flex: 1;
+            min-width: 280px;
+            padding: 18px 30px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-action-btn-blue {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+
+        .hero-action-btn-pink {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+        }
+
+        .hero-action-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Hero Counters */
+        .hero-counters {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 auto 1.5rem;
+            max-width: 700px;
+        }
+
+        .hero-counter {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            min-width: 150px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+        }
+
+        .hero-counter:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-counter-blue {
+            border-top: 4px solid #4facfe;
+        }
+
+        .hero-counter-pink {
+            border-top: 4px solid #fa709a;
+        }
+
+        .hero-counter-number {
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 1;
+            margin-bottom: 0.3rem;
+        }
+
+        .hero-counter-blue .hero-counter-number {
+            color: #4facfe;
+        }
+
+        .hero-counter-pink .hero-counter-number {
+            color: #fa709a;
+        }
+
+        .hero-counter-label {
+            font-size: 0.85rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .hero-expand-btn {
+            background: linear-gradient(135deg, #ffd93d 0%, #ffcd00 100%);
+            color: #1a3a1b;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 217, 61, 0.4);
+            transition: all 0.3s;
+        }
+
+        .hero-expand-btn:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 217, 61, 0.6);
+        }
+
+        .hero-expand-btn:focus-visible {
+            outline: 3px solid white;
+            outline-offset: 3px;
+        }
+
+        /* Hero Email Alternative */
+        .hero-email-alt {
+            font-size: 1rem;
+            margin: 0 auto 3rem;
+            max-width: 600px;
+            opacity: 0.95;
+        }
+
+        .hero-email-alt a {
+            color: #ffd93d;
+            font-weight: 600;
+            text-decoration: underline;
+            transition: opacity 0.3s;
+        }
+
+        .hero-email-alt a:hover {
+            opacity: 0.8;
+        }
+
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        .scroll-arrow {
+            width: 30px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            position: relative;
+            margin: 0 auto 10px;
+        }
+
+        .scroll-arrow::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            animation: scrollDot 2s infinite;
+        }
+
+        @keyframes scrollDot {
+            0% { top: 10px; opacity: 1; }
+            50% { top: 30px; opacity: 0.3; }
+            100% { top: 10px; opacity: 1; }
+        }
+
+        .scroll-text {
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Progress Tracker */
+        .progress-tracker {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .progress-tracker h2 {
+            color: #2c5f2d;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .progress-bar-container {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50px;
+            height: 50px;
+            overflow: hidden;
+            margin: 1.5rem auto;
+            max-width: 800px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4a7c59 0%, #2c5f2d 100%);
+            width: 7.4%;
+            transition: width 1s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            min-width: 100px;
+            box-shadow: 0 0 20px rgba(44, 95, 45, 0.3);
+        }
+
+        .progress-message {
+            font-size: 1.2rem;
+            color: #2c5f2d;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+
+        .progress-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .progress-stat {
+            text-align: center;
+        }
+
+        .progress-stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2c5f2d;
+        }
+
+        .progress-stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* What/When/Where Cards */
+        .w5-section {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .w5-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2c5f2d;
+            margin-bottom: 3rem;
+        }
+
+        .w5-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .w5-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            border-top: 5px solid;
+        }
+
+        .w5-card.what { border-top-color: #4a7c59; }
+        .w5-card.when { border-top-color: #ff6b6b; }
+        .w5-card.where { border-top-color: #4facfe; }
+
+        .w5-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .w5-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .w5-card h3 {
+            font-size: 1.8rem;
+            color: #2c5f2d;
+            margin-bottom: 1rem;
+        }
+
+        .w5-card p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        /* Countdown Timer */
+        .countdown-timer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .countdown-item {
+            text-align: center;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .countdown-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .countdown-label {
+            display: block;
+            font-size: 0.75rem;
+            margin-top: 0.3rem;
+            opacity: 0.9;
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #2c5f2d;
+            border-color: #2c5f2d;
+        }
+
+        .btn-secondary:hover {
+            background: #2c5f2d;
+            color: white;
+        }
+
+        /* Action Details Section */
+        .action-details {
+            background: linear-gradient(to bottom, #f8f9fa 0%, white 100%);
+            padding: 4rem 2rem;
+        }
+
+        .action-details h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2c5f2d;
+            margin-bottom: 2rem;
+        }
+
+        .alert-banner {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            color: white;
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .application-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 2rem auto;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 3px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .app-card:hover {
+            border-color: #4a7c59;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .app-card h3 {
+            color: #2c5f2d;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-ref {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2c5f2d;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-family: 'Courier New', monospace;
+            margin: 0.5rem 0 1.5rem;
+        }
+
+        .app-stat {
+            margin: 1.5rem 0;
+        }
+
+        .app-stat .stat-number {
+            display: block;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #4a7c59;
+            line-height: 1;
+        }
+
+        .app-stat .stat-label {
+            display: block;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .email-alternative {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .email-alternative a {
+            color: #ff6b6b;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Accessibility */
+        .btn:focus-visible,
+        .objection-badge:focus-visible {
+            outline: 3px solid #ffd93d;
+            outline-offset: 4px;
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 75vh;
+                padding: 2rem 1rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero-progress {
+                padding: 1.25rem 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero-progress-header {
+                font-size: 0.85rem;
+            }
+
+            .hero-progress-count {
+                font-size: 1rem;
+            }
+
+            .hero-action-buttons {
+                flex-direction: column;
+                gap: 0.75rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .hero-action-btn {
+                min-width: 100%;
+                padding: 16px 24px;
+                font-size: 1rem;
+            }
+
+            .hero-counters {
+                flex-direction: column;
+                gap: 0.75rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .hero-counter {
+                min-width: 100%;
+                max-width: 300px;
+            }
+
+            .hero-expand-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .hero-email-alt {
+                font-size: 0.9rem;
+                margin-bottom: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .w5-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .countdown-timer {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .progress-stats {
+                gap: 1.5rem;
+            }
+
+            .scroll-indicator {
+                bottom: 20px;
+            }
+        }
+
+        /* POC Banner */
+        .poc-banner {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 200;
+        }
+
+        .poc-banner a {
+            color: #ffd93d;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- POC Indicator Banner -->
+    <div class="poc-banner">
+        🎨 PROOF OF CONCEPT - Redesign Preview | <a href="index.html">View Current Live Site</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Save Our Villages</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#action">Take Action</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- REDESIGNED HERO SECTION -->
+    <div class="hero">
+        <h1>Save Birchanger</h1>
+        <p class="hero-subtitle">Protect Our Green Belt - Object to 480 Homes on Precious Countryside</p>
+
+        <!-- Progress Tracker IN HERO -->
+        <div class="hero-progress">
+            <div class="hero-progress-header">
+                <span class="hero-progress-label">Community Objections</span>
+                <span class="hero-progress-count"><span id="hero-total">74</span> / 1,000</span>
+            </div>
+            <div class="hero-progress-bar-container">
+                <div class="hero-progress-bar" id="hero-progress-fill" style="width: 7.4%;">
+                    <span class="hero-progress-percentage" id="hero-percentage">7.4%</span>
+                </div>
+            </div>
+            <div class="hero-progress-stat">
+                <span id="hero-daily-rate">~11 per day</span>
+            </div>
+        </div>
+
+        <!-- Two Application Action Buttons -->
+        <div class="hero-action-buttons">
+            <a href="https://publicaccess.uttlesford.gov.uk/online-applications/applicationDetails.do?keyVal=T5CHIEQNG2G00&activeTab=summary"
+               target="_blank"
+               class="hero-action-btn hero-action-btn-blue">
+                View and Object to Plan 1 (Birchanger)
+            </a>
+            <a href="https://publicaccess.uttlesford.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=T5CHIWQNG2J00"
+               target="_blank"
+               class="hero-action-btn hero-action-btn-pink">
+                View and Object to Plan 2 (Stansted)
+            </a>
+        </div>
+
+        <!-- Objection Counters with Expand Button -->
+        <div class="hero-counters">
+            <div class="hero-counter hero-counter-blue">
+                <div class="hero-counter-number" id="birchanger-count-hero">38</div>
+                <div class="hero-counter-label">Birchanger Objections</div>
+            </div>
+
+            <button onclick="alert('This would open the detailed statistics modal from the main site')"
+                    class="hero-expand-btn">
+                📊 Expand Details
+            </button>
+
+            <div class="hero-counter hero-counter-pink">
+                <div class="hero-counter-number" id="stansted-count-hero">36</div>
+                <div class="hero-counter-label">Stansted Objections</div>
+            </div>
+        </div>
+
+        <!-- Email Alternative -->
+        <p class="hero-email-alt">
+            Prefer to object by email? Contact
+            <a href="mailto:Cllr.Ray.Gooding@essex.gov.uk">Cllr.Ray.Gooding@essex.gov.uk</a>
+        </p>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span class="scroll-text">Learn More</span>
+        </div>
+    </div>
+
+    <!-- PROGRESS TRACKER -->
+    <section class="progress-tracker">
+        <h2>Community Response</h2>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar">
+                <span id="progress-label">74 of 1,000</span>
+            </div>
+        </div>
+        <p class="progress-message">
+            <strong id="remaining-count">926</strong> more objections needed to demonstrate overwhelming opposition
+        </p>
+        <div class="progress-stats">
+            <div class="progress-stat">
+                <span class="progress-stat-number" id="percentage">7.4%</span>
+                <span class="progress-stat-label">of goal reached</span>
+            </div>
+            <div class="progress-stat">
+                <span class="progress-stat-number" id="daily-rate">~11</span>
+                <span class="progress-stat-label">objections per day</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT/WHEN/WHERE CARDS -->
+    <section class="w5-section">
+        <div class="container">
+            <h2>Know the Facts</h2>
+
+            <div class="w5-cards">
+                <!-- WHAT Card -->
+                <div class="w5-card what">
+                    <span class="w5-icon">🏘️</span>
+                    <h3>What's Threatened?</h3>
+                    <p>480 homes on protected Green Belt land between Birchanger and Stansted Mountfitchet. Split into <strong>TWO separate applications</strong> - both need objections to stop this development.</p>
+                    <a href="#details" class="btn btn-secondary">Full Details →</a>
+                </div>
+
+                <!-- WHEN Card -->
+                <div class="w5-card when">
+                    <span class="w5-icon">⏰</span>
+                    <h3>When Can I Act?</h3>
+                    <p><strong>Object NOW</strong> - consultation window is open. Every objection strengthens the case against inappropriate development.</p>
+
+                    <div class="countdown-timer" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">--</span>
+                            <span class="countdown-label">DAYS</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">--</span>
+                            <span class="countdown-label">HOURS</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">--</span>
+                            <span class="countdown-label">MINS</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">--</span>
+                            <span class="countdown-label">SECS</span>
+                        </div>
+                    </div>
+
+                    <a href="templates.html" class="btn btn-primary">Object Now →</a>
+                </div>
+
+                <!-- WHERE Card -->
+                <div class="w5-card where">
+                    <span class="w5-icon">📍</span>
+                    <h3>Where Is It?</h3>
+                    <p>Green Belt land between our two historic villages. This development would merge Birchanger and Stansted, destroying the countryside buffer that has existed for over 1,000 years.</p>
+                    <a href="#impact" class="btn btn-secondary">See Impact →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTION DETAILS SECTION (Moved from hero) -->
+    <section class="action-details" id="action">
+        <div class="container">
+            <h2>How to Object to Both Applications</h2>
+
+            <div class="alert-banner">
+                ⚠️ IMPORTANT: Two separate applications - both need objecting to!
+            </div>
+
+            <div class="application-cards">
+                <div class="app-card">
+                    <h3>Birchanger Application</h3>
+                    <span class="app-ref">UTT/25/3011/OP</span>
+                    <div class="app-stat">
+                        <span class="stat-number">38</span>
+                        <span class="stat-label">Objections Submitted</span>
+                    </div>
+                    <p style="margin-bottom: 1rem;">180 homes on Green Belt</p>
+                    <a href="https://publicaccess.uttlesford.gov.uk/online-applications/applicationDetails.do?keyVal=T5CHIEQNG2G00&activeTab=summary" class="btn btn-primary" target="_blank">View & Object →</a>
+                </div>
+
+                <div class="app-card">
+                    <h3>Stansted Application</h3>
+                    <span class="app-ref">UTT/25/3012/OP</span>
+                    <div class="app-stat">
+                        <span class="stat-number">36</span>
+                        <span class="stat-label">Objections Submitted</span>
+                    </div>
+                    <p style="margin-bottom: 1rem;">300 homes + commercial</p>
+                    <a href="https://publicaccess.uttlesford.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=T5CHIWQNG2J00" class="btn btn-primary" target="_blank">View & Object →</a>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin: 2rem 0 1rem; color: #666;">
+                <small>Note: To object on the online portal you must create an account and comment on each application</small>
+            </p>
+
+            <div class="email-alternative">
+                Or email your objection to <a href="mailto:Planning@uttlesford.gov.uk">Planning@uttlesford.gov.uk</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            // Set deadline (example: 30 days from now - replace with actual deadline)
+            const deadline = new Date();
+            deadline.setDate(deadline.getDate() + 30); // 30 days from today
+
+            const now = new Date();
+            const diff = deadline - now;
+
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = String(days).padStart(2, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            } else {
+                document.getElementById('countdown').innerHTML = '<p style="color: #ff6b6b; font-weight: bold;">Consultation period - Object now!</p>';
+            }
+        }
+
+        // Update countdown every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Load objection data
+        async function loadObjectionData() {
+            try {
+                const response = await fetch('/monitoring_data/latest.json');
+                const data = await response.json();
+
+                const birchangerTotal = data.applications.birchanger?.total || 38;
+                const stanstedTotal = data.applications.stansted?.total || 36;
+                const total = birchangerTotal + stanstedTotal;
+                const target = 1000;
+                const percentage = ((total / target) * 100).toFixed(1);
+                const remaining = target - total;
+
+                // Calculate daily rate (total / 7 days)
+                const dailyRate = Math.round(total / 7);
+
+                // Update HERO elements
+                document.getElementById('hero-total').textContent = total;
+                document.getElementById('hero-percentage').textContent = percentage + '%';
+                document.getElementById('hero-daily-rate').textContent = '~' + dailyRate + ' per day';
+                document.getElementById('hero-progress-fill').style.width = percentage + '%';
+                document.getElementById('birchanger-count-hero').textContent = birchangerTotal;
+                document.getElementById('stansted-count-hero').textContent = stanstedTotal;
+
+                // Update PROGRESS SECTION elements
+                document.getElementById('progress-label').textContent = `${total} of ${target}`;
+                document.getElementById('percentage').textContent = percentage + '%';
+                document.getElementById('remaining-count').textContent = remaining;
+                document.getElementById('progress-bar').style.width = percentage + '%';
+                document.getElementById('daily-rate').textContent = '~' + dailyRate;
+
+            } catch (error) {
+                console.log('Using fallback objection data');
+            }
+        }
+
+        // Load data when page loads
+        window.addEventListener('load', loadObjectionData);
+
+        // Scroll indicator fade out
+        window.addEventListener('scroll', function() {
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            if (scrollIndicator) {
+                if (window.scrollY > 100) {
+                    scrollIndicator.style.opacity = '0';
+                } else {
+                    scrollIndicator.style.opacity = '0.9';
+                }
+            }
+        });
+
+        // Smooth scroll for card CTAs
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
