@@ -20,6 +20,11 @@
             100% { top: 10px; opacity: 1; }
         }
 
+        @keyframes flicker {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+
         /* Responsive grid for objection tracker and social sharing */
         @media (max-width: 768px) {
             .hero-grid {
@@ -203,7 +208,7 @@
         <div style="text-align: center; margin-top: 1.5rem; max-width: 1100px; margin-left: auto; margin-right: auto;">
 
             <!-- Objections Progress and Social Sharing -->
-            <div class="hero-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 1100px; margin: 0 auto 2rem;">
+            <div class="hero-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; max-width: 1300px; margin: 0 auto 2rem;">
 
                 <!-- Left: Progress Meter -->
                 <div style="background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px); border-radius: 15px; padding: 1rem 1.5rem; border: 2px solid rgba(255, 255, 255, 0.2);">
@@ -221,32 +226,58 @@
                     </div>
                 </div>
 
+                <!-- Middle: Deadline Countdown -->
+                <div style="background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px); border-radius: 15px; padding: 1rem 1.5rem; border: 2px solid rgba(255, 255, 255, 0.2);">
+                    <div style="text-align: center; color: white;">
+                        <div style="font-size: 0.95rem; font-weight: 600; margin-bottom: 0.75rem;">Objection Deadline</div>
+                        <div style="font-size: 1.3rem; font-weight: bold; color: #ffd93d; margin-bottom: 0.5rem;">13th December</div>
+
+                        <!-- Fuse Icon -->
+                        <div style="margin: 0.75rem auto; width: 100%; max-width: 200px;">
+                            <div style="display: flex; align-items: center; gap: 4px;">
+                                <!-- Spark/Fire -->
+                                <div style="font-size: 1.2rem; animation: flicker 1s infinite;">🔥</div>
+                                <!-- Fuse Progress Bar -->
+                                <div style="flex: 1; background: rgba(255, 255, 255, 0.2); border-radius: 10px; height: 12px; overflow: hidden; position: relative;">
+                                    <div id="fuse-fill" style="height: 100%; background: linear-gradient(90deg, #ffd93d 0%, #ffcd00 100%); border-radius: 10px; transition: width 1s ease; width: 0%;"></div>
+                                </div>
+                                <!-- Bomb emoji at the end -->
+                                <div style="font-size: 1.1rem;">💣</div>
+                            </div>
+                        </div>
+
+                        <div style="font-size: 0.85rem; opacity: 0.9; margin-top: 0.5rem;">
+                            <span id="days-remaining">24 days</span> remaining
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Right: Social Sharing Section -->
                 <div style="background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); border-radius: 15px; padding: 1rem 1.5rem; border: 2px solid rgba(255, 255, 255, 0.2);">
                     <h3 style="color: white; font-size: 1rem; margin: 0 0 1rem 0; text-align: center; font-weight: 600; line-height: 1.3;">We're stronger together. We're stronger than any developer. Share this with friends and family:</h3>
                     <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
                             <!-- X (Twitter) Share Button -->
-                            <a href="https://twitter.com/intent/tweet?text=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%0A%0AI%27ve%20just%20submitted%20an%20objection%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20but%20we%20need%20926%20more!%0A%0AAdd%20your%20voice%3A%20saveourvillages.co.uk%0A%0AEvery%20objection%20is%20counted.%20%23SaveOurVillages" id="share-x" target="_blank" title="Share on X" style="background: #000; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.2)';">
+                            <a href="https://twitter.com/intent/tweet?text=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%2C%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%20I%27ve%20just%20submitted%20an%20objection%20to%20City%20%26%20Country%27s%20plans%20for%20Birchanger%20and%20Stansted%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20-%20but%20we%20need%20926%20more!%20Add%20your%20voice%3A%20saveourvillages.co.uk" id="share-x" target="_blank" title="Share on X" style="background: #000; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.2)';">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                             </a>
 
                             <!-- Facebook Share Button -->
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsaveourvillages.co.uk&quote=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%0A%0AI%27ve%20just%20submitted%20an%20objection%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20but%20we%20need%20926%20more!%0A%0AAdd%20your%20voice%3A%20saveourvillages.co.uk%0A%0AEvery%20objection%20is%20counted.%20%23SaveOurVillages" id="share-facebook" target="_blank" title="Share on Facebook" style="background: #1877F2; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.2)';">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsaveourvillages.co.uk&quote=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%2C%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%20I%27ve%20just%20submitted%20an%20objection%20to%20City%20%26%20Country%27s%20plans%20for%20Birchanger%20and%20Stansted%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20-%20but%20we%20need%20926%20more!%20Add%20your%20voice%3A%20saveourvillages.co.uk" id="share-facebook" target="_blank" title="Share on Facebook" style="background: #1877F2; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.2)';">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                             </a>
 
                             <!-- Reddit Share Button -->
-                            <a href="https://reddit.com/submit?url=https%3A%2F%2Fsaveourvillages.co.uk&title=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%20I%27ve%20just%20submitted%20an%20objection%20but%20we%20need%20926%20more!" id="share-reddit" target="_blank" title="Share on Reddit" style="background: #FF4500; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.2)';">
+                            <a href="https://reddit.com/submit?url=https%3A%2F%2Fsaveourvillages.co.uk&title=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%2C%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%20I%27ve%20just%20submitted%20an%20objection%20to%20City%20%26%20Country%27s%20plans%20for%20Birchanger%20and%20Stansted%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20-%20but%20we%20need%20926%20more!%20Add%20your%20voice%3A%20saveourvillages.co.uk" id="share-reddit" target="_blank" title="Share on Reddit" style="background: #FF4500; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.2)';">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
                             </a>
 
                             <!-- WhatsApp Share Button -->
-                            <a href="https://api.whatsapp.com/send?text=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%0A%0AI%27ve%20just%20submitted%20an%20objection%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20but%20we%20need%20926%20more!%0A%0AAdd%20your%20voice%3A%20saveourvillages.co.uk%0A%0AEvery%20objection%20is%20counted.%20%23SaveOurVillages" id="share-whatsapp" target="_blank" title="Share on WhatsApp" style="background: #25D366; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.2)';">
+                            <a href="https://api.whatsapp.com/send?text=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%2C%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%20I%27ve%20just%20submitted%20an%20objection%20to%20City%20%26%20Country%27s%20plans%20for%20Birchanger%20and%20Stansted%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20-%20but%20we%20need%20926%20more!%20Add%20your%20voice%3A%20saveourvillages.co.uk" id="share-whatsapp" target="_blank" title="Share on WhatsApp" style="background: #25D366; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.2)';">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                             </a>
 
                             <!-- Bluesky Share Button -->
-                            <a href="https://bsky.app/intent/compose?text=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%0A%0AI%27ve%20just%20submitted%20an%20objection%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20but%20we%20need%20926%20more!%0A%0AAdd%20your%20voice%3A%20saveourvillages.co.uk%0A%0AEvery%20objection%20is%20counted.%20%23SaveOurVillages" id="share-bluesky" target="_blank" title="Share on Bluesky" style="background: #1185fe; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.2)';">
+                            <a href="https://bsky.app/intent/compose?text=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%2C%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%20I%27ve%20just%20submitted%20an%20objection%20to%20City%20%26%20Country%27s%20plans%20for%20Birchanger%20and%20Stansted%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20-%20but%20we%20need%20926%20more!%20Add%20your%20voice%3A%20saveourvillages.co.uk" id="share-bluesky" target="_blank" title="Share on Bluesky" style="background: #1185fe; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.2)';">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
                             </a>
                         </div>
@@ -1283,7 +1314,7 @@
 
                 // Setup share buttons with dynamic message
                 const remaining = target - totalObjections;
-                const shareMessage = `Not only are our villages under threat from overdevelopment but developers are trying to profit from turning greenbelt into housing estates.\n\nI've just submitted an objection – it took less than a minute but we need ${remaining} more!\n\nAdd your voice: saveourvillages.co.uk\n\nEvery objection is counted. #SaveOurVillages`;
+                const shareMessage = `Not only are our villages under threat from overdevelopment, but developers are trying to profit from turning greenbelt into housing estates. I've just submitted an objection to City & Country's plans for Birchanger and Stansted – it took less than a minute - but we need ${remaining} more! Add your voice: saveourvillages.co.uk`;
                 const shareUrl = 'https://saveourvillages.co.uk';
 
                 // Update share button hrefs
@@ -1358,8 +1389,45 @@
             }
         }
 
+        // Calculate deadline countdown
+        function updateDeadlineCountdown() {
+            const deadlineDate = new Date('2025-12-13T23:59:59');
+            const consultationStart = new Date('2025-11-12'); // First day was Wed 12 Nov 2025
+            const today = new Date();
+
+            // Calculate days remaining
+            const timeRemaining = deadlineDate - today;
+            const daysRemaining = Math.ceil(timeRemaining / (1000 * 60 * 60 * 24));
+
+            // Update days remaining text
+            const daysRemainingElement = document.getElementById('days-remaining');
+            if (daysRemainingElement) {
+                if (daysRemaining > 0) {
+                    daysRemainingElement.textContent = daysRemaining + ' day' + (daysRemaining !== 1 ? 's' : '');
+                } else if (daysRemaining === 0) {
+                    daysRemainingElement.textContent = 'Last day!';
+                } else {
+                    daysRemainingElement.textContent = 'Deadline passed';
+                }
+            }
+
+            // Calculate fuse progress (from Nov 12 to Dec 13 = 31 days total)
+            const totalDays = Math.ceil((deadlineDate - consultationStart) / (1000 * 60 * 60 * 24));
+            const elapsedDays = Math.max(0, Math.ceil((today - consultationStart) / (1000 * 60 * 60 * 24)));
+            const fuseProgress = Math.min(100, (elapsedDays / totalDays) * 100);
+
+            // Update fuse fill
+            const fuseFillElement = document.getElementById('fuse-fill');
+            if (fuseFillElement) {
+                fuseFillElement.style.width = fuseProgress + '%';
+            }
+        }
+
         // Load objection data when page loads
-        window.addEventListener('load', loadObjectionData);
+        window.addEventListener('load', function() {
+            loadObjectionData();
+            updateDeadlineCountdown();
+        });
 
         // Scroll indicator fade out
         window.addEventListener('scroll', function() {
