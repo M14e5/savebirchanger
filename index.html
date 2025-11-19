@@ -984,8 +984,8 @@
                 return cumulativeTotal;
             });
 
-            // Target line data (250 for all points)
-            const targetData = chartData.labels.map(() => 250);
+            // Target line data (1000 for all points)
+            const targetData = chartData.labels.map(() => 1000);
 
             // 1. Create Cumulative Chart
             const cumulativeCtx = document.getElementById('cumulativeChart');
@@ -1012,7 +1012,7 @@
                                 pointBackgroundColor: '#2c5f2d'
                             },
                             {
-                                label: 'Target (250)',
+                                label: 'Target (1000)',
                                 data: targetData,
                                 borderColor: '#ff6b6b',
                                 backgroundColor: 'transparent',
@@ -1050,7 +1050,7 @@
                                 callbacks: {
                                     label: function(context) {
                                         if (context.datasetIndex === 0) {
-                                            const remaining = 250 - context.parsed.y;
+                                            const remaining = 1000 - context.parsed.y;
                                             return [
                                                 'Total: ' + context.parsed.y + ' objections',
                                                 'Remaining: ' + remaining + ' to target'
@@ -1064,9 +1064,9 @@
                         scales: {
                             y: {
                                 beginAtZero: true,
-                                max: 260,
+                                max: 1050,
                                 ticks: {
-                                    stepSize: 25,
+                                    stepSize: 100,
                                     font: { size: 12 }
                                 },
                                 title: {
