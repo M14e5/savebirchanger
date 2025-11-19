@@ -1,6 +1,15 @@
 {
-  "last_update": "2025-11-19T14:27:06.641074",
-  "last_success": true,
-  "total_scrapes": 1,
-  "errors": []
+  "last_update": "2025-11-19T22:00:10.749597",
+  "last_success": false,
+  "total_scrapes": 2,
+  "errors": [
+    {
+      "app": "birchanger",
+      "error": "Timeout"
+    },
+    {
+      "app": "stansted",
+      "error": "Timeout"
+    }
+  ]
 }
