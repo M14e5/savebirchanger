@@ -1,33 +1,19 @@
 {
-  "last_updated": "2025-11-19T14:27:06.641074",
+  "last_updated": "2025-11-19T22:00:10.749597",
   "applications": {
     "birchanger": {
       "name": "Birchanger (UTT/25/3011/OP)",
-      "total": 38,
-      "by_date": {
-        "2025-11-19": 2,
-        "2025-11-18": 7,
-        "2025-11-17": 14,
-        "2025-11-16": 7,
-        "2025-11-15": 4,
-        "2025-11-14": 2,
-        "2025-11-13": 2
-      },
-      "success": true
+      "total": 0,
+      "by_date": {},
+      "success": false,
+      "error": "Timeout"
     },
     "stansted": {
       "name": "Stansted (UTT/25/3012/OP)",
-      "total": 36,
-      "by_date": {
-        "2025-11-19": 2,
-        "2025-11-18": 7,
-        "2025-11-17": 14,
-        "2025-11-16": 7,
-        "2025-11-15": 4,
-        "2025-11-14": 1,
-        "2025-11-13": 1
-      },
-      "success": true
+      "total": 0,
+      "by_date": {},
+      "success": false,
+      "error": "Timeout"
     }
   }
 }
