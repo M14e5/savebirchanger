@@ -1095,41 +1095,55 @@
 
                 // Update last updated timestamp
                 const lastUpdated = new Date(data.last_updated);
-                document.getElementById('last-updated').textContent = lastUpdated.toLocaleString('en-GB', {
+                const formattedDate = lastUpdated.toLocaleString('en-GB', {
                     day: 'numeric',
                     month: 'short',
                     year: 'numeric',
                     hour: '2-digit',
                     minute: '2-digit'
                 });
+                console.log('Last updated:', data.last_updated, '→', formattedDate);
+                const lastUpdatedElement = document.getElementById('last-updated');
+                if (lastUpdatedElement) {
+                    lastUpdatedElement.textContent = formattedDate;
+                    console.log('Last-updated element updated successfully');
+                } else {
+                    console.error('Last-updated element not found!');
+                }
 
-                // Prepare chart data
-                const birchangerByDate = data.applications.birchanger?.by_date || {};
-                const stanstedByDate = data.applications.stansted?.by_date || {};
+                // Prepare chart data (wrapped in try-catch to prevent errors from affecting other updates)
+                try {
+                    const birchangerByDate = data.applications.birchanger?.by_date || {};
+                    const stanstedByDate = data.applications.stansted?.by_date || {};
 
-                // Get all unique dates and sort them
-                const allDates = new Set([
-                    ...Object.keys(birchangerByDate),
-                    ...Object.keys(stanstedByDate)
-                ]);
-                const sortedDates = Array.from(allDates).sort();
+                    // Get all unique dates and sort them
+                    const allDates = new Set([
+                        ...Object.keys(birchangerByDate),
+                        ...Object.keys(stanstedByDate)
+                    ]);
+                    const sortedDates = Array.from(allDates).sort();
 
-                // Prepare datasets
-                const birchangerData = sortedDates.map(date => birchangerByDate[date] || 0);
-                const stanstedData = sortedDates.map(date => stanstedByDate[date] || 0);
+                    // Prepare datasets
+                    const birchangerData = sortedDates.map(date => birchangerByDate[date] || 0);
+                    const stanstedData = sortedDates.map(date => stanstedByDate[date] || 0);
 
-                // Format dates for display
-                const formattedDates = sortedDates.map(date => {
-                    const d = new Date(date);
-                    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-                });
+                    // Format dates for display
+                    const formattedDates = sortedDates.map(date => {
+                        const d = new Date(date);
+                        return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+                    });
 
-                // Store chart data for later use (when modal opens)
-                objectionChartData = {
-                    labels: formattedDates,
-                    birchangerData: birchangerData,
-                    stanstedData: stanstedData
-                };
+                    // Store chart data for later use (when modal opens)
+                    objectionChartData = {
+                        labels: formattedDates,
+                        birchangerData: birchangerData,
+                        stanstedData: stanstedData
+                    };
+                    console.log('Chart data prepared:', objectionChartData);
+                } catch (chartError) {
+                    console.error('Error preparing chart data:', chartError);
+                    // Don't fail the whole function - counters and timestamp are already updated
+                }
 
             } catch (error) {
                 console.error('Error loading objection data:', error);
