@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates - Save Our Villages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        .navbar {
+            background-color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c5f2d;
+        }
+
+        .logo::before {
+            content: "";
+            display: inline-block;
+            width: 65px;
+            height: 65px;
+            background-image: url('icons/Green-Belt-Logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin-right: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 1.5rem;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2c5f2d;
+        }
+
+        .nav-links a.active {
+            color: #2c5f2d;
+            font-weight: bold;
+        }
+
+        .templates-hero {
+            background: linear-gradient(135deg, #2c5f2d, #4a7c59);
+            color: white;
+            padding: 150px 20px 80px;
+            text-align: center;
+        }
+
+        .templates-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .templates-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .templates-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .template-section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .template-section h2 {
+            color: #2c5f2d;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #4a7c59;
+        }
+
+        .template-section h3 {
+            color: #2c5f2d;
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .template-section h4 {
+            color: #4a7c59;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.5rem;
+            font-weight: 600;
+        }
+
+        .template-content {
+            background-color: #f7f9f8;
+            padding: 1.5rem;
+            border-left: 4px solid #4a7c59;
+            border-radius: 4px;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+        }
+
+        .copy-button {
+            background-color: #4a7c59;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .copy-button:hover {
+            background-color: #2c5f2d;
+        }
+
+        .copy-button:active {
+            transform: scale(0.98);
+        }
+
+        .tips-box {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tips-box h3 {
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+
+        .tips-box ul {
+            list-style-position: inside;
+            color: #856404;
+        }
+
+        .tips-box li {
+            margin: 0.5rem 0;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #4a7c59;
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+            z-index: 999;
+        }
+
+        .back-to-top:hover {
+            background-color: #2c5f2d;
+        }
+
+        /* AI Template Generator Styles */
+        .ai-generator-section {
+            background: linear-gradient(135deg, #f0f9f0 0%, #e8f5e9 100%);
+            border: 3px solid #4a7c59;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .ai-generator-section h2 {
+            color: #2c5f2d;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .ai-generator-section .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .ai-generator-section .highlight-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .ai-generator-section .highlight-box p {
+            margin: 0;
+            color: #856404;
+            font-size: 0.95rem;
+        }
+
+        .generator-step {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .generator-step h3 {
+            color: #2c5f2d;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .generator-step h3::before {
+            content: attr(data-step);
+            background: #4a7c59;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.75rem;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .template-type-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .template-type-option {
+            position: relative;
+        }
+
+        .template-type-option input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .template-type-option label {
+            display: block;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .template-type-option label:hover {
+            border-color: #4a7c59;
+            background: #f7f9f8;
+        }
+
+        .template-type-option input[type="radio"]:checked + label {
+            border-color: #4a7c59;
+            background: #e8f5e9;
+            font-weight: 600;
+        }
+
+        .template-type-option label .type-name {
+            color: #2c5f2d;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .template-type-option label .type-desc {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        /* Priority badge styling */
+        .priority-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-left: 0.5rem;
+            box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(255, 107, 107, 0.5);
+            }
+        }
+
+        /* Highlight the planning objection option */
+        #type-planning + label {
+            border: 3px solid #ff6b6b !important;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%) !important;
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+        }
+
+        #type-planning:checked + label {
+            border-color: #ff6b6b !important;
+            background: linear-gradient(135deg, #ffe8e8 0%, #ffd4d4 100%) !important;
+        }
+
+        .questions-container {
+            display: none;
+            margin-top: 1rem;
+        }
+
+        .questions-container.active {
+            display: block;
+        }
+
+        .question-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .question-group label {
+            display: block;
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .question-group input[type="text"],
+        .question-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .question-group input[type="text"]:focus,
+        .question-group textarea:focus {
+            outline: none;
+            border-color: #4a7c59;
+        }
+
+        .question-group textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .question-group small {
+            display: block;
+            color: #666;
+            margin-top: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .generate-button {
+            background: #4a7c59;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .generate-button:hover:not(:disabled) {
+            background: #2c5f2d;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .generate-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .generate-button .spinner {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        .generate-button.loading .spinner {
+            display: block;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .result-container {
+            display: none;
+            margin-top: 2rem;
+        }
+
+        .result-container.active {
+            display: block;
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .result-header h4 {
+            color: #2c5f2d;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .result-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .regenerate-button {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .regenerate-button:hover {
+            background: #ff5252;
+        }
+
+        .error-message {
+            background: #fee;
+            border: 2px solid #fcc;
+            color: #c33;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .error-message.active {
+            display: block;
+        }
+
+        .disclaimer {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #1565c0;
+        }
+
+        /* Postcode suggestion styling */
+        .postcode-suggestion {
+            padding: 0.75rem;
+            cursor: pointer;
+            border-bottom: 1px solid #e0e0e0;
+            transition: background 0.2s;
+        }
+
+        .postcode-suggestion:hover {
+            background: #f7f9f8;
+        }
+
+        .postcode-suggestion:last-child {
+            border-bottom: none;
+        }
+
+        /* Print-friendly styles */
+        @media print {
+            /* Remove browser default headers and footers */
+            @page {
+                margin: 0;
+                size: auto;
+            }
+
+            /* Reset everything */
+            body {
+                background: white !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            /* Hide ALL page elements */
+            .navbar,
+            .templates-hero,
+            .back-to-top,
+            .result-header,
+            .result-actions,
+            .disclaimer,
+            button,
+            nav,
+            header,
+            footer,
+            form,
+            #postcode-suggestions,
+            #questions-step,
+            #error-message,
+            a,
+            .template-section,
+            .generator-step,
+            .question-group,
+            .ai-generator-section > h2,
+            .ai-generator-section > .subtitle,
+            .ai-generator-section > p,
+            .highlight-box,
+            h2,
+            h3,
+            h4,
+            h5 {
+                display: none !important;
+            }
+
+            /* Hide everything in templates-container except ai-generator */
+            .templates-container > *:not(#ai-generator) {
+                display: none !important;
+            }
+
+            /* Ensure containers are visible */
+            .templates-container,
+            #ai-generator,
+            .result-container,
+            .result-container.active {
+                display: block !important;
+                visibility: visible !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                background: white !important;
+            }
+
+            /* Hide everything in result container except the letter */
+            .result-container > *:not(#generated-content),
+            .result-container > * ~ * {
+                display: none !important;
+            }
+
+            /* Hide all divs after generated-content */
+            #generated-content ~ * {
+                display: none !important;
+            }
+
+            /* Ensure the letter is visible */
+            .result-container #generated-content {
+                display: block !important;
+            }
+
+            /* Style the letter for printing */
+            #generated-content {
+                display: block !important;
+                margin: 0 !important;
+                padding: 0.75in !important;
+                border: none !important;
+                outline: none !important;
+                background: white !important;
+                font-family: 'Times New Roman', Times, serif !important;
+                font-size: 12pt !important;
+                line-height: 1.6 !important;
+                white-space: pre-wrap !important;
+                box-shadow: none !important;
+                color: black !important;
+                page-break-inside: avoid !important;
+            }
+
+            /* Remove all borders, outlines, and shadows from everything */
+            *,
+            *::before,
+            *::after,
+            body,
+            html,
+            .templates-container,
+            #ai-generator,
+            .result-container,
+            .template-content,
+            #generated-content,
+            #generated-content.template-content,
+            div.template-content {
+                border: 0 !important;
+                border-style: none !important;
+                border-width: 0 !important;
+                border-color: transparent !important;
+                border-left: 0 none transparent !important;
+                border-right: 0 none transparent !important;
+                border-top: 0 none transparent !important;
+                border-bottom: 0 none transparent !important;
+                outline: 0 none transparent !important;
+                outline-width: 0 !important;
+                outline-style: none !important;
+                outline-offset: 0 !important;
+                box-shadow: none !important;
+                -webkit-box-shadow: none !important;
+                -moz-box-shadow: none !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .templates-hero h1 {
+                font-size: 2rem;
+            }
+
+            .template-content {
+                font-size: 0.9rem;
+                padding: 1rem;
+            }
+
+            .ai-generator-section {
+                padding: 1.5rem;
+            }
+
+            .template-type-selector {
+                grid-template-columns: 1fr;
+            }
+
+            .result-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .result-actions {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+
+    <!-- PostHog Analytics - Loaded immediately with opt-out by default -->
+    <script>
+        // Load PostHog immediately with opt-out by default for GDPR compliance
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init fi Cr Or ci Tr Ir capture Mi calculateEventProperties Ar register register_once register_for_session unregister unregister_for_session Nr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty jr Mr createPersonProfile Lr kr Ur opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Fr debug M Dr getPageViewId captureTraceFeedback captureTraceMetric $r".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+
+        // Initialize PostHog - TESTING: Removed opt-out to test if sequencing is the issue
+        // Using Cloudflare reverse proxy to prevent ad-blocker blocking
+        posthog.init('phc_bapf3RKKWohziv8014UqPW1ySks6p6NFHLbLZRPGJfz', {
+            api_host: 'https://ph.saveourvillages.co.uk',
+            defaults: '2025-05-24',
+            person_profiles: 'identified_only',
+            opt_out_capturing_by_default: false,  // TESTING: Changed to false
+            persistence: 'localStorage',
+            disable_toolbar: true  // Hide PostHog toolbar from visitors
+        });
+
+        // Function to capture landing page data to PostHog (only after consent)
+        function captureLandingPageToPostHog() {
+            try {
+                // Check if we have pending landing page data
+                const pendingLandingData = sessionStorage.getItem('pendingLandingPageData');
+
+                if (pendingLandingData && window.posthog) {
+                    const landingData = JSON.parse(pendingLandingData);
+                    console.log('Sending landing page data to PostHog:', landingData);
+
+                    posthog.capture('landing_page_view', landingData);
+
+                    // Clear the pending data after sending
+                    sessionStorage.removeItem('pendingLandingPageData');
+                    console.log('Landing page data sent and cleared');
+                }
+            } catch (e) {
+                console.error('Error capturing landing page to PostHog:', e);
+            }
+        }
+
+        // Check for existing consent on page load and restore opt-in state
+        (function() {
+            try {
+                const consentData = localStorage.getItem('cookieConsent');
+                if (consentData) {
+                    const consent = JSON.parse(consentData);
+                    if (consent.analytics === true) {
+                        posthog.opt_in_capturing();
+                        console.log('PostHog opt-in restored from saved consent');
+
+                        // User has already consented - send any pending landing page data
+                        setTimeout(function() {
+                            captureLandingPageToPostHog();
+                        }, 1000);
+                    } else if (consent.analytics === false) {
+                        posthog.opt_out_capturing();
+                        console.log('PostHog opt-out maintained from saved consent');
+                    }
+                }
+            } catch (e) {
+                console.error('Error checking cookie consent:', e);
+            }
+        })();
+
+        // TESTING: Capture landing page information immediately (no consent wait)
+        window.addEventListener('load', function() {
+            try {
+                // First check if we have stored landing page data from a 404 redirect
+                const stored404Data = sessionStorage.getItem('landingPageData');
+
+                let landingPageData;
+
+                if (stored404Data) {
+                    // User came from a 404 page - use that data
+                    const landingData = JSON.parse(stored404Data);
+                    console.log('Found 404 landing page data:', landingData);
+
+                    landingPageData = {
+                        path: landingData.path,
+                        referrer: landingData.referrer,
+                        redirected_from_404: true,
+                        actual_landing_url: landingData.url,
+                        original_timestamp: landingData.timestamp,
+                        current_timestamp: new Date().toISOString(),
+                        // Override PostHog's automatic URL capture with the original landing URL
+                        $current_url: landingData.url,
+                        $pathname: landingData.path,
+                        $referrer: landingData.referrer
+                    };
+
+                    // Clear the 404 data
+                    sessionStorage.removeItem('landingPageData');
+                } else {
+                    // Normal landing page (no 404 redirect)
+                    const urlParams = new URLSearchParams(window.location.search);
+                    landingPageData = {
+                        path: window.location.pathname,
+                        referrer: document.referrer || 'direct',
+                        utm_source: urlParams.get('utm_source') || null,
+                        utm_medium: urlParams.get('utm_medium') || null,
+                        utm_campaign: urlParams.get('utm_campaign') || null,
+                        redirected_from_404: false,
+                        timestamp: new Date().toISOString(),
+                        // Set PostHog's automatic properties explicitly
+                        $current_url: window.location.href,
+                        $pathname: window.location.pathname
+                    };
+                }
+
+                // TESTING: Send immediately to PostHog (no consent wait)
+                console.log('TESTING: Sending landing page data immediately:', landingPageData);
+                if (window.posthog) {
+                    posthog.capture('landing_page_view', landingPageData);
+                    console.log('Landing page data sent to PostHog immediately');
+                }
+
+            } catch (e) {
+                console.error('Error capturing landing page:', e);
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Save Our Villages</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="birchanger.html">Save Birchanger</a></li>
+                <li><a href="stansted.html">Save Stansted</a></li>
+                <li><a href="templates.html" class="active">Templates</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#action">Take Action</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="templates-hero">
+        <h1>Objection Guide</h1>
+        <p>Once our Green Belt is gone it's not coming back, and this will be death by a thousand cuts. It's never been more important to object to planning.</p>
+    </div>
+
+    <!-- Templates Container -->
+    <div class="templates-container">
+
+        <!-- AI Template Generator Section -->
+        <section class="ai-generator-section" id="ai-generator">
+            <h2>Template Generator</h2>
+            <p class="subtitle">Answer a few questions to create a personalized letter that is authentic and unique</p>
+
+            <div class="highlight-box">
+                <p><strong>Save time while staying personal:</strong> This tool creates a custom template based on your specific situation. Review and adjust the result before submitting to ensure it truly reflects your voice.</p>
+            </div>
+
+            <!-- Step 1: Answer Questions (Dynamic) -->
+            <div class="generator-step" id="questions-step">
+                <h3 data-step="1">Tell Us About Your Situation</h3>
+                <form id="generator-form">
+                    <div id="questions-container" class="questions-container"></div>
+                    <button type="submit" class="generate-button" id="generate-btn">
+                        <span class="btn-text">Generate My Template</span>
+                        <span class="spinner"></span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Error Message -->
+            <div class="error-message" id="error-message"></div>
+
+            <!-- Step 3: Results -->
+            <div class="result-container" id="result-container">
+                <div class="result-header">
+                    <h4>Your Personalized Template</h4>
+                    <div class="result-actions">
+                        <button class="regenerate-button" id="regenerate-btn">Try Again</button>
+                        <button class="copy-button" id="copy-result-btn">Copy Text</button>
+                        <button class="copy-button" id="print-btn">Print Letter</button>
+                    </div>
+                </div>
+
+                <!-- Instructional text -->
+                <div style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;">
+                    <p style="margin: 0; color: #856404; font-size: 0.95rem; text-align: center;">
+                        <strong>📄 How to use your letter:</strong> Click <strong>"Print Letter"</strong> to print directly to your printer, or click <strong>"Copy Text"</strong> to paste into your email or the online planning portal.
+                    </p>
+                </div>
+
+                <!-- Now Make It Yours Section -->
+                <div style="background: linear-gradient(135deg, #f0f9f0 0%, #e8f5e9 100%); border: 3px solid #4a7c59; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                    <h4 style="color: #2c5f2d; margin-bottom: 1rem; text-align: center;">✍️ Now Make It Yours</h4>
+                    <p style="text-align: center; color: #666; margin-bottom: 1rem; font-size: 0.95rem;">Add your details to personalize the letter below</p>
+
+                    <div class="question-group">
+                        <label for="user-name">Your Name</label>
+                        <input type="text" id="user-name" placeholder="e.g., John Smith">
+                    </div>
+
+                    <div class="question-group">
+                        <label for="user-postcode">Your Postcode or Address</label>
+                        <input type="text" id="user-postcode" placeholder="e.g., CM23 5EH or CM23 5EH 18" style="text-transform: uppercase;">
+                        <div id="postcode-suggestions" style="display: none; background: white; border: 2px solid #4a7c59; border-radius: 6px; margin-top: 0.25rem; max-height: 300px; overflow-y: auto;"></div>
+                        <small>Start typing your postcode (with optional house number) to find your exact address</small>
+                    </div>
+
+                    <div class="question-group">
+                        <label for="user-address">Your Address</label>
+                        <textarea id="user-address" placeholder="e.g., 123 High Street&#10;Birchanger&#10;Essex" rows="3"></textarea>
+                        <small>Will auto-fill from postcode, or type manually</small>
+                    </div>
+                </div>
+
+                <div class="template-content" id="generated-content"></div>
+
+                <!-- Duplicate action buttons at bottom -->
+                <div style="display: flex; gap: 0.5rem; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap;">
+                    <button class="copy-button" id="copy-result-btn-bottom">📋 Copy Text</button>
+                    <button class="copy-button" id="print-btn-bottom">🖨️ Print Letter</button>
+                </div>
+
+                <div class="disclaimer">
+                    <strong>⚠️ Important:</strong> Please review and personalize this template before submitting. Add specific details, check all facts, and ensure it reflects your authentic voice and concerns.
+                </div>
+                <div style="background: #e8f5e9; border: 3px solid #4a7c59; border-radius: 8px; padding: 1.5rem; margin-top: 1.5rem;">
+                    <h4 style="color: #2c5f2d; margin-bottom: 1rem; text-align: center;">📝 Submit Your Objection</h4>
+                    <p style="margin-bottom: 1.5rem; text-align: center; color: #333;"><strong>The planning application has been split into two - you need to object to BOTH applications: UTT/25/3011/OP and UTT/25/3012/OP</strong></p>
+                    <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem;">
+                        <a href="https://publicaccess.uttlesford.gov.uk/online-applications/applicationDetails.do?keyVal=T5CHIEQNG2G00&activeTab=summary" target="_blank" style="background: #4a7c59; color: white; padding: 1rem; text-align: center; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.3s;" onmouseover="this.style.background='#2c5f2d'" onmouseout="this.style.background='#4a7c59'">
+                            View and Object to Planning Application 1 (Birchanger - UTT/25/3011/OP) →
+                        </a>
+                        <a href="https://publicaccess.uttlesford.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=T5CHIWQNG2J00" target="_blank" style="background: #4a7c59; color: white; padding: 1rem; text-align: center; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.3s;" onmouseover="this.style.background='#2c5f2d'" onmouseout="this.style.background='#4a7c59'">
+                            View and Object to Planning Application 2 (Stansted - UTT/25/3012/OP) →
+                        </a>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <h5 style="color: #2c5f2d; margin-bottom: 0.5rem; font-size: 1.1rem;">1) Online</h5>
+                        <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 0;">
+                            Click the links above to view the applications on the Uttlesford portal. You'll need to log in and make a comment for each application (UTT/25/3011/OP and UTT/25/3012/OP).
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <h5 style="color: #2c5f2d; margin-bottom: 0.5rem; font-size: 1.1rem;">2) Email</h5>
+                        <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 0;">
+                            Email your objection letter to <strong>Planning@uttlesford.gov.uk</strong>. Make sure to state that you are objecting to <strong>both UTT/25/3011/OP and UTT/25/3012/OP</strong>.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <h5 style="color: #2c5f2d; margin-bottom: 0.5rem; font-size: 1.1rem;">3) Post</h5>
+                        <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 0.5rem;">
+                            Post your signed and dated objection letter to:
+                        </p>
+                        <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-left: 1rem; margin-bottom: 0;">
+                            <strong>Uttlesford District Council<br>
+                            London Road<br>
+                            Saffron Walden<br>
+                            CB11 4ER</strong>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h5 style="color: #2c5f2d; margin-bottom: 0.5rem; font-size: 1.1rem;">4) In Person</h5>
+                        <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 0;">
+                            Sign and date your objection letter and hand it to any of the SOV team. Email us at <strong>admin@saveourvillages.co.uk</strong> to find us or message us on Facebook.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submission Instructions -->
+        <div style="background: #e8f5e9; border: 3px solid #4a7c59; border-radius: 8px; padding: 2rem; margin-bottom: 3rem;">
+            <h3 style="color: #2c5f2d; margin-bottom: 1rem; text-align: center;">📝 How to Submit Your Objection</h3>
+            <p style="margin-bottom: 1.5rem; text-align: center; color: #333; font-size: 1.1rem;"><strong>The planning application has been split into two - you need to object to BOTH applications: UTT/25/3011/OP and UTT/25/3012/OP</strong></p>
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <a href="https://publicaccess.uttlesford.gov.uk/online-applications/applicationDetails.do?keyVal=T5CHIEQNG2G00&activeTab=summary" target="_blank" style="background: #4a7c59; color: white; padding: 1rem; text-align: center; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.3s;" onmouseover="this.style.background='#2c5f2d'" onmouseout="this.style.background='#4a7c59'">
+                    View and Object to Planning Application 1 (Birchanger - UTT/25/3011/OP) →
+                </a>
+                <a href="https://publicaccess.uttlesford.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=T5CHIWQNG2J00" target="_blank" style="background: #4a7c59; color: white; padding: 1rem; text-align: center; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.3s;" onmouseover="this.style.background='#2c5f2d'" onmouseout="this.style.background='#4a7c59'">
+                    View and Object to Planning Application 2 (Stansted - UTT/25/3012/OP) →
+                </a>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: #2c5f2d; margin-bottom: 0.5rem; font-size: 1.1rem;">1) Online</h4>
+                    <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 0;">
+                        Click the links above to view the applications on the Uttlesford portal. You'll need to log in and make a comment for each application (UTT/25/3011/OP and UTT/25/3012/OP).
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: #2c5f2d; margin-bottom: 0.5rem; font-size: 1.1rem;">2) Email</h4>
+                    <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 0;">
+                        Email your objection letter to <strong>Planning@uttlesford.gov.uk</strong>. Make sure to state that you are objecting to <strong>both UTT/25/3011/OP and UTT/25/3012/OP</strong>.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: #2c5f2d; margin-bottom: 0.5rem; font-size: 1.1rem;">3) Post</h4>
+                    <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 0.5rem;">
+                        Post your signed and dated objection letter to:
+                    </p>
+                    <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-left: 1rem; margin-bottom: 0;">
+                        <strong>Uttlesford District Council<br>
+                        London Road<br>
+                        Saffron Walden<br>
+                        CB11 4ER</strong>
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="color: #2c5f2d; margin-bottom: 0.5rem; font-size: 1.1rem;">4) In Person</h4>
+                    <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 0;">
+                        Sign and date your objection letter and hand it to any of the SOV team. Email us at <strong>admin@saveourvillages.co.uk</strong> to find us or message us on Facebook.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">↑</a>
+
+    <!-- JavaScript -->
+    <script>
+        // Copy to clipboard function
+        function copyToClipboard(button) {
+            const templateContent = button.previousElementSibling;
+            const textToCopy = templateContent.textContent;
+
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                const originalText = button.textContent;
+
+Summary
+I object because: (1) this site is NOT "grey belt" under NPPF Para 155 - it strongly serves Green Belt purposes; (2) it fails the Para 155 sustainability test - it is car-dependent with inadequate public transport; (3) the "Golden Rules" are undeliverable promises without legally binding Section 106 agreements securing delivery BEFORE occupation.
+
+1. NPPF Paragraph 155 "Grey Belt" Test FAILS
+
+Test 1: Land must NOT strongly serve Green Belt purposes - THIS TEST FAILS
+The land DOES strongly serve Green Belt purposes: prevents coalescence, safeguards St Mary's Church setting, maintains separation from Bishop's Stortford.
+
+Test 2: Must be sustainable location - THIS TEST FAILS
+Site is 2.1km from station with NO footway (fails DfT 800m standard). Bus 308: hourly Mon-Sat only, last bus 6:30pm, NO Sundays. Car-dependent: ~1,180 daily trips, ~712 cars.
+
+2. "Golden Rules" Undeliverable Without Section 106
+
+Affordable housing: No open-book viability - how is 50% deliverable? No binding phasing.
+Infrastructure: Developer offers LAND for school - but who funds buildings/teachers? Highway mitigation is vague "s106 contribution" - how much? When? Legally binding?
+BNG: Off-site units create delivery risk. No 30-year habitat plan secured.
+
+3. Infrastructure Crisis
+
+Schools: Forest Hall oversubscribed, no sixth form - where will ~370 children go? NO funded expansion.
+GP surgeries: Lower Street, Church Road overwhelmed - NO new practice committed.
+Highways: B1383, Cambridge Road gridlock - NO capacity upgrades funded.
+
+4. Alternatives Not Assessed
+
+Brownfield sites not robustly assessed.
+
+Conclusion
+REFUSE. Not "grey belt" - strongly serves Green Belt, fails Para 155 sustainability. "Golden Rules" undeliverable without enforceable Section 106 requiring delivery BEFORE occupation.
+
+Your details: [Name, address, email, postcode]
+Attachments: [Photos, route audits, flood evidence]</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section B: Appeal Representation -->
+        <section id="appeal-representation" class="template-section">
+            <h2>B) Appeal (Planning Inspectorate) Representation</h2>
+            <p>If the application is refused and appealed, or if the developer appeals non-determination</p>
+
+            <div class="template-content">Subject: Representation – [PINS REF], Land at Birchanger and Stansted (480 homes), Uttlesford DC
+
+Who I am: Local resident of [X years] at [postcode]; regular user of [paths/lanes/views] affected by the proposal.
+
+Key points (succinct):
+
+NPPF Para 155 Test FAILS: This is NOT "grey belt" - the land STRONGLY serves Green Belt purposes (prevents Birchanger-Stansted coalescence, safeguards St Mary's Church 12th-century setting, maintains Bishop's Stortford separation gap).
+
+Sustainability Test FAILS: Site is 2.1km from Stansted station with NO continuous footway (fails DfT 800m walkability standard). Bus 308: hourly Mon-Sat only, last bus 6:30pm, NO Sundays. This is car-dependent development (~1,180 daily trips, ~712 cars), NOT sustainable location required by NPPF Para 155.
+
+Openness Harm: 480 homes materially reduce spatial and visual openness; photomontages from [VP refs] show marked visual harm the appellant underplays.
+
+"Golden Rules" Undeliverable: 50% affordable uplift not secured via binding Section 106; BNG dependent on off-site units with delivery risk; infrastructure (school buildings, highway upgrades) listed as vague "contributions" not legally tied to occupation triggers.
+
+Infrastructure Capacity: Forest Hall School oversubscribed (no sixth form), GP surgeries overwhelmed, B1383/Cambridge Road gridlock - NO funded mitigation secured before development.
+
+Planning balance: Generic benefits do not outweigh Green Belt harm, sustainability failures, and infrastructure crisis.
+
+Ask: DISMISS the appeal. If allowed (despite these objections), apply stringent conditions/obligations requiring delivery BEFORE occupation (see my LPA objection for detailed requirements).
+
+Attachments: [LPA objection; photos of views/wildlife/flooding; route audits; school rejection letters]</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section C: Local Plan -->
+        <section id="local-plan" class="template-section">
+            <h2>C) Local Plan (Reg 18 / Reg 19) Representation</h2>
+            <p><em>When the council proposes allocating the site through the plan</em></p>
+
+            <div class="template-content">Subject: Representation on [Local Plan name] – Policy [XX] Land at Birchanger and Stansted (480 homes)
+
+Soundness tests: The allocation is UNSOUND – not justified, not effective, inconsistent with national policy on Green Belt and NPPF Para 155.
+
+Points to make:
+
+NPPF Para 155 "grey belt" methodology FLAWED: The council's method down-weights key Green Belt contribution factors (coalescence risk between Birchanger-Stansted, St Mary's Church historic setting, Bishop's Stortford separation gap), wrongly classing this site as "grey belt." The land STRONGLY serves Green Belt purposes - Para 155 test 1 FAILS.
+
+Sustainability assessment FLAWED: Site is 2.1km from station with NO footway (fails DfT 800m standard), bus 308 hourly Mon-Sat only (last bus 6:30pm, NO Sundays) - this is car-dependent location, NOT sustainable as required by Para 155 test 2. Transport modelling ignores ~1,180 daily car trips, ~712 extra cars.
+
+"Golden Rules" undeliverable: Evidence base lacks open-book viability proving 50% affordable housing is economically deliverable. No commitment to school BUILDINGS (only land offer). Highway mitigation unfunded. BNG relies on off-site units. Infrastructure Delivery Plan shows deficits/unfunded items.
+
+Alternatives not fairly assessed: Brownfield sites within Bishop's Stortford and Stansted, densification near station, not robustly assessed as reasonable alternatives.
+
+Policy ask: DELETE the allocation - replace with brownfield-first package. If retained (despite unsoundness), cap at 240 homes maximum, require permanent landscape buffer protecting Green Belt function, on-site social rent minimum 25%, BNG >20% secured on-site, school buildings funded before occupation, highway upgrades delivered before occupation.</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section D: Petition -->
+        <section id="petition" class="template-section">
+            <h2>D) Petition Text</h2>
+            <p>For your website/Change.org/Council e-petition</p>
+
+            <div class="template-content">Title: Stop 480 homes on Birchanger and Stansted Green Belt – say NO to fake "grey belt" claim
+
+Summary:
+We call on Uttlesford Council and City & Country to STOP plans for 480 homes (180 Birchanger, 300 Stansted) on Green Belt land. This is NOT "grey belt" under NPPF Para 155 - it STRONGLY serves Green Belt purposes: prevents Birchanger-Stansted coalescence, protects St Mary's Church 12th-century setting, maintains Bishop's Stortford separation gap. Build brownfield-first and protect our countryside.
+
+Why this matters:
+
+• NPPF Para 155 test FAILS: Land strongly serves Green Belt purposes (not "grey belt").
+• Sustainability test FAILS: Car-dependent (2.1km from station, NO footway, bus 308 hourly Mon-Sat only, last bus 6:30pm, NO Sundays) - NOT sustainable location.
+• "Golden Rules" UNDELIVERABLE: Developer offers school LAND but not funded buildings. Highway mitigation unfunded. BNG off-site with delivery risk. No legally binding Section 106 securing delivery BEFORE occupation.
+• Infrastructure CRISIS: Forest Hall School oversubscribed, GP surgeries overwhelmed, B1383/Cambridge Road gridlock - NO funded expansion.
+• ~1,180 daily car trips, ~712 extra cars, ~370 school-age children with NO plan.
+
+What we want:
+
+• Uttlesford Council to REFUSE allocation/permission and reject "grey belt" classification.
+• City & Country to withdraw and bring forward brownfield alternatives.
+• NO development without enforceable Section 106 requiring infrastructure delivery BEFORE occupation.
+
+Call to action:
+
+• Sign and share before application is submitted (expected November 2025).
+• Submit objection when application lodged (21-day window).
+• Email your councillors demanding they protect Green Belt, not fake "grey belt".</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section E: Email Representatives -->
+        <section id="email-representatives" class="template-section">
+            <h2>E) Email Your Ward Councillors / MP</h2>
+            <p>Use for supporters to contact representatives politely</p>
+
+            <div class="template-content">Subject: Please oppose fake "grey belt" claim for 480 homes on Birchanger and Stansted Green Belt
+
+Dear Cllr/MP [NAME],
+
+I'm a resident of [AREA]. Please oppose City & Country's application for 480 homes (180 Birchanger, 300 Stansted) on Green Belt land. This is NOT "grey belt" under NPPF Para 155:
+
+• NPPF Para 155 test 1 FAILS: Land STRONGLY serves Green Belt purposes (prevents Birchanger-Stansted coalescence, protects St Mary's Church 12th-century setting, maintains Bishop's Stortford separation gap).
+• NPPF Para 155 test 2 FAILS: Site is car-dependent (2.1km from station with NO footway, bus 308 hourly Mon-Sat only, last bus 6:30pm, NO Sundays) - NOT sustainable location.
+• "Golden Rules" UNDELIVERABLE: Developer offers school LAND but not funded buildings. No legally binding Section 106 securing infrastructure delivery BEFORE occupation.
+• Infrastructure CRISIS: Forest Hall School oversubscribed, GP surgeries overwhelmed, B1383/Cambridge Road gridlock - NO funded expansion. ~1,180 daily car trips, ~712 extra cars, ~370 school-age children with NO plan.
+
+Please:
+
+• Urge Uttlesford Council to REFUSE this application and reject "grey belt" classification.
+• Press City & Country to focus on brownfield alternatives.
+• Demand enforceable Section 106 agreements requiring infrastructure BEFORE occupation if approved.
+• Keep me informed of planning committee meetings and votes.
+
+Yours sincerely,
+[NAME, ADDRESS, POSTCODE]</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section F: Committee Speech -->
+        <section id="committee-speech" class="template-section">
+            <h2>F) Planning Committee Speech (≈2 minutes)</h2>
+
+            <div class="template-content">Chair, Members,
+
+This is NOT "grey belt" under NPPF Paragraph 155. BOTH tests FAIL:
+
+Test 1: Land must NOT strongly serve Green Belt - THIS FAILS. It DOES strongly serve Green Belt: prevents Birchanger-Stansted coalescence, protects St Mary's Church 12th-century setting, maintains Bishop's Stortford separation gap.
+
+Test 2: Must be sustainable location - THIS FAILS. Site is 2.1km from station with NO footway (fails DfT 800m standard). Bus 308: hourly Mon-Sat only, last bus 6:30pm, NO Sundays. Car-dependent: ~1,180 daily trips, ~712 extra cars.
+
+The "Golden Rules" are undeliverable promises: Developer offers school LAND but not funded BUILDINGS. Highway mitigation unfunded. BNG off-site with delivery risk. NO legally binding Section 106 securing delivery BEFORE occupation.
+
+Infrastructure crisis: Forest Hall oversubscribed, GP surgeries overwhelmed, B1383/Cambridge Road gridlock. ~370 school-age children with NO funded expansion. NO mitigation secured.
+
+Planning balance: Generic benefits do not outweigh Green Belt harm, Para 155 test failures, and infrastructure crisis. Please REFUSE.
+
+Thank you.</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section G: FOI Request -->
+        <section id="foi-request" class="template-section">
+            <h2>G) Freedom of Information (FOI) / EIR Request</h2>
+            <p>To obtain the council's "grey belt" assessments and inputs</p>
+
+            <div class="template-content">Subject: EIR request – "Grey Belt" assessment for Land at Birchanger and Stansted (480 homes)
+
+Dear Uttlesford District Council,
+
+Under the Environmental Information Regulations 2004, please provide:
+
+1. Any site-specific Green Belt or "grey belt" assessment for Land at Birchanger and Stansted since January 2024, including assessments against NPPF Paragraph 155 tests;
+2. The methodology, scoring matrices, boundary maps, and sustainability assessments used to classify this site as "grey belt";
+3. All correspondence with City & Country (applicant/promoter) relating to "grey belt" status, NPPF Para 155 compliance, and "Golden Rules" deliverability;
+4. Evidence of reasonable alternatives assessment (brownfield sites, densification options) and any viability inputs supporting the claimed 50% affordable housing uplift;
+5. Section 106 draft agreements (if any) relating to infrastructure delivery triggers, affordable housing phasing, school building funding, highway upgrade commitments, and BNG habitat management plans.
+
+Please supply as searchable PDFs/CSV shapefiles.
+
+Yours faithfully,
+[NAME, ADDRESS]</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Section H: Campaign Block -->
+        <section id="campaign-block" class="template-section">
+            <h2>H) Campaign Page Block for Your Website/Newsletter</h2>
+
+            <div class="template-content">Heading: OBJECT to 480 Homes on Green Belt – Application Expected November 2025 (21-day window)
+
+What to do when application is submitted (takes 10 minutes):
+
+1. Check Uttlesford Council planning portal for application reference when announced.
+2. Submit your objection using the template examples above (personalize with your details).
+3. Add personal evidence: photos of views/paths/wildlife/flooding, school rejection letters, GP appointment delays.
+4. Click Submit WITHIN 21 DAYS.
+5. Tell 5 neighbours (share this link) - we need EVERY objection counted.
+
+Key points to include in your objection:
+
+• NPPF Para 155 "grey belt" test FAILS: Land STRONGLY serves Green Belt purposes (prevents Birchanger-Stansted coalescence, protects St Mary's Church 12th-century setting, maintains Bishop's Stortford gap).
+• NPPF Para 155 sustainability test FAILS: Car-dependent (2.1km from station with NO footway, bus 308 hourly Mon-Sat only, last bus 6:30pm, NO Sundays). NOT sustainable location. ~1,180 daily car trips, ~712 extra cars.
+• "Golden Rules" UNDELIVERABLE: Developer offers school LAND not funded BUILDINGS. Highway mitigation unfunded. BNG off-site with delivery risk. NO legally binding Section 106 securing infrastructure delivery BEFORE occupation.
+• Infrastructure CRISIS: Forest Hall School oversubscribed (no sixth form), GP surgeries overwhelmed, B1383/Cambridge Road gridlock. ~370 school-age children with NO funded expansion.
+• Brownfield alternatives NOT properly assessed.
+
+Evidence to include (if you have it):
+
+• Photos of Green Belt views, wildlife, flooding, traffic jams
+• School rejection letters, GP appointment wait times
+• Route measurements (distance to station, bus timetable screenshots)
+• Personal impact statement (how this affects YOUR life)
+
+Make it personal, make it factual, make it COUNT!</div>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
+        </section>
+
+        <!-- Notes & Tips -->
+        <section id="notes-tips" class="template-section">
+            <h2>Notes & Tips</h2>
+            <p><strong>Keep supporters on solid ground</strong></p>
+
+            <div class="tips-box">
+                <h3>✅ Stick to material planning issues:</h3>
+                <ul>
+                    <li>Green Belt purposes, openness, landscape/heritage</li>
+                    <li>Transport, ecology, flooding</li>
+                    <li>Design, infrastructure, policy conflict</li>
+                    <li>Alternatives assessment</li>
+                </ul>
+            </div>
+
+            <div class="tips-box">
+                <h3>❌ Avoid non-material points:</h3>
+                <ul>
+                    <li>House prices</li>
+                    <li>Developer profits</li>
+                    <li>Who lives there</li>
+                    <li>Loss of a private view</li>
+                </ul>
+            </div>
+
+            <div class="tips-box">
+                <h3>💡 Best Practices:</h3>
+                <ul>
+                    <li>Be polite and factual</li>
+                    <li>Add local specifics (photos, measurements, route timings)</li>
+                    <li>If you cite stats, reference the source or keep it qualitative</li>
+                    <li>Customize templates with your personal observations and evidence</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">↑</a>
+
+    <!-- JavaScript -->
+    <script>
+        // Copy to clipboard function
+        function copyToClipboard(button) {
+            const templateContent = button.previousElementSibling;
+            const textToCopy = templateContent.textContent;
+
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                button.style.backgroundColor = '#28a745';
+
+                setTimeout(function() {
+                    button.textContent = originalText;
+                    button.style.backgroundColor = '#4a7c59';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 120; // Account for fixed navbar and templates nav
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 500) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+
+    <!-- AI Template Generator JavaScript -->
+    <script>
+        // IMPORTANT: Update this URL to your deployed Cloudflare Worker URL
+        // After deploying with: wrangler deploy
+        const WORKER_API_URL = 'https://template-generator.martinssolver.workers.dev';
+
+        // Template questions configuration (must match worker)
+        const TEMPLATE_QUESTIONS = {
+            'developer-consultation': [
+                {
+                    label: 'What is your relationship to the area?',
+                    placeholder: 'e.g., Resident for 15 years, work nearby, use local paths regularly',
+                    type: 'text'
+                },
+                {
+                    label: 'Why does this land STRONGLY serve Green Belt purposes in your view?',
+                    placeholder: 'e.g., Prevents Birchanger-Stansted coalescence, protects St Mary\'s Church historic setting, maintains Bishop\'s Stortford separation gap',
+                    type: 'textarea'
+                },
+                {
+                    label: 'Why is this location car-dependent and NOT sustainable?',
+                    placeholder: 'e.g., 2.1km from station with no footway, bus 308 hourly Mon-Sat only (last bus 6:30pm, no Sundays), steep hills, no safe walking routes',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What infrastructure problems do you see that developer promises don\'t address?',
+                    placeholder: 'e.g., Forest Hall School already oversubscribed - who funds actual school buildings? GP surgeries overwhelmed - where\'s the new practice funding? B1383 gridlock - where are highway upgrade commitments?',
+                    type: 'textarea'
+                },
+                {
+                    label: 'Do you have specific evidence of these problems? (optional)',
+                    placeholder: 'e.g., Photos of traffic jams/flooding/wildlife, school rejection letters, GP appointment delays, route measurements, bus timetable screenshots',
+                    type: 'textarea',
+                    optional: true
+                }
+            ],
+            'planning-objection': [
+                {
+                    label: 'What\'s your connection to this area?',
+                    type: 'checkboxes',
+                    minSelections: 1,
+                    maxSelections: 5,
+                    options: [
+                        'I\'ve lived here for over 10 years',
+                        'I\'ve lived here for 5-10 years',
+                        'I\'ve lived here for 1-5 years',
+                        'I work in the area',
+                        'My children go to local schools',
+                        'I use local footpaths and green spaces regularly',
+                        'I\'m a member of the local community',
+                        'I shop and use services locally',
+                        'I care about protecting the countryside',
+                        'Other'
+                    ],
+                    hasOther: true
+                },
+                {
+                    label: 'Why is this Green Belt land important? (Select 1-5 reasons that matter to you)',
+                    type: 'checkboxes',
+                    minSelections: 1,
+                    maxSelections: 5,
+                    options: [
+                        'Prevents villages from merging together',
+                        'Protects the historic setting of St Mary\'s Church',
+                        'Maintains countryside character',
+                        'Provides green space for wildlife',
+                        'Offers walking routes and outdoor recreation',
+                        'Protects the rural landscape I love',
+                        'Keeps villages separate from larger towns',
+                        'Preserves the view from my home/garden',
+                        'Essential for local wildlife habitat',
+                        'Other reason'
+                    ],
+                    hasOther: true
+                },
+                {
+                    label: 'Why would this development create more car journeys? (Select 1-5 issues)',
+                    type: 'checkboxes',
+                    minSelections: 1,
+                    maxSelections: 5,
+                    options: [
+                        'No safe walking route to the station',
+                        'Bus service is infrequent and unreliable',
+                        'Too far to walk to the station (over 2km)',
+                        'No bus service on Sundays',
+                        'Last bus is too early (6:30pm)',
+                        'Roads are already congested',
+                        'No cycle lanes or safe cycling routes',
+                        'Footpaths are missing or unsafe',
+                        'Hills make walking difficult',
+                        'Other issue'
+                    ],
+                    hasOther: true
+                },
+                {
+                    label: 'What promises from the developer do you doubt will happen? (Select 1-5 concerns)',
+                    type: 'checkboxes',
+                    minSelections: 1,
+                    maxSelections: 5,
+                    options: [
+                        'Who will pay for the school buildings?',
+                        'No guarantee affordable homes will be built',
+                        'Highway improvements are vague and unfunded',
+                        'No commitment to infrastructure before homes are occupied',
+                        'Biodiversity promises are off-site and risky',
+                        'No detail on GP surgery provision',
+                        'No binding legal agreements in place',
+                        'Past developments haven\'t delivered promises',
+                        '50% affordable housing seems unrealistic',
+                        'Other concern'
+                    ],
+                    hasOther: true
+                },
+                {
+                    label: 'What local services are already struggling? (Select 1-5 problems you\'ve experienced)',
+                    type: 'checkboxes',
+                    minSelections: 1,
+                    maxSelections: 5,
+                    options: [
+                        'Local schools are oversubscribed (my child was rejected)',
+                        'GP appointments take weeks to get',
+                        'Traffic jams daily during rush hour',
+                        'Roads flood when it rains heavily',
+                        'No sixth form provision locally',
+                        'Dental practices not taking new patients',
+                        'Local roads are in poor condition',
+                        'Public transport is inadequate',
+                        'Car parking is already difficult',
+                        'Other problem'
+                    ],
+                    hasOther: true
+                }
+            ],
+            'email-representatives': [
+                {
+                    label: 'How long have you been a resident or worked in this area?',
+                    placeholder: 'e.g., 12 years',
+                    type: 'text'
+                },
+                {
+                    label: 'What does this Green Belt land personally mean to you?',
+                    placeholder: 'e.g., Where my children play, beautiful countryside I walk daily',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What is your top concern about the proposed development?',
+                    placeholder: 'e.g., Loss of village character and community identity',
+                    type: 'text'
+                },
+                {
+                    label: 'What would you like your representative to do?',
+                    placeholder: 'e.g., Vote against the proposal, press for brownfield alternatives',
+                    type: 'text'
+                }
+            ],
+            'appeal-representation': [
+                {
+                    label: 'How long have you lived in or used this area?',
+                    placeholder: 'e.g., 18 years as a resident',
+                    type: 'text'
+                },
+                {
+                    label: 'What specific views or paths do you regularly use that would be affected?',
+                    placeholder: 'e.g., Footpath along the valley, view from my garden toward the church',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What evidence can you provide about the site\'s Green Belt contribution?',
+                    placeholder: 'e.g., It maintains clear separation between settlements, prevents sprawl',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What are your concerns about the claimed "sustainability" of this location?',
+                    placeholder: 'e.g., No reliable bus service, nearest shops 2km away, steep hills',
+                    type: 'textarea'
+                }
+            ],
+            'local-plan': [
+                {
+                    label: 'What is your connection to this area?',
+                    placeholder: 'e.g., Long-time resident, local business owner',
+                    type: 'text'
+                },
+                {
+                    label: 'Why do you believe this site should not be classified as "grey belt"?',
+                    placeholder: 'e.g., It serves clear Green Belt purposes, prevents coalescence',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What alternative sites or approaches should the council consider?',
+                    placeholder: 'e.g., Brownfield sites in town centre, higher density near station',
+                    type: 'textarea'
+                },
+                {
+                    label: 'What specific policy concerns do you have about this allocation?',
+                    placeholder: 'e.g., Inconsistent with national Green Belt policy, infrastructure deficit',
+                    type: 'textarea'
+                }
+            ]
+        };
+
+        let selectedTemplateType = null;
+
+        // Template type selection handler
+        document.querySelectorAll('input[name="template-type"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                selectedTemplateType = this.value;
+                showQuestionsForTemplate(selectedTemplateType, true); // Scroll when user clicks
+            });
+        });
+
+        // Auto-load planning objection questions on page load (since it's pre-selected)
+        window.addEventListener('DOMContentLoaded', function() {
+            const planningRadio = document.getElementById('type-planning');
+            if (planningRadio && planningRadio.checked) {
+                selectedTemplateType = 'planning-objection';
+                showQuestionsForTemplate('planning-objection', false); // Don't scroll on initial load
+            }
+        });
+
+        // Show questions based on selected template
+        function showQuestionsForTemplate(templateType, shouldScroll = true) {
+            const questionsStep = document.getElementById('questions-step');
+            const questionsContainer = document.getElementById('questions-container');
+            const resultContainer = document.getElementById('result-container');
+            const errorMessage = document.getElementById('error-message');
+
+            // Hide results and errors
+            resultContainer.classList.remove('active');
+            errorMessage.classList.remove('active');
+
+            // Clear previous questions
+            questionsContainer.innerHTML = '';
+
+            // Get questions for this template type
+            const questions = TEMPLATE_QUESTIONS[templateType];
+
+            // Generate question inputs
+            questions.forEach((q, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.className = 'question-group';
+                questionDiv.style.marginBottom = '2rem';
+
+                const label = document.createElement('label');
+                label.textContent = q.label + (q.optional ? ' (optional)' : '');
+                label.style.display = 'block';
+                label.style.marginBottom = '1rem';
+                label.style.fontWeight = '600';
+                label.style.color = '#2c5f2d';
+
+                questionDiv.appendChild(label);
+
+                if (q.type === 'checkboxes') {
+                    // Create checkbox group
+                    const checkboxContainer = document.createElement('div');
+                    checkboxContainer.style.display = 'grid';
+                    checkboxContainer.style.gridTemplateColumns = 'repeat(auto-fill, minmax(280px, 1fr))';
+                    checkboxContainer.style.gap = '0.75rem';
+                    checkboxContainer.id = `question-${index}-container`;
+
+                    q.options.forEach((option, optIndex) => {
+                        const checkboxDiv = document.createElement('div');
+                        checkboxDiv.style.display = 'flex';
+                        checkboxDiv.style.alignItems = 'flex-start';
+                        checkboxDiv.style.padding = '0.75rem';
+                        checkboxDiv.style.border = '2px solid #e0e0e0';
+                        checkboxDiv.style.borderRadius = '6px';
+                        checkboxDiv.style.transition = 'all 0.2s';
+                        checkboxDiv.style.cursor = 'pointer';
+
+                        const checkbox = document.createElement('input');
+                        checkbox.type = 'checkbox';
+                        checkbox.id = `question-${index}-option-${optIndex}`;
+                        checkbox.name = `question-${index}`;
+                        checkbox.value = option;
+                        checkbox.style.marginRight = '0.5rem';
+                        checkbox.style.marginTop = '0.25rem';
+                        checkbox.style.cursor = 'pointer';
+
+                        // Checkbox selection validation
+                        checkbox.addEventListener('change', function() {
+                            const checked = checkboxContainer.querySelectorAll('input[type="checkbox"]:checked');
+                            if (checked.length > q.maxSelections) {
+                                this.checked = false;
+                                showError(`Please select no more than ${q.maxSelections} options for this question.`);
+                                setTimeout(() => {
+                                    document.getElementById('error-message').classList.remove('active');
+                                }, 3000);
+                            }
+                            // Update border styling
+                            checkboxDiv.style.borderColor = this.checked ? '#4a7c59' : '#e0e0e0';
+                            checkboxDiv.style.background = this.checked ? '#f7f9f8' : 'white';
+                        });
+
+                        const checkboxLabel = document.createElement('label');
+                        checkboxLabel.htmlFor = `question-${index}-option-${optIndex}`;
+                        checkboxLabel.textContent = option;
+                        checkboxLabel.style.cursor = 'pointer';
+                        checkboxLabel.style.fontSize = '0.95rem';
+
+                        checkboxDiv.appendChild(checkbox);
+                        checkboxDiv.appendChild(checkboxLabel);
+
+                        // Click anywhere on the div to toggle checkbox
+                        checkboxDiv.addEventListener('click', function(e) {
+                            if (e.target !== checkbox && e.target !== checkboxLabel) {
+                                checkbox.click();
+                            }
+                        });
+
+                        checkboxContainer.appendChild(checkboxDiv);
+                    });
+
+                    questionDiv.appendChild(checkboxContainer);
+
+                    // If this question has an "Other" option, create a full-width text box below all checkboxes
+                    if (q.hasOther) {
+                        const otherInputContainer = document.createElement('div');
+                        otherInputContainer.style.display = 'none';
+                        otherInputContainer.style.marginTop = '1rem';
+                        otherInputContainer.id = `question-${index}-other-container`;
+
+                        const otherLabel = document.createElement('label');
+                        otherLabel.textContent = 'Please specify:';
+                        otherLabel.style.display = 'block';
+                        otherLabel.style.marginBottom = '0.5rem';
+                        otherLabel.style.fontWeight = '500';
+                        otherLabel.style.color = '#2c5f2d';
+
+                        const otherInput = document.createElement('textarea');
+                        otherInput.id = `question-${index}-other`;
+                        otherInput.placeholder = 'Please tell us more...';
+                        otherInput.style.width = '100%';
+                        otherInput.style.padding = '0.75rem';
+                        otherInput.style.border = '2px solid #e0e0e0';
+                        otherInput.style.borderRadius = '6px';
+                        otherInput.style.fontSize = '1rem';
+                        otherInput.style.fontFamily = 'inherit';
+                        otherInput.style.transition = 'border-color 0.3s';
+                        otherInput.rows = 3;
+
+                        otherInput.addEventListener('focus', function() {
+                            this.style.borderColor = '#4a7c59';
+                        });
+
+                        otherInput.addEventListener('blur', function() {
+                            this.style.borderColor = '#e0e0e0';
+                        });
+
+                        otherInputContainer.appendChild(otherLabel);
+                        otherInputContainer.appendChild(otherInput);
+                        questionDiv.appendChild(otherInputContainer);
+
+                        // Show/hide the "Other" text box when any "Other" checkbox is toggled
+                        checkboxContainer.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                            const isOtherOption = cb.value.includes('Other');
+                            if (isOtherOption) {
+                                cb.addEventListener('change', function() {
+                                    if (this.checked) {
+                                        otherInputContainer.style.display = 'block';
+                                        // Focus the text box for better UX
+                                        setTimeout(() => otherInput.focus(), 100);
+                                    } else {
+                                        // Check if any other "Other" checkbox is still checked
+                                        const anyOtherChecked = Array.from(checkboxContainer.querySelectorAll('input[type="checkbox"]'))
+                                            .some(checkbox => checkbox.value.includes('Other') && checkbox.checked);
+                                        if (!anyOtherChecked) {
+                                            otherInputContainer.style.display = 'none';
+                                            otherInput.value = ''; // Clear the text when hiding
+                                        }
+                                    }
+                                });
+                            }
+                        });
+                    }
+
+                    // Add helper text
+                    const helperText = document.createElement('small');
+                    helperText.textContent = `Select ${q.minSelections}-${q.maxSelections} options`;
+                    helperText.style.display = 'block';
+                    helperText.style.marginTop = '0.5rem';
+                    helperText.style.color = '#666';
+                    questionDiv.appendChild(helperText);
+
+                } else {
+                    // Regular text or textarea input
+                    const input = q.type === 'textarea'
+                        ? document.createElement('textarea')
+                        : document.createElement('input');
+
+                    input.id = `question-${index}`;
+                    input.name = `question-${index}`;
+                    input.placeholder = q.placeholder;
+
+                    if (q.type === 'text') {
+                        input.type = 'text';
+                    }
+
+                    if (!q.optional) {
+                        input.required = true;
+                    }
+
+                    questionDiv.appendChild(input);
+                }
+
+                questionsContainer.appendChild(questionDiv);
+            });
+
+            // Show questions step
+            questionsContainer.classList.add('active');
+            questionsStep.style.display = 'block';
+
+            // Scroll to questions with proper offset accounting for fixed navbar
+            if (shouldScroll) {
+                const offset = 100; // Account for fixed navbar
+                const targetPosition = questionsStep.offsetTop - offset;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Form submission handler
+        document.getElementById('generator-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            if (!selectedTemplateType) {
+                showError('Please select a template type first.');
+                return;
+            }
+
+            // Collect answers
+            const answers = [];
+            const questions = TEMPLATE_QUESTIONS[selectedTemplateType];
+
+            questions.forEach((q, index) => {
+                if (q.type === 'checkboxes') {
+                    // Collect checked checkboxes
+                    const checkboxes = document.querySelectorAll(`input[name="question-${index}"]:checked`);
+                    const selectedOptions = [];
+
+                    checkboxes.forEach(checkbox => {
+                        // Check if it's an "Other" option with custom text
+                        const isOther = checkbox.value.includes('Other');
+                        if (isOther) {
+                            const otherInput = document.getElementById(`question-${index}-other`);
+                            if (otherInput && otherInput.value.trim()) {
+                                selectedOptions.push(otherInput.value.trim());
+                            } else {
+                                selectedOptions.push(checkbox.value);
+                            }
+                        } else {
+                            selectedOptions.push(checkbox.value);
+                        }
+                    });
+
+                    // Validate minimum selections
+                    if (selectedOptions.length < q.minSelections) {
+                        showError(`Please select at least ${q.minSelections} option(s) for: "${q.label}"`);
+                        throw new Error('Validation failed');
+                    }
+
+                    answers.push(selectedOptions.join('; '));
+                } else {
+                    // Regular text/textarea input
+                    const input = document.getElementById(`question-${index}`);
+                    answers.push(input.value.trim());
+                }
+            });
+
+            // Validate at least one answer is provided
+            const hasAnswers = answers.some(answer => answer.length > 0);
+            if (!hasAnswers) {
+                showError('Please answer at least one question.');
+                return;
+            }
+
+            // Show loading state
+            const generateBtn = document.getElementById('generate-btn');
+            const btnText = generateBtn.querySelector('.btn-text');
+            generateBtn.disabled = true;
+            generateBtn.classList.add('loading');
+            btnText.textContent = 'Generating...';
+
+            // Hide previous results/errors
+            document.getElementById('result-container').classList.remove('active');
+            document.getElementById('error-message').classList.remove('active');
+
+            try {
+                // Call Cloudflare Worker
+                const response = await fetch(WORKER_API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        templateType: selectedTemplateType,
+                        answers: answers
+                    })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.error || 'Failed to generate template');
+                }
+
+                // Show result
+                displayResult(data.content);
+
+            } catch (error) {
+                console.error('Error:', error);
+                showError(error.message || 'Failed to generate template. Please try again.');
+            } finally {
+                // Reset button
+                generateBtn.disabled = false;
+                generateBtn.classList.remove('loading');
+                btnText.textContent = 'Generate My Template';
+            }
+        });
+
+        // Display generated result
+        function displayResult(content) {
+            const resultContainer = document.getElementById('result-container');
+            const generatedContent = document.getElementById('generated-content');
+
+            // Get today's date in British format
+            const today = new Date().toLocaleDateString('en-GB', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+
+            // Add formal signoff to the letter with pre-filled date
+            const signoff = "\n\nYours sincerely,\n\n\nSigned: _____________________________\n\nDate: " + today;
+            generatedContent.textContent = content + signoff;
+            resultContainer.classList.add('active');
+
+            // Scroll to result
+            resultContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Show error message
+        function showError(message) {
+            const errorMessage = document.getElementById('error-message');
+            errorMessage.textContent = message;
+            errorMessage.classList.add('active');
+            errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Copy result button (top)
+        document.getElementById('copy-result-btn').addEventListener('click', function() {
+            const content = document.getElementById('generated-content').textContent;
+            navigator.clipboard.writeText(content).then(() => {
+                const originalText = this.textContent;
+                this.textContent = 'Copied!';
+                this.style.backgroundColor = '#28a745';
+
+                setTimeout(() => {
+                    this.textContent = originalText;
+                    this.style.backgroundColor = '#4a7c59';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                showError('Failed to copy to clipboard');
+            });
+        });
+
+        // Copy result button (bottom)
+        document.getElementById('copy-result-btn-bottom').addEventListener('click', function() {
+            const content = document.getElementById('generated-content').textContent;
+            navigator.clipboard.writeText(content).then(() => {
+                const originalText = this.textContent;
+                this.textContent = '✅ Copied!';
+                this.style.backgroundColor = '#28a745';
+
+                setTimeout(() => {
+                    this.textContent = originalText;
+                    this.style.backgroundColor = '#4a7c59';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                showError('Failed to copy to clipboard');
+            });
+        });
+
+        // Regenerate button
+        document.getElementById('regenerate-btn').addEventListener('click', function() {
+            // Re-submit the form
+            document.getElementById('generator-form').dispatchEvent(new Event('submit'));
+        });
+
+        // ========================================
+        // POSTCODE AUTOCOMPLETE & LETTER PERSONALIZATION
+        // ========================================
+
+        let rawLetterContent = ''; // Store the original generated letter
+        let postcodeSearchTimeout = null;
+        let currentAddresses = []; // Store current address results
+
+        // Address lookup using findaddress.io API
+        const postcodeInput = document.getElementById('user-postcode');
+        const postcodeSuggestions = document.getElementById('postcode-suggestions');
+        const addressInput = document.getElementById('user-address');
+        const nameInput = document.getElementById('user-name');
+
+        console.log('=== Address Autocomplete Initialization ===');
+        console.log('postcodeInput found:', !!postcodeInput, postcodeInput);
+        console.log('postcodeSuggestions found:', !!postcodeSuggestions, postcodeSuggestions);
+        console.log('addressInput found:', !!addressInput, addressInput);
+        console.log('nameInput found:', !!nameInput, nameInput);
+
+        // Only attach listeners if elements exist
+        if (!postcodeInput || !postcodeSuggestions || !addressInput || !nameInput) {
+            console.error('⚠️ REQUIRED ELEMENTS NOT FOUND! Cannot initialize address autocomplete.');
+            console.error('Missing elements:', {
+                postcodeInput: !postcodeInput,
+                postcodeSuggestions: !postcodeSuggestions,
+                addressInput: !addressInput,
+                nameInput: !nameInput
+            });
+        }
+
+        // Debounced address search
+        if (postcodeInput) {
+            console.log('✅ Attaching input event listener to postcode field');
+            postcodeInput.addEventListener('input', function() {
+            const query = this.value.trim().toUpperCase();
+            console.log('Postcode input changed:', query);
+
+            // Clear previous timeout
+            if (postcodeSearchTimeout) {
+                clearTimeout(postcodeSearchTimeout);
+            }
+
+            // Hide suggestions if query is too short
+            if (query.length < 2) {
+                postcodeSuggestions.style.display = 'none';
+                console.log('Query too short, hiding suggestions');
+                return;
+            }
+
+            // Debounce API calls (wait 400ms after user stops typing)
+            postcodeSearchTimeout = setTimeout(async () => {
+                console.log('Searching for addresses with query:', query);
+
+                // Parse the query to extract house number and postcode
+                // Expected formats: "CM23 5EH", "CM235EH", "CM23 5EH 18", "CM235EH 18", "18 CM23 5EH"
+                let house = 'NULL';
+                let postcode = '';
+
+                // Remove extra spaces and split
+                const parts = query.trim().split(/\s+/);
+
+                // Check if first part is a number (house number at start)
+                if (parts.length > 1 && /^\d+[A-Z]?$/.test(parts[0])) {
+                    house = parts[0];
+                    postcode = parts.slice(1).join('');
+                } else if (parts.length > 1 && /^\d+[A-Z]?$/.test(parts[parts.length - 1])) {
+                    // House number at end
+                    house = parts[parts.length - 1];
+                    postcode = parts.slice(0, -1).join('');
+                } else {
+                    // No house number, just postcode
+                    postcode = parts.join('');
+                }
+
+                // Format postcode - add space if missing (e.g., CM235EH -> CM23 5EH)
+                const postcodePattern = /^([A-Z]{1,2}\d{1,2}[A-Z]?)(\d[A-Z]{2})$/;
+                const match = postcode.match(postcodePattern);
+                if (match) {
+                    postcode = match[1] + ' ' + match[2];
+                }
+
+                // Replace spaces with + for URL (as per docs)
+                const postcodeForUrl = postcode.replace(/\s/g, '+');
+
+                console.log('Parsed - House:', house, 'Postcode:', postcode);
+
+                try {
+                    // Call findaddress.io API with correct format: /API/{house}/{postcode}
+                    const apiUrl = `https://findaddress.io/API/${house}/${postcodeForUrl}`;
+                    console.log('Calling findaddress.io API:', apiUrl);
+
+                    const response = await fetch(apiUrl, {
+                        method: 'GET',
+                        headers: {
+                            'x-api-key': 'aaabadc946b2df14b885aa0e6aa590439d67d40c8ee4dbb23b6ca3e11b8a60cc',
+                            'content-type': 'application/json',
+                            'cache-control': 'no-cache',
+                            'referer': window.location.origin
+                        }
+                    });
+
+                    console.log('Using referer:', window.location.origin);
+
+                    console.log('API response status:', response.status);
+
+                    if (response.ok) {
+                        const data = await response.json();
+                        console.log('findaddress.io response:', data);
+
+                        // Check if the API returned success or partial match
+                        if (data && (data.result === 'Success' || data.result === 'Partial match') && data.expandedAddress) {
+                            console.log('✅ Found address from findaddress.io:', data.result);
+
+                            // Convert the single result to array format for our display function
+                            const addresses = [{
+                                house: data.expandedAddress.house,
+                                street: data.expandedAddress.street,
+                                locality: data.expandedAddress.locality,
+                                town: data.expandedAddress.town,
+                                district: data.expandedAddress.district,
+                                county: data.expandedAddress.county,
+                                postcode: data.expandedAddress.pCode,
+                                csvAddress: data.csvAddress,
+                                latitude: data.latitude,
+                                longitude: data.longitude,
+                                isPartialMatch: data.result === 'Partial match'
+                            }];
+
+                            currentAddresses = addresses;
+                            displayAddressSuggestions(addresses);
+                            return;
+                        } else if (data && data.result === 'Failure') {
+                            console.log('❌ API returned failure:', data.errorMsg);
+                            postcodeSuggestions.style.display = 'none';
+                        } else {
+                            console.log('No addresses found for this query');
+                            postcodeSuggestions.style.display = 'none';
+                        }
+                    } else {
+                        console.error('findaddress.io request failed with status:', response.status);
+                        const errorText = await response.text();
+                        console.error('Error response:', errorText);
+                        postcodeSuggestions.style.display = 'none';
+                    }
+                } catch (error) {
+                    console.error('Address lookup error:', error);
+                    postcodeSuggestions.style.display = 'none';
+                }
+            }, 400);
+        });
+        } else {
+            console.error('❌ postcodeInput element not found - event listener not attached');
+        }
+
+        // Display address suggestions
+        function displayAddressSuggestions(addresses) {
+            console.log('Displaying suggestions:', addresses.length, 'addresses');
+            console.log('First address structure:', addresses[0]);
+            postcodeSuggestions.innerHTML = '';
+
+            addresses.slice(0, 15).forEach((address, index) => {
+                const div = document.createElement('div');
+                div.className = 'postcode-suggestion';
+
+                // Format the address display - findaddress.io might use different field names
+                let addressText = '';
+                if (typeof address === 'string') {
+                    addressText = address;
+                } else if (address.address) {
+                    // If there's an 'address' field with the full address
+                    addressText = address.address;
+                } else if (address.formatted) {
+                    addressText = address.formatted;
+                } else {
+                    // Build from parts
+                    addressText = formatAddressFromParts(address);
+                }
+
+                // Add partial match indicator if needed
+                if (address.isPartialMatch) {
+                    addressText += ' (Partial match - some details may be missing)';
+                    div.style.fontStyle = 'italic';
+                    div.style.opacity = '0.8';
+                }
+
+                console.log('Address suggestion', index, ':', addressText);
+                div.textContent = addressText;
+
+                div.addEventListener('click', () => {
+                    console.log('Address selected:', address);
+                    selectAddress(address);
+                });
+                postcodeSuggestions.appendChild(div);
+            });
+
+            postcodeSuggestions.style.display = 'block';
+            console.log('Suggestions box should now be visible');
+        }
+
+        // Format address from individual parts if needed
+        function formatAddressFromParts(address) {
+            console.log('Formatting address from parts:', address);
+            const parts = [];
+
+            // Try common field names (findaddress.io uses 'house', others use 'building_number')
+            if (address.house) parts.push(address.house);
+            if (address.building_number || address.buildingNumber) parts.push(address.building_number || address.buildingNumber);
+            if (address.building_name || address.buildingName) parts.push(address.building_name || address.buildingName);
+            if (address.street || address.thoroughfare) parts.push(address.street || address.thoroughfare);
+            if (address.locality) parts.push(address.locality);
+            if (address.town || address.postTown) parts.push(address.town || address.postTown);
+            if (address.district) parts.push(address.district);
+            if (address.county) parts.push(address.county);
+            if (address.postcode) parts.push(address.postcode);
+
+            const formatted = parts.filter(p => p).join(', ');
+            console.log('Formatted address:', formatted);
+            return formatted || address.csvAddress || 'Address';
+        }
+
+        // When user selects an address from the dropdown
+        async function selectAddress(address) {
+            console.log('selectAddress called with:', address);
+
+            if (!postcodeInput || !addressInput || !postcodeSuggestions) {
+                console.error('selectAddress called but required elements not found');
+                return;
+            }
+
+            // Set the postcode input to the selected postcode
+            if (address.postcode) {
+                postcodeInput.value = address.postcode;
+            }
+
+            postcodeSuggestions.style.display = 'none';
+
+            // Build formatted address for the address textarea
+            const addressLines = [];
+
+            // Line 1: House number/name and street (handle both findaddress.io and other formats)
+            let line1 = '';
+            if (address.house) line1 += address.house + ' ';
+            if (address.building_number) line1 += address.building_number + ' ';
+            if (address.building_name) line1 += address.building_name + ' ';
+            if (address.street) line1 += address.street;
+            if (line1.trim()) addressLines.push(line1.trim());
+
+            // Line 2: Locality (if different from town)
+            if (address.locality && address.locality !== address.town) {
+                addressLines.push(address.locality);
+            }
+
+            // Line 3: District (if present and different from town)
+            if (address.district && address.district !== address.town) {
+                addressLines.push(address.district);
+            }
+
+            // Line 4: Town/City
+            if (address.town) {
+                addressLines.push(address.town);
+            }
+
+            // Line 5: County
+            if (address.county) {
+                addressLines.push(address.county);
+            }
+
+            // Line 6: Postcode
+            if (address.postcode) {
+                addressLines.push(address.postcode);
+            }
+
+            // Fill the address textarea
+            addressInput.value = addressLines.join('\n');
+            console.log('Address filled into textarea:', addressLines.join('\n'));
+
+            // Trigger letter update
+            updateLetterPreview();
+        }
+
+        // Hide suggestions when clicking outside
+        if (postcodeInput && postcodeSuggestions) {
+            document.addEventListener('click', function(e) {
+                if (!postcodeInput.contains(e.target) && !postcodeSuggestions.contains(e.target)) {
+                    postcodeSuggestions.style.display = 'none';
+                }
+            });
+        }
+
+        // Real-time letter preview update
+        if (nameInput) {
+            console.log('✅ Attaching input event listener to name field');
+            nameInput.addEventListener('input', updateLetterPreview);
+        } else {
+            console.error('❌ nameInput element not found');
+        }
+
+        if (addressInput) {
+            console.log('✅ Attaching input event listener to address field');
+            addressInput.addEventListener('input', updateLetterPreview);
+        } else {
+            console.error('❌ addressInput element not found');
+        }
+
+        function updateLetterPreview() {
+            if (!nameInput || !addressInput) {
+                console.error('updateLetterPreview called but inputs not found');
+                return;
+            }
+
+            const name = nameInput.value.trim();
+            const address = addressInput.value.trim();
+            const generatedContent = document.getElementById('generated-content');
+
+            // Build formal letter header with date
+            const today = new Date().toLocaleDateString('en-GB', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+
+            // Formal signoff with pre-filled date
+            const signoff = "\n\nYours sincerely,\n\n\nSigned: _____________________________\n\nDate: " + today;
+
+            // If no personalization yet, use raw content with signoff
+            if (!name && !address) {
+                generatedContent.textContent = rawLetterContent + signoff;
+                return;
+            }
+
+            let letterHeader = '';
+
+            if (name) {
+                letterHeader += name + '\n';
+            }
+
+            if (address) {
+                letterHeader += address + '\n';
+            }
+
+            if (name || address) {
+                letterHeader += '\n' + today + '\n\n';
+            }
+
+            // Combine header with original letter content and signoff
+            generatedContent.textContent = letterHeader + rawLetterContent + signoff;
+        }
+
+        // Print button functionality (top)
+        document.getElementById('print-btn').addEventListener('click', function() {
+            window.print();
+        });
+
+        // Print button functionality (bottom)
+        document.getElementById('print-btn-bottom').addEventListener('click', function() {
+            window.print();
+        });
+
+        // Store original letter content when generated
+        const originalDisplayResult = displayResult;
+        displayResult = function(content) {
+            rawLetterContent = content;
+            originalDisplayResult(content);
+
+            // Clear personalization fields when new letter is generated
+            nameInput.value = '';
+            addressInput.value = '';
+            postcodeInput.value = '';
+        };
+    </script>
+</body>
+</html>

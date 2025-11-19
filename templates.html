@@ -840,8 +840,8 @@
 
     <!-- Hero Section -->
     <div class="templates-hero">
-        <h1>Response Templates</h1>
-        <p>Ready-to-use templates for consultations, objections, and campaigning. Copy, customize with your details, and submit to make your voice heard.</p>
+        <h1>Objection Guide</h1>
+        <p>Once our Green Belt is gone it's not coming back, and this will be death by a thousand cuts. It's never been more important to object to planning.</p>
     </div>
 
     <!-- Templates Container -->
@@ -856,51 +856,9 @@
                 <p><strong>Save time while staying personal:</strong> This tool creates a custom template based on your specific situation. Review and adjust the result before submitting to ensure it truly reflects your voice.</p>
             </div>
 
-            <!-- Step 1: Select Template Type -->
-            <div class="generator-step">
-                <h3 data-step="1">Choose Your Template Type</h3>
-                <div class="template-type-selector">
-                    <div class="template-type-option">
-                        <input type="radio" id="type-dev-consult" name="template-type" value="developer-consultation">
-                        <label for="type-dev-consult">
-                            <span class="type-name">Developer Consultation</span>
-                            <span class="type-desc">Respond to pre-application consultation (deadline: 2 Oct 2025)</span>
-                        </label>
-                    </div>
-                    <div class="template-type-option">
-                        <input type="radio" id="type-planning" name="template-type" value="planning-objection" checked>
-                        <label for="type-planning">
-                            <span class="type-name">Planning Objection<span class="priority-badge">🔴 CURRENT PRIORITY</span></span>
-                            <span class="type-desc">Formal objection when application is lodged</span>
-                        </label>
-                    </div>
-                    <div class="template-type-option">
-                        <input type="radio" id="type-email" name="template-type" value="email-representatives">
-                        <label for="type-email">
-                            <span class="type-name">Email Councillors/MP</span>
-                            <span class="type-desc">Contact your local representatives</span>
-                        </label>
-                    </div>
-                    <div class="template-type-option">
-                        <input type="radio" id="type-appeal" name="template-type" value="appeal-representation">
-                        <label for="type-appeal">
-                            <span class="type-name">Appeal Representation</span>
-                            <span class="type-desc">If application is refused and appealed</span>
-                        </label>
-                    </div>
-                    <div class="template-type-option">
-                        <input type="radio" id="type-local-plan" name="template-type" value="local-plan">
-                        <label for="type-local-plan">
-                            <span class="type-name">Local Plan Response</span>
-                            <span class="type-desc">When council proposes allocating the site</span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Step 2: Answer Questions (Dynamic) -->
-            <div class="generator-step" id="questions-step" style="display: none;">
-                <h3 data-step="2">Tell Us About Your Situation</h3>
+            <!-- Step 1: Answer Questions (Dynamic) -->
+            <div class="generator-step" id="questions-step">
+                <h3 data-step="1">Tell Us About Your Situation</h3>
                 <form id="generator-form">
                     <div id="questions-container" class="questions-container"></div>
                     <button type="submit" class="generate-button" id="generate-btn">
@@ -1065,277 +1023,36 @@
             </div>
         </div>
 
-        <!-- Example Responses Heading -->
-        <h2 style="text-align: center; color: #2c5f2d; font-size: 2.5rem; margin: 3rem 0 2rem; padding-bottom: 1rem; border-bottom: 3px solid #4a7c59;">Example Responses</h2>
-
-        <!-- Section A: Planning Objection -->
-        <section id="planning-objection" class="template-section">
-            <h2>A) Statutory Planning Objection</h2>
-            <p>To the Council when an application is lodged</p>
-
-            <div class="template-content">Subject: OBJECTION – [APPLICATION REF], Land at Birchanger and Stansted (480 homes)
-
-Summary
-I object because: (1) this site is NOT "grey belt" under NPPF Para 155 - it strongly serves Green Belt purposes; (2) it fails the Para 155 sustainability test - it is car-dependent with inadequate public transport; (3) the "Golden Rules" are undeliverable promises without legally binding Section 106 agreements securing delivery BEFORE occupation.
-
-1. NPPF Paragraph 155 "Grey Belt" Test FAILS
-
-Test 1: Land must NOT strongly serve Green Belt purposes - THIS TEST FAILS
-The land DOES strongly serve Green Belt purposes: prevents coalescence, safeguards St Mary's Church setting, maintains separation from Bishop's Stortford.
-
-Test 2: Must be sustainable location - THIS TEST FAILS
-Site is 2.1km from station with NO footway (fails DfT 800m standard). Bus 308: hourly Mon-Sat only, last bus 6:30pm, NO Sundays. Car-dependent: ~1,180 daily trips, ~712 cars.
-
-2. "Golden Rules" Undeliverable Without Section 106
-
-Affordable housing: No open-book viability - how is 50% deliverable? No binding phasing.
-Infrastructure: Developer offers LAND for school - but who funds buildings/teachers? Highway mitigation is vague "s106 contribution" - how much? When? Legally binding?
-BNG: Off-site units create delivery risk. No 30-year habitat plan secured.
-
-3. Infrastructure Crisis
-
-Schools: Forest Hall oversubscribed, no sixth form - where will ~370 children go? NO funded expansion.
-GP surgeries: Lower Street, Church Road overwhelmed - NO new practice committed.
-Highways: B1383, Cambridge Road gridlock - NO capacity upgrades funded.
-
-4. Alternatives Not Assessed
-
-Brownfield sites not robustly assessed.
-
-Conclusion
-REFUSE. Not "grey belt" - strongly serves Green Belt, fails Para 155 sustainability. "Golden Rules" undeliverable without enforceable Section 106 requiring delivery BEFORE occupation.
-
-Your details: [Name, address, email, postcode]
-Attachments: [Photos, route audits, flood evidence]</div>
-            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
-        </section>
-
-        <!-- Section B: Appeal Representation -->
-        <section id="appeal-representation" class="template-section">
-            <h2>B) Appeal (Planning Inspectorate) Representation</h2>
-            <p>If the application is refused and appealed, or if the developer appeals non-determination</p>
-
-            <div class="template-content">Subject: Representation – [PINS REF], Land at Birchanger and Stansted (480 homes), Uttlesford DC
-
-Who I am: Local resident of [X years] at [postcode]; regular user of [paths/lanes/views] affected by the proposal.
-
-Key points (succinct):
-
-NPPF Para 155 Test FAILS: This is NOT "grey belt" - the land STRONGLY serves Green Belt purposes (prevents Birchanger-Stansted coalescence, safeguards St Mary's Church 12th-century setting, maintains Bishop's Stortford separation gap).
-
-Sustainability Test FAILS: Site is 2.1km from Stansted station with NO continuous footway (fails DfT 800m walkability standard). Bus 308: hourly Mon-Sat only, last bus 6:30pm, NO Sundays. This is car-dependent development (~1,180 daily trips, ~712 cars), NOT sustainable location required by NPPF Para 155.
-
-Openness Harm: 480 homes materially reduce spatial and visual openness; photomontages from [VP refs] show marked visual harm the appellant underplays.
-
-"Golden Rules" Undeliverable: 50% affordable uplift not secured via binding Section 106; BNG dependent on off-site units with delivery risk; infrastructure (school buildings, highway upgrades) listed as vague "contributions" not legally tied to occupation triggers.
-
-Infrastructure Capacity: Forest Hall School oversubscribed (no sixth form), GP surgeries overwhelmed, B1383/Cambridge Road gridlock - NO funded mitigation secured before development.
-
-Planning balance: Generic benefits do not outweigh Green Belt harm, sustainability failures, and infrastructure crisis.
-
-Ask: DISMISS the appeal. If allowed (despite these objections), apply stringent conditions/obligations requiring delivery BEFORE occupation (see my LPA objection for detailed requirements).
-
-Attachments: [LPA objection; photos of views/wildlife/flooding; route audits; school rejection letters]</div>
-            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
-        </section>
-
-        <!-- Section C: Local Plan -->
-        <section id="local-plan" class="template-section">
-            <h2>C) Local Plan (Reg 18 / Reg 19) Representation</h2>
-            <p><em>When the council proposes allocating the site through the plan</em></p>
-
-            <div class="template-content">Subject: Representation on [Local Plan name] – Policy [XX] Land at Birchanger and Stansted (480 homes)
-
-Soundness tests: The allocation is UNSOUND – not justified, not effective, inconsistent with national policy on Green Belt and NPPF Para 155.
-
-Points to make:
-
-NPPF Para 155 "grey belt" methodology FLAWED: The council's method down-weights key Green Belt contribution factors (coalescence risk between Birchanger-Stansted, St Mary's Church historic setting, Bishop's Stortford separation gap), wrongly classing this site as "grey belt." The land STRONGLY serves Green Belt purposes - Para 155 test 1 FAILS.
-
-Sustainability assessment FLAWED: Site is 2.1km from station with NO footway (fails DfT 800m standard), bus 308 hourly Mon-Sat only (last bus 6:30pm, NO Sundays) - this is car-dependent location, NOT sustainable as required by Para 155 test 2. Transport modelling ignores ~1,180 daily car trips, ~712 extra cars.
-
-"Golden Rules" undeliverable: Evidence base lacks open-book viability proving 50% affordable housing is economically deliverable. No commitment to school BUILDINGS (only land offer). Highway mitigation unfunded. BNG relies on off-site units. Infrastructure Delivery Plan shows deficits/unfunded items.
-
-Alternatives not fairly assessed: Brownfield sites within Bishop's Stortford and Stansted, densification near station, not robustly assessed as reasonable alternatives.
-
-Policy ask: DELETE the allocation - replace with brownfield-first package. If retained (despite unsoundness), cap at 240 homes maximum, require permanent landscape buffer protecting Green Belt function, on-site social rent minimum 25%, BNG >20% secured on-site, school buildings funded before occupation, highway upgrades delivered before occupation.</div>
-            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
-        </section>
-
-        <!-- Section D: Petition -->
-        <section id="petition" class="template-section">
-            <h2>D) Petition Text</h2>
-            <p>For your website/Change.org/Council e-petition</p>
-
-            <div class="template-content">Title: Stop 480 homes on Birchanger and Stansted Green Belt – say NO to fake "grey belt" claim
-
-Summary:
-We call on Uttlesford Council and City & Country to STOP plans for 480 homes (180 Birchanger, 300 Stansted) on Green Belt land. This is NOT "grey belt" under NPPF Para 155 - it STRONGLY serves Green Belt purposes: prevents Birchanger-Stansted coalescence, protects St Mary's Church 12th-century setting, maintains Bishop's Stortford separation gap. Build brownfield-first and protect our countryside.
-
-Why this matters:
-
-• NPPF Para 155 test FAILS: Land strongly serves Green Belt purposes (not "grey belt").
-• Sustainability test FAILS: Car-dependent (2.1km from station, NO footway, bus 308 hourly Mon-Sat only, last bus 6:30pm, NO Sundays) - NOT sustainable location.
-• "Golden Rules" UNDELIVERABLE: Developer offers school LAND but not funded buildings. Highway mitigation unfunded. BNG off-site with delivery risk. No legally binding Section 106 securing delivery BEFORE occupation.
-• Infrastructure CRISIS: Forest Hall School oversubscribed, GP surgeries overwhelmed, B1383/Cambridge Road gridlock - NO funded expansion.
-• ~1,180 daily car trips, ~712 extra cars, ~370 school-age children with NO plan.
-
-What we want:
-
-• Uttlesford Council to REFUSE allocation/permission and reject "grey belt" classification.
-• City & Country to withdraw and bring forward brownfield alternatives.
-• NO development without enforceable Section 106 requiring infrastructure delivery BEFORE occupation.
-
-Call to action:
-
-• Sign and share before application is submitted (expected November 2025).
-• Submit objection when application lodged (21-day window).
-• Email your councillors demanding they protect Green Belt, not fake "grey belt".</div>
-            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
-        </section>
-
-        <!-- Section E: Email Representatives -->
-        <section id="email-representatives" class="template-section">
-            <h2>E) Email Your Ward Councillors / MP</h2>
-            <p>Use for supporters to contact representatives politely</p>
-
-            <div class="template-content">Subject: Please oppose fake "grey belt" claim for 480 homes on Birchanger and Stansted Green Belt
-
-Dear Cllr/MP [NAME],
-
-I'm a resident of [AREA]. Please oppose City & Country's application for 480 homes (180 Birchanger, 300 Stansted) on Green Belt land. This is NOT "grey belt" under NPPF Para 155:
-
-• NPPF Para 155 test 1 FAILS: Land STRONGLY serves Green Belt purposes (prevents Birchanger-Stansted coalescence, protects St Mary's Church 12th-century setting, maintains Bishop's Stortford separation gap).
-• NPPF Para 155 test 2 FAILS: Site is car-dependent (2.1km from station with NO footway, bus 308 hourly Mon-Sat only, last bus 6:30pm, NO Sundays) - NOT sustainable location.
-• "Golden Rules" UNDELIVERABLE: Developer offers school LAND but not funded buildings. No legally binding Section 106 securing infrastructure delivery BEFORE occupation.
-• Infrastructure CRISIS: Forest Hall School oversubscribed, GP surgeries overwhelmed, B1383/Cambridge Road gridlock - NO funded expansion. ~1,180 daily car trips, ~712 extra cars, ~370 school-age children with NO plan.
-
-Please:
-
-• Urge Uttlesford Council to REFUSE this application and reject "grey belt" classification.
-• Press City & Country to focus on brownfield alternatives.
-• Demand enforceable Section 106 agreements requiring infrastructure BEFORE occupation if approved.
-• Keep me informed of planning committee meetings and votes.
-
-Yours sincerely,
-[NAME, ADDRESS, POSTCODE]</div>
-            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
-        </section>
-
-        <!-- Section F: Committee Speech -->
-        <section id="committee-speech" class="template-section">
-            <h2>F) Planning Committee Speech (≈2 minutes)</h2>
-
-            <div class="template-content">Chair, Members,
-
-This is NOT "grey belt" under NPPF Paragraph 155. BOTH tests FAIL:
-
-Test 1: Land must NOT strongly serve Green Belt - THIS FAILS. It DOES strongly serve Green Belt: prevents Birchanger-Stansted coalescence, protects St Mary's Church 12th-century setting, maintains Bishop's Stortford separation gap.
-
-Test 2: Must be sustainable location - THIS FAILS. Site is 2.1km from station with NO footway (fails DfT 800m standard). Bus 308: hourly Mon-Sat only, last bus 6:30pm, NO Sundays. Car-dependent: ~1,180 daily trips, ~712 extra cars.
-
-The "Golden Rules" are undeliverable promises: Developer offers school LAND but not funded BUILDINGS. Highway mitigation unfunded. BNG off-site with delivery risk. NO legally binding Section 106 securing delivery BEFORE occupation.
-
-Infrastructure crisis: Forest Hall oversubscribed, GP surgeries overwhelmed, B1383/Cambridge Road gridlock. ~370 school-age children with NO funded expansion. NO mitigation secured.
-
-Planning balance: Generic benefits do not outweigh Green Belt harm, Para 155 test failures, and infrastructure crisis. Please REFUSE.
-
-Thank you.</div>
-            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
-        </section>
-
-        <!-- Section G: FOI Request -->
-        <section id="foi-request" class="template-section">
-            <h2>G) Freedom of Information (FOI) / EIR Request</h2>
-            <p>To obtain the council's "grey belt" assessments and inputs</p>
-
-            <div class="template-content">Subject: EIR request – "Grey Belt" assessment for Land at Birchanger and Stansted (480 homes)
-
-Dear Uttlesford District Council,
-
-Under the Environmental Information Regulations 2004, please provide:
-
-1. Any site-specific Green Belt or "grey belt" assessment for Land at Birchanger and Stansted since January 2024, including assessments against NPPF Paragraph 155 tests;
-2. The methodology, scoring matrices, boundary maps, and sustainability assessments used to classify this site as "grey belt";
-3. All correspondence with City & Country (applicant/promoter) relating to "grey belt" status, NPPF Para 155 compliance, and "Golden Rules" deliverability;
-4. Evidence of reasonable alternatives assessment (brownfield sites, densification options) and any viability inputs supporting the claimed 50% affordable housing uplift;
-5. Section 106 draft agreements (if any) relating to infrastructure delivery triggers, affordable housing phasing, school building funding, highway upgrade commitments, and BNG habitat management plans.
-
-Please supply as searchable PDFs/CSV shapefiles.
-
-Yours faithfully,
-[NAME, ADDRESS]</div>
-            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
-        </section>
-
-        <!-- Section H: Campaign Block -->
-        <section id="campaign-block" class="template-section">
-            <h2>H) Campaign Page Block for Your Website/Newsletter</h2>
-
-            <div class="template-content">Heading: OBJECT to 480 Homes on Green Belt – Application Expected November 2025 (21-day window)
-
-What to do when application is submitted (takes 10 minutes):
-
-1. Check Uttlesford Council planning portal for application reference when announced.
-2. Submit your objection using the template examples above (personalize with your details).
-3. Add personal evidence: photos of views/paths/wildlife/flooding, school rejection letters, GP appointment delays.
-4. Click Submit WITHIN 21 DAYS.
-5. Tell 5 neighbours (share this link) - we need EVERY objection counted.
-
-Key points to include in your objection:
-
-• NPPF Para 155 "grey belt" test FAILS: Land STRONGLY serves Green Belt purposes (prevents Birchanger-Stansted coalescence, protects St Mary's Church 12th-century setting, maintains Bishop's Stortford gap).
-• NPPF Para 155 sustainability test FAILS: Car-dependent (2.1km from station with NO footway, bus 308 hourly Mon-Sat only, last bus 6:30pm, NO Sundays). NOT sustainable location. ~1,180 daily car trips, ~712 extra cars.
-• "Golden Rules" UNDELIVERABLE: Developer offers school LAND not funded BUILDINGS. Highway mitigation unfunded. BNG off-site with delivery risk. NO legally binding Section 106 securing infrastructure delivery BEFORE occupation.
-• Infrastructure CRISIS: Forest Hall School oversubscribed (no sixth form), GP surgeries overwhelmed, B1383/Cambridge Road gridlock. ~370 school-age children with NO funded expansion.
-• Brownfield alternatives NOT properly assessed.
-
-Evidence to include (if you have it):
-
-• Photos of Green Belt views, wildlife, flooding, traffic jams
-• School rejection letters, GP appointment wait times
-• Route measurements (distance to station, bus timetable screenshots)
-• Personal impact statement (how this affects YOUR life)
-
-Make it personal, make it factual, make it COUNT!</div>
-            <button class="copy-button" onclick="copyToClipboard(this)">Copy Text</button>
-        </section>
-
-        <!-- Notes & Tips -->
-        <section id="notes-tips" class="template-section">
-            <h2>Notes & Tips</h2>
-            <p><strong>Keep supporters on solid ground</strong></p>
-
-            <div class="tips-box">
-                <h3>✅ Stick to material planning issues:</h3>
-                <ul>
-                    <li>Green Belt purposes, openness, landscape/heritage</li>
-                    <li>Transport, ecology, flooding</li>
-                    <li>Design, infrastructure, policy conflict</li>
-                    <li>Alternatives assessment</li>
-                </ul>
+    </div>
+
+    <!-- Social Sharing Section -->
+    <div style="background: linear-gradient(135deg, #2c5f2d 0%, #4a7c59 100%); padding: 2rem 1.5rem; margin-top: 0;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); border-radius: 15px; padding: 1rem 1.5rem; border: 2px solid rgba(255, 255, 255, 0.2);">
+                <h3 style="color: white; font-size: 1.1rem; margin: 0 0 1rem 0; text-align: center; font-weight: 600; line-height: 1.4;">We're stronger together. We're stronger than any developer. Share this with friends and family:</h3>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <!-- X (Twitter) Share Button -->
+                    <a href="https://twitter.com/intent/tweet?text=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%0A%0AI%27ve%20just%20submitted%20an%20objection%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20but%20we%20need%20926%20more!%0A%0AAdd%20your%20voice%3A%20saveourvillages.co.uk%0A%0AEvery%20objection%20is%20counted.%20%23SaveOurVillages" id="share-x-templates" target="_blank" title="Share on X" style="background: #000; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+
+                    <!-- Facebook Share Button -->
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsaveourvillages.co.uk&quote=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%0A%0AI%27ve%20just%20submitted%20an%20objection%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20but%20we%20need%20926%20more!%0A%0AAdd%20your%20voice%3A%20saveourvillages.co.uk%0A%0AEvery%20objection%20is%20counted.%20%23SaveOurVillages" id="share-facebook-templates" target="_blank" title="Share on Facebook" style="background: #1877F2; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+
+                    <!-- Reddit Share Button -->
+                    <a href="https://reddit.com/submit?url=https%3A%2F%2Fsaveourvillages.co.uk&title=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%20I%27ve%20just%20submitted%20an%20objection%20but%20we%20need%20926%20more!" id="share-reddit-templates" target="_blank" title="Share on Reddit" style="background: #FF4500; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+                    </a>
+
+                    <!-- WhatsApp Share Button -->
+                    <a href="https://api.whatsapp.com/send?text=Not%20only%20are%20our%20villages%20under%20threat%20from%20overdevelopment%20but%20developers%20are%20trying%20to%20profit%20from%20turning%20greenbelt%20into%20housing%20estates.%0A%0AI%27ve%20just%20submitted%20an%20objection%20%E2%80%93%20it%20took%20less%20than%20a%20minute%20but%20we%20need%20926%20more!%0A%0AAdd%20your%20voice%3A%20saveourvillages.co.uk%0A%0AEvery%20objection%20is%20counted.%20%23SaveOurVillages" id="share-whatsapp-templates" target="_blank" title="Share on WhatsApp" style="background: #25D366; color: white; width: 50px; height: 50px; border-radius: 50%; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    </a>
+                </div>
             </div>
-
-            <div class="tips-box">
-                <h3>❌ Avoid non-material points:</h3>
-                <ul>
-                    <li>House prices</li>
-                    <li>Developer profits</li>
-                    <li>Who lives there</li>
-                    <li>Loss of a private view</li>
-                </ul>
-            </div>
-
-            <div class="tips-box">
-                <h3>💡 Best Practices:</h3>
-                <ul>
-                    <li>Be polite and factual</li>
-                    <li>Add local specifics (photos, measurements, route timings)</li>
-                    <li>If you cite stats, reference the source or keep it qualitative</li>
-                    <li>Customize templates with your personal observations and evidence</li>
-                </ul>
-            </div>
-        </section>
+        </div>
     </div>
 
     <!-- Back to top button -->
@@ -1350,10 +1067,6 @@ Make it personal, make it factual, make it COUNT!</div>
 
             navigator.clipboard.writeText(textToCopy).then(function() {
                 const originalText = button.textContent;
-                button.textContent = 'Copied!';
-                button.style.backgroundColor = '#28a745';
-
-                setTimeout(function() {
                     button.textContent = originalText;
                     button.style.backgroundColor = '#4a7c59';
                 }, 2000);
@@ -1590,23 +1303,12 @@ Make it personal, make it factual, make it COUNT!</div>
             ]
         };
 
-        let selectedTemplateType = null;
+        // Default to planning objection type
+        let selectedTemplateType = 'planning-objection';
 
-        // Template type selection handler
-        document.querySelectorAll('input[name="template-type"]').forEach(radio => {
-            radio.addEventListener('change', function() {
-                selectedTemplateType = this.value;
-                showQuestionsForTemplate(selectedTemplateType, true); // Scroll when user clicks
-            });
-        });
-
-        // Auto-load planning objection questions on page load (since it's pre-selected)
+        // Auto-load planning objection questions on page load
         window.addEventListener('DOMContentLoaded', function() {
-            const planningRadio = document.getElementById('type-planning');
-            if (planningRadio && planningRadio.checked) {
-                selectedTemplateType = 'planning-objection';
-                showQuestionsForTemplate('planning-objection', false); // Don't scroll on initial load
-            }
+            showQuestionsForTemplate('planning-objection', false); // Don't scroll on initial load
         });
 
         // Show questions based on selected template
@@ -2352,6 +2054,41 @@ Make it personal, make it factual, make it COUNT!</div>
             addressInput.value = '';
             postcodeInput.value = '';
         };
+
+        // Load objection data for share box
+        async function loadObjectionData() {
+            try {
+                const response = await fetch('/monitoring_data/latest.json');
+                const data = await response.json();
+                const birchangerTotal = data.applications.birchanger?.total || 0;
+                const stanstedTotal = data.applications.stansted?.total || 0;
+                const totalObjections = birchangerTotal + stanstedTotal;
+                const target = 1000;
+                const remaining = target - totalObjections;
+
+                // Setup share buttons with dynamic message
+                const shareMessage = `Not only are our villages under threat from overdevelopment but developers are trying to profit from turning greenbelt into housing estates.\n\nI've just submitted an objection – it took less than a minute but we need ${remaining} more!\n\nAdd your voice: saveourvillages.co.uk\n\nEvery objection is counted. #SaveOurVillages`;
+                const shareUrl = 'https://saveourvillages.co.uk';
+
+                // Update share button hrefs
+                const shareX = document.getElementById('share-x-templates');
+                if (shareX) shareX.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareMessage);
+
+                const shareFacebook = document.getElementById('share-facebook-templates');
+                if (shareFacebook) shareFacebook.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(shareUrl) + '&quote=' + encodeURIComponent(shareMessage);
+
+                const shareReddit = document.getElementById('share-reddit-templates');
+                if (shareReddit) shareReddit.href = 'https://reddit.com/submit?url=' + encodeURIComponent(shareUrl) + '&title=' + encodeURIComponent(shareMessage);
+
+                const shareWhatsapp = document.getElementById('share-whatsapp-templates');
+                if (shareWhatsapp) shareWhatsapp.href = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(shareMessage);
+            } catch (error) {
+                console.error('Error loading objection data:', error);
+            }
+        }
+
+        // Load objection data when page loads
+        window.addEventListener('load', loadObjectionData);
     </script>
 </body>
 </html>
