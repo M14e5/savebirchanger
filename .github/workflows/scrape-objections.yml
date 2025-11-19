@@ -55,6 +55,9 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Update objection data - $(date +'%Y-%m-%d %H:%M:%S UTC')"
+            # Stash any unstaged changes to allow clean rebase
+            git stash --include-untracked || true
             git pull --rebase origin main
+            git stash pop || true
             git push
           fi
