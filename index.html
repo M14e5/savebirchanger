@@ -810,8 +810,13 @@
             </div>
 
             <div style="margin-top: 2rem;">
-                <h3 style="text-align: center; margin-bottom: 1rem; color: #2c5f2d;">Objection Letters Timeline</h3>
-                <canvas id="objectionChart"></canvas>
+                <h3 style="text-align: center; margin-bottom: 1rem; color: #2c5f2d;">Cumulative Objections Progress</h3>
+                <canvas id="cumulativeChart" style="margin-bottom: 3rem;"></canvas>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <h3 style="text-align: center; margin-bottom: 1rem; color: #2c5f2d;">Daily Objection Letters</h3>
+                <canvas id="dailyChart"></canvas>
             </div>
 
             <p style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
@@ -942,7 +947,8 @@
         });
 
         // Objection Data Storage
-        let objectionChart = null;
+        let cumulativeChart = null;
+        let dailyChart = null;
         let objectionChartData = null;
 
         // Objection Modal Functions
@@ -950,9 +956,9 @@
             document.getElementById('objection-modal').style.display = 'block';
             document.body.style.overflow = 'hidden';
 
-            // Create chart when modal opens (if data is loaded and chart doesn't exist)
-            if (objectionChartData && !objectionChart) {
-                createObjectionChart(objectionChartData);
+            // Create charts when modal opens (if data is loaded and charts don't exist)
+            if (objectionChartData && !cumulativeChart && !dailyChart) {
+                createObjectionCharts(objectionChartData);
             }
         }
 
@@ -969,105 +975,205 @@
             }
         });
 
-        // Create Chart Function
-        function createObjectionChart(chartData) {
-            const ctx = document.getElementById('objectionChart');
-            if (!ctx) return;
+        // Create Charts Function
+        function createObjectionCharts(chartData) {
+            // Calculate cumulative totals
+            let cumulativeTotal = 0;
+            const cumulativeData = chartData.birchangerData.map((birch, idx) => {
+                cumulativeTotal += birch + chartData.stanstedData[idx];
+                return cumulativeTotal;
+            });
 
-            if (objectionChart) {
-                objectionChart.destroy();
-            }
+            // Target line data (250 for all points)
+            const targetData = chartData.labels.map(() => 250);
 
-            objectionChart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: chartData.labels,
-                    datasets: [
-                        {
-                            label: 'Birchanger (UTT/25/3011/OP)',
-                            data: chartData.birchangerData,
-                            borderColor: '#4facfe',
-                            backgroundColor: 'rgba(79, 172, 254, 0.1)',
-                            borderWidth: 3,
-                            fill: true,
-                            tension: 0.3,
-                            pointRadius: 5,
-                            pointHoverRadius: 7
-                        },
-                        {
-                            label: 'Stansted (UTT/25/3012/OP)',
-                            data: chartData.stanstedData,
-                            borderColor: '#fa709a',
-                            backgroundColor: 'rgba(250, 112, 154, 0.1)',
-                            borderWidth: 3,
-                            fill: true,
-                            tension: 0.3,
-                            pointRadius: 5,
-                            pointHoverRadius: 7
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: true,
-                    aspectRatio: 2,
-                    interaction: {
-                        intersect: false,
-                        mode: 'index'
+            // 1. Create Cumulative Chart
+            const cumulativeCtx = document.getElementById('cumulativeChart');
+            if (cumulativeCtx) {
+                if (cumulativeChart) {
+                    cumulativeChart.destroy();
+                }
+
+                cumulativeChart = new Chart(cumulativeCtx, {
+                    type: 'line',
+                    data: {
+                        labels: chartData.labels,
+                        datasets: [
+                            {
+                                label: 'Total Objections',
+                                data: cumulativeData,
+                                borderColor: '#2c5f2d',
+                                backgroundColor: 'rgba(44, 95, 45, 0.1)',
+                                borderWidth: 4,
+                                fill: true,
+                                tension: 0.3,
+                                pointRadius: 6,
+                                pointHoverRadius: 8,
+                                pointBackgroundColor: '#2c5f2d'
+                            },
+                            {
+                                label: 'Target (250)',
+                                data: targetData,
+                                borderColor: '#ff6b6b',
+                                backgroundColor: 'transparent',
+                                borderWidth: 2,
+                                borderDash: [10, 5],
+                                fill: false,
+                                pointRadius: 0,
+                                pointHoverRadius: 0
+                            }
+                        ]
                     },
-                    plugins: {
-                        legend: {
-                            display: true,
-                            position: 'top',
-                            labels: {
-                                font: { size: 14 },
-                                padding: 15,
-                                usePointStyle: true
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        aspectRatio: 2.5,
+                        interaction: {
+                            intersect: false,
+                            mode: 'index'
+                        },
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top',
+                                labels: {
+                                    font: { size: 14 },
+                                    padding: 15,
+                                    usePointStyle: true
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                padding: 12,
+                                titleFont: { size: 14 },
+                                bodyFont: { size: 13 },
+                                callbacks: {
+                                    label: function(context) {
+                                        if (context.datasetIndex === 0) {
+                                            const remaining = 250 - context.parsed.y;
+                                            return [
+                                                'Total: ' + context.parsed.y + ' objections',
+                                                'Remaining: ' + remaining + ' to target'
+                                            ];
+                                        }
+                                        return 'Target: ' + context.parsed.y;
+                                    }
+                                }
                             }
                         },
-                        tooltip: {
-                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                            padding: 12,
-                            titleFont: { size: 14 },
-                            bodyFont: { size: 13 },
-                            callbacks: {
-                                title: function(context) {
-                                    return 'Date: ' + context[0].label;
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 260,
+                                ticks: {
+                                    stepSize: 25,
+                                    font: { size: 12 }
                                 },
-                                label: function(context) {
-                                    return context.dataset.label + ': ' + context.parsed.y + ' letters';
+                                title: {
+                                    display: true,
+                                    text: 'Total Objections',
+                                    font: { size: 14, weight: 'bold' }
+                                }
+                            },
+                            x: {
+                                ticks: {
+                                    font: { size: 12 },
+                                    maxRotation: 45,
+                                    minRotation: 0
+                                },
+                                title: {
+                                    display: true,
+                                    text: 'Date',
+                                    font: { size: 13 }
                                 }
                             }
                         }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            ticks: {
-                                stepSize: 1,
-                                font: { size: 12 }
+                    }
+                });
+            }
+
+            // 2. Create Daily Bar Chart
+            const dailyCtx = document.getElementById('dailyChart');
+            if (dailyCtx) {
+                if (dailyChart) {
+                    dailyChart.destroy();
+                }
+
+                dailyChart = new Chart(dailyCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: chartData.labels,
+                        datasets: [
+                            {
+                                label: 'Birchanger',
+                                data: chartData.birchangerData,
+                                backgroundColor: 'rgba(79, 172, 254, 0.8)',
+                                borderColor: '#4facfe',
+                                borderWidth: 2
                             },
-                            title: {
+                            {
+                                label: 'Stansted',
+                                data: chartData.stanstedData,
+                                backgroundColor: 'rgba(250, 112, 154, 0.8)',
+                                borderColor: '#fa709a',
+                                borderWidth: 2
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        aspectRatio: 2.5,
+                        interaction: {
+                            intersect: false,
+                            mode: 'index'
+                        },
+                        plugins: {
+                            legend: {
                                 display: true,
-                                text: 'Number of Objection Letters',
-                                font: { size: 13 }
+                                position: 'top',
+                                labels: {
+                                    font: { size: 14 },
+                                    padding: 15,
+                                    usePointStyle: true
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                padding: 12,
+                                titleFont: { size: 14 },
+                                bodyFont: { size: 13 }
                             }
                         },
-                        x: {
-                            ticks: {
-                                font: { size: 12 },
-                                maxRotation: 45,
-                                minRotation: 0
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    stepSize: 2,
+                                    font: { size: 12 }
+                                },
+                                title: {
+                                    display: true,
+                                    text: 'Objections per Day',
+                                    font: { size: 14, weight: 'bold' }
+                                }
                             },
-                            title: {
-                                display: true,
-                                text: 'Date Published',
-                                font: { size: 13 }
+                            x: {
+                                ticks: {
+                                    font: { size: 12 },
+                                    maxRotation: 45,
+                                    minRotation: 0
+                                },
+                                title: {
+                                    display: true,
+                                    text: 'Date',
+                                    font: { size: 13 }
+                                }
                             }
                         }
                     }
-                }
-            });
+                });
+            }
         }
 
         async function loadObjectionData() {
