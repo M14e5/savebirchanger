@@ -1,0 +1,53 @@
+name: Scrape Planning Objections
+
+on:
+  schedule:
+    # Run every 6 hours at minutes 5 past the hour
+    - cron: '5 */6 * * *'
+  workflow_dispatch:  # Allow manual triggering
+  push:
+    branches:
+      - main
+    paths:
+      - 'Monitoring/monitoring/scraper.py'
+      - '.github/workflows/scrape-objections.yml'
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for proper git operations
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r Monitoring/requirements_monitoring.txt
+
+      - name: Run scraper
+        run: |
+          cd Monitoring/monitoring
+          python scraper.py
+
+      - name: Configure git
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+
+      - name: Commit and push if changes
+        run: |
+          git add monitoring_data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update objection data - $(date +'%Y-%m-%d %H:%M:%S UTC')"
+            git push
+          fi

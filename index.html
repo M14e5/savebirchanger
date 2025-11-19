@@ -12,6 +12,9 @@
     <meta property="og:url" content="https://saveourvillages.co.uk">
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Chart.js for objection timeline -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
     <!-- PostHog Analytics - Loaded immediately with opt-out by default -->
     <script>
         // Load PostHog immediately with opt-out by default for GDPR compliance
@@ -195,6 +198,23 @@
             <div style="display: flex; flex-direction: row; gap: 12px; margin-bottom: 1rem; flex-wrap: wrap; justify-content: center;">
                 <a href="https://publicaccess.uttlesford.gov.uk/online-applications/applicationDetails.do?keyVal=T5CHIEQNG2G00&activeTab=summary" class="btn btn-primary" target="_blank" style="display: inline-block;">View and Object to Plan 1 (Birchanger)</a>
                 <a href="https://publicaccess.uttlesford.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=T5CHIWQNG2J00" class="btn btn-primary" target="_blank" style="display: inline-block;">View and Object to Plan 2 (Stansted)</a>
+            </div>
+
+            <!-- Objection Counters -->
+            <div style="display: flex; gap: 10px; justify-content: center; align-items: center; margin-bottom: 1rem; flex-wrap: wrap;">
+                <div style="background: rgba(79, 172, 254, 0.95); padding: 12px 20px; border-radius: 8px; color: white; text-align: center; min-width: 140px; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+                    <div style="font-size: 1.8rem; font-weight: bold;" id="birchanger-count-hero">38</div>
+                    <div style="font-size: 0.85rem; opacity: 0.95;">Birchanger Objections</div>
+                </div>
+
+                <button onclick="openObjectionModal()" style="background: #ffd93d; color: #333; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 0.9rem; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(0,0,0,0.2);" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 3px 10px rgba(0,0,0,0.2)';">
+                    📊 Expand Details
+                </button>
+
+                <div style="background: rgba(250, 112, 154, 0.95); padding: 12px 20px; border-radius: 8px; color: white; text-align: center; min-width: 140px; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+                    <div style="font-size: 1.8rem; font-weight: bold;" id="stansted-count-hero">36</div>
+                    <div style="font-size: 0.85rem; opacity: 0.95;">Stansted Objections</div>
+                </div>
             </div>
 
             <!-- Note about account requirement -->
@@ -767,6 +787,40 @@
         </div>
     </div>
 
+    <!-- Objection Details Modal -->
+    <div id="objection-modal" class="modal">
+        <div class="modal-content" style="max-width: 900px;">
+            <span class="modal-close" onclick="closeObjectionModal()">&times;</span>
+            <h2 style="text-align: center; color: #2c5f2d;">Community Opposition Tracker</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem; color: #666;">Objection letters submitted to Uttlesford District Council</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 1.5rem; border-radius: 10px; text-align: center; color: white;">
+                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;" id="birchanger-count-modal">38</div>
+                    <div style="font-size: 1rem; opacity: 0.9;">Birchanger (UTT/25/3011/OP)</div>
+                </div>
+                <div style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); padding: 1.5rem; border-radius: 10px; text-align: center; color: white;">
+                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;" id="stansted-count-modal">36</div>
+                    <div style="font-size: 1rem; opacity: 0.9;">Stansted (UTT/25/3012/OP)</div>
+                </div>
+                <div style="background: linear-gradient(135deg, #2c5f2d 0%, #4a7c59 100%); padding: 1.5rem; border-radius: 10px; text-align: center; color: white;">
+                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;" id="total-count-modal">74</div>
+                    <div style="font-size: 1rem; opacity: 0.9;">Total Objections</div>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <h3 style="text-align: center; margin-bottom: 1rem; color: #2c5f2d;">Objection Letters Timeline</h3>
+                <canvas id="objectionChart"></canvas>
+            </div>
+
+            <p style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
+                Data updated automatically every 6 hours via GitHub Actions.<br>
+                Last updated: <span id="last-updated">Loading...</span>
+            </p>
+        </div>
+    </div>
+
     <script>
         // Mobile menu toggle
         function toggleMenu() {
@@ -886,6 +940,195 @@
                 document.body.style.overflow = 'auto'; // Restore scrolling
             }
         });
+
+        // Objection Modal Functions
+        function openObjectionModal() {
+            document.getElementById('objection-modal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeObjectionModal() {
+            document.getElementById('objection-modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('objection-modal');
+            if (event.target === modal) {
+                closeObjectionModal();
+            }
+        });
+
+        // Objection Data Loader
+        let objectionChart = null;
+
+        async function loadObjectionData() {
+            try {
+                const response = await fetch('/monitoring_data/latest.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load objection data');
+                }
+
+                const data = await response.json();
+
+                // Update total objection count
+                const birchangerTotal = data.applications.birchanger?.total || 0;
+                const stanstedTotal = data.applications.stansted?.total || 0;
+                const totalObjections = birchangerTotal + stanstedTotal;
+
+                // Update hero counters
+                document.getElementById('birchanger-count-hero').textContent = birchangerTotal;
+                document.getElementById('stansted-count-hero').textContent = stanstedTotal;
+
+                // Update modal counters
+                document.getElementById('birchanger-count-modal').textContent = birchangerTotal;
+                document.getElementById('stansted-count-modal').textContent = stanstedTotal;
+                document.getElementById('total-count-modal').textContent = totalObjections;
+
+                // Update last updated timestamp
+                const lastUpdated = new Date(data.last_updated);
+                document.getElementById('last-updated').textContent = lastUpdated.toLocaleString('en-GB', {
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+
+                // Prepare chart data
+                const birchangerByDate = data.applications.birchanger?.by_date || {};
+                const stanstedByDate = data.applications.stansted?.by_date || {};
+
+                // Get all unique dates and sort them
+                const allDates = new Set([
+                    ...Object.keys(birchangerByDate),
+                    ...Object.keys(stanstedByDate)
+                ]);
+                const sortedDates = Array.from(allDates).sort();
+
+                // Prepare datasets
+                const birchangerData = sortedDates.map(date => birchangerByDate[date] || 0);
+                const stanstedData = sortedDates.map(date => stanstedByDate[date] || 0);
+
+                // Format dates for display
+                const formattedDates = sortedDates.map(date => {
+                    const d = new Date(date);
+                    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+                });
+
+                // Create or update chart
+                const ctx = document.getElementById('objectionChart');
+                if (objectionChart) {
+                    objectionChart.destroy();
+                }
+
+                objectionChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: formattedDates,
+                        datasets: [
+                            {
+                                label: 'Birchanger (UTT/25/3011/OP)',
+                                data: birchangerData,
+                                borderColor: '#4facfe',
+                                backgroundColor: 'rgba(79, 172, 254, 0.1)',
+                                borderWidth: 3,
+                                fill: true,
+                                tension: 0.3,
+                                pointRadius: 5,
+                                pointHoverRadius: 7
+                            },
+                            {
+                                label: 'Stansted (UTT/25/3012/OP)',
+                                data: stanstedData,
+                                borderColor: '#fa709a',
+                                backgroundColor: 'rgba(250, 112, 154, 0.1)',
+                                borderWidth: 3,
+                                fill: true,
+                                tension: 0.3,
+                                pointRadius: 5,
+                                pointHoverRadius: 7
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        aspectRatio: 2,
+                        interaction: {
+                            intersect: false,
+                            mode: 'index'
+                        },
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top',
+                                labels: {
+                                    font: { size: 14 },
+                                    padding: 15,
+                                    usePointStyle: true
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                padding: 12,
+                                titleFont: { size: 14 },
+                                bodyFont: { size: 13 },
+                                callbacks: {
+                                    title: function(context) {
+                                        return 'Date: ' + context[0].label;
+                                    },
+                                    label: function(context) {
+                                        return context.dataset.label + ': ' + context.parsed.y + ' letters';
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    stepSize: 1,
+                                    font: { size: 12 }
+                                },
+                                title: {
+                                    display: true,
+                                    text: 'Number of Objection Letters',
+                                    font: { size: 13 }
+                                }
+                            },
+                            x: {
+                                ticks: {
+                                    font: { size: 12 },
+                                    maxRotation: 45,
+                                    minRotation: 0
+                                },
+                                title: {
+                                    display: true,
+                                    text: 'Date Published',
+                                    font: { size: 13 }
+                                }
+                            }
+                        }
+                    }
+                });
+
+            } catch (error) {
+                console.error('Error loading objection data:', error);
+                // Set fallback values for hero
+                document.getElementById('birchanger-count-hero').textContent = '38';
+                document.getElementById('stansted-count-hero').textContent = '36';
+                // Set fallback values for modal
+                document.getElementById('birchanger-count-modal').textContent = '38';
+                document.getElementById('stansted-count-modal').textContent = '36';
+                document.getElementById('total-count-modal').textContent = '74';
+                document.getElementById('last-updated').textContent = 'Data unavailable';
+            }
+        }
+
+        // Load objection data when page loads
+        window.addEventListener('load', loadObjectionData);
     </script>
 </body>
 </html>

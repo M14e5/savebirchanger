@@ -1,0 +1,14 @@
+# Planning Objection Monitor - Additional Dependencies
+# Install with: pip install -r requirements_monitoring.txt
+
+# Web scraping
+beautifulsoup4==4.12.2
+requests==2.31.0
+lxml==5.1.0
+
+# Scheduling
+APScheduler==3.10.4
+
+# Data handling (already installed in main project, listed for completeness)
+pandas==2.2.2
+python-dotenv==1.0.1
