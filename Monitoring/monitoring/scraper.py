@@ -12,15 +12,22 @@ import logging
 from pathlib import Path
 import random
 
+# Try to use cloudscraper for better anti-bot handling
+try:
+    import cloudscraper
+    session = cloudscraper.create_scraper()
+    logger = logging.getLogger(__name__)
+    logger.info("Using cloudscraper for enhanced stealth")
+except ImportError:
+    session = requests.Session()
+    logger = logging.getLogger(__name__)
+    logger.info("Using standard requests (cloudscraper not available)")
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
-logger = logging.getLogger(__name__)
-
-# Create a session to maintain cookies
-session = requests.Session()
 
 # Application URLs
 APPLICATIONS = {
