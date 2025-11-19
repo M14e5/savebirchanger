@@ -941,10 +941,19 @@
             }
         });
 
+        // Objection Data Storage
+        let objectionChart = null;
+        let objectionChartData = null;
+
         // Objection Modal Functions
         function openObjectionModal() {
             document.getElementById('objection-modal').style.display = 'block';
             document.body.style.overflow = 'hidden';
+
+            // Create chart when modal opens (if data is loaded and chart doesn't exist)
+            if (objectionChartData && !objectionChart) {
+                createObjectionChart(objectionChartData);
+            }
         }
 
         function closeObjectionModal() {
@@ -960,8 +969,106 @@
             }
         });
 
-        // Objection Data Loader
-        let objectionChart = null;
+        // Create Chart Function
+        function createObjectionChart(chartData) {
+            const ctx = document.getElementById('objectionChart');
+            if (!ctx) return;
+
+            if (objectionChart) {
+                objectionChart.destroy();
+            }
+
+            objectionChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: chartData.labels,
+                    datasets: [
+                        {
+                            label: 'Birchanger (UTT/25/3011/OP)',
+                            data: chartData.birchangerData,
+                            borderColor: '#4facfe',
+                            backgroundColor: 'rgba(79, 172, 254, 0.1)',
+                            borderWidth: 3,
+                            fill: true,
+                            tension: 0.3,
+                            pointRadius: 5,
+                            pointHoverRadius: 7
+                        },
+                        {
+                            label: 'Stansted (UTT/25/3012/OP)',
+                            data: chartData.stanstedData,
+                            borderColor: '#fa709a',
+                            backgroundColor: 'rgba(250, 112, 154, 0.1)',
+                            borderWidth: 3,
+                            fill: true,
+                            tension: 0.3,
+                            pointRadius: 5,
+                            pointHoverRadius: 7
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    aspectRatio: 2,
+                    interaction: {
+                        intersect: false,
+                        mode: 'index'
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                font: { size: 14 },
+                                padding: 15,
+                                usePointStyle: true
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            padding: 12,
+                            titleFont: { size: 14 },
+                            bodyFont: { size: 13 },
+                            callbacks: {
+                                title: function(context) {
+                                    return 'Date: ' + context[0].label;
+                                },
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.parsed.y + ' letters';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1,
+                                font: { size: 12 }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Number of Objection Letters',
+                                font: { size: 13 }
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                font: { size: 12 },
+                                maxRotation: 45,
+                                minRotation: 0
+                            },
+                            title: {
+                                display: true,
+                                text: 'Date Published',
+                                font: { size: 13 }
+                            }
+                        }
+                    }
+                }
+            });
+        }
 
         async function loadObjectionData() {
             try {
@@ -1017,102 +1124,12 @@
                     return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
                 });
 
-                // Create or update chart
-                const ctx = document.getElementById('objectionChart');
-                if (objectionChart) {
-                    objectionChart.destroy();
-                }
-
-                objectionChart = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: formattedDates,
-                        datasets: [
-                            {
-                                label: 'Birchanger (UTT/25/3011/OP)',
-                                data: birchangerData,
-                                borderColor: '#4facfe',
-                                backgroundColor: 'rgba(79, 172, 254, 0.1)',
-                                borderWidth: 3,
-                                fill: true,
-                                tension: 0.3,
-                                pointRadius: 5,
-                                pointHoverRadius: 7
-                            },
-                            {
-                                label: 'Stansted (UTT/25/3012/OP)',
-                                data: stanstedData,
-                                borderColor: '#fa709a',
-                                backgroundColor: 'rgba(250, 112, 154, 0.1)',
-                                borderWidth: 3,
-                                fill: true,
-                                tension: 0.3,
-                                pointRadius: 5,
-                                pointHoverRadius: 7
-                            }
-                        ]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: true,
-                        aspectRatio: 2,
-                        interaction: {
-                            intersect: false,
-                            mode: 'index'
-                        },
-                        plugins: {
-                            legend: {
-                                display: true,
-                                position: 'top',
-                                labels: {
-                                    font: { size: 14 },
-                                    padding: 15,
-                                    usePointStyle: true
-                                }
-                            },
-                            tooltip: {
-                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                                padding: 12,
-                                titleFont: { size: 14 },
-                                bodyFont: { size: 13 },
-                                callbacks: {
-                                    title: function(context) {
-                                        return 'Date: ' + context[0].label;
-                                    },
-                                    label: function(context) {
-                                        return context.dataset.label + ': ' + context.parsed.y + ' letters';
-                                    }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: {
-                                beginAtZero: true,
-                                ticks: {
-                                    stepSize: 1,
-                                    font: { size: 12 }
-                                },
-                                title: {
-                                    display: true,
-                                    text: 'Number of Objection Letters',
-                                    font: { size: 13 }
-                                }
-                            },
-                            x: {
-                                ticks: {
-                                    font: { size: 12 },
-                                    maxRotation: 45,
-                                    minRotation: 0
-                                },
-                                title: {
-                                    display: true,
-                                    text: 'Date Published',
-                                    font: { size: 13 }
-                                }
-                            }
-                        }
-                    }
-                });
+                // Store chart data for later use (when modal opens)
+                objectionChartData = {
+                    labels: formattedDates,
+                    birchangerData: birchangerData,
+                    stanstedData: stanstedData
+                };
 
             } catch (error) {
                 console.error('Error loading objection data:', error);
