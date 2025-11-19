@@ -2,8 +2,8 @@ name: Scrape Planning Objections
 
 on:
   schedule:
-    # Run every 6 hours at minutes 5 past the hour
-    - cron: '5 */6 * * *'
+    # Run every hour at 5 minutes past the hour
+    - cron: '5 * * * *'
   workflow_dispatch:  # Allow manual triggering
   push:
     branches:
