@@ -11,23 +11,41 @@ import time
 import logging
 from pathlib import Path
 import random
-
-# Try to use cloudscraper for better anti-bot handling
-try:
-    import cloudscraper
-    session = cloudscraper.create_scraper()
-    logger = logging.getLogger(__name__)
-    logger.info("Using cloudscraper for enhanced stealth")
-except ImportError:
-    session = requests.Session()
-    logger = logging.getLogger(__name__)
-    logger.info("Using standard requests (cloudscraper not available)")
+import os
 
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
+logger = logging.getLogger(__name__)
+
+# Configure proxy from environment variables
+PROXY_ENABLED = os.getenv('USE_PROXY', 'false').lower() == 'true'
+PROXY_HOST = os.getenv('PROXY_HOST', 'geo.iproyal.com')
+PROXY_PORT = os.getenv('PROXY_PORT', '11202')
+PROXY_USER = os.getenv('PROXY_USER', '')
+PROXY_PASS = os.getenv('PROXY_PASS', '')
+
+proxies = None
+if PROXY_ENABLED and PROXY_USER and PROXY_PASS:
+    proxy_url = f"http://{PROXY_USER}:{PROXY_PASS}@{PROXY_HOST}:{PROXY_PORT}"
+    proxies = {
+        'http': proxy_url,
+        'https': proxy_url
+    }
+    logger.info(f"Using proxy: {PROXY_HOST}:{PROXY_PORT}")
+else:
+    logger.info("No proxy configured")
+
+# Try to use cloudscraper for better anti-bot handling
+try:
+    import cloudscraper
+    session = cloudscraper.create_scraper()
+    logger.info("Using cloudscraper for enhanced stealth")
+except ImportError:
+    session = requests.Session()
+    logger.info("Using standard requests (cloudscraper not available)")
 
 # Application URLs
 APPLICATIONS = {
@@ -102,7 +120,7 @@ def scrape_application(app_id, url, app_name, max_retries=3, base_timeout=90):
             timeout = base_timeout + (attempt * 30)
             logger.info(f"Requesting with {timeout}s timeout...")
 
-            response = session.get(url, headers=headers, timeout=timeout)
+            response = session.get(url, headers=headers, timeout=timeout, proxies=proxies)
             response.raise_for_status()
 
             soup = BeautifulSoup(response.content, 'html.parser')
