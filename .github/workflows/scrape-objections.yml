@@ -1,16 +1,20 @@
 name: Scrape Planning Objections
 
 on:
-  schedule:
-    # Run every hour at 5 minutes past the hour
-    - cron: '5 * * * *'
-  workflow_dispatch:  # Allow manual triggering
-  push:
-    branches:
-      - main
-    paths:
-      - 'Monitoring/monitoring/scraper.py'
-      - '.github/workflows/scrape-objections.yml'
+  # DISABLED: Scheduled runs disabled because Uttlesford portal blocks cloud IPs
+  # Use local cron job instead (see Monitoring/CRON_SETUP.md)
+  # schedule:
+  #   - cron: '5 * * * *'
+
+  workflow_dispatch:  # Manual triggering still available for testing
+
+  # DISABLED: Auto-run on push (use local cron instead)
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - 'Monitoring/monitoring/scraper.py'
+  #     - '.github/workflows/scrape-objections.yml'
 
 concurrency:
   group: scrape-objections
