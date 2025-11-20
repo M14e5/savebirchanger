@@ -40,6 +40,12 @@ jobs:
 
       - name: Run scraper
         id: scraper
+        env:
+          USE_PROXY: 'true'
+          PROXY_HOST: 'geo.iproyal.com'
+          PROXY_PORT: '11202'
+          PROXY_USER: 'zpq47r5O2pAFl5j5'
+          PROXY_PASS: 't5dnpBXlPJBExVxT_country-gb_session-3z73g5ri_lifetime-168h'
         run: |
           cd Monitoring/monitoring
           python scraper.py
