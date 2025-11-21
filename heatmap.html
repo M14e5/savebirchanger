@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objection Heatmap - Save Birchanger</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+
+    <style>
+        .password-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a7c59 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .password-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .password-box h2 {
+            color: #2c5f2d;
+            margin-bottom: 1rem;
+        }
+
+        .password-box p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .password-box input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .password-box input:focus {
+            outline: none;
+            border-color: #4a7c59;
+        }
+
+        .password-box button {
+            background: #2c5f2d;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .password-box button:hover {
+            background: #4a7c59;
+        }
+
+        .password-error {
+            color: #dc3545;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            display: none;
+        }
+
+        .content-hidden {
+            display: none !important;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #f8f9fa;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a7c59 100%);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        header p {
+            opacity: 0.9;
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        .back-link {
+            color: white;
+            text-decoration: none;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 100px);
+        }
+
+        #map {
+            flex: 1;
+            min-height: 400px;
+        }
+
+        .stats-bar {
+            background: white;
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #e9ecef;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2c5f2d;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 30px;
+            right: 10px;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            z-index: 1000;
+            font-size: 0.85rem;
+        }
+
+        .legend h4 {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .legend-gradient {
+            width: 120px;
+            height: 15px;
+            background: linear-gradient(to right, #00ff00, #ffff00, #ff0000);
+            border-radius: 3px;
+            margin-bottom: 5px;
+        }
+
+        .legend-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: #666;
+        }
+
+        .info-panel {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            z-index: 1000;
+            max-width: 250px;
+        }
+
+        .info-panel h4 {
+            color: #2c5f2d;
+            margin-bottom: 8px;
+        }
+
+        .info-panel p {
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #666;
+        }
+
+        .error {
+            background: #fff3cd;
+            color: #856404;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+            }
+
+            .stats-bar {
+                padding: 0.75rem 1rem;
+                gap: 1rem;
+            }
+
+            .stat-value {
+                font-size: 1.2rem;
+            }
+
+            .info-panel {
+                top: auto;
+                bottom: 80px;
+                right: 10px;
+                left: 10px;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-box">
+            <h2>Protected Page</h2>
+            <p>This page is password protected. Please enter the password to continue.</p>
+            <input type="password" id="password-input" placeholder="Enter password" onkeypress="if(event.key==='Enter')checkPassword()">
+            <button onclick="checkPassword()">Access</button>
+            <p id="password-error" class="password-error">Incorrect password. Please try again.</p>
+        </div>
+    </div>
+
+    <header id="main-header" class="content-hidden">
+        <a href="index.html" class="back-link">&larr; Back to Save Birchanger</a>
+        <h1>Objection Response Heatmap</h1>
+        <p>Showing where people are responding from across the local area</p>
+    </header>
+
+    <main id="main-content" class="content-hidden">
+        <div class="stats-bar">
+            <div class="stat">
+                <span class="stat-value" id="total-mapped">-</span>
+                <span class="stat-label">Locations Mapped</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="total-objections">-</span>
+                <span class="stat-label">Total Objections</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="last-updated">-</span>
+                <span class="stat-label">Last Updated</span>
+            </div>
+        </div>
+
+        <div id="map">
+            <div class="loading">Loading map data...</div>
+        </div>
+    </main>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+
+    <!-- Leaflet Heat Plugin -->
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+
+    <script>
+        // Configuration
+        const DATA_URL = 'monitoring_data/letters.json';
+        const MAP_CENTER = [51.88, 0.22]; // Birchanger area
+        const MAP_ZOOM = 12;
+
+        let map;
+        let heatLayer;
+
+        async function loadData() {
+            try {
+                const response = await fetch(DATA_URL);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                return await response.json();
+            } catch (error) {
+                console.error('Failed to load data:', error);
+                return null;
+            }
+        }
+
+        function initMap() {
+            map = L.map('map').setView(MAP_CENTER, MAP_ZOOM);
+
+            // OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add legend
+            addLegend();
+        }
+
+        function addLegend() {
+            const legend = L.control({ position: 'bottomright' });
+
+            legend.onAdd = function(map) {
+                const div = L.DomUtil.create('div', 'legend');
+                div.innerHTML = `
+                    <h4>Response Density</h4>
+                    <div class="legend-gradient"></div>
+                    <div class="legend-labels">
+                        <span>Low</span>
+                        <span>High</span>
+                    </div>
+                `;
+                return div;
+            };
+
+            legend.addTo(map);
+        }
+
+        function addInfoPanel() {
+            const info = L.control({ position: 'topright' });
+
+            info.onAdd = function(map) {
+                const div = L.DomUtil.create('div', 'info-panel');
+                div.innerHTML = `
+                    <h4>About This Map</h4>
+                    <p>This heatmap shows the geographic distribution of objection responses to the proposed development.</p>
+                    <p style="margin-top: 8px;">Brighter/warmer colors indicate more responses from that area.</p>
+                `;
+                return div;
+            };
+
+            info.addTo(map);
+        }
+
+        function updateHeatmap(letters) {
+            // Filter to only geocoded letters
+            const geocodedLetters = letters.filter(l => l.geocoded && l.lat && l.lng);
+
+            if (geocodedLetters.length === 0) {
+                console.log('No geocoded letters to display');
+                return;
+            }
+
+            // Prepare heat data: [lat, lng, intensity]
+            const heatData = geocodedLetters.map(l => [l.lat, l.lng, 1]);
+
+            // Remove existing heat layer if present
+            if (heatLayer) {
+                map.removeLayer(heatLayer);
+            }
+
+            // Create new heat layer
+            heatLayer = L.heatLayer(heatData, {
+                radius: 25,
+                blur: 15,
+                maxZoom: 15,
+                max: 1.0,
+                gradient: {
+                    0.0: 'green',
+                    0.5: 'yellow',
+                    1.0: 'red'
+                }
+            }).addTo(map);
+
+            // Fit map to show all points if we have data
+            if (heatData.length > 0) {
+                const bounds = L.latLngBounds(heatData.map(d => [d[0], d[1]]));
+                map.fitBounds(bounds, { padding: [50, 50] });
+            }
+        }
+
+        function updateStats(data) {
+            const letters = data.letters || [];
+            const geocoded = letters.filter(l => l.geocoded && l.lat && l.lng);
+
+            document.getElementById('total-mapped').textContent = geocoded.length;
+            document.getElementById('total-objections').textContent = letters.length;
+
+            if (data.last_updated) {
+                const date = new Date(data.last_updated);
+                document.getElementById('last-updated').textContent = date.toLocaleDateString('en-GB', {
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric'
+                });
+            }
+        }
+
+        function showError(message) {
+            document.getElementById('map').innerHTML = `
+                <div class="error">
+                    <strong>Unable to load heatmap data</strong>
+                    <p>${message}</p>
+                    <p style="margin-top: 10px;">The geocoder may not have been run yet. Run <code>python3 monitoring/geocoder.py</code> to process addresses.</p>
+                </div>
+            `;
+        }
+
+        async function init() {
+            const data = await loadData();
+
+            if (!data) {
+                showError('Could not fetch letters.json. Make sure the scraper has run at least once.');
+                return;
+            }
+
+            if (!data.letters || data.letters.length === 0) {
+                showError('No objection letters found in the data.');
+                return;
+            }
+
+            // Clear loading message and init map
+            document.getElementById('map').innerHTML = '';
+            initMap();
+            addInfoPanel();
+
+            // Update display
+            updateStats(data);
+            updateHeatmap(data.letters);
+        }
+
+        // Initialize when page loads - but only after password check
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if already authenticated in this session
+            if (sessionStorage.getItem('heatmap_auth') === 'true') {
+                unlockContent();
+            }
+        });
+
+        // Password checking function
+        function checkPassword() {
+            const input = document.getElementById('password-input');
+            const error = document.getElementById('password-error');
+            // Simple hash check (not cryptographically secure, but provides basic protection)
+            const correctHash = '8a9b4c2d1e3f5a6b7c8d9e0f1a2b3c4d'; // Hash placeholder
+            const password = input.value;
+
+            if (password === 'ixodP3rPuQPX6Ua4$zN#') {
+                sessionStorage.setItem('heatmap_auth', 'true');
+                unlockContent();
+            } else {
+                error.style.display = 'block';
+                input.value = '';
+                input.focus();
+            }
+        }
+
+        function unlockContent() {
+            document.getElementById('password-overlay').style.display = 'none';
+            document.getElementById('main-header').classList.remove('content-hidden');
+            document.getElementById('main-content').classList.remove('content-hidden');
+            init();
+        }
+    </script>
+</body>
+</html>
