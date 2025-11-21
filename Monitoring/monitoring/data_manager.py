@@ -24,9 +24,78 @@ DATA_DIR = BASE_DIR / 'monitoring_data'
 CSV_PATH = DATA_DIR / 'timeseries.csv'
 JSON_PATH = DATA_DIR / 'latest.json'
 METADATA_PATH = DATA_DIR / 'metadata.json'
+LETTERS_PATH = DATA_DIR / 'letters.json'
 
 # Ensure data directory exists
 DATA_DIR.mkdir(exist_ok=True)
+
+import hashlib
+
+def generate_letter_id(application, date, description):
+    """Generate a unique ID for a letter based on its content"""
+    content = f"{application}:{date}:{description}"
+    return hashlib.md5(content.encode()).hexdigest()[:12]
+
+def load_letters():
+    """Load existing letters from JSON file"""
+    if LETTERS_PATH.exists():
+        try:
+            with open(LETTERS_PATH, 'r') as f:
+                return json.load(f)
+        except Exception as e:
+            logger.warning(f"Could not load letters.json: {e}")
+    return {"letters": [], "last_updated": None}
+
+def save_letters(letters_data):
+    """Save letters to JSON file"""
+    try:
+        with open(LETTERS_PATH, 'w') as f:
+            json.dump(letters_data, f, indent=2)
+        logger.info(f"Saved {len(letters_data['letters'])} letters to {LETTERS_PATH}")
+        return True
+    except Exception as e:
+        logger.error(f"Error saving letters: {e}")
+        return False
+
+def save_individual_letters(results):
+    """
+    Save individual letter records with descriptions for geocoding
+
+    Args:
+        results: Dict from scraper.scrape_all_applications()
+
+    Returns:
+        int: Number of new letters added
+    """
+    letters_data = load_letters()
+    existing_ids = {letter['id'] for letter in letters_data['letters']}
+
+    new_count = 0
+    for app_id, data in results.items():
+        if data['success'] and data['letters']:
+            for letter in data['letters']:
+                letter_id = generate_letter_id(app_id, letter['date'], letter['description'])
+
+                if letter_id not in existing_ids:
+                    letters_data['letters'].append({
+                        'id': letter_id,
+                        'application': app_id,
+                        'date': letter['date'],
+                        'description': letter['description'],
+                        'lat': None,
+                        'lng': None,
+                        'geocoded': False,
+                        'geocode_error': None
+                    })
+                    existing_ids.add(letter_id)
+                    new_count += 1
+
+    if new_count > 0:
+        letters_data['last_updated'] = datetime.now().isoformat()
+        save_letters(letters_data)
+        logger.info(f"Added {new_count} new letters to letters.json")
+
+    return new_count
 
 def validate_scrape_results(results):
     """
@@ -83,6 +152,11 @@ def save_scrape_results(results):
         return False
 
     timestamp = datetime.now().isoformat()
+
+    # Save individual letters for geocoding/heatmap
+    new_letters = save_individual_letters(results)
+    if new_letters > 0:
+        logger.info(f"Saved {new_letters} new individual letters for geocoding")
 
     try:
         # Prepare CSV rows
