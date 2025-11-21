@@ -31,6 +31,42 @@
                 grid-template-columns: 1fr !important;
             }
         }
+
+        /* Milestone tooltip styling */
+        .milestone-label {
+            position: relative;
+        }
+        .milestone-label::after {
+            content: attr(title);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            white-space: normal;
+            width: 200px;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 100;
+            pointer-events: none;
+            line-height: 1.4;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .milestone-label:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Milestone marker pulse animation for passed milestones */
+        .milestone-marker.achieved {
+            background: #4facfe !important;
+            box-shadow: 0 0 8px rgba(79, 172, 254, 0.6);
+        }
     </style>
 
     <!-- Chart.js for objection timeline -->
@@ -210,19 +246,49 @@
             <!-- Objections Progress and Social Sharing -->
             <div class="hero-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; max-width: 1300px; margin: 0 auto 2rem;">
 
-                <!-- Left: Progress Meter -->
+                <!-- Left: Progress Meter with Milestones -->
                 <div style="background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px); border-radius: 15px; padding: 1rem 1.5rem; border: 2px solid rgba(255, 255, 255, 0.2);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; font-size: 0.95rem; font-weight: 600; color: white;">
-                        <span>Objections Raised So Far</span>
-                        <span style="color: #ffd93d; font-size: 1.1rem;"><span id="hero-total">74</span> / 1,000</span>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; font-size: 0.95rem; font-weight: 600; color: white;">
+                        <span>Objections Raised</span>
+                        <span style="color: #ffd93d; font-size: 1.1rem;"><span id="hero-total">112</span></span>
                     </div>
-                    <div style="background: rgba(255, 255, 255, 0.2); border-radius: 20px; height: 35px; overflow: hidden; margin-bottom: 0.5rem; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);">
-                        <div id="hero-progress-fill" style="height: 100%; background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; transition: width 1s ease; min-width: 60px; width: 7.4%;">
-                            <span style="color: white; font-weight: bold; font-size: 0.9rem; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);" id="hero-percentage">7.4%</span>
+                    <!-- Progress bar with milestone markers -->
+                    <div style="position: relative; margin-bottom: 1.5rem;">
+                        <div style="background: rgba(255, 255, 255, 0.2); border-radius: 20px; height: 30px; overflow: visible; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); position: relative;">
+                            <div id="hero-progress-fill" style="height: 100%; background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; transition: width 1s ease; min-width: 50px; width: 5.6%; position: relative; z-index: 2;">
+                                <span style="color: white; font-weight: bold; font-size: 0.8rem; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);" id="hero-percentage">28%</span>
+                            </div>
+                            <!-- Milestone markers on the bar -->
+                            <!-- 400 marker (20% of 2001) -->
+                            <div class="milestone-marker" style="position: absolute; left: 20%; top: 0; bottom: 0; width: 3px; background: rgba(255, 217, 61, 0.8); z-index: 1;" title="400 - Minimum"></div>
+                            <!-- 1000 marker (50% of 2001) -->
+                            <div class="milestone-marker" style="position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: rgba(255, 217, 61, 0.8); z-index: 1;" title="1000 - Community Majority"></div>
+                        </div>
+                        <!-- Milestone labels below the bar -->
+                        <div style="position: relative; height: 45px; margin-top: 5px;">
+                            <!-- 400 milestone -->
+                            <div class="milestone-label" style="position: absolute; left: 20%; transform: translateX(-50%); text-align: center; cursor: help;"
+                                 title="This number demonstrates clear, organised community opposition. Hitting this proves the objections aren't isolated or fringe; they're collective.">
+                                <div style="font-size: 0.7rem; color: #ffd93d; font-weight: bold;">400</div>
+                                <div style="font-size: 0.65rem; color: rgba(255,255,255,0.8); white-space: nowrap;">Minimum</div>
+                            </div>
+                            <!-- 1000 milestone -->
+                            <div class="milestone-label" style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center; cursor: help;"
+                                 title="Over 10% of Stansted + Birchanger residents raising objections. This is a level planners cannot ignore.">
+                                <div style="font-size: 0.7rem; color: #ffd93d; font-weight: bold;">1,000</div>
+                                <div style="font-size: 0.65rem; color: rgba(255,255,255,0.8); white-space: nowrap;">Community Majority</div>
+                            </div>
+                            <!-- 2001 milestone (end) -->
+                            <div class="milestone-label" style="position: absolute; right: 0; text-align: center; cursor: help;"
+                                 title="The highest number of objections recorded locally. Achieving this sends a historic, unambiguous message to UDC.">
+                                <div style="font-size: 0.7rem; color: #ffd93d; font-weight: bold;">2,001</div>
+                                <div style="font-size: 0.65rem; color: rgba(255,255,255,0.8); white-space: nowrap;">Record Breaking</div>
+                            </div>
                         </div>
                     </div>
-                    <div style="text-align: center; font-size: 0.85rem; opacity: 0.9; color: white;">
-                        <span id="hero-daily-rate">~11 per day</span>
+                    <div style="text-align: center; font-size: 0.8rem; color: white;">
+                        <span id="hero-progress-text" style="color: #ffd93d; font-weight: 600;">28% towards Minimum (400)</span>
+                        <br><span id="hero-daily-rate" style="opacity: 0.8;">~16 per day</span>
                     </div>
                 </div>
 
@@ -1297,15 +1363,53 @@
                 document.getElementById('birchanger-count-hero').textContent = birchangerTotal;
                 document.getElementById('stansted-count-hero').textContent = stanstedTotal;
 
-                // Update hero progress pill
-                const target = 1000;
-                const percentage = ((totalObjections / target) * 100).toFixed(1);
-                const dailyRate = Math.round(totalObjections / 7);
+                // Milestone targets
+                const milestones = [
+                    { value: 400, label: 'Minimum', description: 'Clear community opposition' },
+                    { value: 1000, label: 'Community Majority', description: '10% of residents' },
+                    { value: 2001, label: 'Record Breaking', description: 'Historic message to UDC' }
+                ];
+                const maxTarget = 2001;
 
+                // Find current and next milestone
+                let currentMilestone = null;
+                let nextMilestone = milestones[0];
+                for (let i = 0; i < milestones.length; i++) {
+                    if (totalObjections >= milestones[i].value) {
+                        currentMilestone = milestones[i];
+                        nextMilestone = milestones[i + 1] || milestones[i];
+                    } else {
+                        nextMilestone = milestones[i];
+                        break;
+                    }
+                }
+
+                // Calculate percentage towards next milestone
+                const previousValue = currentMilestone ? currentMilestone.value : 0;
+                const progressInCurrentSegment = totalObjections - previousValue;
+                const segmentSize = nextMilestone.value - previousValue;
+                const percentageTowardsNext = Math.min(100, Math.round((progressInCurrentSegment / segmentSize) * 100));
+
+                // Calculate overall percentage for bar width (against 2001)
+                const overallPercentage = ((totalObjections / maxTarget) * 100).toFixed(1);
+                const dailyRate = Math.round(totalObjections / 8); // 8 days since Nov 12
+
+                // Update display
                 document.getElementById('hero-total').textContent = totalObjections;
-                document.getElementById('hero-percentage').textContent = percentage + '%';
-                document.getElementById('hero-progress-fill').style.width = percentage + '%';
+                document.getElementById('hero-percentage').textContent = percentageTowardsNext + '%';
+                document.getElementById('hero-progress-fill').style.width = overallPercentage + '%';
                 document.getElementById('hero-daily-rate').textContent = '~' + dailyRate + ' per day';
+
+                // Update progress text to show milestone progress
+                const progressTextEl = document.getElementById('hero-progress-text');
+                if (progressTextEl) {
+                    if (totalObjections >= maxTarget) {
+                        progressTextEl.innerHTML = '🎉 <strong>RECORD BROKEN!</strong> ' + totalObjections + ' objections!';
+                    } else {
+                        const remaining = nextMilestone.value - totalObjections;
+                        progressTextEl.innerHTML = percentageTowardsNext + '% towards ' + nextMilestone.label + ' (' + nextMilestone.value.toLocaleString() + ') - <strong>' + remaining + ' to go</strong>';
+                    }
+                }
 
                 // Update modal counters
                 document.getElementById('birchanger-count-modal').textContent = birchangerTotal;
@@ -1313,8 +1417,8 @@
                 document.getElementById('total-count-modal').textContent = totalObjections;
 
                 // Setup share buttons with dynamic message
-                const remaining = target - totalObjections;
-                const shareMessage = `Not only are our villages under threat from overdevelopment, but developers are trying to profit from turning greenbelt into housing estates. I've just submitted an objection to City & Country's plans for Birchanger and Stansted – it took less than a minute - but we need ${remaining} more! Add your voice: saveourvillages.co.uk`;
+                const shareRemaining = nextMilestone.value - totalObjections;
+                const shareMessage = `Not only are our villages under threat from overdevelopment, but developers are trying to profit from turning greenbelt into housing estates. I've just submitted an objection to City & Country's plans for Birchanger and Stansted – it took less than a minute - but we need ${shareRemaining} more to hit our ${nextMilestone.label} target! Add your voice: saveourvillages.co.uk`;
                 const shareUrl = 'https://saveourvillages.co.uk';
 
                 // Store share message globally for Facebook share function
