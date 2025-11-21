@@ -3,91 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Templates - Save Our Villages</title>
+    <title>Object - Save Our Villages</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            line-height: 1.6;
-        }
-
-
-        .navbar {
-            background-color: #fff;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2c5f2d;
-        }
-
-        .logo::before {
-            content: "";
-            display: inline-block;
-            width: 65px;
-            height: 65px;
-            background-image: url('icons/Green-Belt-Logo.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            vertical-align: middle;
-            margin-right: 15px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            padding: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links li {
-            margin: 0 1.5rem;
-        }
-
-        .nav-links a {
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #2c5f2d;
-        }
-
-        .nav-links a.active {
-            color: #2c5f2d;
-            font-weight: bold;
-        }
-
         .templates-hero {
             background: linear-gradient(135deg, #2c5f2d, #4a7c59);
             color: white;
-            padding: 150px 20px 80px;
+            padding: 80px 20px;
             text-align: center;
         }
 
@@ -824,22 +746,23 @@
     </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="navbar-container">
+    <!-- Header -->
+    <header>
+        <nav>
             <div class="logo">Save Our Villages</div>
-            <ul class="nav-links">
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="templates.html" class="active">Object</a></li>
                 <li><a href="birchanger.html">Save Birchanger</a></li>
                 <li><a href="stansted.html">Save Stansted</a></li>
-                <li><a href="templates.html" class="active">Templates</a></li>
                 <li><a href="documentation.html">Documentation</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="index.html#action">Take Action</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <div class="templates-hero">
@@ -2100,6 +2023,12 @@
 
         // Load objection data when page loads
         window.addEventListener('load', loadObjectionData);
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('show');
+        }
     </script>
 </body>
 </html>
