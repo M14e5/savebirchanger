@@ -476,17 +476,30 @@ nav {
 
 .newsletter-form {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    max-width: 500px;
+    max-width: 600px;
     margin: 2rem auto 0;
+    justify-content: center;
 }
 
 .newsletter-form input {
     flex: 1;
+    min-width: 150px;
     padding: 1rem;
     border: none;
     border-radius: 50px;
     font-size: 1rem;
+}
+
+.newsletter-form select {
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    flex: 1;
+    min-width: 180px;
 }
 
 .newsletter-form button {
