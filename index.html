@@ -754,6 +754,20 @@
             <form class="newsletter-form" action="https://formspree.io/f/xldpewza" method="POST">
                 <input type="text" name="name" placeholder="Your name" required>
                 <input type="email" name="email" placeholder="Your email address" required>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1rem 0;">
+                    <label style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; font-size: 0.95rem;">
+                        <input type="radio" name="interest" value="More Information" style="width: auto; margin: 0;" checked>
+                        More Information
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; font-size: 0.95rem;">
+                        <input type="radio" name="interest" value="Help Objecting" style="width: auto; margin: 0;">
+                        Help Objecting
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer; font-size: 0.95rem;">
+                        <input type="radio" name="interest" value="Volunteer" style="width: auto; margin: 0;">
+                        Volunteer
+                    </label>
+                </div>
                 <button type="submit">Subscribe</button>
             </form>
             <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">We'll only use your email for campaign updates. View our <a href="#" id="newsletter-privacy-link" style="color: #ffd93d; text-decoration: underline;">Privacy Notice</a>.</p>
