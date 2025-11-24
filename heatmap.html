@@ -1030,6 +1030,56 @@
             legend.addTo(canvassingMap);
         }
 
+        function createRoadPopup(road) {
+            const statusLabels = {
+                'none': 'Not checked',
+                'todo': 'To Do',
+                'doing': 'In Progress',
+                'done': 'Done'
+            };
+            const statusColors = {
+                'none': '#6c757d',
+                'todo': '#007bff',
+                'doing': '#fd7e14',
+                'done': '#28a745'
+            };
+
+            const status = road.status || 'none';
+            const statusLabel = statusLabels[status];
+            const statusColor = statusColors[status];
+
+            let dateInfo = '';
+            if (road.last_checked) {
+                const date = new Date(road.last_checked);
+                dateInfo = `<div style="margin-top:5px;font-size:0.85rem;color:#666;">
+                    Last checked: ${date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                </div>`;
+            }
+
+            let updatedByInfo = '';
+            if (road.updated_by) {
+                updatedByInfo = `<div style="font-size:0.85rem;color:#666;">By: ${road.updated_by}</div>`;
+            }
+
+            return `
+                <div style="min-width:150px;">
+                    <strong style="font-size:1rem;">${road.name}</strong>
+                    <div style="margin-top:8px;">
+                        <span style="display:inline-block;padding:3px 8px;border-radius:4px;background:${statusColor};color:white;font-size:0.8rem;">
+                            ${statusLabel}
+                        </span>
+                    </div>
+                    ${dateInfo}
+                    ${updatedByInfo}
+                    <div style="margin-top:10px;padding-top:8px;border-top:1px solid #eee;">
+                        <button onclick="toggleRoadSelection('${road.id}')" style="background:#2c5f2d;color:white;border:none;padding:5px 10px;border-radius:4px;cursor:pointer;font-size:0.85rem;">
+                            ${selectedRoads.has(road.id) ? 'Deselect' : 'Select'} Road
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
         function renderRoadsOnMap() {
             // Clear existing layers
             Object.values(roadLayers).forEach(layer => {
@@ -1052,7 +1102,15 @@
                     }
                 });
 
-                layer.on('click', () => toggleRoadSelection(road.id));
+                // Create popup content
+                const popupContent = createRoadPopup(road);
+                layer.bindPopup(popupContent);
+
+                layer.on('click', (e) => {
+                    // Show popup on click
+                    layer.openPopup(e.latlng);
+                });
+
                 layer.addTo(canvassingMap);
                 roadLayers[road.id] = layer;
             });
