@@ -492,6 +492,15 @@
             background: #1e7e34;
         }
 
+        .action-btn.reset {
+            background: #dc3545;
+            color: white;
+        }
+
+        .action-btn.reset:hover:not(:disabled) {
+            background: #c82333;
+        }
+
         .action-btn.clear {
             background: #6c757d;
             color: white;
@@ -703,7 +712,8 @@
                         <button class="action-btn todo" id="btn-todo" disabled>To Do</button>
                         <button class="action-btn doing" id="btn-doing" disabled>Doing</button>
                         <button class="action-btn done" id="btn-done" disabled>Done</button>
-                        <button class="action-btn clear" id="btn-clear" disabled>Clear</button>
+                        <button class="action-btn reset" id="btn-reset" disabled>Reset</button>
+                        <button class="action-btn clear" id="btn-clear" disabled>Clear Selection</button>
                     </div>
                 </div>
             </div>
@@ -1170,6 +1180,7 @@
             document.getElementById('btn-todo').disabled = !hasSelection;
             document.getElementById('btn-doing').disabled = !hasSelection;
             document.getElementById('btn-done').disabled = !hasSelection;
+            document.getElementById('btn-reset').disabled = !hasSelection;
             document.getElementById('btn-clear').disabled = !hasSelection;
         }
 
@@ -1274,6 +1285,14 @@
 
             document.getElementById('btn-done').addEventListener('click', async () => {
                 if (await updateRoadStatus(Array.from(selectedRoads), 'done')) {
+                    selectedRoads.clear();
+                    await refreshCanvassingData();
+                    updateSelectionUI();
+                }
+            });
+
+            document.getElementById('btn-reset').addEventListener('click', async () => {
+                if (await updateRoadStatus(Array.from(selectedRoads), 'none')) {
                     selectedRoads.clear();
                     await refreshCanvassingData();
                     updateSelectionUI();
