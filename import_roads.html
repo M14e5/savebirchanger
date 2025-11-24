@@ -102,7 +102,6 @@
         const SUPABASE_URL = 'https://jwbjrgpcwwqrumstaqfi.supabase.co';
         const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YmpyZ3Bjd3dxcnVtc3RhcWZpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM5MDM2MDUsImV4cCI6MjA3OTQ3OTYwNX0.ZaN62Uhe09uheuzoLT1NWv4otrH0TI5XnKaDNwAFUUk';
         const OVERPASS_URL = 'https://overpass-api.de/api/interpreter';
-        const BBOX = '51.82,0.05,51.95,0.30';
 
         let roads = [];
         let imported = 0;
@@ -123,9 +122,18 @@
 
         async function fetchRoads() {
             document.getElementById('btn-fetch').disabled = true;
-            log('Fetching roads from OpenStreetMap...');
+            log('Fetching roads from OpenStreetMap for Birchanger & Stansted...');
 
-            const query = `[out:json][timeout:90];(way["highway"]["name"](${BBOX}););out body;>;out skel qt;`;
+            const query = `[out:json][timeout:120];
+area["name"="Birchanger"]["boundary"="administrative"]->.birchanger;
+area["name"="Stansted Mountfitchet"]["boundary"="administrative"]->.stansted;
+(
+  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street|service)$"](area.birchanger);
+  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street|service)$"](area.stansted);
+);
+out body;
+>;
+out skel qt;`;
 
             try {
                 const response = await fetch(OVERPASS_URL, {
@@ -155,13 +163,12 @@
 
                 // Convert to road objects
                 roads = [];
-                const skipTypes = ['footway', 'cycleway', 'path', 'steps', 'pedestrian', 'service'];
 
                 ways.forEach(way => {
-                    const name = way.tags?.name || 'Unnamed Road';
-                    const highway = way.tags?.highway || 'road';
-
-                    if (skipTypes.includes(highway)) return;
+                    const tags = way.tags || {};
+                    const highway = tags.highway || 'road';
+                    // Generate name for unnamed roads
+                    const name = tags.name || tags.ref || `Unnamed ${highway.replace('_', ' ')}`;
 
                     const coords = [];
                     (way.nodes || []).forEach(nodeId => {

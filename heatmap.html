@@ -170,11 +170,6 @@
         }
 
         /* Heatmap Tab Styles */
-        #heatmap-tab {
-            display: flex;
-            flex-direction: column;
-        }
-
         #heatmap-map {
             flex: 1;
             min-height: 400px;
@@ -920,7 +915,8 @@
 
         async function fetchRoads() {
             try {
-                const response = await fetch(`${SUPABASE_URL}/rest/v1/roads?select=*`, {
+                // Fetch all roads (override default 1000 limit)
+                const response = await fetch(`${SUPABASE_URL}/rest/v1/roads?select=*&limit=5000`, {
                     headers: {
                         'apikey': SUPABASE_KEY,
                         'Authorization': `Bearer ${SUPABASE_KEY}`
