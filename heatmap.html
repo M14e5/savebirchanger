@@ -863,10 +863,7 @@
                 gradient: { 0.0: 'green', 0.5: 'yellow', 1.0: 'red' }
             }).addTo(heatmapMap);
 
-            if (heatData.length > 0) {
-                const bounds = L.latLngBounds(heatData.map(d => [d[0], d[1]]));
-                heatmapMap.fitBounds(bounds, { padding: [50, 50] });
-            }
+            // Don't auto-fit bounds - use default center/zoom for consistent view
         }
 
         function updateHeatmapStats(data) {
@@ -1126,14 +1123,7 @@
                 roadLayers[road.id] = layer;
             });
 
-            // Fit bounds if we have roads
-            if (roads.length > 0) {
-                const allLayers = Object.values(roadLayers);
-                if (allLayers.length > 0) {
-                    const group = L.featureGroup(allLayers);
-                    canvassingMap.fitBounds(group.getBounds(), { padding: [20, 20] });
-                }
-            }
+            // Don't auto-fit bounds - use default center/zoom for consistent view
         }
 
         function toggleRoadSelection(roadId) {
