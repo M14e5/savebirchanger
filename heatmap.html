@@ -557,6 +557,7 @@
         .legend-line.doing { background: #fd7e14; }
         .legend-line.done { background: #28a745; }
         .legend-line.done-old { background: #90EE90; }
+        .legend-line.done-older { background: #D0F0D0; }
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
@@ -984,11 +985,12 @@
             if (road.status === 'todo') return '#007bff';
             if (road.status === 'doing') return '#fd7e14';
             if (road.status === 'done') {
-                // Check if older than 7 days
+                // Check age of completion
                 if (road.last_checked) {
                     const lastChecked = new Date(road.last_checked);
                     const daysSince = (Date.now() - lastChecked) / (1000 * 60 * 60 * 24);
-                    if (daysSince > 7) return '#90EE90'; // Light green for old
+                    if (daysSince > 30) return '#D0F0D0'; // Very light green for >30 days
+                    if (daysSince > 14) return '#90EE90'; // Light green for >14 days
                 }
                 return '#28a745'; // Bright green for recent
             }
@@ -1030,7 +1032,11 @@
                     </div>
                     <div class="legend-item">
                         <div class="legend-line done-old"></div>
-                        <span>Done (>7 days)</span>
+                        <span>Done (>14 days)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-line done-older"></div>
+                        <span>Done (>30 days)</span>
                     </div>
                 `;
                 return div;
