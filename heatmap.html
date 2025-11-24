@@ -1099,14 +1099,14 @@
             roads.forEach(road => {
                 if (!road.geojson || !road.geojson.geometry) return;
 
-                const color = getRoadColor(road);
                 const isSelected = selectedRoads.has(road.id);
+                const color = isSelected ? '#FFD700' : getRoadColor(road);  // Yellow when selected
 
                 const layer = L.geoJSON(road.geojson, {
                     style: {
                         color: color,
                         weight: isSelected ? 6 : 4,
-                        opacity: isSelected ? 1 : 0.8
+                        opacity: 1
                     }
                 });
 
@@ -1145,12 +1145,12 @@
             if (!layer) return;
 
             const isSelected = selectedRoads.has(roadId);
-            const color = getRoadColor(road);
+            const color = isSelected ? '#FFD700' : getRoadColor(road);  // Yellow when selected
 
             layer.setStyle({
                 color: color,
                 weight: isSelected ? 6 : 4,
-                opacity: isSelected ? 1 : 0.8
+                opacity: 1
             });
 
             // Update list item
