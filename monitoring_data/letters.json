@@ -1514,7 +1514,57 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": null
+    },
+    {
+      "id": "8594e45df6ae",
+      "application": "stansted",
+      "date": "2025-11-24",
+      "description": "HIGHFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9caef62fabdf",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "25 BENTFIELD END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5ddcbd609c36",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "13 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7e702d59aa13",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "24 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1389d07fd84e",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "8 CROASDAILE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-24T10:05:12.891612"
+  "last_updated": "2025-11-24T11:05:12.032022"
 }
