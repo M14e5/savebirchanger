@@ -29,18 +29,25 @@ OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 VILLAGES = ["Birchanger", "Stansted Mountfitchet"]
 
 def get_overpass_query() -> str:
-    """Generate Overpass query for roads in Birchanger and Stansted Mountfitchet only."""
+    """Generate Overpass query for roads in Birchanger and Stansted Mountfitchet only, excluding airport."""
     return """
 [out:json][timeout:120];
 // Get areas for both villages
 area["name"="Birchanger"]["boundary"="administrative"]->.birchanger;
 area["name"="Stansted Mountfitchet"]["boundary"="administrative"]->.stansted;
+// Get airport area to exclude
+area["name"="London Stansted Airport"]["aeroway"="aerodrome"]->.airport;
 
-// Get all roads (with or without names) in both villages
+// Get all roads in both villages, excluding airport
 (
-  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street|service)$"](area.birchanger);
-  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street|service)$"](area.stansted);
+  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street)$"](area.birchanger);
+  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street)$"](area.stansted);
+  // Only include service roads that have names (excludes airport access roads)
+  way["highway"="service"]["name"](area.birchanger);
+  way["highway"="service"]["name"](area.stansted);
 );
+// Remove any roads that are within the airport
+(._; - way(area.airport););
 out body;
 >;
 out skel qt;

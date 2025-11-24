@@ -127,10 +127,14 @@
             const query = `[out:json][timeout:120];
 area["name"="Birchanger"]["boundary"="administrative"]->.birchanger;
 area["name"="Stansted Mountfitchet"]["boundary"="administrative"]->.stansted;
+area["name"="London Stansted Airport"]["aeroway"="aerodrome"]->.airport;
 (
-  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street|service)$"](area.birchanger);
-  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street|service)$"](area.stansted);
+  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street)$"](area.birchanger);
+  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street)$"](area.stansted);
+  way["highway"="service"]["name"](area.birchanger);
+  way["highway"="service"]["name"](area.stansted);
 );
+(._; - way(area.airport););
 out body;
 >;
 out skel qt;`;
