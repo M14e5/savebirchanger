@@ -25,17 +25,21 @@ SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJ
 # Overpass API endpoint
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 
-# Bounding box for CM22, CM23, CM24 area (Bishop's Stortford, Stansted, Birchanger)
-# Format: south, west, north, east
-BBOX = "51.82,0.05,51.95,0.30"
+# Target villages for focused road coverage
+VILLAGES = ["Birchanger", "Stansted Mountfitchet"]
 
 def get_overpass_query() -> str:
-    """Generate Overpass query for roads in the target area."""
-    return f"""
-[out:json][timeout:90];
+    """Generate Overpass query for roads in Birchanger and Stansted Mountfitchet only."""
+    return """
+[out:json][timeout:120];
+// Get areas for both villages
+area["name"="Birchanger"]["boundary"="administrative"]->.birchanger;
+area["name"="Stansted Mountfitchet"]["boundary"="administrative"]->.stansted;
+
+// Get all roads (with or without names) in both villages
 (
-  // Get all named roads/streets in the bounding box
-  way["highway"]["name"]({BBOX});
+  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street|service)$"](area.birchanger);
+  way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street|service)$"](area.stansted);
 );
 out body;
 >;
@@ -82,12 +86,14 @@ def process_osm_data(osm_data: Dict) -> List[Dict]:
     seen_names = {}  # Track roads by name to combine segments
 
     for way in ways:
-        name = way.get('tags', {}).get('name', 'Unnamed Road')
-        highway_type = way.get('tags', {}).get('highway', 'road')
+        tags = way.get('tags', {})
+        name = tags.get('name')
+        highway_type = tags.get('highway', 'road')
 
-        # Skip certain types
-        if highway_type in ['footway', 'cycleway', 'path', 'steps', 'pedestrian', 'service']:
-            continue
+        # Generate a name for unnamed roads
+        if not name:
+            # Try ref (road number) or use highway type
+            name = tags.get('ref') or f"Unnamed {highway_type.replace('_', ' ').title()}"
 
         # Build coordinates from node references
         coords = []
