@@ -2105,7 +2105,17 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "159 CANNONS CLOSE, Essex, UK"
+    },
+    {
+      "id": "4ac98d86528e",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "31 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-24T14:51:50.141145"
+  "last_updated": "2025-11-24T15:05:12.480581"
 }
