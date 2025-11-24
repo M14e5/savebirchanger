@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objection Heatmap - Save Birchanger</title>
+    <title>Campaign Tools - Save Birchanger</title>
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -129,13 +129,53 @@
             text-decoration: underline;
         }
 
-        main {
+        /* Tab Navigation */
+        .tab-nav {
+            background: white;
             display: flex;
-            flex-direction: column;
-            height: calc(100vh - 100px);
+            border-bottom: 2px solid #e9ecef;
         }
 
-        #map {
+        .tab-btn {
+            padding: 1rem 2rem;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #6c757d;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.2s;
+        }
+
+        .tab-btn:hover {
+            color: #2c5f2d;
+            background: #f8f9fa;
+        }
+
+        .tab-btn.active {
+            color: #2c5f2d;
+            font-weight: 600;
+            border-bottom-color: #2c5f2d;
+        }
+
+        .tab-content {
+            display: none;
+            height: calc(100vh - 150px);
+        }
+
+        .tab-content.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Heatmap Tab Styles */
+        #heatmap-tab {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #heatmap-map {
             flex: 1;
             min-height: 400px;
         }
@@ -239,9 +279,292 @@
             margin: 1rem;
         }
 
+        /* Canvassing Tab Styles */
+        #canvassing-tab {
+            display: flex;
+            flex-direction: row;
+            height: calc(100vh - 150px);
+        }
+
+        .canvassing-sidebar {
+            width: 350px;
+            background: white;
+            border-right: 1px solid #e9ecef;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .sidebar-header {
+            padding: 1rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .sidebar-header h3 {
+            color: #2c5f2d;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 10px 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #4a7c59;
+        }
+
+        .filter-row {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .filter-select {
+            flex: 1;
+            padding: 8px;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: #4a7c59;
+        }
+
+        .sidebar-stats {
+            padding: 0.75rem 1rem;
+            background: #f8f9fa;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .mini-stat {
+            text-align: center;
+        }
+
+        .mini-stat-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .mini-stat-label {
+            font-size: 0.65rem;
+            color: #6c757d;
+            text-transform: uppercase;
+        }
+
+        .mini-stat.done .mini-stat-value { color: #28a745; }
+        .mini-stat.doing .mini-stat-value { color: #fd7e14; }
+        .mini-stat.todo .mini-stat-value { color: #007bff; }
+        .mini-stat.total .mini-stat-value { color: #2c5f2d; }
+
+        .road-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0.5rem;
+        }
+
+        .road-item {
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .road-item:hover {
+            background: #f8f9fa;
+        }
+
+        .road-item.selected {
+            border-color: #2c5f2d;
+            background: #e8f5e9;
+        }
+
+        .road-status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .road-status-dot.none { background: #adb5bd; }
+        .road-status-dot.todo { background: #007bff; }
+        .road-status-dot.doing { background: #fd7e14; }
+        .road-status-dot.done { background: #28a745; }
+
+        .road-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .road-name {
+            font-weight: 500;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .road-meta {
+            font-size: 0.75rem;
+            color: #6c757d;
+        }
+
+        .sidebar-actions {
+            padding: 1rem;
+            border-top: 1px solid #e9ecef;
+            background: #f8f9fa;
+        }
+
+        .user-name-row {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .user-name-input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+
+        .user-name-input:focus {
+            outline: none;
+            border-color: #4a7c59;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .action-btn {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            flex: 1;
+            min-width: 70px;
+        }
+
+        .action-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .action-btn.todo {
+            background: #007bff;
+            color: white;
+        }
+
+        .action-btn.todo:hover:not(:disabled) {
+            background: #0056b3;
+        }
+
+        .action-btn.doing {
+            background: #fd7e14;
+            color: white;
+        }
+
+        .action-btn.doing:hover:not(:disabled) {
+            background: #e65100;
+        }
+
+        .action-btn.done {
+            background: #28a745;
+            color: white;
+        }
+
+        .action-btn.done:hover:not(:disabled) {
+            background: #1e7e34;
+        }
+
+        .action-btn.clear {
+            background: #6c757d;
+            color: white;
+        }
+
+        .action-btn.clear:hover:not(:disabled) {
+            background: #545b62;
+        }
+
+        .selection-count {
+            font-size: 0.8rem;
+            color: #6c757d;
+            margin-bottom: 0.5rem;
+        }
+
+        #canvassing-map {
+            flex: 1;
+            min-height: 400px;
+        }
+
+        /* Canvassing Legend */
+        .canvassing-legend {
+            position: absolute;
+            bottom: 30px;
+            right: 10px;
+            background: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            z-index: 1000;
+            font-size: 0.85rem;
+        }
+
+        .canvassing-legend h4 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .legend-line {
+            width: 24px;
+            height: 4px;
+            border-radius: 2px;
+        }
+
+        .legend-line.none { background: #adb5bd; }
+        .legend-line.todo { background: #007bff; }
+        .legend-line.doing { background: #fd7e14; }
+        .legend-line.done { background: #28a745; }
+        .legend-line.done-old { background: #90EE90; }
+
+        /* Mobile Responsive */
         @media (max-width: 768px) {
             header {
                 padding: 1rem;
+            }
+
+            .tab-btn {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
             }
 
             .stats-bar {
@@ -260,6 +583,34 @@
                 left: 10px;
                 max-width: none;
             }
+
+            #canvassing-tab {
+                flex-direction: column;
+            }
+
+            .canvassing-sidebar {
+                width: 100%;
+                height: auto;
+                max-height: 40vh;
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
+            }
+
+            .road-list {
+                max-height: 150px;
+            }
+
+            .sidebar-stats {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .action-buttons {
+                flex-wrap: wrap;
+            }
+
+            .action-btn {
+                min-width: calc(50% - 0.25rem);
+            }
         }
     </style>
 </head>
@@ -277,28 +628,95 @@
 
     <header id="main-header" class="content-hidden">
         <a href="index.html" class="back-link">&larr; Back to Save Birchanger</a>
-        <h1>Objection Response Heatmap</h1>
-        <p>Showing where people are responding from across the local area</p>
+        <h1>Campaign Tools</h1>
+        <p>Internal tools for campaign coordination</p>
     </header>
 
     <main id="main-content" class="content-hidden">
-        <div class="stats-bar">
-            <div class="stat">
-                <span class="stat-value" id="total-mapped">-</span>
-                <span class="stat-label">Locations Mapped</span>
+        <!-- Tab Navigation -->
+        <div class="tab-nav">
+            <button class="tab-btn active" data-tab="heatmap">Objection Heatmap</button>
+            <button class="tab-btn" data-tab="canvassing">Canvassing Planner</button>
+        </div>
+
+        <!-- Heatmap Tab -->
+        <div id="heatmap-tab" class="tab-content active">
+            <div class="stats-bar">
+                <div class="stat">
+                    <span class="stat-value" id="total-mapped">-</span>
+                    <span class="stat-label">Locations Mapped</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="total-objections">-</span>
+                    <span class="stat-label">Total Objections</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="last-updated">-</span>
+                    <span class="stat-label">Last Updated</span>
+                </div>
             </div>
-            <div class="stat">
-                <span class="stat-value" id="total-objections">-</span>
-                <span class="stat-label">Total Objections</span>
-            </div>
-            <div class="stat">
-                <span class="stat-value" id="last-updated">-</span>
-                <span class="stat-label">Last Updated</span>
+            <div id="heatmap-map">
+                <div class="loading">Loading map data...</div>
             </div>
         </div>
 
-        <div id="map">
-            <div class="loading">Loading map data...</div>
+        <!-- Canvassing Tab -->
+        <div id="canvassing-tab" class="tab-content">
+            <div class="canvassing-sidebar">
+                <div class="sidebar-header">
+                    <h3>Road Coverage Tracker</h3>
+                    <input type="text" class="search-box" id="road-search" placeholder="Search roads...">
+                    <div class="filter-row">
+                        <select class="filter-select" id="status-filter">
+                            <option value="all">All Roads</option>
+                            <option value="none">Never Checked</option>
+                            <option value="todo">To Do</option>
+                            <option value="doing">In Progress</option>
+                            <option value="done">Done</option>
+                            <option value="stale">Done >7 days ago</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="sidebar-stats">
+                    <div class="mini-stat total">
+                        <div class="mini-stat-value" id="stat-total">-</div>
+                        <div class="mini-stat-label">Total</div>
+                    </div>
+                    <div class="mini-stat done">
+                        <div class="mini-stat-value" id="stat-done">-</div>
+                        <div class="mini-stat-label">Done</div>
+                    </div>
+                    <div class="mini-stat doing">
+                        <div class="mini-stat-value" id="stat-doing">-</div>
+                        <div class="mini-stat-label">Doing</div>
+                    </div>
+                    <div class="mini-stat todo">
+                        <div class="mini-stat-value" id="stat-todo">-</div>
+                        <div class="mini-stat-label">To Do</div>
+                    </div>
+                </div>
+
+                <div class="road-list" id="road-list">
+                    <div class="loading">Loading roads...</div>
+                </div>
+
+                <div class="sidebar-actions">
+                    <div class="user-name-row">
+                        <input type="text" class="user-name-input" id="user-name" placeholder="Your name">
+                    </div>
+                    <div class="selection-count" id="selection-count">No roads selected</div>
+                    <div class="action-buttons">
+                        <button class="action-btn todo" id="btn-todo" disabled>To Do</button>
+                        <button class="action-btn doing" id="btn-doing" disabled>Doing</button>
+                        <button class="action-btn done" id="btn-done" disabled>Done</button>
+                        <button class="action-btn clear" id="btn-clear" disabled>Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div id="canvassing-map">
+                <div class="loading">Loading map...</div>
+            </div>
         </div>
     </main>
 
@@ -311,43 +729,91 @@
     <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
 
     <script>
+        // ============================================
         // Configuration
+        // ============================================
+        const SUPABASE_URL = 'https://jwbjrgpcwwqrumstaqfi.supabase.co';
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YmpyZ3Bjd3dxcnVtc3RhcWZpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM5MDM2MDUsImV4cCI6MjA3OTQ3OTYwNX0.ZaN62Uhe09uheuzoLT1NWv4otrH0TI5XnKaDNwAFUUk';
         const DATA_URL = 'monitoring_data/letters.json';
-        const MAP_CENTER = [51.88, 0.22]; // Birchanger area
+        const MAP_CENTER = [51.88, 0.18];
         const MAP_ZOOM = 12;
 
-        let map;
+        // ============================================
+        // Tab Management
+        // ============================================
+        let activeTab = 'heatmap';
+        let heatmapInitialized = false;
+        let canvassingInitialized = false;
+
+        function initTabs() {
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const tab = btn.dataset.tab;
+                    switchTab(tab);
+                });
+            });
+        }
+
+        function switchTab(tab) {
+            activeTab = tab;
+
+            // Update button states
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.tab === tab);
+            });
+
+            // Update content visibility
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.toggle('active', content.id === `${tab}-tab`);
+            });
+
+            // Initialize tab content if needed
+            if (tab === 'heatmap' && !heatmapInitialized) {
+                initHeatmap();
+            } else if (tab === 'canvassing' && !canvassingInitialized) {
+                initCanvassing();
+            }
+
+            // Invalidate map sizes after tab switch
+            setTimeout(() => {
+                if (tab === 'heatmap' && heatmapMap) {
+                    heatmapMap.invalidateSize();
+                } else if (tab === 'canvassing' && canvassingMap) {
+                    canvassingMap.invalidateSize();
+                }
+            }, 100);
+        }
+
+        // ============================================
+        // Heatmap Tab
+        // ============================================
+        let heatmapMap;
         let heatLayer;
 
-        async function loadData() {
+        async function loadHeatmapData() {
             try {
                 const response = await fetch(DATA_URL);
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 return await response.json();
             } catch (error) {
-                console.error('Failed to load data:', error);
+                console.error('Failed to load heatmap data:', error);
                 return null;
             }
         }
 
-        function initMap() {
-            map = L.map('map').setView(MAP_CENTER, MAP_ZOOM);
+        function initHeatmapMap() {
+            heatmapMap = L.map('heatmap-map').setView(MAP_CENTER, MAP_ZOOM);
 
-            // OpenStreetMap tiles
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 18,
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
+            }).addTo(heatmapMap);
 
-            // Add legend
-            addLegend();
+            addHeatmapLegend();
         }
 
-        function addLegend() {
+        function addHeatmapLegend() {
             const legend = L.control({ position: 'bottomright' });
-
             legend.onAdd = function(map) {
                 const div = L.DomUtil.create('div', 'legend');
                 div.innerHTML = `
@@ -360,13 +826,11 @@
                 `;
                 return div;
             };
-
-            legend.addTo(map);
+            legend.addTo(heatmapMap);
         }
 
-        function addInfoPanel() {
+        function addHeatmapInfoPanel() {
             const info = L.control({ position: 'topright' });
-
             info.onAdd = function(map) {
                 const div = L.DomUtil.create('div', 'info-panel');
                 div.innerHTML = `
@@ -376,48 +840,32 @@
                 `;
                 return div;
             };
-
-            info.addTo(map);
+            info.addTo(heatmapMap);
         }
 
         function updateHeatmap(letters) {
-            // Filter to only geocoded letters
             const geocodedLetters = letters.filter(l => l.geocoded && l.lat && l.lng);
+            if (geocodedLetters.length === 0) return;
 
-            if (geocodedLetters.length === 0) {
-                console.log('No geocoded letters to display');
-                return;
-            }
-
-            // Prepare heat data: [lat, lng, intensity]
             const heatData = geocodedLetters.map(l => [l.lat, l.lng, 1]);
 
-            // Remove existing heat layer if present
-            if (heatLayer) {
-                map.removeLayer(heatLayer);
-            }
+            if (heatLayer) heatmapMap.removeLayer(heatLayer);
 
-            // Create new heat layer
             heatLayer = L.heatLayer(heatData, {
                 radius: 25,
                 blur: 15,
                 maxZoom: 15,
                 max: 1.0,
-                gradient: {
-                    0.0: 'green',
-                    0.5: 'yellow',
-                    1.0: 'red'
-                }
-            }).addTo(map);
+                gradient: { 0.0: 'green', 0.5: 'yellow', 1.0: 'red' }
+            }).addTo(heatmapMap);
 
-            // Fit map to show all points if we have data
             if (heatData.length > 0) {
                 const bounds = L.latLngBounds(heatData.map(d => [d[0], d[1]]));
-                map.fitBounds(bounds, { padding: [50, 50] });
+                heatmapMap.fitBounds(bounds, { padding: [50, 50] });
             }
         }
 
-        function updateStats(data) {
+        function updateHeatmapStats(data) {
             const letters = data.letters || [];
             const geocoded = letters.filter(l => l.geocoded && l.lat && l.lng);
 
@@ -427,60 +875,403 @@
             if (data.last_updated) {
                 const date = new Date(data.last_updated);
                 document.getElementById('last-updated').textContent = date.toLocaleDateString('en-GB', {
-                    day: 'numeric',
-                    month: 'short',
-                    year: 'numeric'
+                    day: 'numeric', month: 'short', year: 'numeric'
                 });
             }
         }
 
-        function showError(message) {
-            document.getElementById('map').innerHTML = `
+        function showHeatmapError(message) {
+            document.getElementById('heatmap-map').innerHTML = `
                 <div class="error">
                     <strong>Unable to load heatmap data</strong>
                     <p>${message}</p>
-                    <p style="margin-top: 10px;">The geocoder may not have been run yet. Run <code>python3 monitoring/geocoder.py</code> to process addresses.</p>
                 </div>
             `;
         }
 
-        async function init() {
-            const data = await loadData();
+        async function initHeatmap() {
+            const data = await loadHeatmapData();
 
             if (!data) {
-                showError('Could not fetch letters.json. Make sure the scraper has run at least once.');
+                showHeatmapError('Could not fetch letters.json.');
                 return;
             }
 
             if (!data.letters || data.letters.length === 0) {
-                showError('No objection letters found in the data.');
+                showHeatmapError('No objection letters found.');
                 return;
             }
 
-            // Clear loading message and init map
-            document.getElementById('map').innerHTML = '';
-            initMap();
-            addInfoPanel();
-
-            // Update display
-            updateStats(data);
+            document.getElementById('heatmap-map').innerHTML = '';
+            initHeatmapMap();
+            addHeatmapInfoPanel();
+            updateHeatmapStats(data);
             updateHeatmap(data.letters);
+            heatmapInitialized = true;
         }
 
-        // Initialize when page loads - but only after password check
-        document.addEventListener('DOMContentLoaded', function() {
-            // Check if already authenticated in this session
-            if (sessionStorage.getItem('heatmap_auth') === 'true') {
-                unlockContent();
-            }
-        });
+        // ============================================
+        // Canvassing Tab
+        // ============================================
+        let canvassingMap;
+        let roads = [];
+        let roadLayers = {};
+        let selectedRoads = new Set();
 
-        // Password checking function
+        async function fetchRoads() {
+            try {
+                const response = await fetch(`${SUPABASE_URL}/rest/v1/roads?select=*`, {
+                    headers: {
+                        'apikey': SUPABASE_KEY,
+                        'Authorization': `Bearer ${SUPABASE_KEY}`
+                    }
+                });
+
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                console.error('Failed to fetch roads:', error);
+                return [];
+            }
+        }
+
+        async function updateRoadStatus(roadIds, status) {
+            const userName = document.getElementById('user-name').value.trim();
+            if (!userName) {
+                alert('Please enter your name first');
+                return false;
+            }
+
+            // Save username to localStorage
+            localStorage.setItem('canvassing_username', userName);
+
+            const today = new Date().toISOString().split('T')[0];
+
+            try {
+                for (const roadId of roadIds) {
+                    const response = await fetch(`${SUPABASE_URL}/rest/v1/roads?id=eq.${roadId}`, {
+                        method: 'PATCH',
+                        headers: {
+                            'apikey': SUPABASE_KEY,
+                            'Authorization': `Bearer ${SUPABASE_KEY}`,
+                            'Content-Type': 'application/json',
+                            'Prefer': 'return=minimal'
+                        },
+                        body: JSON.stringify({
+                            status: status,
+                            last_checked: status === 'done' ? today : null,
+                            updated_by: userName
+                        })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`Failed to update road ${roadId}`);
+                    }
+                }
+
+                return true;
+            } catch (error) {
+                console.error('Error updating roads:', error);
+                alert('Failed to update roads. Please try again.');
+                return false;
+            }
+        }
+
+        function getRoadColor(road) {
+            if (!road.status || road.status === 'none') return '#adb5bd';
+            if (road.status === 'todo') return '#007bff';
+            if (road.status === 'doing') return '#fd7e14';
+            if (road.status === 'done') {
+                // Check if older than 7 days
+                if (road.last_checked) {
+                    const lastChecked = new Date(road.last_checked);
+                    const daysSince = (Date.now() - lastChecked) / (1000 * 60 * 60 * 24);
+                    if (daysSince > 7) return '#90EE90'; // Light green for old
+                }
+                return '#28a745'; // Bright green for recent
+            }
+            return '#adb5bd';
+        }
+
+        function initCanvassingMap() {
+            canvassingMap = L.map('canvassing-map').setView(MAP_CENTER, MAP_ZOOM);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(canvassingMap);
+
+            addCanvassingLegend();
+        }
+
+        function addCanvassingLegend() {
+            const legend = L.control({ position: 'bottomright' });
+            legend.onAdd = function(map) {
+                const div = L.DomUtil.create('div', 'canvassing-legend');
+                div.innerHTML = `
+                    <h4>Road Status</h4>
+                    <div class="legend-item">
+                        <div class="legend-line none"></div>
+                        <span>Not checked</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-line todo"></div>
+                        <span>To Do</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-line doing"></div>
+                        <span>In Progress</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-line done"></div>
+                        <span>Done (recent)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-line done-old"></div>
+                        <span>Done (>7 days)</span>
+                    </div>
+                `;
+                return div;
+            };
+            legend.addTo(canvassingMap);
+        }
+
+        function renderRoadsOnMap() {
+            // Clear existing layers
+            Object.values(roadLayers).forEach(layer => {
+                canvassingMap.removeLayer(layer);
+            });
+            roadLayers = {};
+
+            // Add road layers
+            roads.forEach(road => {
+                if (!road.geojson || !road.geojson.geometry) return;
+
+                const color = getRoadColor(road);
+                const isSelected = selectedRoads.has(road.id);
+
+                const layer = L.geoJSON(road.geojson, {
+                    style: {
+                        color: color,
+                        weight: isSelected ? 6 : 4,
+                        opacity: isSelected ? 1 : 0.8
+                    }
+                });
+
+                layer.on('click', () => toggleRoadSelection(road.id));
+                layer.addTo(canvassingMap);
+                roadLayers[road.id] = layer;
+            });
+
+            // Fit bounds if we have roads
+            if (roads.length > 0) {
+                const allLayers = Object.values(roadLayers);
+                if (allLayers.length > 0) {
+                    const group = L.featureGroup(allLayers);
+                    canvassingMap.fitBounds(group.getBounds(), { padding: [20, 20] });
+                }
+            }
+        }
+
+        function toggleRoadSelection(roadId) {
+            if (selectedRoads.has(roadId)) {
+                selectedRoads.delete(roadId);
+            } else {
+                selectedRoads.add(roadId);
+            }
+
+            updateRoadDisplay(roadId);
+            updateSelectionUI();
+        }
+
+        function updateRoadDisplay(roadId) {
+            const road = roads.find(r => r.id === roadId);
+            if (!road) return;
+
+            const layer = roadLayers[roadId];
+            if (!layer) return;
+
+            const isSelected = selectedRoads.has(roadId);
+            const color = getRoadColor(road);
+
+            layer.setStyle({
+                color: color,
+                weight: isSelected ? 6 : 4,
+                opacity: isSelected ? 1 : 0.8
+            });
+
+            // Update list item
+            const listItem = document.querySelector(`.road-item[data-id="${roadId}"]`);
+            if (listItem) {
+                listItem.classList.toggle('selected', isSelected);
+            }
+        }
+
+        function updateSelectionUI() {
+            const count = selectedRoads.size;
+            document.getElementById('selection-count').textContent =
+                count === 0 ? 'No roads selected' :
+                count === 1 ? '1 road selected' :
+                `${count} roads selected`;
+
+            const hasSelection = count > 0;
+            document.getElementById('btn-todo').disabled = !hasSelection;
+            document.getElementById('btn-doing').disabled = !hasSelection;
+            document.getElementById('btn-done').disabled = !hasSelection;
+            document.getElementById('btn-clear').disabled = !hasSelection;
+        }
+
+        function renderRoadList() {
+            const listEl = document.getElementById('road-list');
+            const searchTerm = document.getElementById('road-search').value.toLowerCase();
+            const statusFilter = document.getElementById('status-filter').value;
+
+            // Filter roads
+            let filteredRoads = roads.filter(road => {
+                // Search filter
+                if (searchTerm && !road.name.toLowerCase().includes(searchTerm)) {
+                    return false;
+                }
+
+                // Status filter
+                if (statusFilter === 'all') return true;
+                if (statusFilter === 'none') return !road.status || road.status === 'none';
+                if (statusFilter === 'stale') {
+                    if (road.status !== 'done') return false;
+                    if (!road.last_checked) return false;
+                    const daysSince = (Date.now() - new Date(road.last_checked)) / (1000 * 60 * 60 * 24);
+                    return daysSince > 7;
+                }
+                return road.status === statusFilter;
+            });
+
+            // Sort by name
+            filteredRoads.sort((a, b) => a.name.localeCompare(b.name));
+
+            // Render list
+            if (filteredRoads.length === 0) {
+                listEl.innerHTML = '<div class="loading">No roads match your filters</div>';
+                return;
+            }
+
+            listEl.innerHTML = filteredRoads.map(road => {
+                const isSelected = selectedRoads.has(road.id);
+                const status = road.status || 'none';
+                const lastChecked = road.last_checked ? new Date(road.last_checked).toLocaleDateString('en-GB') : '';
+                const updatedBy = road.updated_by || '';
+
+                return `
+                    <div class="road-item ${isSelected ? 'selected' : ''}" data-id="${road.id}">
+                        <div class="road-status-dot ${status}"></div>
+                        <div class="road-info">
+                            <div class="road-name">${road.name}</div>
+                            <div class="road-meta">${lastChecked ? `${lastChecked}` : ''}${updatedBy ? ` by ${updatedBy}` : ''}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Add click handlers
+            listEl.querySelectorAll('.road-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    toggleRoadSelection(item.dataset.id);
+                });
+            });
+        }
+
+        function updateCanvassingStats() {
+            const total = roads.length;
+            const done = roads.filter(r => r.status === 'done').length;
+            const doing = roads.filter(r => r.status === 'doing').length;
+            const todo = roads.filter(r => r.status === 'todo').length;
+
+            document.getElementById('stat-total').textContent = total;
+            document.getElementById('stat-done').textContent = done;
+            document.getElementById('stat-doing').textContent = doing;
+            document.getElementById('stat-todo').textContent = todo;
+        }
+
+        async function refreshCanvassingData() {
+            roads = await fetchRoads();
+            updateCanvassingStats();
+            renderRoadList();
+            renderRoadsOnMap();
+        }
+
+        function setupCanvassingEventListeners() {
+            // Search and filter
+            document.getElementById('road-search').addEventListener('input', renderRoadList);
+            document.getElementById('status-filter').addEventListener('change', renderRoadList);
+
+            // Action buttons
+            document.getElementById('btn-todo').addEventListener('click', async () => {
+                if (await updateRoadStatus(Array.from(selectedRoads), 'todo')) {
+                    selectedRoads.clear();
+                    await refreshCanvassingData();
+                    updateSelectionUI();
+                }
+            });
+
+            document.getElementById('btn-doing').addEventListener('click', async () => {
+                if (await updateRoadStatus(Array.from(selectedRoads), 'doing')) {
+                    selectedRoads.clear();
+                    await refreshCanvassingData();
+                    updateSelectionUI();
+                }
+            });
+
+            document.getElementById('btn-done').addEventListener('click', async () => {
+                if (await updateRoadStatus(Array.from(selectedRoads), 'done')) {
+                    selectedRoads.clear();
+                    await refreshCanvassingData();
+                    updateSelectionUI();
+                }
+            });
+
+            document.getElementById('btn-clear').addEventListener('click', () => {
+                selectedRoads.clear();
+                renderRoadList();
+                renderRoadsOnMap();
+                updateSelectionUI();
+            });
+
+            // Load saved username
+            const savedName = localStorage.getItem('canvassing_username');
+            if (savedName) {
+                document.getElementById('user-name').value = savedName;
+            }
+        }
+
+        async function initCanvassing() {
+            document.getElementById('canvassing-map').innerHTML = '';
+            initCanvassingMap();
+
+            setupCanvassingEventListeners();
+
+            roads = await fetchRoads();
+
+            if (roads.length === 0) {
+                document.getElementById('road-list').innerHTML = `
+                    <div class="error">
+                        <strong>No roads found</strong>
+                        <p>Run the import script to load roads into Supabase.</p>
+                    </div>
+                `;
+            } else {
+                updateCanvassingStats();
+                renderRoadList();
+                renderRoadsOnMap();
+            }
+
+            canvassingInitialized = true;
+        }
+
+        // ============================================
+        // Password Protection
+        // ============================================
         function checkPassword() {
             const input = document.getElementById('password-input');
             const error = document.getElementById('password-error');
-            // Simple hash check (not cryptographically secure, but provides basic protection)
-            const correctHash = '8a9b4c2d1e3f5a6b7c8d9e0f1a2b3c4d'; // Hash placeholder
             const password = input.value;
 
             if (password === 'ixodP3rPuQPX6Ua4$zN#') {
@@ -497,8 +1288,21 @@
             document.getElementById('password-overlay').style.display = 'none';
             document.getElementById('main-header').classList.remove('content-hidden');
             document.getElementById('main-content').classList.remove('content-hidden');
-            init();
+
+            initTabs();
+
+            // Initialize heatmap tab by default
+            initHeatmap();
         }
+
+        // ============================================
+        // Initialize
+        // ============================================
+        document.addEventListener('DOMContentLoaded', function() {
+            if (sessionStorage.getItem('heatmap_auth') === 'true') {
+                unlockContent();
+            }
+        });
     </script>
 </body>
 </html>
