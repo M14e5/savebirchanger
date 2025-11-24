@@ -1494,7 +1494,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "55 WOODFIELDS, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "a9eb38ae9022",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "THE SPINNEY - COMMENT",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6d615b42bcfb",
+      "application": "birchanger",
+      "date": "2025-11-21",
+      "description": "36 SHEPHALL WAY - COMMENT",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-22T09:26:00.744539"
+  "last_updated": "2025-11-24T10:05:12.891612"
 }
