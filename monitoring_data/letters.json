@@ -1564,7 +1564,207 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": null
+    },
+    {
+      "id": "efd156b7c643",
+      "application": "stansted",
+      "date": "2025-11-24",
+      "description": "12 LOATES PASTURE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "757de7c6d4a6",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "76 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "985bb6488b5a",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "265 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ef38eb629a40",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "17 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cd4bebf1e884",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "48 MILL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4eb80c14467b",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "28 BENTFIELD END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fd24cd008164",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "14A BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3eb8209b91e4",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "35 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "05e071b4beed",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "1 WRIGHTS PIECE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e02c367ad33f",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "6 HILLSIDE COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "946bc56f6d18",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "11 PEACHEY WALK - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a50bfcd373d9",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "10 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "33e3dc8771e4",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "6 CHURCH HILL CORNER - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "846309b4c6e6",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "30 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "718c410038aa",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "17 NEWELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "eee53f433d2e",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "39 WEST ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c1f3b6133fa1",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "7 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a091f6a83a7f",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "THE SPINNEY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0d55ab6067fb",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "36 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "72caf680c43e",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "46 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-24T11:05:12.032022"
+  "last_updated": "2025-11-24T12:05:12.348180"
 }
