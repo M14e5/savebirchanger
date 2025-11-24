@@ -343,6 +343,13 @@
 
         .mini-stat {
             text-align: center;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .mini-stat:hover {
+            background: #e9ecef;
         }
 
         .mini-stat-value {
@@ -675,8 +682,10 @@
                             <option value="none">Never Checked</option>
                             <option value="todo">To Do</option>
                             <option value="doing">In Progress</option>
-                            <option value="done">Done</option>
-                            <option value="stale">Done >7 days ago</option>
+                            <option value="done">Done (all)</option>
+                            <option value="done-recent">Done (recent)</option>
+                            <option value="done-14">Done (>14 days)</option>
+                            <option value="done-30">Done (>30 days)</option>
                         </select>
                     </div>
                 </div>
@@ -1199,11 +1208,24 @@
                 // Status filter
                 if (statusFilter === 'all') return true;
                 if (statusFilter === 'none') return !road.status || road.status === 'none';
-                if (statusFilter === 'stale') {
+                if (statusFilter === 'done') return road.status === 'done';
+                if (statusFilter === 'done-recent') {
+                    if (road.status !== 'done') return false;
+                    if (!road.last_checked) return true; // No date = recent
+                    const daysSince = (Date.now() - new Date(road.last_checked)) / (1000 * 60 * 60 * 24);
+                    return daysSince <= 14;
+                }
+                if (statusFilter === 'done-14') {
                     if (road.status !== 'done') return false;
                     if (!road.last_checked) return false;
                     const daysSince = (Date.now() - new Date(road.last_checked)) / (1000 * 60 * 60 * 24);
-                    return daysSince > 7;
+                    return daysSince > 14 && daysSince <= 30;
+                }
+                if (statusFilter === 'done-30') {
+                    if (road.status !== 'done') return false;
+                    if (!road.last_checked) return false;
+                    const daysSince = (Date.now() - new Date(road.last_checked)) / (1000 * 60 * 60 * 24);
+                    return daysSince > 30;
                 }
                 return road.status === statusFilter;
             });
@@ -1265,6 +1287,24 @@
             // Search and filter
             document.getElementById('road-search').addEventListener('input', renderRoadList);
             document.getElementById('status-filter').addEventListener('change', renderRoadList);
+
+            // Mini-stat filter shortcuts
+            document.querySelector('.mini-stat.total').addEventListener('click', () => {
+                document.getElementById('status-filter').value = 'all';
+                renderRoadList();
+            });
+            document.querySelector('.mini-stat.done').addEventListener('click', () => {
+                document.getElementById('status-filter').value = 'done';
+                renderRoadList();
+            });
+            document.querySelector('.mini-stat.doing').addEventListener('click', () => {
+                document.getElementById('status-filter').value = 'doing';
+                renderRoadList();
+            });
+            document.querySelector('.mini-stat.todo').addEventListener('click', () => {
+                document.getElementById('status-filter').value = 'todo';
+                renderRoadList();
+            });
 
             // Action buttons
             document.getElementById('btn-todo').addEventListener('click', async () => {
