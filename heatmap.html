@@ -1153,6 +1153,9 @@
                 opacity: 1
             });
 
+            // Update popup content to reflect selection state
+            layer.setPopupContent(createRoadPopup(road));
+
             // Update list item
             const listItem = document.querySelector(`.road-item[data-id="${roadId}"]`);
             if (listItem) {
