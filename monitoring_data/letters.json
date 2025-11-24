@@ -1764,7 +1764,157 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": null
+    },
+    {
+      "id": "9bf2621484d1",
+      "application": "birchanger",
+      "date": "2025-11-22",
+      "description": "25 BENTFIELD END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "37e002544ef4",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "3 COLTSFIELD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3307a4e38b7a",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "2 WASHINGTON MEADS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ee5f79512388",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "274 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "baa605b7f61a",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "1 BARKER ROW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0e5413dd490d",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "8 CHURTON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "611753b04b38",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "84 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e0ff0b7ce1eb",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "34 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "343cf3e188bc",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "4 CLARKE CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0c39b5148e39",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "27 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5ccab2a456f2",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "31 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b29edecd78bc",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "22 CROSADAILE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9aa50508db62",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "15 STONEY PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "78ff339fd1a5",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "67-68 LONG ACRE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "12de58d7e016",
+      "application": "stansted",
+      "date": "2025-11-21",
+      "description": "14 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-24T12:05:12.348180"
+  "last_updated": "2025-11-24T13:05:12.122489"
 }
