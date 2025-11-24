@@ -1914,7 +1914,147 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": null
+    },
+    {
+      "id": "04d7c7c71443",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "36 BAYFORD WAY - COMMENT",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b7589988d3c2",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "46 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "85bb4fcb2e5d",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "84 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e461a85a1968",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "34 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "500466f31233",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "4 CLARKE CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f82f0b4b1632",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "27 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a4ca687637ec",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "2 BENTFIELD END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "46137787b4ed",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "53 LOWER STREET - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "31a3b9836604",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "6 HILLSIDE COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b3da18c9e4ca",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "4 BLAKE MEWS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3b14d1a7a708",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "34 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f457547562b1",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "65 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "67b025565b83",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "5 RECREATION GROUND - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e6d462ddb702",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "159 CANNONS CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-24T13:05:12.122489"
+  "last_updated": "2025-11-24T14:05:12.776127"
 }
