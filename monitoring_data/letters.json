@@ -2115,7 +2115,127 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": null
+    },
+    {
+      "id": "85ac993bc9be",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "22 CROASDAILE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "835120ba314e",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "15 STONEY PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "be8a9dd05a1d",
+      "application": "birchanger",
+      "date": "2025-11-22",
+      "description": "10 BRADLEY COMMON - COMMENT",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d47d3d3d978e",
+      "application": "birchanger",
+      "date": "2025-11-22",
+      "description": "10 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a98d84b418dc",
+      "application": "birchanger",
+      "date": "2025-11-22",
+      "description": "30 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b674c640dba3",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "17 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c7df537ffc06",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "13 ST JOHNS ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "36811755d5ef",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "16 HERMITAGE HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6da1a6443117",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "32 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "82121bc434d3",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "16 GILBEY CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "bcf76f142af4",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "2 GREENFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "94a52401e7f4",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "2 GREENFIELDS - COMMENTS - ATTACHMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-24T15:05:12.480581"
+  "last_updated": "2025-11-25T11:05:12.647484"
 }
