@@ -2385,7 +2385,287 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": null
+    },
+    {
+      "id": "1eeaab64e7ef",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "18 GOLDINGS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7e438fa039b5",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "3 HILLSIDE END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1aaa5f9c4ffe",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "274 BIRCHCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "06e610874806",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "1 BARKER ROW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "57194b04beda",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "8 CHURTON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b981de841da0",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "6 HILLSIDE COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9c16b452dd88",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "4 BLAKE MEWS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8535dcb5d888",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "5 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a1c99d476d48",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "12 LOATES PASTURE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c3042858b25e",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "6 LIMES CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "27d1f582fdc5",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "55 WOODFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f1a0c627ba0d",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "35 PEACHEY WALK - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4dfe74735e72",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "18 GOLDINGS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "daa77190c2c9",
+      "application": "stansted",
+      "date": "2025-11-24",
+      "description": "6 LIMES CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e737f9552cbd",
+      "application": "stansted",
+      "date": "2025-11-24",
+      "description": "35 PEACHEY WALK - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2ed7bcd985a2",
+      "application": "stansted",
+      "date": "2025-11-24",
+      "description": "16 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "35e9d62c97b1",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "MEADOWCROFT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e05844799053",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "39 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e9be18fc2cf5",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "2 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "956f2b6f001d",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "4 DOCKERELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d33f9ac1ae53",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "32 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3e5cc884d3af",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "4 THE GREEN - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1f3f7a85e2e6",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "16 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b0c4c542dd08",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "12 CHAPEL HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cea0523d8f2e",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "MALLOWS GREEN FARM - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c30055136431",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "3 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "72563685bd97",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "DRIVERS END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "bb57cdb1ccba",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "12 MEADOWCROFT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-25T12:05:12.789091"
+  "last_updated": "2025-11-25T13:05:12.441695"
 }
