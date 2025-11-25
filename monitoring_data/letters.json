@@ -2235,7 +2235,157 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": null
+    },
+    {
+      "id": "9828542fdc83",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "67-68 LONG ACRE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "67c752ab766a",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "14 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "815d84a79738",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "3 COLTSFIELD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "335e7483f60c",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "39 WEST ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3c4d810e02d6",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "2 WASHINGTON MEADS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "021f25596cd4",
+      "application": "birchanger",
+      "date": "2025-11-22",
+      "description": "17 NEWELLL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e11bb09616df",
+      "application": "birchanger",
+      "date": "2025-11-22",
+      "description": "39 WEST ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "356aa8080047",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "HAWTHORN HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "309f5589339e",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "1 WASHINGTON MEADS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "da4abe7c0f27",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "6 WATER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "37f0ed9e7168",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "32 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "81c356376dd1",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "18 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "af9a82956789",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "2 FIVE ACRES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "716b07affb3c",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "40 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "48196906f1f3",
+      "application": "stansted",
+      "date": "2025-11-23",
+      "description": "15 KNIGHTS CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-25T11:05:12.647484"
+  "last_updated": "2025-11-25T12:05:12.789091"
 }
