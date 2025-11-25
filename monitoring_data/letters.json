@@ -2665,7 +2665,127 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": null
+    },
+    {
+      "id": "d7aac82fb790",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "24 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "18bd8e6fec04",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "34 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "499156035cfc",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "65 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7a6b2c6de95d",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "5 RECREATION GROUND - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "37dd60e3447e",
+      "application": "stansted",
+      "date": "2025-11-24",
+      "description": "18 WOODLAND VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "85176faae327",
+      "application": "stansted",
+      "date": "2025-11-24",
+      "description": "18 MILL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3230dff77125",
+      "application": "stansted",
+      "date": "2025-11-24",
+      "description": "LITTLE SPRINGS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3de6c55141a1",
+      "application": "stansted",
+      "date": "2025-11-24",
+      "description": "54 STONEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4362cd1331e2",
+      "application": "stansted",
+      "date": "2025-11-24",
+      "description": "145 CANNONS CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2bfa71916c27",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "1 WASHINGTON MEADS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4974b5942ac3",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "39 RAINSFORD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1a36dab470b2",
+      "application": "stansted",
+      "date": "2025-11-22",
+      "description": "2 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-25T13:05:12.441695"
+  "last_updated": "2025-11-25T14:05:13.627989"
 }
