@@ -2850,80 +2850,88 @@
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "303 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "303 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "81291e5799cf",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "331 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "331 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "1c571c775147",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "17 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "17 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "1b3fb211fb09",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "303 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "303 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "870755db7207",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "331 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "331 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "41d54fe98b5b",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "17 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "17 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "7601faf60ff7",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "69 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "69 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "3a76b820a09d",
       "application": "stansted",
       "date": "2025-11-24",
       "description": "3 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8934427,
+      "lng": 0.1920397,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 BAYFORD WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "08f14c972bb8",
@@ -2933,18 +2941,19 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "62a99b643880",
       "application": "stansted",
       "date": "2025-11-24",
       "description": "65 CHAPEL HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9037639,
+      "lng": 0.193283,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "65 CHAPEL HILL, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-25T15:05:12.386321"
+  "last_updated": "2025-11-25T15:16:09.069075"
 }
