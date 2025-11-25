@@ -2111,80 +2111,88 @@
       "application": "birchanger",
       "date": "2025-11-24",
       "description": "31 FELSTEAD CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8942693,
+      "lng": 0.1945805,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "31 FELSTEAD CRESCENT, Birchanger, Essex, UK"
     },
     {
       "id": "85ac993bc9be",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "22 CROASDAILE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9089418,
+      "lng": 0.1965281,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "22 CROASDAILE ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "835120ba314e",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "15 STONEY PLACE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8969982,
+      "lng": 0.1977273,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 STONEY PLACE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "be8a9dd05a1d",
       "application": "birchanger",
       "date": "2025-11-22",
       "description": "10 BRADLEY COMMON - COMMENT",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "10 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "d47d3d3d978e",
       "application": "birchanger",
       "date": "2025-11-22",
       "description": "10 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "10 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "a98d84b418dc",
       "application": "birchanger",
       "date": "2025-11-22",
       "description": "30 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882497,
+      "lng": 0.1892625,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "30 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "b674c640dba3",
       "application": "stansted",
       "date": "2025-11-23",
       "description": "17 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "17 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "c7df537ffc06",
       "application": "stansted",
       "date": "2025-11-23",
       "description": "13 ST JOHNS ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7002828,
+      "lng": 0.1082835,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "13 ST JOHNS ROAD, Essex, UK"
     },
     {
       "id": "36811755d5ef",
@@ -2194,57 +2202,62 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "6da1a6443117",
       "application": "stansted",
       "date": "2025-11-23",
       "description": "32 BENTFIELD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9047401,
+      "lng": 0.1918673,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "32 BENTFIELD ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "82121bc434d3",
       "application": "stansted",
       "date": "2025-11-23",
       "description": "16 GILBEY CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9087338,
+      "lng": 0.1948581,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 GILBEY CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "bcf76f142af4",
       "application": "stansted",
       "date": "2025-11-23",
       "description": "2 GREENFIELDS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9035085,
+      "lng": 0.1954159,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 GREENFIELDS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "94a52401e7f4",
       "application": "stansted",
       "date": "2025-11-23",
       "description": "2 GREENFIELDS - COMMENTS - ATTACHMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9035085,
+      "lng": 0.1954159,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 GREENFIELDS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "9828542fdc83",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "67-68 LONG ACRE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7835468,
+      "lng": 0.1288492,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "67-68 LONG ACRE, Essex, UK"
     },
     {
       "id": "67c752ab766a",
@@ -2787,5 +2800,5 @@
       "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-25T14:05:13.627989"
+  "last_updated": "2025-11-25T14:26:19.454429"
 }
