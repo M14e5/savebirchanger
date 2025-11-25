@@ -2953,7 +2953,37 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "65 CHAPEL HILL, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "2bbd4bf26187",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "69 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "123a0a94305c",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "22 BENTFIELD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "223445d26f65",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "22 BENTFIELD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-25T15:16:09.069075"
+  "last_updated": "2025-11-25T16:05:12.653078"
 }
