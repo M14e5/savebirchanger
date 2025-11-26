@@ -2997,7 +2997,87 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "159 CANNONS CLOSE, Essex, UK"
+    },
+    {
+      "id": "de7a1372274e",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "9 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e1529ec39200",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "FIVE PENNIES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "051742c56a75",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "3 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "de497e86566b",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "1 BLUEBELL DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "dcf0ec8c4cff",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "9 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f49a14242054",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "FIVE PENNIES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "649806e2cb95",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "3 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f3adca96a18d",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "1 BLUEBELL DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-26T08:14:46.351209"
+  "last_updated": "2025-11-26T09:05:13.306777"
 }
