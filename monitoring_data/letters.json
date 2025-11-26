@@ -3605,11 +3605,12 @@
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "14 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 HARRISONS, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-26T17:05:14.031199"
+  "last_updated": "2025-11-26T17:15:42.917323"
 }
