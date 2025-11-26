@@ -3437,7 +3437,107 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "39 BIRCHWOOD, Birchanger, Essex, UK"
+    },
+    {
+      "id": "1e164a087aae",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "18 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c641b4f07d23",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "240 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1346cf5dd7e1",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "2 BENTFIELD END CAUSEWAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cc60733ee0fc",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "16 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ce8573f12803",
+      "application": "birchanger",
+      "date": "2025-11-24",
+      "description": "LITTLE SPRINGS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8f0d4b27804a",
+      "application": "stansted",
+      "date": "2025-11-26",
+      "description": "33 PEACHEY WALK - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ef24b7217de3",
+      "application": "stansted",
+      "date": "2025-11-26",
+      "description": "22 CHILDS LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0ec927242806",
+      "application": "stansted",
+      "date": "2025-11-26",
+      "description": "99 DIMSADLE CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c3e4c802fb75",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "22 BLYTHWOOD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a8ffe5ab4d3e",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "240 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-26T12:22:13.743695"
+  "last_updated": "2025-11-26T13:05:13.321699"
 }
