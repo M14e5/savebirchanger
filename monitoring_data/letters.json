@@ -3557,7 +3557,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "53 LOWER STREET, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "130bb1c2524d",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "1 WASHINGTON MEADS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "99182c923942",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "HAWTHORN HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-26T14:14:55.016901"
+  "last_updated": "2025-11-26T15:05:13.183866"
 }
