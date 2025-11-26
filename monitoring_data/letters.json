@@ -3091,151 +3091,166 @@
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "39 BENTFIELD GARDENS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9055935,
+      "lng": 0.1925602,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "39 BENTFIELD GARDENS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "6ee027a56fe6",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "3 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "c53f4e1dbf88",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "76 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "76 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "40bfeee00dd6",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "265 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "265 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "17d51a7f1181",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "17 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "17 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "bf687301d826",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "48 MILL ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7883175,
+      "lng": 0.3608154,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "48 MILL ROAD, Essex, UK"
     },
     {
       "id": "31889088f185",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "28 BENTFIELD END - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9071937,
+      "lng": 0.1905585,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "28 BENTFIELD END, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "5c0c05c7cf8b",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "14A BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14A BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "17c74a73280f",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "35 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "35 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "3ce38ec9b70d",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "1 WRIGHTS PIECE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9339177,
+      "lng": 0.2543374,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 WRIGHTS PIECE, Essex, UK"
     },
     {
       "id": "95fb5a5f5c24",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "DUNWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "DUNWOOD (approx: birchanger village)"
     },
     {
       "id": "3995c65d9fae",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "6 HILLSIDE COTTAGES - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9071019,
+      "lng": 1.1959158,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "HILLSIDE COTTAGES, Essex, UK"
     },
     {
       "id": "efe7bca6aca5",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "11 PEACHEY WALK - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8939723,
+      "lng": 0.20349,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 PEACHEY WALK, Birchanger, Essex, UK"
     },
     {
       "id": "7ab2f9d03b85",
       "application": "birchanger",
       "date": "2025-11-22",
       "description": "7 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "790b6bcac991",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "39 BENTFIELD GARDENS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9055935,
+      "lng": 0.1925602,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "39 BENTFIELD GARDENS, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-26T10:05:13.224747"
+  "last_updated": "2025-11-26T10:18:41.497963"
 }
