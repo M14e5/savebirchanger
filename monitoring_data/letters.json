@@ -3552,11 +3552,12 @@
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "53 LOWER STREET - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9041704,
+      "lng": 0.2010893,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "53 LOWER STREET, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-26T14:05:12.330586"
+  "last_updated": "2025-11-26T14:14:55.016901"
 }
