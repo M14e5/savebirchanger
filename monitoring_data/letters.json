@@ -2986,7 +2986,17 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "22 BENTFIELD GARDENS, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "994982ae24db",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "159 CANNONS CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-26T07:14:33.247682"
+  "last_updated": "2025-11-26T08:05:12.511997"
 }
