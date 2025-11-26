@@ -3256,101 +3256,111 @@
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "16 GILBEY CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9087338,
+      "lng": 0.1948581,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 GILBEY CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "b5909f3391f8",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "25 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882497,
+      "lng": 0.1892625,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "25 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "a466396a95fa",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "18 SPENCER CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9027324,
+      "lng": 0.1941959,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 SPENCER CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "49f7d2774c22",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "33 HAILES WOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9155935,
+      "lng": 0.235078,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "33 HAILES WOOD, Essex, UK"
     },
     {
       "id": "0be862bbcd82",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "11 PIMBLETT ROW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9296697,
+      "lng": 0.2481016,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 PIMBLETT ROW, Essex, UK"
     },
     {
       "id": "1c94e612dec9",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "LANGLEYS LODGE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "LANGLEYS LODGE (approx: stansted village)"
     },
     {
       "id": "985e381afe1a",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "ROFFEY BARNS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "ROFFEY BARNS (approx: stansted village)"
     },
     {
       "id": "2cb4a2368c04",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "5 MEADOW CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8596949,
+      "lng": 0.4168453,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 MEADOW CLOSE, Essex, UK"
     },
     {
       "id": "e05ab0fda9f0",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "25 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882497,
+      "lng": 0.1892625,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "25 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "f70aed5e70a7",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "212 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "212 BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-26T11:05:13.827786"
+  "last_updated": "2025-11-26T11:19:11.787869"
 }
