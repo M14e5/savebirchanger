@@ -3085,7 +3085,157 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "1 BLUEBELL DRIVE, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "74d082075df6",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "39 BENTFIELD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6ee027a56fe6",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "3 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c53f4e1dbf88",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "76 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "40bfeee00dd6",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "265 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "17d51a7f1181",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "17 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "bf687301d826",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "48 MILL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "31889088f185",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "28 BENTFIELD END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5c0c05c7cf8b",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "14A BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "17c74a73280f",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "35 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3ce38ec9b70d",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "1 WRIGHTS PIECE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "95fb5a5f5c24",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "DUNWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3995c65d9fae",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "6 HILLSIDE COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "efe7bca6aca5",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "11 PEACHEY WALK - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7ab2f9d03b85",
+      "application": "birchanger",
+      "date": "2025-11-22",
+      "description": "7 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "790b6bcac991",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "39 BENTFIELD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-26T09:14:46.840603"
+  "last_updated": "2025-11-26T10:05:13.224747"
 }
