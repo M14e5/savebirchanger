@@ -3578,7 +3578,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "HAWTHORN HOUSE (approx: birchanger village)"
+    },
+    {
+      "id": "acba68c8a57e",
+      "application": "birchanger",
+      "date": "2025-11-22",
+      "description": "1 WASHINGTON MEADS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6bca685ad13e",
+      "application": "birchanger",
+      "date": "2025-11-22",
+      "description": "39 RAINSFORD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-26T15:15:21.165839"
+  "last_updated": "2025-11-26T16:05:12.709766"
 }
