@@ -2992,11 +2992,12 @@
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "159 CANNONS CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8775452,
+      "lng": 0.8844257,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "159 CANNONS CLOSE, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-26T08:05:12.511997"
+  "last_updated": "2025-11-26T08:14:46.351209"
 }
