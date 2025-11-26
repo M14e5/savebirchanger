@@ -3566,18 +3566,19 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "99182c923942",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "HAWTHORN HOUSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "HAWTHORN HOUSE (approx: birchanger village)"
     }
   ],
-  "last_updated": "2025-11-26T15:05:13.183866"
+  "last_updated": "2025-11-26T15:15:21.165839"
 }
