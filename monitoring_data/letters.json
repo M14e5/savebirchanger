@@ -3250,7 +3250,107 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "39 BENTFIELD GARDENS, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "9c2c202b1312",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "16 GILBEY CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b5909f3391f8",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "25 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a466396a95fa",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "18 SPENCER CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "49f7d2774c22",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "33 HAILES WOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0be862bbcd82",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "11 PIMBLETT ROW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1c94e612dec9",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "LANGLEYS LODGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "985e381afe1a",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "ROFFEY BARNS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2cb4a2368c04",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "5 MEADOW CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e05ab0fda9f0",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "25 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f70aed5e70a7",
+      "application": "stansted",
+      "date": "2025-11-25",
+      "description": "212 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-26T10:18:41.497963"
+  "last_updated": "2025-11-26T11:05:13.827786"
 }
