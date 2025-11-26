@@ -3443,70 +3443,77 @@
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "18 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "c641b4f07d23",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "240 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "240 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "1346cf5dd7e1",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "2 BENTFIELD END CAUSEWAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9062617,
+      "lng": 0.1886992,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 BENTFIELD END CAUSEWAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "cc60733ee0fc",
       "application": "birchanger",
       "date": "2025-11-24",
       "description": "16 LIVINGS WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8944529,
+      "lng": 0.1972588,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 LIVINGS WAY, Birchanger, Essex, UK"
     },
     {
       "id": "ce8573f12803",
       "application": "birchanger",
       "date": "2025-11-24",
       "description": "LITTLE SPRINGS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "LITTLE SPRINGS (approx: birchanger village)"
     },
     {
       "id": "8f0d4b27804a",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "33 PEACHEY WALK - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8942609,
+      "lng": 0.2005477,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "33 PEACHEY WALK, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "ef24b7217de3",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "22 CHILDS LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8955073,
+      "lng": 0.1957611,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "22 CHILDS LANE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "0ec927242806",
@@ -3516,28 +3523,30 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "c3e4c802fb75",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "22 BLYTHWOOD GARDENS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9013944,
+      "lng": 0.1905997,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "22 BLYTHWOOD GARDENS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "a8ffe5ab4d3e",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "240 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "240 BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-26T13:05:13.321699"
+  "last_updated": "2025-11-26T13:15:10.476729"
 }
