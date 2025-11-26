@@ -3366,71 +3366,78 @@
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "33 PEACHEY WALK - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8942609,
+      "lng": 0.2005477,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "33 PEACHEY WALK, Birchanger, Essex, UK"
     },
     {
       "id": "72cfea755b2d",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "2 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882497,
+      "lng": 0.1892625,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "bbbba924f28d",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "14 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882497,
+      "lng": 0.1892625,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "bae48f75f6d4",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "THE OLD POST OFFICE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE OLD POST OFFICE (approx: stansted village)"
     },
     {
       "id": "405420afb525",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "HONEYSUCKLE COTTAGE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "HONEYSUCKLE COTTAGE (approx: stansted village)"
     },
     {
       "id": "d8279c8d7216",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "16 ROCHFORD CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8969133,
+      "lng": 0.196593,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 ROCHFORD CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "2df5e41d4cfa",
       "application": "stansted",
       "date": "2025-11-25",
       "description": "39 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "39 BIRCHWOOD, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-26T12:05:11.496624"
+  "last_updated": "2025-11-26T12:22:13.743695"
 }
