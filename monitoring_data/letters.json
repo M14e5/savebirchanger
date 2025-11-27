@@ -4148,7 +4148,117 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "273A BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "f2683b3270a7",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "6 BENTLEY VILLAS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c16f182fc86d",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "7 OLD BURY LODGE LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "14b9ec3eeb2f",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "2 STANWAYS COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "26293aff46da",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "3 WATSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ca792d72ebed",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "32 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "18ecdac23833",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "6 BENTLEY VILLAS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4adf7700e65d",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "7 OLD BURY LODGE LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "aa262903a7c7",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "2 STANWAYS COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e3c2357e18cd",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "12 CHURCH FIELD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "777234b71d40",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "5 THE DREYS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6fbbedb126e4",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "6 CHURTON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-27T14:17:19.679624"
+  "last_updated": "2025-11-27T15:05:12.821099"
 }
