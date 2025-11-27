@@ -3957,10 +3957,11 @@
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "40 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "40 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "cf477a69cf20",
@@ -3970,88 +3971,96 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "6e2addfbcb7c",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "22 CHILDS LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8955073,
+      "lng": 0.1957611,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "22 CHILDS LANE, Birchanger, Essex, UK"
     },
     {
       "id": "70c470398217",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "16 ROCHFORD CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8969133,
+      "lng": 0.196593,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 ROCHFORD CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "f8971f9087bc",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "18 SPENCER CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9027324,
+      "lng": 0.1941959,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 SPENCER CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "9b78680ef943",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "21 OZIERS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9168162,
+      "lng": 0.2302636,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "21 OZIERS, Essex, UK"
     },
     {
       "id": "bd69ec67d7c2",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "16 HERRINGTON AVENUE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8953774,
+      "lng": 0.1998917,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 HERRINGTON AVENUE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "30fc9278745a",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "14 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "a1a35fc25620",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "40 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "40 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "b4f5accdc6f2",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "55 WOODFIELDS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9018639,
+      "lng": 0.1965533,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "55 WOODFIELDS, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-27T12:05:13.972428"
+  "last_updated": "2025-11-27T12:16:20.463543"
 }
