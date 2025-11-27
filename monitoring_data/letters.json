@@ -3632,7 +3632,87 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "1 BAYFORD WAY, Birchanger, Essex, UK"
+    },
+    {
+      "id": "f04e162c6d3a",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "35 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "243fa578dac0",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "26 RAYFIELD CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e875d8f7604b",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "17 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "15d53ebe1649",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "23 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "48720bdcf4b2",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "21 OZIERS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "176b208b135c",
+      "application": "stansted",
+      "date": "2025-11-26",
+      "description": "61 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ebf5a3d845ef",
+      "application": "stansted",
+      "date": "2025-11-26",
+      "description": "1 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "63b1e8e0360a",
+      "application": "stansted",
+      "date": "2025-11-26",
+      "description": "62 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-27T09:15:29.589410"
+  "last_updated": "2025-11-27T10:05:13.290034"
 }
