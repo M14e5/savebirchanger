@@ -4132,21 +4132,23 @@
       "application": "stansted",
       "date": "2025-11-27",
       "description": "3 WATSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8952847,
+      "lng": 0.1943635,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 WATSON WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "7baf100cc271",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "273A BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "273A BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-27T14:05:12.921746"
+  "last_updated": "2025-11-27T14:17:19.679624"
 }
