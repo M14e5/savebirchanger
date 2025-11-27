@@ -4273,21 +4273,23 @@
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "2 FIVE ACRES - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9094369,
+      "lng": 0.1994391,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 FIVE ACRES, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "7504317d64cd",
       "application": "birchanger",
       "date": "2025-11-23",
       "description": "18 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 BRADLEY COMMON, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-27T16:05:13.363238"
+  "last_updated": "2025-11-27T16:20:50.023916"
 }
