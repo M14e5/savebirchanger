@@ -3726,211 +3726,232 @@
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "55 WOODFIELDS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9018639,
+      "lng": 0.1965533,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "55 WOODFIELDS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "161b46eda1d9",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "43 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "43 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "9172b681631d",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "210 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "210 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "39eb935b0393",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "16 HERRINGTON AVENUE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8953774,
+      "lng": 0.1998917,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 HERRINGTON AVENUE, Birchanger, Essex, UK"
     },
     {
       "id": "d759d0444013",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "31 ST EDMUNDS LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8770539,
+      "lng": 0.3716008,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "31 ST EDMUNDS LANE, Essex, UK"
     },
     {
       "id": "0d0d2f82cab6",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "14 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "e8c5d3a9bd53",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "18 NURSERY RISE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8656643,
+      "lng": 0.3658807,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 NURSERY RISE, Essex, UK"
     },
     {
       "id": "146bf346e984",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "2 SPARROWS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9983584,
+      "lng": 0.1077082,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 SPARROWS, Essex, UK"
     },
     {
       "id": "88861977a018",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "22 PYNCHON PADDOCKS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8323127,
+      "lng": 0.1851459,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "22 PYNCHON PADDOCKS, Essex, UK"
     },
     {
       "id": "f5650218b0e4",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "14 CLIFFORD SMITH DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8652933,
+      "lng": 0.4546957,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 CLIFFORD SMITH DRIVE, Essex, UK"
     },
     {
       "id": "5ab0d4342a7a",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "23 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "23 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "c3762ef74fb1",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "210 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "210 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "c2fca7714731",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "WOODFIELDS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9018639,
+      "lng": 0.1965533,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "WOODFIELDS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "bfa3ff825c23",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "35 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "35 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "0b188d132182",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "31 ST EDMUNDS LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8770539,
+      "lng": 0.3716008,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "31 ST EDMUNDS LANE, Essex, UK"
     },
     {
       "id": "cb401e2d1f47",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "26 RAYFIELD CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8521444,
+      "lng": 0.3858865,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "26 RAYFIELD CLOSE, Essex, UK"
     },
     {
       "id": "1a8fd2a8324b",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "14 CLIFFORD SMITH DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8652933,
+      "lng": 0.4546957,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 CLIFFORD SMITH DRIVE, Essex, UK"
     },
     {
       "id": "c89f79ee60c4",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "2 SPARROWS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9983584,
+      "lng": 0.1077082,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 SPARROWS, Essex, UK"
     },
     {
       "id": "3d821eafbc18",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "22 PYNCHON PADDOCKS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8323127,
+      "lng": 0.1851459,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "22 PYNCHON PADDOCKS, Essex, UK"
     },
     {
       "id": "2852da47e730",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "18 NURSERY RISE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8656643,
+      "lng": 0.3658807,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 NURSERY RISE, Essex, UK"
     },
     {
       "id": "6b35364c6e35",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "17 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "17 BRADLEY COMMON, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-27T11:05:11.905115"
+  "last_updated": "2025-11-27T11:18:25.252338"
 }
