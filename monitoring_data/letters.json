@@ -4066,61 +4066,67 @@
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "33 HAILES WOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9155935,
+      "lng": 0.235078,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "33 HAILES WOOD, Essex, UK"
     },
     {
       "id": "440e3e650f03",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "11 PIMBLETT ROW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9296697,
+      "lng": 0.2481016,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 PIMBLETT ROW, Essex, UK"
     },
     {
       "id": "f60192402c40",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "LANGLEYS LODGE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "LANGLEYS LODGE (approx: birchanger village)"
     },
     {
       "id": "57059af513e8",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "ROSSEY BARN - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "ROSSEY BARN (approx: birchanger village)"
     },
     {
       "id": "7b6a92ff7c08",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "5 MEADOW CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8596949,
+      "lng": 0.4168453,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 MEADOW CLOSE, Essex, UK"
     },
     {
       "id": "1e18a136c8cf",
       "application": "birchanger",
       "date": "2025-11-25",
       "description": "14 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882497,
+      "lng": 0.1892625,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 HARRISONS, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-27T13:05:12.608184"
+  "last_updated": "2025-11-27T13:17:43.591369"
 }
