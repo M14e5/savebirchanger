@@ -3616,21 +3616,23 @@
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "61 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "61 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "9e40827657af",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "1 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 BAYFORD WAY, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-27T09:05:13.314046"
+  "last_updated": "2025-11-27T09:15:29.589410"
 }
