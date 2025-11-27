@@ -1453,11 +1453,8 @@
                     }
                 }
 
-                // Calculate percentage towards next milestone
-                const previousValue = currentMilestone ? currentMilestone.value : 0;
-                const progressInCurrentSegment = totalObjections - previousValue;
-                const segmentSize = nextMilestone.value - previousValue;
-                const percentageTowardsNext = Math.min(100, Math.round((progressInCurrentSegment / segmentSize) * 100));
+                // Calculate percentage towards next milestone (from 0 to target)
+                const percentageTowardsNext = Math.min(100, Math.round((totalObjections / nextMilestone.value) * 100));
 
                 // Calculate overall percentage for bar width (against 2001)
                 const overallPercentage = ((totalObjections / maxTarget) * 100).toFixed(1);
