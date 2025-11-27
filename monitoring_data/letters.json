@@ -4154,20 +4154,22 @@
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "6 BENTLEY VILLAS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.889617,
+      "lng": 1.0750615,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "BENTLEY VILLAS, Essex, UK"
     },
     {
       "id": "c16f182fc86d",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "7 OLD BURY LODGE LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932974,
+      "lng": 0.211124,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 OLD BURY LODGE LANE, Birchanger, Essex, UK"
     },
     {
       "id": "14b9ec3eeb2f",
@@ -4177,47 +4179,51 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "26293aff46da",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "3 WATSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8952847,
+      "lng": 0.1943635,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 WATSON WAY, Birchanger, Essex, UK"
     },
     {
       "id": "ca792d72ebed",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "32 LIVINGS WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8944375,
+      "lng": 0.1969556,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "32 LIVINGS WAY, Birchanger, Essex, UK"
     },
     {
       "id": "18ecdac23833",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "6 BENTLEY VILLAS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.889617,
+      "lng": 1.0750615,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "BENTLEY VILLAS, Essex, UK"
     },
     {
       "id": "4adf7700e65d",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "7 OLD BURY LODGE LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932974,
+      "lng": 0.211124,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 OLD BURY LODGE LANE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "aa262903a7c7",
@@ -4227,38 +4233,41 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "e3c2357e18cd",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "12 CHURCH FIELD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 52.0493651,
+      "lng": 0.3016495,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 CHURCH FIELD, Essex, UK"
     },
     {
       "id": "777234b71d40",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "5 THE DREYS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 52.0180316,
+      "lng": 0.2810904,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 THE DREYS, Essex, UK"
     },
     {
       "id": "6fbbedb126e4",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "6 CHURTON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8796239,
+      "lng": 0.1957478,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "6 CHURTON, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-27T15:05:12.821099"
+  "last_updated": "2025-11-27T15:23:14.309773"
 }
