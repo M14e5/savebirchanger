@@ -4267,7 +4267,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "6 CHURTON, Birchanger, Essex, UK"
+    },
+    {
+      "id": "86ed118696e3",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "2 FIVE ACRES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7504317d64cd",
+      "application": "birchanger",
+      "date": "2025-11-23",
+      "description": "18 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-27T15:23:14.309773"
+  "last_updated": "2025-11-27T16:05:13.363238"
 }
