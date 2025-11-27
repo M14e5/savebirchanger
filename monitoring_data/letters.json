@@ -3638,81 +3638,89 @@
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "35 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "35 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "243fa578dac0",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "26 RAYFIELD CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8526192,
+      "lng": 0.3857507,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "26 RAYFIELD CLOSE, Essex, UK"
     },
     {
       "id": "e875d8f7604b",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "17 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "17 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "15d53ebe1649",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "23 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "23 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "48720bdcf4b2",
       "application": "birchanger",
       "date": "2025-11-26",
       "description": "21 OZIERS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9168162,
+      "lng": 0.2302636,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "21 OZIERS, Essex, UK"
     },
     {
       "id": "176b208b135c",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "61 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "61 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "ebf5a3d845ef",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "1 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8934427,
+      "lng": 0.1920397,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 BAYFORD WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "63b1e8e0360a",
       "application": "stansted",
       "date": "2025-11-26",
       "description": "62 BENTFIELD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9073482,
+      "lng": 0.1916928,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "62 BENTFIELD ROAD, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-27T10:05:13.290034"
+  "last_updated": "2025-11-27T10:16:23.137834"
 }
