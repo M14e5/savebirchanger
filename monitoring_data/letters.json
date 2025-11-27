@@ -4126,7 +4126,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "14 HARRISONS, Birchanger, Essex, UK"
+    },
+    {
+      "id": "0e6cf619d74c",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "3 WATSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7baf100cc271",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "273A BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-27T13:17:43.591369"
+  "last_updated": "2025-11-27T14:05:12.921746"
 }
