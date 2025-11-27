@@ -3951,7 +3951,107 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "17 BRADLEY COMMON, Birchanger, Essex, UK"
+    },
+    {
+      "id": "8d2b2e22526c",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "40 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cf477a69cf20",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "99 DIMSDALE CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6e2addfbcb7c",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "22 CHILDS LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "70c470398217",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "16 ROCHFORD CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f8971f9087bc",
+      "application": "birchanger",
+      "date": "2025-11-26",
+      "description": "18 SPENCER CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9b78680ef943",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "21 OZIERS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "bd69ec67d7c2",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "16 HERRINGTON AVENUE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "30fc9278745a",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "14 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a1a35fc25620",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "40 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b4f5accdc6f2",
+      "application": "stansted",
+      "date": "2025-11-26",
+      "description": "55 WOODFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-27T11:18:25.252338"
+  "last_updated": "2025-11-27T12:05:13.972428"
 }
