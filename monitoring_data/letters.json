@@ -4742,21 +4742,23 @@
       "application": "stansted",
       "date": "2025-11-27",
       "description": "1 PINES HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8982734,
+      "lng": 0.1908818,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 PINES HILL, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "42d97e5b209f",
       "application": "stansted",
       "date": "2025-11-27",
       "description": "THE OAKS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE OAKS (approx: stansted village)"
     }
   ],
-  "last_updated": "2025-11-28T15:05:13.632330"
+  "last_updated": "2025-11-28T15:18:15.099348"
 }
