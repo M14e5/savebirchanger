@@ -4295,11 +4295,12 @@
       "application": "stansted",
       "date": "2025-11-27",
       "description": "114 CAMBRIDGE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9131963,
+      "lng": 0.1998876,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "114 CAMBRIDGE ROAD, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-28T10:05:13.647330"
+  "last_updated": "2025-11-28T10:17:09.076730"
 }
