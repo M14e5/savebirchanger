@@ -4634,10 +4634,11 @@
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "20 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "20 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "94ac71d5ebe3",
@@ -4647,38 +4648,41 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "914d6c140333",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "65 CHAPEL HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9026878,
+      "lng": 0.1964086,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "65 CHAPEL HILL, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "8e9029975536",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "4 THE CAMPIONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9076385,
+      "lng": 0.1986165,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "4 THE CAMPIONS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "99e0cc2982c3",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "FLAT 3 25 RECREATION GROUND - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "FLAT 3 25 RECREATION GROUND (approx: birchanger village)"
     }
   ],
-  "last_updated": "2025-11-28T13:05:12.782494"
+  "last_updated": "2025-11-28T13:17:08.984381"
 }
