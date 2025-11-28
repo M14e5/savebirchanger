@@ -4764,171 +4764,188 @@
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "303 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "303 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "95cc53ffba06",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "THE OLD POST OFFICE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE OLD POST OFFICE (approx: birchanger village)"
     },
     {
       "id": "ec58ce366275",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "HONEYSUCKLE COTTAGE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "HONEYSUCKLE COTTAGE (approx: birchanger village)"
     },
     {
       "id": "24ab071e5be4",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "16 ROCHFORD CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8969133,
+      "lng": 0.196593,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 ROCHFORD CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "f362efbe7e17",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "39 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "39 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "ab8d302eac90",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "FLAT 3, 25 RECREATION GROUND - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9014826,
+      "lng": 0.1948798,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "25 RECREATION GROUND, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "ef0db6e54b1a",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "HOLLY HOUSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "HOLLY HOUSE (approx: birchanger village)"
     },
     {
       "id": "f710b7f5bdcd",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "33 HARRISON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7396749,
+      "lng": 0.4571271,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "33 HARRISON, Essex, UK"
     },
     {
       "id": "cc67015a9aca",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "14 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "c754fdef6fe6",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "68 WEST ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8986462,
+      "lng": 0.1950323,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "68 WEST ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "953fc8de5894",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "58 BENTFIELD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9071639,
+      "lng": 0.1915859,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "58 BENTFIELD ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "7b105d95a510",
       "application": "stansted",
       "date": "2025-11-28",
       "description": "20 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "20 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "a314ba47069b",
       "application": "stansted",
       "date": "2025-11-28",
       "description": "FLAT 3, 25 RECREATION GROUND - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9014826,
+      "lng": 0.1948798,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "25 RECREATION GROUND, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "4be2690e614d",
       "application": "stansted",
       "date": "2025-11-28",
       "description": "HOLLY HOUSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "HOLLY HOUSE (approx: stansted village)"
     },
     {
       "id": "0016e768096b",
       "application": "stansted",
       "date": "2025-11-28",
       "description": "33 HARRISON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7396749,
+      "lng": 0.4571271,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "33 HARRISON, Essex, UK"
     },
     {
       "id": "0cdd1257b4ee",
       "application": "stansted",
       "date": "2025-11-28",
       "description": "14 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "37017c1f8615",
       "application": "stansted",
       "date": "2025-11-28",
       "description": "58 BENTFIELD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9071639,
+      "lng": 0.1915859,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "58 BENTFIELD ROAD, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-28T17:05:12.749848"
+  "last_updated": "2025-11-28T17:17:35.988045"
 }
