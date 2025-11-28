@@ -4628,7 +4628,57 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "12 STONEY COMMON, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "1d4321c57847",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "20 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "94ac71d5ebe3",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "6 OLD COURT HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "914d6c140333",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "65 CHAPEL HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8e9029975536",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "4 THE CAMPIONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "99e0cc2982c3",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "FLAT 3 25 RECREATION GROUND - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-28T12:19:14.275307"
+  "last_updated": "2025-11-28T13:05:12.782494"
 }
