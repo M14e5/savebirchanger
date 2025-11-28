@@ -4736,7 +4736,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "12 STONEY COMMON, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "4b76f6821f5f",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "1 PINES HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "42d97e5b209f",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "THE OAKS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-28T14:20:43.774423"
+  "last_updated": "2025-11-28T15:05:13.632330"
 }
