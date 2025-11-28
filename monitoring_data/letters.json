@@ -4289,7 +4289,17 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "18 BRADLEY COMMON, Birchanger, Essex, UK"
+    },
+    {
+      "id": "f995c31451e7",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "114 CAMBRIDGE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-28T09:17:21.022967"
+  "last_updated": "2025-11-28T10:05:13.647330"
 }

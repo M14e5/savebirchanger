@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-28T09:05:13.138849",
+  "last_updated": "2025-11-28T10:05:13.646158",
   "applications": {
     "birchanger": {
       "name": "Birchanger (UTT/25/3011/OP)",
@@ -25,9 +25,9 @@
     },
     "stansted": {
       "name": "Stansted (UTT/25/3012/OP)",
-      "total": 237,
+      "total": 238,
       "by_date": {
-        "2025-11-27": 14,
+        "2025-11-27": 15,
         "2025-11-26": 17,
         "2025-11-25": 33,
         "2025-11-24": 15,
