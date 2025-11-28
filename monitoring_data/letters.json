@@ -4951,21 +4951,23 @@
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "9 OLD BELL ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.6554467,
+      "lng": 0.5524646,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "OLD BELL ROAD, Essex, UK"
     },
     {
       "id": "0fb81f42ddda",
       "application": "stansted",
       "date": "2025-11-28",
       "description": "9 OLD BELL ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.6554467,
+      "lng": 0.5524646,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "OLD BELL ROAD, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-28T18:05:12.555958"
+  "last_updated": "2025-11-28T18:17:50.345680"
 }
