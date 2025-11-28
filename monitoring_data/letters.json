@@ -4535,91 +4535,100 @@
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "18 WOODLAND VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9185305,
+      "lng": 0.2223294,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 WOODLAND VIEW, Essex, UK"
     },
     {
       "id": "7d18eba757bc",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "18 MILL CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7499083,
+      "lng": 0.3785164,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 MILL CLOSE, Essex, UK"
     },
     {
       "id": "a1394ef2d7a3",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "65 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "65 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "77dcc388e6ce",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "2 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 BAYFORD WAY, Birchanger, Essex, UK"
     },
     {
       "id": "c2ba9b67e5fc",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "54 STONEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8975552,
+      "lng": 0.1956976,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "54 STONEY COMMON, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "d39e945bdbbc",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "145 CANNONS CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8775452,
+      "lng": 0.8844257,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "145 CANNONS CLOSE, Essex, UK"
     },
     {
       "id": "01f231fe7389",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "3 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 BAYFORD WAY, Birchanger, Essex, UK"
     },
     {
       "id": "79ebf179ec47",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "1 PINES HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8982734,
+      "lng": 0.1908818,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 PINES HILL, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "c4dbedf9aefa",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "12 STONEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8975552,
+      "lng": 0.1956976,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 STONEY COMMON, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-28T12:05:11.614847"
+  "last_updated": "2025-11-28T12:19:14.275307"
 }
