@@ -4309,67 +4309,73 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "f7fb8a5ee7e4",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "40 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "40 BAYFORD WAY, Birchanger, Essex, UK"
     },
     {
       "id": "70d45f0e93c7",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "1 WRIGHTS PIECE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9339177,
+      "lng": 0.2543374,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 WRIGHTS PIECE, Essex, UK"
     },
     {
       "id": "09077225cea1",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "15 KNIGHTS CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9450892,
+      "lng": 1.0569373,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 KNIGHTS CLOSE, Essex, UK"
     },
     {
       "id": "916e5e590cfd",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "39 WALSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947868,
+      "lng": 0.2002768,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "39 WALSON WAY, Birchanger, Essex, UK"
     },
     {
       "id": "045896dd9728",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "4 DOCKERELL ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8965026,
+      "lng": 0.200081,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "4 DOCKERELL ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "383ce4b657f6",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "MEADCROFT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "MEADCROFT (approx: birchanger village)"
     },
     {
       "id": "1ae74e2c5dec",
@@ -4379,138 +4385,151 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "f9749a8a3624",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "4 THE GREEN - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7302881,
+      "lng": 0.4293771,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "4 THE GREEN, Essex, UK"
     },
     {
       "id": "f74e7660d65e",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "16 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "31b0dc42cbed",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "12 CHAPEL HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9026878,
+      "lng": 0.1964086,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 CHAPEL HILL, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "8fa489e292ce",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "MALLOWS GREEN FARM - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9183037,
+      "lng": 0.1383271,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "MALLOWS GREEN FARM, Essex, UK"
     },
     {
       "id": "745f8f45aae1",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "DRIVERS END - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9103986,
+      "lng": 0.1335958,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "DRIVERS END, Essex, UK"
     },
     {
       "id": "129a765690f5",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "12 MEADOWCROFT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9067793,
+      "lng": 0.2008994,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 MEADOWCROFT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "579b17efffb9",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "114 CAMBRIDGE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9142232,
+      "lng": 0.1999713,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "114 CAMBRIDGE ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "03fbdc4c2d0c",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "214 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "214 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "8f780ed59922",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "363 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "363 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "f0d09cf2d612",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "12 CHURCH FIELD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 52.0491416,
+      "lng": 0.3018201,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 CHURCH FIELD, Essex, UK"
     },
     {
       "id": "393e22b892e8",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "5 THE DREYS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 52.0180538,
+      "lng": 0.2805376,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 THE DREYS, Essex, UK"
     },
     {
       "id": "e6ce95ba8408",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "273A BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "273A BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "0ec656d67fa1",
       "application": "birchanger",
       "date": "2025-11-27",
       "description": "6 CHURTON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8796239,
+      "lng": 0.1957478,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "6 CHURTON, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-11-28T11:05:12.704554"
+  "last_updated": "2025-11-28T11:18:40.122190"
 }
