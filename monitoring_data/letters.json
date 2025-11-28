@@ -4529,7 +4529,97 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "6 CHURTON, Birchanger, Essex, UK"
+    },
+    {
+      "id": "441c20adddd9",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "18 WOODLAND VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7d18eba757bc",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "18 MILL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a1394ef2d7a3",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "65 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "77dcc388e6ce",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "2 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c2ba9b67e5fc",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "54 STONEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d39e945bdbbc",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "145 CANNONS CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "01f231fe7389",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "3 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "79ebf179ec47",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "1 PINES HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c4dbedf9aefa",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "12 STONEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-28T11:18:40.122190"
+  "last_updated": "2025-11-28T12:05:11.614847"
 }
