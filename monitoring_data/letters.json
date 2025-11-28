@@ -4758,7 +4758,177 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "THE OAKS (approx: stansted village)"
+    },
+    {
+      "id": "7226eeddbd97",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "303 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "95cc53ffba06",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "THE OLD POST OFFICE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ec58ce366275",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "HONEYSUCKLE COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "24ab071e5be4",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "16 ROCHFORD CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f362efbe7e17",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "39 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ab8d302eac90",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "FLAT 3, 25 RECREATION GROUND - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ef0db6e54b1a",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "HOLLY HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f710b7f5bdcd",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "33 HARRISON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cc67015a9aca",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "14 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c754fdef6fe6",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "68 WEST ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "953fc8de5894",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "58 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7b105d95a510",
+      "application": "stansted",
+      "date": "2025-11-28",
+      "description": "20 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a314ba47069b",
+      "application": "stansted",
+      "date": "2025-11-28",
+      "description": "FLAT 3, 25 RECREATION GROUND - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4be2690e614d",
+      "application": "stansted",
+      "date": "2025-11-28",
+      "description": "HOLLY HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0016e768096b",
+      "application": "stansted",
+      "date": "2025-11-28",
+      "description": "33 HARRISON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0cdd1257b4ee",
+      "application": "stansted",
+      "date": "2025-11-28",
+      "description": "14 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "37017c1f8615",
+      "application": "stansted",
+      "date": "2025-11-28",
+      "description": "58 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-28T16:17:49.969438"
+  "last_updated": "2025-11-28T17:05:12.749848"
 }
