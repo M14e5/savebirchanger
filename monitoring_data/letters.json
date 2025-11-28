@@ -4300,7 +4300,217 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "114 CAMBRIDGE ROAD, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "445cffd2267c",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "40 BAYFORD HICKS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f7fb8a5ee7e4",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "40 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "70d45f0e93c7",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "1 WRIGHTS PIECE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "09077225cea1",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "15 KNIGHTS CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "916e5e590cfd",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "39 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "045896dd9728",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "4 DOCKERELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "383ce4b657f6",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "MEADCROFT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1ae74e2c5dec",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "32 BIRCHCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f9749a8a3624",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "4 THE GREEN - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f74e7660d65e",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "16 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "31b0dc42cbed",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "12 CHAPEL HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8fa489e292ce",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "MALLOWS GREEN FARM - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "745f8f45aae1",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "DRIVERS END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "129a765690f5",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "12 MEADOWCROFT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "579b17efffb9",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "114 CAMBRIDGE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "03fbdc4c2d0c",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "214 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8f780ed59922",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "363 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f0d09cf2d612",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "12 CHURCH FIELD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "393e22b892e8",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "5 THE DREYS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e6ce95ba8408",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "273A BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0ec656d67fa1",
+      "application": "birchanger",
+      "date": "2025-11-27",
+      "description": "6 CHURTON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-28T10:17:09.076730"
+  "last_updated": "2025-11-28T11:05:12.704554"
 }
