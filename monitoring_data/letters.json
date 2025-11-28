@@ -4945,7 +4945,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "58 BENTFIELD ROAD, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "5782813c866e",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "9 OLD BELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0fb81f42ddda",
+      "application": "stansted",
+      "date": "2025-11-28",
+      "description": "9 OLD BELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-28T17:17:35.988045"
+  "last_updated": "2025-11-28T18:05:12.555958"
 }
