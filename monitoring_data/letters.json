@@ -4682,7 +4682,57 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "FLAT 3 25 RECREATION GROUND (approx: birchanger village)"
+    },
+    {
+      "id": "9f0a8e3badd5",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "22 BLYTHWOOD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e8abf0030024",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "212 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e522dfb67771",
+      "application": "birchanger",
+      "date": "2025-11-25",
+      "description": "49 WAYTEMORE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d550c5631111",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "214 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5b1b45360e01",
+      "application": "stansted",
+      "date": "2025-11-26",
+      "description": "12 STONEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-11-28T13:17:08.984381"
+  "last_updated": "2025-11-28T14:05:12.161392"
 }
