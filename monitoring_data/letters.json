@@ -4967,7 +4967,67 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "OLD BELL ROAD, Essex, UK"
+    },
+    {
+      "id": "9739cbbb57ba",
+      "application": "birchanger",
+      "date": "2025-11-30",
+      "description": "28 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2788d2351535",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "27 CHAPEL HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "61b1b73e44a6",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "18 ST JOHNS CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "040e3e297cdf",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "15 DAIRY LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2076684b66e8",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "7 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "99f71aaa9359",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "27 CHAPEL HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-01T08:17:14.743106"
+  "last_updated": "2025-12-01T09:05:14.134996"
 }
