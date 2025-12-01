@@ -5137,61 +5137,67 @@
       "application": "birchanger",
       "date": "2025-12-01",
       "description": "11 WILKINS CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8963988,
+      "lng": 0.1950158,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 WILKINS CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "61a055959137",
       "application": "birchanger",
       "date": "2025-11-29",
       "description": "51 CHAPEL HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9037639,
+      "lng": 0.193283,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "51 CHAPEL HILL, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "2c6fc06c44dc",
       "application": "birchanger",
       "date": "2025-11-29",
       "description": "7 MARY MCARTHUR PLACE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9100643,
+      "lng": 0.1962918,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 MARY MCARTHUR PLACE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "4c6a6dbea798",
       "application": "birchanger",
       "date": "2025-11-29",
       "description": "3 HAGGERWOOD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8952029,
+      "lng": 0.2006471,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 HAGGERWOOD WAY, Birchanger, Essex, UK"
     },
     {
       "id": "405958b7860c",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "25 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "25 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "6046d7199bd5",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "91 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "91 BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-01T11:05:14.238832"
+  "last_updated": "2025-12-01T11:18:21.139060"
 }
