@@ -5039,30 +5039,33 @@
       "application": "birchanger",
       "date": "2025-11-30",
       "description": "9 RAINSFORD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9103037,
+      "lng": 0.1967682,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "9 RAINSFORD ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "693a1742a308",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "23 BENTFIELD CAUSEWAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9062617,
+      "lng": 0.1886992,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "23 BENTFIELD CAUSEWAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "cf331bd80207",
       "application": "birchanger",
       "date": "2025-11-28",
       "description": "359 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "359 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "c6173c58cf18",
@@ -5072,58 +5075,63 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "73e3acaf529b",
       "application": "stansted",
       "date": "2025-11-30",
       "description": "28 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "28 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "d958488e726d",
       "application": "stansted",
       "date": "2025-11-30",
       "description": "9 RAINSFORD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9103037,
+      "lng": 0.1967682,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "9 RAINSFORD ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "f4b4dcdf9181",
       "application": "stansted",
       "date": "2025-11-29",
       "description": "18 ST JOHNS CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9059356,
+      "lng": 0.1970586,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 ST JOHN'S CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "f4701466963a",
       "application": "stansted",
       "date": "2025-11-29",
       "description": "15 DAIRY LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9012583,
+      "lng": 0.2036615,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 DAIRY LANE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "1b479c29c0af",
       "application": "stansted",
       "date": "2025-11-29",
       "description": "6 CLARKE CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8953869,
+      "lng": 0.1994677,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "6 CLARKE CLOSE, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-01T10:05:12.675479"
+  "last_updated": "2025-12-01T10:18:52.523390"
 }
