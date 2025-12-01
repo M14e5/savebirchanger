@@ -5197,7 +5197,17 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "91 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "38fbe7f2f2b7",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "11 WILKINS CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-01T11:18:21.139060"
+  "last_updated": "2025-12-01T12:05:12.685582"
 }
