@@ -5131,7 +5131,67 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "6 CLARKE CLOSE, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "c9b79d01db20",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "11 WILKINS CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "61a055959137",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "51 CHAPEL HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2c6fc06c44dc",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "7 MARY MCARTHUR PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4c6a6dbea798",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "3 HAGGERWOOD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "405958b7860c",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "25 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6046d7199bd5",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "91 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-01T10:18:52.523390"
+  "last_updated": "2025-12-01T11:05:14.238832"
 }
