@@ -4973,61 +4973,67 @@
       "application": "birchanger",
       "date": "2025-11-30",
       "description": "28 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "28 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "2788d2351535",
       "application": "birchanger",
       "date": "2025-11-29",
       "description": "27 CHAPEL HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9026878,
+      "lng": 0.1964086,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "27 CHAPEL HILL, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "61b1b73e44a6",
       "application": "birchanger",
       "date": "2025-11-29",
       "description": "18 ST JOHNS CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9048819,
+      "lng": 0.1970888,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 ST JOHN'S CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "040e3e297cdf",
       "application": "birchanger",
       "date": "2025-11-29",
       "description": "15 DAIRY LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9012583,
+      "lng": 0.2036615,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 DAIRY LANE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "2076684b66e8",
       "application": "birchanger",
       "date": "2025-11-29",
       "description": "7 BENTLEY DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 BENTLEY DRIVE, Birchanger, Essex, UK"
     },
     {
       "id": "99f71aaa9359",
       "application": "stansted",
       "date": "2025-11-29",
       "description": "27 CHAPEL HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9026878,
+      "lng": 0.1964086,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "27 CHAPEL HILL, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-01T09:05:14.134996"
+  "last_updated": "2025-12-01T09:17:44.356867"
 }
