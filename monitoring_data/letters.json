@@ -5218,7 +5218,97 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "98e7b87e120e",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "12 PATMORE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e271c9a3cb3b",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "1 CARTERS DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7a4ddc6e78cb",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "1 LIVINGS DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6e9b3f66bd4a",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "51 CHAPEL HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5c67f4f30294",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "91 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4fe0bcebd579",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "7 MARY MCARTHUR PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "13f0ff9c3477",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "3 HAGGERWOOD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "53cc4c25ffcf",
+      "application": "stansted",
+      "date": "2025-11-28",
+      "description": "25 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "01a711de4d17",
+      "application": "stansted",
+      "date": "2025-11-27",
+      "description": "23 BENTFIELD CAUSEWAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-01T13:23:28.115490"
+  "last_updated": "2025-12-01T14:05:13.741410"
 }
