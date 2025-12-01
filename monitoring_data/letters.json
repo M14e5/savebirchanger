@@ -5033,7 +5033,97 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "27 CHAPEL HILL, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "b6a6ef802fe5",
+      "application": "birchanger",
+      "date": "2025-11-30",
+      "description": "9 RAINSFORD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "693a1742a308",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "23 BENTFIELD CAUSEWAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cf331bd80207",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "359 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c6173c58cf18",
+      "application": "birchanger",
+      "date": "2025-11-28",
+      "description": "16 MILLSIDE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "73e3acaf529b",
+      "application": "stansted",
+      "date": "2025-11-30",
+      "description": "28 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d958488e726d",
+      "application": "stansted",
+      "date": "2025-11-30",
+      "description": "9 RAINSFORD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f4b4dcdf9181",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "18 ST JOHNS CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f4701466963a",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "15 DAIRY LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1b479c29c0af",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "6 CLARKE CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-01T09:17:44.356867"
+  "last_updated": "2025-12-01T10:05:12.675479"
 }
