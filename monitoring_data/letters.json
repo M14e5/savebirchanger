@@ -5316,7 +5316,37 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "23 BENTFIELD CAUSEWAY, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "d1c3c330293b",
+      "application": "birchanger",
+      "date": "2025-11-30",
+      "description": "13 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1f0fea897fce",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "11 WILKINS CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "bc4fa96d19b3",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "7 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-01T14:22:09.718615"
+  "last_updated": "2025-12-01T15:05:14.660382"
 }
