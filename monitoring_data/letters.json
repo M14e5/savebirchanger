@@ -5613,7 +5613,97 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "69 BIRCHWOOD, Birchanger, Essex, UK"
+    },
+    {
+      "id": "324e7d70d20a",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "FORGE HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f905752fe674",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "14 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1366de9bdeca",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "40 HUDGELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e8d63402b92a",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "ROWLEY HILL FARM - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ca50e2eec51f",
+      "application": "birchanger",
+      "date": "2025-11-29",
+      "description": "69 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0d1763e0a003",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "FORGE HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "86537a8eafc3",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "14 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fedb0c8c8786",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "40 HUDGELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e5ba94f74140",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "ROWLEY HILL FARM - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-02T12:20:40.797235"
+  "last_updated": "2025-12-02T13:05:13.228574"
 }
