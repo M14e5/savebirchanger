@@ -5861,7 +5861,147 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "624277274b89",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "44 BLUEBELL DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d6b60b4852cc",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "99 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "43da8579adcd",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "85 BRIDPORT WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6502a76372bf",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "27 ST JOHN'S CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "69551deb2639",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "5 COOPER SMITH ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0d9d661b74bd",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "48 ALBA GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7c007f36fb64",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "51 WOODFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "04b0adaea91d",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "10 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3c0ae20c78bb",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "44 BLUEBELL DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "56c10af70c84",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "99 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "473b8dece75c",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "85 BRIDPORT WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d63e6178c851",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "27 ST JOHN'S CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0143b559f35a",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "5 COOPER SMITH ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3baca1885ae9",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "48 ALBA GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-02T14:22:37.688535"
+  "last_updated": "2025-12-02T15:05:11.801689"
 }
