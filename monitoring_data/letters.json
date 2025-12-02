@@ -5714,37 +5714,40 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "0f880dc184e4",
       "application": "birchanger",
       "date": "2025-12-01",
       "description": "36 PARK STREET - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 52.4729384,
+      "lng": -1.8976252,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "PARK STREET, Essex, UK"
     },
     {
       "id": "f466372c9240",
       "application": "birchanger",
       "date": "2025-12-01",
       "description": "SHARON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "SHARON (approx: birchanger village)"
     },
     {
       "id": "204af5e879d2",
       "application": "birchanger",
       "date": "2025-12-01",
       "description": "JOYCES FARM - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "JOYCES FARM (approx: birchanger village)"
     },
     {
       "id": "38911e863651",
@@ -5754,7 +5757,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "23ebc1953047",
@@ -5764,7 +5767,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "6f8a6a63136d",
@@ -5774,7 +5777,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "7eac16e1cdd4",
@@ -5784,7 +5787,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "4e72e6c77d13",
@@ -5794,37 +5797,40 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "fafe02d2febc",
       "application": "stansted",
       "date": "2025-12-01",
       "description": "36 PARK STREET - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 52.4729384,
+      "lng": -1.8976252,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "PARK STREET, Essex, UK"
     },
     {
       "id": "5e65b2d22281",
       "application": "stansted",
       "date": "2025-12-01",
       "description": "SHARON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "SHARON (approx: stansted village)"
     },
     {
       "id": "e621a0a65ce7",
       "application": "stansted",
       "date": "2025-12-01",
       "description": "JOYCES FARM - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "JOYCES FARM (approx: stansted village)"
     },
     {
       "id": "5da36f130b34",
@@ -5834,7 +5840,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "58e207130276",
@@ -5844,7 +5850,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "2691e6649ec4",
@@ -5854,8 +5860,8 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2025-12-02T14:05:12.525850"
+  "last_updated": "2025-12-02T14:22:37.688535"
 }
