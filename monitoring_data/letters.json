@@ -5525,7 +5525,87 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "38 HUDGELL ROAD, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "01c80f586b56",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "6 BLAKE MEWS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "013fb17da545",
+      "application": "birchanger",
+      "date": "2025-11-30",
+      "description": "51 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5d13558e672b",
+      "application": "birchanger",
+      "date": "2025-11-30",
+      "description": "16 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "10e09093e52e",
+      "application": "birchanger",
+      "date": "2025-11-30",
+      "description": "15 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "60580180763b",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "6 BLAKE MEWS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e0766d7a5b1d",
+      "application": "stansted",
+      "date": "2025-11-30",
+      "description": "51 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8686654c2d46",
+      "application": "stansted",
+      "date": "2025-11-30",
+      "description": "16 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1fab83a36a6a",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "69 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-02T11:19:53.147098"
+  "last_updated": "2025-12-02T12:05:13.856479"
 }
