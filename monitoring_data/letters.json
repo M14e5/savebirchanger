@@ -5531,81 +5531,89 @@
       "application": "birchanger",
       "date": "2025-12-01",
       "description": "6 BLAKE MEWS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8924906,
+      "lng": 0.1922883,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "6 BLAKE MEWS, Birchanger, Essex, UK"
     },
     {
       "id": "013fb17da545",
       "application": "birchanger",
       "date": "2025-11-30",
       "description": "51 FELSTEAD CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8942693,
+      "lng": 0.1945805,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "51 FELSTEAD CRESCENT, Birchanger, Essex, UK"
     },
     {
       "id": "5d13558e672b",
       "application": "birchanger",
       "date": "2025-11-30",
       "description": "16 BENTLEY DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 BENTLEY DRIVE, Birchanger, Essex, UK"
     },
     {
       "id": "10e09093e52e",
       "application": "birchanger",
       "date": "2025-11-30",
       "description": "15 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "60580180763b",
       "application": "stansted",
       "date": "2025-12-01",
       "description": "6 BLAKE MEWS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8924906,
+      "lng": 0.1922883,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "6 BLAKE MEWS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "e0766d7a5b1d",
       "application": "stansted",
       "date": "2025-11-30",
       "description": "51 FELSTEAD CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8942693,
+      "lng": 0.1945805,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "51 FELSTEAD CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "8686654c2d46",
       "application": "stansted",
       "date": "2025-11-30",
       "description": "16 BENTLEY DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 BENTLEY DRIVE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "1fab83a36a6a",
       "application": "stansted",
       "date": "2025-11-29",
       "description": "69 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "69 BIRCHWOOD, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-02T12:05:13.856479"
+  "last_updated": "2025-12-02T12:20:40.797235"
 }
