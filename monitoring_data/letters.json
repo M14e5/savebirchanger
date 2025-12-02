@@ -5415,7 +5415,107 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "35 HARRISONS, Birchanger, Essex, UK"
+    },
+    {
+      "id": "8112d7764f8b",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "202 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "58f18dfa1f43",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "363 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f656962b13ce",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "70 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6be0d5bfe7f7",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "THE OLD MALTINGS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e54ff0ef23e7",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "THE OLD MALTINGS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ae0e7748fae5",
+      "application": "stansted",
+      "date": "2025-11-30",
+      "description": "35 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "476f540d97d6",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "12 PATMORE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "46aa6fac50e2",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "1 CARTERS DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fbcf1bf37a89",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "1 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d4a01f9b744b",
+      "application": "stansted",
+      "date": "2025-11-29",
+      "description": "38 HUDGELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-02T10:18:15.031344"
+  "last_updated": "2025-12-02T11:05:14.691874"
 }
