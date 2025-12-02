@@ -5705,7 +5705,157 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "86e65b40c080",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "5 TOWER VIEW DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0f880dc184e4",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "36 PARK STREET - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f466372c9240",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "SHARON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "204af5e879d2",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "JOYCES FARM - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "38911e863651",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "5 MILDILA WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "23ebc1953047",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "27 SUNNYSIDE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6f8a6a63136d",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "20 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7eac16e1cdd4",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "5 MILDILA WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4e72e6c77d13",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "5 TOWER VIEW DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fafe02d2febc",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "36 PARK STREET - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5e65b2d22281",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "SHARON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e621a0a65ce7",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "JOYCES FARM - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5da36f130b34",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "27 SUNNYSIDE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "58e207130276",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "20 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2691e6649ec4",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "51 WOODFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-02T13:19:22.806445"
+  "last_updated": "2025-12-02T14:05:12.525850"
 }
