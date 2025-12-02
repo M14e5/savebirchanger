@@ -5421,101 +5421,111 @@
       "application": "birchanger",
       "date": "2025-12-01",
       "description": "202 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "202 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "58f18dfa1f43",
       "application": "birchanger",
       "date": "2025-12-01",
       "description": "363 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "363 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "f656962b13ce",
       "application": "birchanger",
       "date": "2025-12-01",
       "description": "70 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "70 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "6be0d5bfe7f7",
       "application": "birchanger",
       "date": "2025-12-01",
       "description": "THE OLD MALTINGS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE OLD MALTINGS (approx: birchanger village)"
     },
     {
       "id": "e54ff0ef23e7",
       "application": "stansted",
       "date": "2025-12-01",
       "description": "THE OLD MALTINGS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE OLD MALTINGS (approx: stansted village)"
     },
     {
       "id": "ae0e7748fae5",
       "application": "stansted",
       "date": "2025-11-30",
       "description": "35 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "35 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "476f540d97d6",
       "application": "stansted",
       "date": "2025-11-29",
       "description": "12 PATMORE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8955163,
+      "lng": 0.196597,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 PATMORE ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "46aa6fac50e2",
       "application": "stansted",
       "date": "2025-11-29",
       "description": "1 CARTERS DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8943642,
+      "lng": 0.1941488,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 CARTERS DRIVE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "fbcf1bf37a89",
       "application": "stansted",
       "date": "2025-11-29",
       "description": "1 LIVINGS WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8937267,
+      "lng": 0.1970356,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 LIVINGS WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "d4a01f9b744b",
       "application": "stansted",
       "date": "2025-11-29",
       "description": "38 HUDGELL ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8958666,
+      "lng": 0.1950509,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "38 HUDGELL ROAD, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-02T11:05:14.691874"
+  "last_updated": "2025-12-02T11:19:53.147098"
 }
