@@ -6197,7 +6197,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "d5918b7b4bd5",
@@ -6207,7 +6207,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "8629463b0f1d",
@@ -6217,7 +6217,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "d34444ff3dea",
@@ -6227,7 +6227,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "19d94f7cd3c7",
@@ -6237,7 +6237,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "fce60c61586b",
@@ -6247,27 +6247,29 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "f736d41f9ca3",
       "application": "birchanger",
       "date": "2025-12-03",
       "description": "LUCAS FARM - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "LUCAS FARM (approx: birchanger village)"
     },
     {
       "id": "3d2e9a161d44",
       "application": "birchanger",
       "date": "2025-12-03",
       "description": "MITCHELLS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "MITCHELLS (approx: birchanger village)"
     },
     {
       "id": "3b934bec8692",
@@ -6277,7 +6279,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "a772bba40a47",
@@ -6287,8 +6289,8 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2025-12-03T15:05:13.165958"
+  "last_updated": "2025-12-03T15:31:21.374984"
 }
