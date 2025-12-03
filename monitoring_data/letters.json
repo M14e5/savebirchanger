@@ -6156,7 +6156,37 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "91968076c2fc",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "2 CLIFFORD SMITH DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "04b85b6de36e",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "LUCAS FARM - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d9c00b1cbe6f",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "MITCHELLS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-03T13:29:10.244091"
+  "last_updated": "2025-12-03T14:05:12.666038"
 }
