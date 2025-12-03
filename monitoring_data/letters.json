@@ -6021,7 +6021,137 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "6900848c8c83",
+      "application": "birchanger",
+      "date": "2025-12-03",
+      "description": "88 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b34e8aebddb7",
+      "application": "birchanger",
+      "date": "2025-12-03",
+      "description": "THE CHESTNUTS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0593e2ce92bf",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "JOSLIN COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3554d8f0b6b4",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "RAMBLERS COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a0bde80ae1d8",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "6 THE DOWNS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2caa3d128656",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "6 LARCH WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "864549098eaf",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "162 WILLOW ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ce9242a911b1",
+      "application": "stansted",
+      "date": "2025-12-03",
+      "description": "88 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ab58af08e536",
+      "application": "stansted",
+      "date": "2025-12-03",
+      "description": "6 LARCH WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ed3b661ba415",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "JOSLIN COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "97df8f543b0d",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "RAMBLERS COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cf386e092d5f",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "6 THE DOWNS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "be750370ce24",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "162 WILLOW ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-03T12:26:04.446601"
+  "last_updated": "2025-12-03T13:05:14.508188"
 }
