@@ -6010,7 +6010,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "0ed1548108ed",
@@ -6020,8 +6020,8 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2025-12-03T12:05:12.842302"
+  "last_updated": "2025-12-03T12:26:04.446601"
 }
