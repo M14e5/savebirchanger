@@ -54,6 +54,99 @@ const TEMPLATE_QUESTIONS = {
   }
 };
 
+// Structural approaches for letter variety - each MUST produce distinctly different letters
+const STRUCTURAL_APPROACHES = {
+  'personal-first': {
+    name: 'Personal Connection Lead',
+    description: 'Open with personal stake, weave policy as supporting evidence',
+    guidance: `Lead with your personal connection - but VARY how you express it each time.
+
+VARY YOUR OPENING - choose different angles:
+- Reflect on time spent here and what you've witnessed change
+- Describe a daily routine or walk that would be affected
+- Share a specific memory or moment that captures why this place matters
+- Explain why you chose to live here and what drew you
+
+DO NOT use formulaic openings like "As someone who..." or "Having lived here for X years, I..."
+Find more natural, conversational ways to express your connection.
+
+STRUCTURE: First two paragraphs entirely personal. Policy points come later as supporting evidence.
+This is personal testimony first, planning argument second.`,
+    answerWeights: { residency: 2, personal: 2, infrastructure: 1, policy: 0.5 }
+  },
+  'policy-led': {
+    name: 'Policy Analysis Lead',
+    description: 'Open with NPPF/policy failures, use personal experience as evidence',
+    guidance: `Lead with policy substance - but VARY your angle each time.
+
+VARY YOUR OPENING - choose different approaches:
+- Cite a specific NPPF test and show how it fails
+- Contrast what planning policy requires versus what's proposed
+- State the sustainability criteria then demonstrate the gaps
+- Lead with the conclusion ("This fails...") then explain why
+
+DO NOT always start with "The planning framework requires..." - find different policy entry points.
+
+STRUCTURE: Policy analysis first with numbered/bulleted points. Personal observations later as evidence.
+This should read like a planning consultant's assessment, not an emotional appeal.`,
+    answerWeights: { residency: 0.5, personal: 1, infrastructure: 1.5, policy: 2 }
+  },
+  'infrastructure-focus': {
+    name: 'Infrastructure Crisis Lead',
+    description: 'Open with local service strain, show why more development is wrong here',
+    guidance: `Lead with infrastructure reality - but VARY your entry point each time.
+
+VARY YOUR OPENING - choose different angles:
+- A specific statistic or waiting time you've experienced
+- A personal frustration with a local service
+- A comparison to how things used to be versus now
+- A question about how services can possibly cope
+
+CRITICAL: Do NOT simply restate what the user told you. Expand on it, add context, make it vivid.
+If they said "GP waits are 3 weeks" - don't write "GP waits are now 3 weeks"
+Instead: "Last month I tried to book a routine appointment and was offered a date three weeks away"
+
+STRUCTURE: Paint services failing, then explain why 480 more homes is impossible. Green Belt comes last.
+This is about practical reality, not abstract planning policy.`,
+    answerWeights: { residency: 1, personal: 1, infrastructure: 2, policy: 1 }
+  },
+  'question-driven': {
+    name: 'Unanswered Questions Frame',
+    description: 'Frame as critical questions the developer/council must answer',
+    guidance: `Open with questions - but VARY your framing each time.
+
+VARY YOUR OPENING - choose different structures:
+- Lead with one pointed, specific question
+- List 2-3 questions upfront that demand answers
+- Frame what remains dangerously unanswered
+- Ask "Before approving this, can anyone explain..."
+
+Make questions SPECIFIC to this case using the user's concerns - not generic planning questions.
+
+STRUCTURE: Questions as framework, evidence for why each matters, demand for answers before decision.
+This should read as skeptical inquiry demanding accountability, not blanket opposition.`,
+    answerWeights: { residency: 0.5, personal: 1, infrastructure: 1.5, policy: 1.5 }
+  },
+  'narrative': {
+    name: 'Place Story',
+    description: 'Tell the story of what makes this place special and what would be lost',
+    guidance: `Paint the place - but VARY your vantage point each time.
+
+VARY YOUR OPENING - choose different perspectives:
+- Stand in a specific location and describe looking out
+- Describe what you see on a familiar walk
+- Evoke the history or how this place has endured
+- Capture a particular season, time of day, or weather
+
+DO NOT use generic descriptions. Make it specific to THIS landscape, THIS community.
+
+STRUCTURE: First half - what EXISTS (landscape, history, wildlife, character). Second half - what would be LOST.
+Planning arguments woven naturally throughout, not listed separately.
+This should read as a love letter to a place, not a planning objection.`,
+    answerWeights: { residency: 1.5, personal: 2, infrastructure: 0.5, policy: 0.5 }
+  }
+};
+
 // Rate limiting configuration
 const RATE_LIMIT = {
   requests: 10,
@@ -62,6 +155,46 @@ const RATE_LIMIT = {
 
 // In-memory rate limiting (resets when worker restarts - for production use KV or Durable Objects)
 const rateLimitMap = new Map();
+
+/**
+ * Select structural approach based on answer strength with randomness
+ */
+function selectStructuralApproach(answers, templateType) {
+  const approaches = Object.keys(STRUCTURAL_APPROACHES);
+
+  // Calculate scores based on answer lengths mapped to weights
+  const scores = {};
+  approaches.forEach(approach => {
+    const weights = STRUCTURAL_APPROACHES[approach].answerWeights;
+    let score = 0;
+
+    // Map answer indices to weight categories (varies by template type)
+    answers.forEach((answer, idx) => {
+      if (!answer) return;
+      const length = answer.trim().length;
+
+      // Simple heuristic: longer answers indicate stronger feelings
+      // Weight categories based on question types
+      let category;
+      if (idx === 0) category = 'residency';
+      else if (idx === 1) category = 'personal';
+      else if (idx === 2 || idx === 3) category = 'infrastructure';
+      else category = 'policy';
+
+      score += (length / 50) * (weights[category] || 1);
+    });
+
+    // Add randomness (±30% of score)
+    score *= (0.7 + Math.random() * 0.6);
+    scores[approach] = score;
+  });
+
+  // Select highest scoring approach
+  const selected = Object.entries(scores)
+    .sort((a, b) => b[1] - a[1])[0][0];
+
+  return selected;
+}
 
 /**
  * Check rate limit for an IP address
@@ -87,6 +220,8 @@ function checkRateLimit(ip) {
  */
 function buildPrompt(templateType, answers, baseTemplate) {
   const templateInfo = TEMPLATE_QUESTIONS[templateType];
+  const selectedApproach = selectStructuralApproach(answers, templateType);
+  const approach = STRUCTURAL_APPROACHES[selectedApproach];
 
   // Build user details from answers
   let userDetails = '';
@@ -109,34 +244,56 @@ CRITICAL STYLE REQUIREMENTS:
 - DO keep paragraphs focused and well-organized
 - DO use appropriate planning terminology when relevant (e.g., "Green Belt purposes", "openness", "material considerations")
 
+STRUCTURAL APPROACH FOR THIS LETTER - "${approach.name}":
+${approach.guidance}
+
+CRITICAL - YOU MUST FOLLOW THE STRUCTURAL APPROACH ABOVE:
+- The opening sentence MUST match the approach style - DO NOT default to "I am writing to object/express"
+- The paragraph order MUST follow the approach's specified flow
+- Vary paragraph lengths naturally - not all should be similar
+- Mix prose paragraphs with occasional bullet points where appropriate
+- FORBIDDEN OPENINGS: "I am writing to", "I wish to express", "I am objecting to", "This letter is to"
+
+OPENING VARIETY - ABSOLUTELY CRITICAL:
+- Your first sentence must NOT directly repeat or echo the user's input word-for-word
+- If they said "GP waits are 3 weeks" do NOT write "GP waits are now 3 weeks" - rephrase it naturally
+- EXPAND and CONTEXTUALIZE their concerns rather than just restating them
+- Avoid formulaic patterns like "As someone who...", "Having lived here for...", "The planning framework requires..."
+- Each letter should feel like it was written by a different person with a unique voice
+
 Think of this as a resident making a serious, well-reasoned representation to planning authorities - professional, credible, and grounded in their genuine concerns.`;
 
-  const userPrompt = `Write a personalized ${templateInfo.name} for someone with these details:
+  // No forced opening - let AI create varied openings but strip bad patterns post-hoc
+  const forcedOpening = null;
 
+  const userPrompt = `Write a ${templateInfo.name} using the "${approach.name}" style.
+
+The person's details:
 ${userDetails}
 
-Use this template as a STYLE GUIDE for structure and tone, but make the final output unique and personalized:
-
+Reference facts (use where appropriate):
 ${baseTemplate}
 
 CRITICAL REQUIREMENTS:
-- Follow the formal, professional tone of the template above
-- Incorporate their specific details naturally throughout (NOT just at the start)
-- Use their answers to add substance and credibility - these are their genuine observations
-- Replace generic placeholder text with contextually appropriate references:
-  - Instead of [SITE NAME]: "this Green Belt land", "the proposed site", "the land in question"
-  - Instead of [AREA]: "our village", "this area", "the local community"
-  - Be specific where they gave specifics, general where appropriate
-- Maintain the template's logical structure (opening, substantive points, conclusion)
-- Keep the same level of formality and professionalism as the template
-- Make each sentence unique - do not copy template sentences verbatim
-- Aim for 250-400 words for formal letters/objections, 150-250 for consultation responses
-- DO NOT include placeholder text like [NAME], [ADDRESS] - omit signature blocks entirely
-- DO NOT add a subject line - start directly with the letter content
 
-Write only the body of the letter/response. Make it professional, credible, and grounded in their specific situation.`;
+1. OPENING: Follow the "${approach.name}" structural approach from your instructions.
+   - DO NOT just restate their answers - transform and expand them
+   - Find a fresh, natural way to open that fits this specific person's situation
 
-  return { systemPrompt, userPrompt };
+2. BANNED OPENINGS (will be automatically removed):
+   - "I am writing to...", "I wish to...", "I would like to...", "This letter is to..."
+   - "As someone who...", "Having lived here for X years, I..."
+   - Any opening that directly echoes their input word-for-word
+
+3. CONTENT:
+   - Weave their specific details throughout, not just at the start
+   - 250-400 words
+   - No signature blocks, "Yours sincerely", dates, or placeholders
+   - End with a clear request, then stop
+
+Write a letter that sounds like THIS specific person wrote it, not like a template.`;
+
+  return { systemPrompt, userPrompt, forcedOpening };
 }
 
 /**
@@ -221,7 +378,7 @@ DELETE the allocation - replace with brownfield-first package. If retained (desp
  */
 async function generateTemplate(templateType, answers, apiKey) {
   const baseTemplate = getBaseTemplate(templateType);
-  const { systemPrompt, userPrompt } = buildPrompt(templateType, answers, baseTemplate);
+  const { systemPrompt, userPrompt, forcedOpening } = buildPrompt(templateType, answers, baseTemplate);
 
   try {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -236,7 +393,7 @@ async function generateTemplate(templateType, answers, apiKey) {
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userPrompt }
         ],
-        temperature: 0.7, // Balanced - unique but consistent with formal tone
+        temperature: 0.85, // Higher to encourage structural variety and avoid default patterns
         max_tokens: 1000,
         presence_penalty: 0.5, // Reduce repetition while maintaining coherence
         frequency_penalty: 0.4
@@ -249,7 +406,18 @@ async function generateTemplate(templateType, answers, apiKey) {
     }
 
     const data = await response.json();
-    return data.choices[0].message.content.trim();
+    let content = data.choices[0].message.content.trim();
+
+    // Remove any "I am writing" style openings the AI might have added despite instructions
+    content = content.replace(/^(I am writing|I wish to|I would like to|This letter|I formally|I am formally|Dear Sir|Dear Madam|To whom|I object|I am objecting)[^.]*\.\s*/i, '');
+
+    // Remove signature blocks
+    content = content.replace(/\n\n?(Yours (sincerely|faithfully)|Kind regards|Best regards|Sincerely|Signed:?|Date:)[^\n]*(\n.*)*$/gi, '');
+
+    // Remove any trailing placeholder-style lines
+    content = content.replace(/\n\[?(NAME|ADDRESS|SIGNATURE|Your name).*$/gi, '');
+
+    return content.trim();
   } catch (error) {
     console.error('OpenAI API Error:', error);
     throw error;
