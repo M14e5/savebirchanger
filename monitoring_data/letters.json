@@ -6188,7 +6188,107 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "MITCHELLS (approx: stansted village)"
+    },
+    {
+      "id": "54639e84e1f3",
+      "application": "birchanger",
+      "date": "2025-12-03",
+      "description": "229 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d5918b7b4bd5",
+      "application": "birchanger",
+      "date": "2025-12-03",
+      "description": "2 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8629463b0f1d",
+      "application": "birchanger",
+      "date": "2025-12-03",
+      "description": "33 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d34444ff3dea",
+      "application": "birchanger",
+      "date": "2025-12-03",
+      "description": "5 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "19d94f7cd3c7",
+      "application": "birchanger",
+      "date": "2025-12-03",
+      "description": "12 BROOK VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fce60c61586b",
+      "application": "birchanger",
+      "date": "2025-12-03",
+      "description": "2 CLIFFORD SMITH DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f736d41f9ca3",
+      "application": "birchanger",
+      "date": "2025-12-03",
+      "description": "LUCAS FARM - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3d2e9a161d44",
+      "application": "birchanger",
+      "date": "2025-12-03",
+      "description": "MITCHELLS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3b934bec8692",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "229 BIRCHANGER LANE - COMMNETS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a772bba40a47",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "6 BRADLEY COMMON - COMMNETS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-03T14:30:11.044484"
+  "last_updated": "2025-12-03T15:05:13.165958"
 }
