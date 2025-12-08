@@ -7436,7 +7436,77 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "313 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "26dec264da6e",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "281 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e82c8a3d6544",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "34 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f21a2b3dd515",
+      "application": "birchanger",
+      "date": "2025-12-05",
+      "description": "5 BROOK SPRINGS GROVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cb5425e87b5e",
+      "application": "birchanger",
+      "date": "2025-12-05",
+      "description": "1 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1d38d1d2bd2d",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "281 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "149464918823",
+      "application": "stansted",
+      "date": "2025-12-05",
+      "description": "34 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8a94f650c58a",
+      "application": "stansted",
+      "date": "2025-12-05",
+      "description": "5 BROOK SPRINGS GROVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-08T14:29:11.050522"
+  "last_updated": "2025-12-08T15:05:13.035655"
 }
