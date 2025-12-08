@@ -7030,7 +7030,377 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "32 BLYTHWOOD GARDENS, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "f45290cc56c9",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "76 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "04256016cee3",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "THE FORGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "73c3a9c2aaa8",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "11 CLARKE CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e29d4f5d85bc",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "THE FORGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "52b84f607123",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "317 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "12445fa9b743",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "16 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f703ce63f780",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "53 ORCHARD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a2ee601ac702",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "20 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ea0549ecd8ac",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "1 DRAGONFLY WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b54c6bfe28a6",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "2 HILLSIDE COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a612a442f2af",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "25 BENTFIELD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "20bb54a10dd3",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "SION HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "118d33d3a4da",
+      "application": "birchanger",
+      "date": "2025-12-06",
+      "description": "11 NEWELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c40684d79f67",
+      "application": "birchanger",
+      "date": "2025-12-06",
+      "description": "44 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "52307cdc16d6",
+      "application": "birchanger",
+      "date": "2025-12-06",
+      "description": "47 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fcac1066897b",
+      "application": "birchanger",
+      "date": "2025-12-06",
+      "description": "3 HILLSIDE COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "aca3a8edd4d8",
+      "application": "birchanger",
+      "date": "2025-12-05",
+      "description": "313 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2235b480ff33",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "76 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6794ed2240f7",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "THE FORGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0650757b713c",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "11 CLARKE CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6f0f3b5e9970",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "THE FORGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "142297924b50",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "14 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0aad2fc9d4a4",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "9 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "68e6dad863be",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "317 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d8c15e0e2232",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "16 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d412aa48bc71",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "53 ORCHARD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "193baab4a4ff",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "15 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4649b104c208",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "70 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "388093ef05d7",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "37 REEVE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ae99439a502e",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "2 HILLSIDE COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "08ccc746c4c0",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "25 BENTFIELD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9fda4bdea5f3",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "SION HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "250affff8e75",
+      "application": "stansted",
+      "date": "2025-12-06",
+      "description": "11 NEWELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "26f16fb2d889",
+      "application": "stansted",
+      "date": "2025-12-06",
+      "description": "44 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d9f8986e180e",
+      "application": "stansted",
+      "date": "2025-12-06",
+      "description": "47 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "dd251a4f5be8",
+      "application": "stansted",
+      "date": "2025-12-06",
+      "description": "3 HILLSIDE COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e5b174e9e9bd",
+      "application": "stansted",
+      "date": "2025-12-05",
+      "description": "313 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-07T10:21:04.979684"
+  "last_updated": "2025-12-08T14:11:27.398415"
 }
