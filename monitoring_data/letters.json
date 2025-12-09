@@ -7676,57 +7676,62 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "c26c23b3894b",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "1 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8934427,
+      "lng": 0.1920397,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 BAYFORD WAY, Birchanger, Essex, UK"
     },
     {
       "id": "523576c3755a",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "16 LOATES PASTURE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9084282,
+      "lng": 0.1920322,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 LOATES PASTURE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "17fc7705ff81",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "THE OLD SCHOOLHOUSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE OLD SCHOOLHOUSE (approx: birchanger village)"
     },
     {
       "id": "a41b8fd92d52",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "18 GOLDINGS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7554218,
+      "lng": 0.1042798,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 GOLDINGS, Essex, UK"
     },
     {
       "id": "eb9a5b9c0ffc",
       "application": "stansted",
       "date": "2025-12-09",
       "description": "18 GOLDINGS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7554218,
+      "lng": 0.1042798,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 GOLDINGS, Essex, UK"
     },
     {
       "id": "0d78cef13728",
@@ -7736,48 +7741,52 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "8c4f0eafb815",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "1 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8934427,
+      "lng": 0.1920397,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 BAYFORD WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "da771ee35079",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "67 BROOK ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.899996,
+      "lng": 0.1944815,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "67 BROOK ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "4a80e5a2e4a6",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "16 LOATES PASTURE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9084282,
+      "lng": 0.1920322,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 LOATES PASTURE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "ac831080aa5b",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "THE OLD SCHOOLHOUSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE OLD SCHOOLHOUSE (approx: stansted village)"
     }
   ],
-  "last_updated": "2025-12-09T12:05:12.506784"
+  "last_updated": "2025-12-09T12:24:41.274812"
 }
