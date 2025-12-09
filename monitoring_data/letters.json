@@ -7667,7 +7667,117 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "10 STONEYFIELD DRIVE, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "a04bed82a505",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "5 HERMITAGE HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c26c23b3894b",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "1 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "523576c3755a",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "16 LOATES PASTURE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "17fc7705ff81",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "THE OLD SCHOOLHOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a41b8fd92d52",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "18 GOLDINGS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "eb9a5b9c0ffc",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "18 GOLDINGS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0d78cef13728",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "5 HERMITAGE HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8c4f0eafb815",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "1 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "da771ee35079",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "67 BROOK ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4a80e5a2e4a6",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "16 LOATES PASTURE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ac831080aa5b",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "THE OLD SCHOOLHOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-09T11:22:24.659756"
+  "last_updated": "2025-12-09T12:05:12.506784"
 }
