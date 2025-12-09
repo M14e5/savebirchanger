@@ -7786,7 +7786,87 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "THE OLD SCHOOLHOUSE (approx: stansted village)"
+    },
+    {
+      "id": "3241089ab16e",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "20 PALMERS CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9df9d6afc50d",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "46 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "62d920dc2a22",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "63 WOODFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1ac532e67dc9",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "5 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d09dc74a9647",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "20 PALMERS CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cd45c9ad9d8c",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "46 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "08881d375442",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "63 WOODFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5a6a287a9ef9",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "254 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-09T12:24:41.274812"
+  "last_updated": "2025-12-09T13:05:14.240014"
 }
