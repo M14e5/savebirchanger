@@ -7519,71 +7519,78 @@
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "2 HILLSIDE COTTAGES - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9071019,
+      "lng": 1.1959158,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 HILLSIDE COTTAGES, Essex, UK"
     },
     {
       "id": "89e1ba818e10",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "20 CANNONS MEAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9038032,
+      "lng": 0.191612,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "20 CANNONS MEAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "302dd1de4d95",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "8 CHURCHILL CORNER - COMMENTS / 2",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8938234,
+      "lng": 0.2037604,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "CHURCHILL CORNER, Birchanger, Essex, UK"
     },
     {
       "id": "696aff361e32",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "2 HILLSIDE COTTAGES - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9071019,
+      "lng": 1.1959158,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 HILLSIDE COTTAGES, Essex, UK"
     },
     {
       "id": "37a9fd68675f",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "20 CANNONS MEAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9038032,
+      "lng": 0.191612,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "20 CANNONS MEAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "c91b2b10bd2c",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "8 CHURCHILL CORNER - COMMENTS / 2",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8938234,
+      "lng": 0.2037604,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "CHURCHILL CORNER, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "ba67ace306ef",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "1 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 HARRISONS, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-09T10:05:13.273472"
+  "last_updated": "2025-12-09T10:24:41.362386"
 }
