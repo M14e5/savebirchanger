@@ -7590,7 +7590,77 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "1 HARRISONS, Birchanger, Essex, UK"
+    },
+    {
+      "id": "bc3cda3f6241",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "10 STONEYFIELD DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c29f59afdebc",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "10 STONEYFIELD DRIVE - COMMENTS / 2",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "db583fbe787c",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "11 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fce0afff5bc2",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "BRAMBLE HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0adb6e8bd20c",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "23 NUTHATCH PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "588921f159fa",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "10 STONEYFIELD DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e6c5cf0dc06e",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "10 STONEYFIELD DRIVE - COMMENTS / 2",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-09T10:24:41.362386"
+  "last_updated": "2025-12-09T11:05:16.207492"
 }
