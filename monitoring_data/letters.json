@@ -8030,101 +8030,111 @@
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "31 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "31 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "63261be1ce61",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "12 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "072f6654c90b",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "5 COOPER SMITH ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8677272,
+      "lng": 0.2571823,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 COOPER SMITH ROAD, Essex, UK"
     },
     {
       "id": "04b23e025e46",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "28 PARK ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8998821,
+      "lng": 0.2001617,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "28 PARK ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "76b258ecf746",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "275A BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "275A BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "4132e1e02dc0",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "31 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "31 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "771d11ed4c55",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "12 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "758ca178889d",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "5 COOPER SMITH ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8677272,
+      "lng": 0.2571823,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 COOPER SMITH ROAD, Essex, UK"
     },
     {
       "id": "aca1b65cca18",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "28 PARK ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8998821,
+      "lng": 0.2001617,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "28 PARK ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "3aa81a373204",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "275A BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "275A BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-09T16:05:12.115718"
+  "last_updated": "2025-12-09T16:25:07.053281"
 }
