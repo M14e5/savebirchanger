@@ -8140,10 +8140,11 @@
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "275A BIRCHANGER LANE - COMMENTS / 2",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "275A BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "7ded4b23f8c6",
@@ -8153,7 +8154,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "c1887be29cfc",
@@ -8163,17 +8164,18 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "a9b25881a02a",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "275A BIRCHANGER LANE - COMMENTS / 2",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "275A BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "923172332a52",
@@ -8183,7 +8185,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "9d54c442341b",
@@ -8193,8 +8195,8 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2025-12-09T17:05:14.783995"
+  "last_updated": "2025-12-09T17:24:43.086369"
 }
