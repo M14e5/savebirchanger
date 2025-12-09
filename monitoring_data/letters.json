@@ -7872,7 +7872,137 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "254 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "5705aa5e38b9",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "20 BENTFIELD GREEN - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9128f21d0a7b",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "14 MEADOWCROFT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0270a894a5b8",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "46 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "734070c33878",
+      "application": "birchanger",
+      "date": "2025-12-02",
+      "description": "4 FOREST HALL COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "dd024e3add25",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "21 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4b37d304cf43",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "10 BROOK COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9e256bd36e0e",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "24 HAMPTON ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9e81a5e5c637",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "12 MAITLAND ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e42fb9e097b8",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "SION HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c47650ae7843",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "20 PALMER CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2b550b86c258",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "7 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4f0721b0458f",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "13 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "21f5a0cced4c",
+      "application": "stansted",
+      "date": "2025-12-02",
+      "description": "4 FOREST HALL COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-09T13:25:12.000915"
+  "last_updated": "2025-12-09T14:05:11.764044"
 }
