@@ -7795,37 +7795,40 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "9df9d6afc50d",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "46 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8934427,
+      "lng": 0.1920397,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "46 BAYFORD WAY, Birchanger, Essex, UK"
     },
     {
       "id": "62d920dc2a22",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "63 WOODFIELDS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9018639,
+      "lng": 0.1965533,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "63 WOODFIELDS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "1ac532e67dc9",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "5 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "d09dc74a9647",
@@ -7835,38 +7838,41 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "cd45c9ad9d8c",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "46 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8934427,
+      "lng": 0.1920397,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "46 BAYFORD WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "08881d375442",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "63 WOODFIELDS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9018639,
+      "lng": 0.1965533,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "63 WOODFIELDS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "5a6a287a9ef9",
       "application": "stansted",
       "date": "2025-12-02",
       "description": "254 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "254 BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-09T13:05:14.240014"
+  "last_updated": "2025-12-09T13:25:12.000915"
 }
