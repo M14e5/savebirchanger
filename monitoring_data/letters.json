@@ -8207,7 +8207,57 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "49 HIGH VIEW, Birchanger, Essex, UK"
+    },
+    {
+      "id": "43c1ac6ab471",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "8 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9323eecacc49",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "10 BROOK COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ab4424215335",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "4 CANNONS MILL LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "704fb01d5e01",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "13 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "87735645f263",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "238 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-10T10:30:19.421764"
+  "last_updated": "2025-12-10T11:05:13.792280"
 }
