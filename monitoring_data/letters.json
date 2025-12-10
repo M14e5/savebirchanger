@@ -8414,7 +8414,77 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "46 HIGH VIEW, Birchanger, Essex, UK"
+    },
+    {
+      "id": "26cb3a1686b3",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "5 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8a3eb5d7645f",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "20 PALMER CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3c92eebaf8a7",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "15 GROVE HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "222f64498c4b",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "9 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ad025dc671f1",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "60 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7593b9952759",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "2 STATION ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e83947b99518",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "32 BROOK CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-10T14:32:49.552081"
+  "last_updated": "2025-12-10T15:05:14.816004"
 }
