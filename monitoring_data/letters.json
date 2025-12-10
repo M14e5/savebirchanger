@@ -8497,10 +8497,11 @@
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "8 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "8 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "6621d0a3754e",
@@ -8510,8 +8511,8 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2025-12-10T16:05:13.460635"
+  "last_updated": "2025-12-10T16:25:21.276261"
 }
