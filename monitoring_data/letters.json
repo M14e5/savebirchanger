@@ -8213,20 +8213,22 @@
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "8 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "8 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "9323eecacc49",
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "10 BROOK COTTAGES - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8976419,
+      "lng": 0.1947656,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "10 BROOK COTTAGES, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "ab4424215335",
@@ -8236,28 +8238,30 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "704fb01d5e01",
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "13 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "13 BAYFORD WAY, Birchanger, Essex, UK"
     },
     {
       "id": "87735645f263",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "238 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "238 BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-10T11:05:13.792280"
+  "last_updated": "2025-12-10T11:30:32.374923"
 }
