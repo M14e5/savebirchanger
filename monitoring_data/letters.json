@@ -8202,11 +8202,12 @@
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "49 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "49 HIGH VIEW, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-10T10:05:14.542317"
+  "last_updated": "2025-12-10T10:30:19.421764"
 }
