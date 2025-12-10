@@ -8261,7 +8261,47 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "238 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "49de5daf59c7",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "WATSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "59706e5fa51f",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "12 MAITLAND ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a41766538060",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "9 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1d34b3fe6b83",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "WATSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-10T11:30:32.374923"
+  "last_updated": "2025-12-10T12:05:12.470246"
 }
