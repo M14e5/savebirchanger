@@ -8420,71 +8420,78 @@
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "5 WALSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947868,
+      "lng": 0.2002768,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 WALSON WAY, Birchanger, Essex, UK"
     },
     {
       "id": "8a3eb5d7645f",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "20 PALMER CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8941736,
+      "lng": 0.202891,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "20 PALMER CLOSE, Birchanger, Essex, UK"
     },
     {
       "id": "3c92eebaf8a7",
       "application": "birchanger",
       "date": "2025-12-08",
       "description": "15 GROVE HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.903574,
+      "lng": 0.203468,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 GROVE HILL, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "222f64498c4b",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "9 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882497,
+      "lng": 0.1892625,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "9 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "ad025dc671f1",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "60 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "60 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "7593b9952759",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "2 STATION ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9018235,
+      "lng": 0.1994937,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 STATION ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "e83947b99518",
       "application": "stansted",
       "date": "2025-12-01",
       "description": "32 BROOK CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8154087,
+      "lng": 0.7573004,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "32 BROOK CLOSE, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-10T15:05:14.816004"
+  "last_updated": "2025-12-10T15:26:49.077186"
 }
