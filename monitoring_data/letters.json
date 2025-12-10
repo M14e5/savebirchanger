@@ -8491,7 +8491,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "32 BROOK CLOSE, Essex, UK"
+    },
+    {
+      "id": "f52f83c6f29d",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "8 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6621d0a3754e",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "8 CANNONS MILL LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-10T15:26:49.077186"
+  "last_updated": "2025-12-10T16:05:13.460635"
 }
