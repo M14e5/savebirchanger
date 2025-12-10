@@ -8301,7 +8301,107 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": null
+    },
+    {
+      "id": "4f025d2f98a4",
+      "application": "birchanger",
+      "date": "2025-12-08",
+      "description": "3 PAYNE DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4ad282f1c0cd",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "8 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e88426f4fb5c",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "5 LOATES PASTURE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3be93739bd6f",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "49 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5c35074f616b",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "4 CANNONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2d52899b3181",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "13 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "653707c58918",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "20 BENTFIELD GREEN - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5fefc551416b",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "14 MEADOWCROFT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5bf2ddd3814b",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "238 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3593e3f9cffb",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "46 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-10T12:05:12.470246"
+  "last_updated": "2025-12-10T14:05:14.519637"
 }
