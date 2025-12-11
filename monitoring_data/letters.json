@@ -9079,111 +9079,122 @@
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "77 HAILES WOOD - COMMENTS / 2",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9155935,
+      "lng": 0.235078,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "77 HAILES WOOD, Essex, UK"
     },
     {
       "id": "c68c5343d187",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "27 DAIRY LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9013928,
+      "lng": 0.2048423,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "27 DAIRY LANE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "c42e86eeba05",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "23 BENTFIELD CAUSEWAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9062617,
+      "lng": 0.1886992,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "23 BENTFIELD CAUSEWAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "1f368e5484fa",
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "CEDARS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "CEDARS (approx: birchanger village)"
     },
     {
       "id": "369c0a7bb57b",
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "20 BENTFIELD GREEN - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9080017,
+      "lng": 0.1884445,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "20 BENTFIELD GREEN, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "8a1861e771d6",
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "11 CLARKE CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8953869,
+      "lng": 0.1994677,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 CLARKE CLOSE, Birchanger, Essex, UK"
     },
     {
       "id": "51cca5033ea4",
       "application": "birchanger",
       "date": "2025-12-07",
       "description": "13 CARTERS DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8943642,
+      "lng": 0.1941488,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "13 CARTERS DRIVE, Birchanger, Essex, UK"
     },
     {
       "id": "607f5a530c22",
       "application": "birchanger",
       "date": "2025-12-01",
       "description": "MEADOW VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8101247,
+      "lng": 0.4864754,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "MEADOW VIEW, Essex, UK"
     },
     {
       "id": "b28f6b5affc2",
       "application": "stansted",
       "date": "2025-12-10",
       "description": "11 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 BAYFORD WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "b29618134ad7",
       "application": "stansted",
       "date": "2025-12-07",
       "description": "13 CARTERS DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8943642,
+      "lng": 0.1941488,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "13 CARTERS DRIVE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "1486ec20e2d1",
       "application": "stansted",
       "date": "2025-12-01",
       "description": "MEADOW VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8101247,
+      "lng": 0.4864754,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "MEADOW VIEW, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-11T14:05:13.032436"
+  "last_updated": "2025-12-11T14:30:09.151848"
 }
