@@ -9040,7 +9040,37 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "27 DAIRY LANE, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "e71fe3223238",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "THE GATEHOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "91a752b6e6f1",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "267 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "bcea58724c0b",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "23 BENTFIELD CAUSEWAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-11T12:25:53.848215"
+  "last_updated": "2025-12-11T13:05:12.754173"
 }
