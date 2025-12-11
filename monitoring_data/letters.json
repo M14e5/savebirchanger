@@ -8512,7 +8512,57 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "c27ad2828a40",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "8 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c4cb27626675",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "5 LOATES PASTURE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "db4dc0920206",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "25 BREWERY LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "03704ec5e9b2",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "291 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4745f5d24202",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "THE OLD MALTINGS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-11T08:25:25.724035"
+  "last_updated": "2025-12-11T09:05:15.367572"
 }
