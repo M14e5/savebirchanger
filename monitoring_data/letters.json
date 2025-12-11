@@ -8567,7 +8567,247 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "THE OLD MALTINGS (approx: birchanger village)"
+    },
+    {
+      "id": "79264924694f",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "48 RAINSFORD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6b12d13a48ed",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "274 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7f6a4c5196be",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "7 JAMES PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fe92b946172b",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "33 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "406d6cf249ae",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "9 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "91159d4a7fc0",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "10 BIRCHALLS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "280a0123d351",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "22 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8c009dc8622b",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "1 CHURTON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9d7f2f7dee45",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "24 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "730b1bbe663a",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "8 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "408083f2230c",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "7 JORDON CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fbb5c038d3bc",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "60 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0e8c70a89b44",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "48 RAINSFORD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "765aa641a6d7",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "55 RECREATION GROUND - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ca50e91189a8",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "14 JORDON CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "125d4fc3e31f",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "25 BREWERY LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "218254d19614",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "3 JORDON CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cf4fcd20503e",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "291 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e18cde71626c",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "274 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f76689e5e23d",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "THE OLD MALTINGS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ccde15073b6f",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "7 JAMES PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c43c8292062b",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "33 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "82d7630a0340",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "1 CHURTON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cb5bbdaa6407",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "24 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-11T09:25:36.872529"
+  "last_updated": "2025-12-11T10:05:12.696852"
 }
