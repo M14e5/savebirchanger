@@ -9073,7 +9073,117 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "23 BENTFIELD CAUSEWAY, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "5184723f9ba0",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "77 HAILES WOOD - COMMENTS / 2",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c68c5343d187",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "27 DAIRY LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c42e86eeba05",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "23 BENTFIELD CAUSEWAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1f368e5484fa",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "CEDARS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "369c0a7bb57b",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "20 BENTFIELD GREEN - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8a1861e771d6",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "11 CLARKE CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "51cca5033ea4",
+      "application": "birchanger",
+      "date": "2025-12-07",
+      "description": "13 CARTERS DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "607f5a530c22",
+      "application": "birchanger",
+      "date": "2025-12-01",
+      "description": "MEADOW VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b28f6b5affc2",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "11 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b29618134ad7",
+      "application": "stansted",
+      "date": "2025-12-07",
+      "description": "13 CARTERS DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1486ec20e2d1",
+      "application": "stansted",
+      "date": "2025-12-01",
+      "description": "MEADOW VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-11T13:26:53.507688"
+  "last_updated": "2025-12-11T14:05:13.032436"
 }
