@@ -9046,31 +9046,34 @@
       "application": "stansted",
       "date": "2025-12-10",
       "description": "THE GATEHOUSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE GATEHOUSE (approx: stansted village)"
     },
     {
       "id": "91a752b6e6f1",
       "application": "stansted",
       "date": "2025-12-10",
       "description": "267 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "267 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "bcea58724c0b",
       "application": "stansted",
       "date": "2025-12-09",
       "description": "23 BENTFIELD CAUSEWAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9062617,
+      "lng": 0.1886992,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "23 BENTFIELD CAUSEWAY, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-11T13:05:12.754173"
+  "last_updated": "2025-12-11T13:26:53.507688"
 }
