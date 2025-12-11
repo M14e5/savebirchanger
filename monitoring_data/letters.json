@@ -8831,7 +8831,97 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "24 HIGH VIEW, Birchanger, Essex, UK"
+    },
+    {
+      "id": "4aefb92c398a",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "20 CAWKELL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "bbf1e7cdb0ec",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "32 BROOK CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ace9a2d15400",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "13 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b9865c78a2f0",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "60 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b23a05edbf10",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "60 BIRCHANGER LANE - COMMENTS / 2",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "69f1ba7fecc6",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "24 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f22ad9ea0e2c",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "47 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "592a91f6f737",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "77 HAILES WOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2f4fb8a2d959",
+      "application": "stansted",
+      "date": "2025-12-08",
+      "description": "15 GROVE HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-11T10:26:39.497635"
+  "last_updated": "2025-12-11T11:05:13.659539"
 }
