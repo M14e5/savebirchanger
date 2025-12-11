@@ -9194,7 +9194,97 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "MEADOW VIEW, Essex, UK"
+    },
+    {
+      "id": "5649aeec7775",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "THE GATEHOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "70a72b178230",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "267 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9bf24335b790",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "80 TEMPLETON PARK - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "879c8b8e5f93",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "40 WETHERFIELD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "69e763a22c23",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "5 BURNELLS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4c8e1f469129",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "40 WETHERFIELD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7be670de5638",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "CEDARS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7d898dc22318",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "277 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d77bea2e7d90",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "26 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-11T14:30:09.151848"
+  "last_updated": "2025-12-11T15:05:15.373886"
 }
