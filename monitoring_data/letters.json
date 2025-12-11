@@ -9293,7 +9293,137 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "26 LIVINGS WAY, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "78dae1370165",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "277 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1492d226c640",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "BISHOPS STORTFORD CIVIC FEDERATION - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "703de3c85f80",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "26 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a09de58d5fbc",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "20 CAWKELL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "719e67767218",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "5 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9c00ad1ac76e",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "10 FIVE ACRES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3d0e6e269faf",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "191 SILVER STREET - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9818b7deadd8",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "6 JORDON CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "97a1876d4907",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "7 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a2213d652f96",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "15 OLD BELL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5c7a1f32de91",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "34 MILLSIDE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "515db2b9ecec",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "32 MOUNTFITCHET ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a17dc149eced",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "11 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-11T15:27:31.211590"
+  "last_updated": "2025-12-11T16:05:14.512679"
 }
