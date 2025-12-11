@@ -8930,7 +8930,107 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "15 GROVE HILL, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "22c198efcb74",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "47 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f1292ec604e3",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "47 BIRCHWOOD - COMMENTS / 2",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3077e62f9423",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "77 HAILES WOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4866eedb5d18",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "24 HAMPTON ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d488398353d2",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "23 NEWELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6c3863c36070",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "5 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ae747fecce75",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "11 CLARKE CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5af6cbb79462",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "20 BENTFIELD GREEN - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f12002b540f9",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "8 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cec183d7d011",
+      "application": "stansted",
+      "date": "2025-12-09",
+      "description": "27 DAIRY LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-11T11:26:48.712331"
+  "last_updated": "2025-12-11T12:05:13.462884"
 }
