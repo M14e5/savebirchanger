@@ -8518,51 +8518,56 @@
       "application": "birchanger",
       "date": "2025-12-11",
       "description": "8 LIVINGS WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8944529,
+      "lng": 0.1972588,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "8 LIVINGS WAY, Birchanger, Essex, UK"
     },
     {
       "id": "c4cb27626675",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "5 LOATES PASTURE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9084282,
+      "lng": 0.1920322,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 LOATES PASTURE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "db4dc0920206",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "25 BREWERY LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9049424,
+      "lng": 0.1994781,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "25 BREWERY LANE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "03704ec5e9b2",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "291 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "291 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "4745f5d24202",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "THE OLD MALTINGS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE OLD MALTINGS (approx: birchanger village)"
     }
   ],
-  "last_updated": "2025-12-11T09:05:15.367572"
+  "last_updated": "2025-12-11T09:25:36.872529"
 }
