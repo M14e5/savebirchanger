@@ -8936,101 +8936,111 @@
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "47 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "47 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "f1292ec604e3",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "47 BIRCHWOOD - COMMENTS / 2",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "47 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "3077e62f9423",
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "77 HAILES WOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9155935,
+      "lng": 0.235078,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "77 HAILES WOOD, Essex, UK"
     },
     {
       "id": "4866eedb5d18",
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "24 HAMPTON ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8959795,
+      "lng": 0.1992127,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "24 HAMPTON ROAD, Birchanger, Essex, UK"
     },
     {
       "id": "d488398353d2",
       "application": "stansted",
       "date": "2025-12-10",
       "description": "23 NEWELL ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8937601,
+      "lng": 0.1944066,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "23 NEWELL ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "6c3863c36070",
       "application": "stansted",
       "date": "2025-12-09",
       "description": "5 WALSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947868,
+      "lng": 0.2002768,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 WALSON WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "ae747fecce75",
       "application": "stansted",
       "date": "2025-12-09",
       "description": "11 CLARKE CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8953869,
+      "lng": 0.1994677,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 CLARKE CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "5af6cbb79462",
       "application": "stansted",
       "date": "2025-12-09",
       "description": "20 BENTFIELD GREEN - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9080017,
+      "lng": 0.1884445,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "20 BENTFIELD GREEN, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "f12002b540f9",
       "application": "stansted",
       "date": "2025-12-09",
       "description": "8 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882497,
+      "lng": 0.1892625,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "8 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "cec183d7d011",
       "application": "stansted",
       "date": "2025-12-09",
       "description": "27 DAIRY LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9013928,
+      "lng": 0.2048423,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "27 DAIRY LANE, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-11T12:05:13.462884"
+  "last_updated": "2025-12-11T12:25:53.848215"
 }
