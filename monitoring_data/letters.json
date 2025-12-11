@@ -8837,91 +8837,100 @@
       "application": "birchanger",
       "date": "2025-12-11",
       "description": "20 CAWKELL CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9058854,
+      "lng": 0.1933099,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "20 CAWKELL CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "bbf1e7cdb0ec",
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "32 BROOK CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8154087,
+      "lng": 0.7573004,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "32 BROOK CLOSE, Essex, UK"
     },
     {
       "id": "ace9a2d15400",
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "13 WALSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947868,
+      "lng": 0.2002768,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "13 WALSON WAY, Birchanger, Essex, UK"
     },
     {
       "id": "b9865c78a2f0",
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "60 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "60 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "b23a05edbf10",
       "application": "birchanger",
       "date": "2025-12-09",
       "description": "60 BIRCHANGER LANE - COMMENTS / 2",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "60 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "69f1ba7fecc6",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "24 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "24 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "f22ad9ea0e2c",
       "application": "stansted",
       "date": "2025-12-09",
       "description": "47 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "47 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "592a91f6f737",
       "application": "stansted",
       "date": "2025-12-09",
       "description": "77 HAILES WOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9163012,
+      "lng": 0.2347561,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "77 HAILES WOOD, Essex, UK"
     },
     {
       "id": "2f4fb8a2d959",
       "application": "stansted",
       "date": "2025-12-08",
       "description": "15 GROVE HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.903574,
+      "lng": 0.203468,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 GROVE HILL, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-11T11:05:13.659539"
+  "last_updated": "2025-12-11T11:26:48.712331"
 }
