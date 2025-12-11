@@ -9200,91 +9200,100 @@
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "THE GATEHOUSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE GATEHOUSE (approx: birchanger village)"
     },
     {
       "id": "70a72b178230",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "267 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "267 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "9bf24335b790",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "80 TEMPLETON PARK - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.6834001,
+      "lng": 0.4707855,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "80 TEMPLETON PARK, Essex, UK"
     },
     {
       "id": "879c8b8e5f93",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "40 WETHERFIELD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9074558,
+      "lng": 0.1880002,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "40 WETHERFIELD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "69e763a22c23",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "5 BURNELLS WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9043697,
+      "lng": 0.1988096,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 BURNELLS WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "4c8e1f469129",
       "application": "stansted",
       "date": "2025-12-10",
       "description": "40 WETHERFIELD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9074558,
+      "lng": 0.1880002,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "40 WETHERFIELD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "7be670de5638",
       "application": "stansted",
       "date": "2025-12-10",
       "description": "CEDARS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "CEDARS (approx: stansted village)"
     },
     {
       "id": "7d898dc22318",
       "application": "stansted",
       "date": "2025-12-10",
       "description": "277 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "277 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "d77bea2e7d90",
       "application": "stansted",
       "date": "2025-12-10",
       "description": "26 LIVINGS WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8937267,
+      "lng": 0.1970356,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "26 LIVINGS WAY, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-11T15:05:15.373886"
+  "last_updated": "2025-12-11T15:27:31.211590"
 }
