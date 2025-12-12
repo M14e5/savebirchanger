@@ -10122,7 +10122,67 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "0afcadd009f3",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "61B BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6ed7247a8530",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "7 CROCUS DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f67a65bf463a",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "19 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c460ce26244c",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "1 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "05dbc30f2f48",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "29 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a5464428b023",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "7 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-12T13:29:36.059422"
+  "last_updated": "2025-12-12T14:05:14.427073"
 }
