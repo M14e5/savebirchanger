@@ -10260,21 +10260,23 @@
       "application": "stansted",
       "date": "2025-12-12",
       "description": "63 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "63 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "802241dbb7a2",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "61B BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "61B BIRCHWOOD, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-12T16:05:12.546278"
+  "last_updated": "2025-12-12T16:27:49.538405"
 }
