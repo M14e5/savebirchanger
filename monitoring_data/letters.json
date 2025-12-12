@@ -9992,7 +9992,17 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "19 CARTERS DRIVE, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "5c68610fcb4a",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "281 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-12T10:27:08.785318"
+  "last_updated": "2025-12-12T11:05:14.725394"
 }
