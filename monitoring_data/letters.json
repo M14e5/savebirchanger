@@ -9998,11 +9998,12 @@
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "281 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "281 BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-12T11:05:14.725394"
+  "last_updated": "2025-12-12T11:27:46.948595"
 }
