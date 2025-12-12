@@ -10128,61 +10128,67 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "61B BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "61B BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "6ed7247a8530",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "7 CROCUS DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9172146,
+      "lng": 0.238029,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 CROCUS DRIVE, Essex, UK"
     },
     {
       "id": "f67a65bf463a",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "19 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882497,
+      "lng": 0.1892625,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "19 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "c460ce26244c",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "1 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 BAYFORD WAY, Birchanger, Essex, UK"
     },
     {
       "id": "05dbc30f2f48",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "29 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "29 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "a5464428b023",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "7 FELSTEAD CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8942693,
+      "lng": 0.1945805,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 FELSTEAD CRESCENT, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-12T14:05:14.427073"
+  "last_updated": "2025-12-12T14:28:09.136266"
 }
