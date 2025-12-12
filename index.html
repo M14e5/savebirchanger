@@ -131,10 +131,66 @@
                 display: block;
             }
         }
+
+        /* 1000 Milestone Celebration Styles */
+        .celebration-toast {
+            position: fixed;
+            top: 100px;
+            left: 30px;
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a7c59 100%);
+            color: white;
+            padding: 20px 28px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(44, 95, 45, 0.4);
+            z-index: 10000;
+            transform: translateX(-120%);
+            transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            max-width: 340px;
+            border: 2px solid rgba(255, 217, 61, 0.5);
+        }
+        .celebration-toast.show {
+            transform: translateX(0);
+        }
+        .celebration-toast h4 {
+            margin: 0 0 8px 0;
+            font-size: 1.1rem;
+            color: #ffd93d;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .celebration-toast p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            opacity: 0.95;
+        }
+        .milestone-glow {
+            animation: milestone-pulse 1.5s ease-in-out 3;
+        }
+        @keyframes milestone-pulse {
+            0%, 100% {
+                box-shadow: 0 0 5px rgba(255, 217, 61, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(255, 217, 61, 0.9), 0 0 50px rgba(255, 217, 61, 0.5);
+            }
+        }
+        @media (max-width: 480px) {
+            .celebration-toast {
+                top: 80px;
+                left: 15px;
+                right: 15px;
+                max-width: none;
+            }
+        }
     </style>
 
     <!-- Chart.js for objection timeline -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <!-- Canvas Confetti for 1000 milestone celebration -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
     <!-- PostHog Analytics - Loaded immediately with opt-out by default -->
     <script>
@@ -1184,6 +1240,73 @@
             }
         });
 
+        // 1000 Milestone Celebration Function
+        function celebrate1000Milestone() {
+            // Get the progress bar position for confetti origin
+            const progressBar = document.getElementById('hero-progress-fill');
+            if (!progressBar) return;
+
+            const rect = progressBar.getBoundingClientRect();
+            const originX = (rect.left + rect.width / 2) / window.innerWidth;
+            const originY = rect.top / window.innerHeight;
+
+            // Create and show the toast
+            const toast = document.createElement('div');
+            toast.className = 'celebration-toast';
+            toast.innerHTML = `
+                <h4><span>🎉</span> We Hit 1,000!</h4>
+                <p>Thank you for making history. Over 1,000 objections raised against this development. Every voice matters!</p>
+            `;
+            document.body.appendChild(toast);
+
+            // Trigger toast animation after a brief delay
+            setTimeout(() => toast.classList.add('show'), 100);
+
+            // Fire confetti from the progress bar area
+            const colors = ['#ffd93d', '#2c5f2d', '#4a7c59', '#ffffff'];
+
+            // Initial burst
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { x: originX, y: originY },
+                colors: colors,
+                startVelocity: 45,
+                gravity: 0.8,
+                ticks: 300
+            });
+
+            // Second burst after small delay
+            setTimeout(() => {
+                confetti({
+                    particleCount: 50,
+                    spread: 100,
+                    origin: { x: originX - 0.1, y: originY },
+                    colors: colors,
+                    startVelocity: 35
+                });
+                confetti({
+                    particleCount: 50,
+                    spread: 100,
+                    origin: { x: originX + 0.1, y: originY },
+                    colors: colors,
+                    startVelocity: 35
+                });
+            }, 200);
+
+            // Add glow to the 1000 milestone marker
+            const milestoneLabels = document.querySelectorAll('.milestone-label');
+            if (milestoneLabels.length >= 2) {
+                milestoneLabels[1].classList.add('milestone-glow');
+            }
+
+            // Remove toast after 5 seconds
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 500);
+            }, 5000);
+        }
+
         // Objection Data Storage
         let cumulativeChart = null;
         let dailyChart = null;
@@ -1431,6 +1554,12 @@
                 // Update hero counters
                 document.getElementById('birchanger-count-hero').textContent = birchangerTotal;
                 document.getElementById('stansted-count-hero').textContent = stanstedTotal;
+
+                // Trigger 1000 milestone celebration (once per visitor)
+                if (totalObjections >= 1000 && !localStorage.getItem('celebrated1000')) {
+                    localStorage.setItem('celebrated1000', 'true');
+                    setTimeout(celebrate1000Milestone, 800); // Small delay after data loads
+                }
 
                 // Milestone targets
                 const milestones = [
