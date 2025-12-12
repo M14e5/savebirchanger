@@ -10254,7 +10254,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "1 BAYFORD WAY, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "11709405360e",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "63 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "802241dbb7a2",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "61B BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-12T15:28:30.873982"
+  "last_updated": "2025-12-12T16:05:12.546278"
 }
