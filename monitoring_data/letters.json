@@ -10194,61 +10194,67 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "63 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "63 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "5dc0fb030829",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "61A BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "61A BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "857fea9bfa34",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "53 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "53 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "1dc651957d7c",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "35 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "35 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "aae31d3c5f07",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "41 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "41 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "2311ad03e82d",
       "application": "stansted",
       "date": "2025-12-10",
       "description": "1 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 BAYFORD WAY, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-12T15:05:12.140609"
+  "last_updated": "2025-12-12T15:28:30.873982"
 }
