@@ -10293,30 +10293,33 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "4 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "4 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "e2861e92ba48",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "15 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "85d7204d89e4",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "209 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8738563,
+      "lng": 0.195856,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "209 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "03a6ffeb6bd7",
@@ -10326,38 +10329,41 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "614f09bd6ea4",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "267 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8738563,
+      "lng": 0.195856,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "267 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "338f188aaccd",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "32 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "32 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "7023d112d1b0",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "15 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 BRADLEY COMMON, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-12T19:05:12.241004"
+  "last_updated": "2025-12-12T19:27:43.926702"
 }
