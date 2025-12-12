@@ -9490,7 +9490,387 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "4 BRADLEY COMMON, Birchanger, Essex, UK"
+    },
+    {
+      "id": "2e010ea41d80",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "64 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "be2708979c9e",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "5 LINKSIDE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3e6e065838e0",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "13 MAPLE CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "487978f84a39",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "3 CHURCH HILL CORNER - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9fa14d63e879",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "7 BENTFIELD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3b514166a6e0",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "6 HERRINGTON AVENUE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cfec9a95ef8e",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "24 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "51f5debfa51d",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "5 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "60bf2b56f48f",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "10 FIVE ACRES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d05c67ca86ad",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "11 FIVE ACRES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9e117842b9ca",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "191 SILVER STREET - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1ceb67c385e5",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "7 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fe6cb93a9e82",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "15 OLD BELL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8a0dcf8d2cd5",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "204 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "74ba725dd2ca",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "34 MILLSIDE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "30b63f5cc647",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "36 BENTFIELD END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a45f35826f2d",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "48 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "498edc902cc7",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "16 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5ecb2ecf734f",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "44 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "839b98f10848",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "206 STANSTED ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c4b206f3fc4c",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "24 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8e98eb4fb57a",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "28 BENTFIELD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "998289434a35",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "10 WOODLAND VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f71827abeff5",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "26 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f51e1c300199",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "5 LINKSIDE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ef6cb78f5007",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "13 MAPLE CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3214b1517121",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "3 CHURCH HILL CORNER - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7d2d753014d8",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "37 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ed02741702ac",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "7 BENTFIELD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "da09e498c3c6",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "6 HERRINGTON AVENUE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "96ff59b10b86",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "36 BENTFIELD END CAUSEWAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ce812a8d1105",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "204 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d5634b4aa5ab",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "48 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d24a53bd2c01",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "16 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "aab7388c81c4",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "44 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "bb60c8d7fc72",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "20 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cd4b50c39d0b",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "206 STANSTED ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2aee340f1be1",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "24 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-11T17:25:55.849209"
+  "last_updated": "2025-12-12T09:05:14.099930"
 }
