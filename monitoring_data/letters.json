@@ -9905,7 +9905,87 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "24 HIGH VIEW, Birchanger, Essex, UK"
+    },
+    {
+      "id": "1195f119c68f",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "47 NORTHOLT AVENUE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1f0b9a786134",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "32 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "199bea835eff",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "29 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6df2997b2243",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "41 CROASDAILE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "25108ed68d54",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "11 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1711f95e58e3",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "28 BENTFIELD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1d6cd9b8fbd9",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "26 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3ef258ec2acc",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "19 CARTERS DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-12T09:28:31.483505"
+  "last_updated": "2025-12-12T10:05:13.037230"
 }
