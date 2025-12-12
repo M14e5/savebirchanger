@@ -10014,7 +10014,107 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "5 BURNELLS WAY, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "c31c09fedc20",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "38 HUDGELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "965713f49b0e",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "5 GRANGE PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "37f0fba0d8a2",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "61A BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4e3e47baab73",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "53 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "56d118093ec6",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "35 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0385fbf91e89",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "41 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c0fa786f73f1",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "61B BIRCHWOOD - COMMENT",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a16e60331f87",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "5 WENTWORTH DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "518a9f07f33e",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "5 GRANGE PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cfbabfa9d69e",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "5 WENTWORTH DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-12T12:27:24.513488"
+  "last_updated": "2025-12-12T13:05:13.010677"
 }
