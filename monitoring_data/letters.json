@@ -10369,51 +10369,56 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "299 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "299 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "860e0061c7d5",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "29 FELSTEAD CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8931057,
+      "lng": 0.1958034,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "29 FELSTEAD CRESCENT, Birchanger, Essex, UK"
     },
     {
       "id": "0d72a10b88a1",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "299 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "299 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "56057f3bbb6e",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "29 FELSTEAD CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8931057,
+      "lng": 0.1958034,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "29 FELSTEAD CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "d60de0d4577d",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "29 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "29 HIGH VIEW, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-12T20:05:12.009457"
+  "last_updated": "2025-12-12T20:27:56.850130"
 }
