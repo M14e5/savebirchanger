@@ -10020,70 +10020,77 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "38 HUDGELL ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8958666,
+      "lng": 0.1950509,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "38 HUDGELL ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "965713f49b0e",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "5 GRANGE PLACE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9060888,
+      "lng": 0.2018503,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 GRANGE PLACE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "37f0fba0d8a2",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "61A BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "61A BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "4e3e47baab73",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "53 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "53 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "56d118093ec6",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "35 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "35 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "0385fbf91e89",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "41 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "41 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "c0fa786f73f1",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "61B BIRCHWOOD - COMMENT",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "61B BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "a16e60331f87",
@@ -10093,17 +10100,18 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "518a9f07f33e",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "5 GRANGE PLACE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9060888,
+      "lng": 0.2018503,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 GRANGE PLACE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "cfbabfa9d69e",
@@ -10113,8 +10121,8 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2025-12-12T13:05:13.010677"
+  "last_updated": "2025-12-12T13:29:36.059422"
 }
