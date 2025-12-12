@@ -9914,78 +9914,85 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "1f0b9a786134",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "32 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "32 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "199bea835eff",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "29 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "29 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "6df2997b2243",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "41 CROASDAILE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9089418,
+      "lng": 0.1965281,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "41 CROASDAILE ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "25108ed68d54",
       "application": "birchanger",
       "date": "2025-12-10",
       "description": "11 WALSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947868,
+      "lng": 0.2002768,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 WALSON WAY, Birchanger, Essex, UK"
     },
     {
       "id": "1711f95e58e3",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "28 BENTFIELD GARDENS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9055935,
+      "lng": 0.1925602,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "28 BENTFIELD GARDENS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "1d6cd9b8fbd9",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "26 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882497,
+      "lng": 0.1892625,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "26 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "3ef258ec2acc",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "19 CARTERS DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8943642,
+      "lng": 0.1941488,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "19 CARTERS DRIVE, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-12T10:15:38.542966"
+  "last_updated": "2025-12-12T10:27:08.785318"
 }
