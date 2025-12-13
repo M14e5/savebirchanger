@@ -10427,7 +10427,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "8b9012b73d6f",
@@ -10437,37 +10437,40 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "4e35d667f398",
       "application": "birchanger",
       "date": "2025-12-13",
       "description": "11 WALSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947868,
+      "lng": 0.2002768,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 WALSON WAY, Birchanger, Essex, UK"
     },
     {
       "id": "a80f5e4f2d11",
       "application": "birchanger",
       "date": "2025-12-13",
       "description": "5 LOATES PASTURE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9084282,
+      "lng": 0.1920322,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 LOATES PASTURE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "19bd2cd212b9",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "41 CROASDAILE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9089418,
+      "lng": 0.1965281,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "41 CROASDAILE ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "031410b1b3a9",
@@ -10477,7 +10480,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "a868efa4864b",
@@ -10487,107 +10490,117 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "e4d8e91b19a5",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "11 WALSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947868,
+      "lng": 0.2002768,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 WALSON WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "f3ee21a1b03e",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "5 LOATES PASTURE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9084282,
+      "lng": 0.1920322,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 LOATES PASTURE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "2cc64c2b5b90",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "FLATE, 25 RECREATION GROUND - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9014826,
+      "lng": 0.1948798,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "25 RECREATION GROUND, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "015e727dba55",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "5 HAGGERWOOD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8952029,
+      "lng": 0.2006471,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 HAGGERWOOD WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "6010a4acf1b7",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "17 ISABEL DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9159268,
+      "lng": 0.2245367,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "17 ISABEL DRIVE, Essex, UK"
     },
     {
       "id": "8a3d4bb906ca",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "38 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "38 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "bb9dd6911135",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "55 MOUNTFITCHET ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8976685,
+      "lng": 0.1999619,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "55 MOUNTFITCHET ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "b75048f53aed",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "57 ST JOHNS ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7002828,
+      "lng": 0.1082835,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "57 ST JOHNS ROAD, Essex, UK"
     },
     {
       "id": "fd3b4c556b74",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "80 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8738563,
+      "lng": 0.195856,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "80 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "a7d25d7aa961",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "5 BANKS LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947364,
+      "lng": 0.1956747,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 BANKS LANE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "d82a1a5f4edf",
@@ -10597,37 +10610,40 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "380fdc2e1b8c",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "12 SUNNYSIDE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9015859,
+      "lng": 0.1974121,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 SUNNYSIDE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "7cf9d5d8f208",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "74 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8738563,
+      "lng": 0.195856,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "74 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "fd8473ad2678",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "219 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8738563,
+      "lng": 0.195856,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "219 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "0affa17d1ec3",
@@ -10637,37 +10653,40 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "7e04951b261a",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "32 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "32 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "49ae1192a9a6",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "22 PEACHEY WALK - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8942609,
+      "lng": 0.2005477,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "22 PEACHEY WALK, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "5e56c64932b1",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "18 ISABEL DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9159268,
+      "lng": 0.2245367,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 ISABEL DRIVE, Essex, UK"
     },
     {
       "id": "c358ff2d73b2",
@@ -10677,48 +10696,52 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "7358b57004ee",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "17 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "17 BAYFORD WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "695ff2d622f9",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "8 COLE WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8973522,
+      "lng": 0.9183635,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "COLE WAY, Essex, UK"
     },
     {
       "id": "d00b2fd2171e",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "1 TUCKER CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947109,
+      "lng": 0.1933509,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 TUCKER CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "7d24072cd017",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "293 BIRCHANGER - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8819193,
+      "lng": 0.1882454,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "293 BIRCHANGER, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-13T09:05:12.784074"
+  "last_updated": "2025-12-13T09:30:39.866732"
 }
