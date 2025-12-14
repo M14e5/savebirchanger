@@ -654,6 +654,33 @@
                     case 'blockquote':
                         return `<blockquote>${node.content.map(nodeToHtml).join('')}</blockquote>`;
 
+                    case 'embedded-asset-block':
+                        // Handle embedded images from Contentful
+                        const asset = node.data?.target;
+                        if (asset && asset.fields && asset.fields.file) {
+                            const fileUrl = 'https:' + asset.fields.file.url;
+                            const altText = asset.fields.title || asset.fields.description || 'Embedded image';
+                            const contentType = asset.fields.file.contentType || '';
+
+                            // Check if it's an image
+                            if (contentType.startsWith('image/')) {
+                                return `<figure style="margin: 2rem 0; text-align: center;">
+                                    <img src="${fileUrl}" alt="${altText}" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                                    ${asset.fields.description ? `<figcaption style="margin-top: 0.5rem; font-size: 0.9rem; color: #666; font-style: italic;">${asset.fields.description}</figcaption>` : ''}
+                                </figure>`;
+                            }
+
+                            // For other file types, show a download link
+                            return `<p><a href="${fileUrl}" target="_blank" rel="noopener">Download: ${asset.fields.title || 'File'}</a></p>`;
+                        }
+                        console.warn('Embedded asset missing data:', node);
+                        return '';
+
+                    case 'embedded-entry-block':
+                        // Handle embedded entries (e.g., other content types)
+                        console.warn('Embedded entry block not fully supported:', node);
+                        return '';
+
                     default:
                         console.warn('Unknown node type:', node.nodeType);
                         return node.content ? node.content.map(nodeToHtml).join('') : '';
