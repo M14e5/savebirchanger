@@ -11102,7 +11102,87 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "74 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "5d4029974ed4",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "219 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "eac053cb71bf",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "38 HIGH LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "23b33917205b",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "17 ISABEL DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "31d512d1238e",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "FLAT 3, 25 RECREATION GROUND - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c3f952f7ebd2",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "32 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5a8d634a7c1b",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "14 PATMORE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c53e627df297",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "58 CHAPEL HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "65324c3afe9d",
+      "application": "stansted",
+      "date": "2025-12-14",
+      "description": "326 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-14T08:30:38.714779"
+  "last_updated": "2025-12-14T09:05:14.804520"
 }
