@@ -10839,7 +10839,17 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "BANK HOUSE (approx: stansted village)"
+    },
+    {
+      "id": "70e39b4c242d",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "18 ISABEL DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-14T06:29:31.201811"
+  "last_updated": "2025-12-14T07:05:13.940787"
 }
