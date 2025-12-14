@@ -11196,10 +11196,11 @@
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "38 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "38 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "61e51d278718",
@@ -11209,108 +11210,118 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "ec7565c8c9db",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "6 PADDOCK VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9014752,
+      "lng": 0.2032226,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "6 PADDOCK VIEW, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "350bd39112a7",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "15 BENTLEY DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 BENTLEY DRIVE, Birchanger, Essex, UK"
     },
     {
       "id": "e857cdc028bd",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "14 THE AVENUE- COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 52.0150159,
+      "lng": 0.241578,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 THE AVENUE, Essex, UK"
     },
     {
       "id": "60b6b317e01a",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "11 LINKSIDE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.6120539,
+      "lng": 0.0810172,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "LINKSIDE ROAD, Essex, UK"
     },
     {
       "id": "208786d628a9",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "7 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "dfbb0154d7f6",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "39 WALSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947868,
+      "lng": 0.2002768,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "39 WALSON WAY, Birchanger, Essex, UK"
     },
     {
       "id": "a8a2ace095f9",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "7 CARTERS DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8943642,
+      "lng": 0.1941488,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 CARTERS DRIVE, Birchanger, Essex, UK"
     },
     {
       "id": "da3e0e4d9b8c",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "234 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "234 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "667d2500b7f5",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "BLUEBELLS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "BLUEBELLS (approx: birchanger village)"
     },
     {
       "id": "1e5a5c0088c0",
       "application": "stansted",
       "date": "2025-12-14",
       "description": "BLUEBELLS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "BLUEBELLS (approx: stansted village)"
     }
   ],
-  "last_updated": "2025-12-14T10:05:12.336725"
+  "last_updated": "2025-12-14T10:30:37.684296"
 }
