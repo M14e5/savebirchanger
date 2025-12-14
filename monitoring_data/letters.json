@@ -11108,81 +11108,89 @@
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "219 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "219 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "eac053cb71bf",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "38 HIGH LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9071039,
+      "lng": 0.2017611,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "38 HIGH LANE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "23b33917205b",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "17 ISABEL DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9159268,
+      "lng": 0.2245367,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "17 ISABEL DRIVE, Essex, UK"
     },
     {
       "id": "31d512d1238e",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "FLAT 3, 25 RECREATION GROUND - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9014826,
+      "lng": 0.1948798,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "25 RECREATION GROUND, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "c3f952f7ebd2",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "32 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "32 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "5a8d634a7c1b",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "14 PATMORE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8955163,
+      "lng": 0.196597,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 PATMORE ROAD, Birchanger, Essex, UK"
     },
     {
       "id": "c53e627df297",
       "application": "birchanger",
       "date": "2025-12-14",
       "description": "58 CHAPEL HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9037639,
+      "lng": 0.193283,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "58 CHAPEL HILL, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "65324c3afe9d",
       "application": "stansted",
       "date": "2025-12-14",
       "description": "326 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "326 BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-14T09:05:14.804520"
+  "last_updated": "2025-12-14T09:30:23.287879"
 }
