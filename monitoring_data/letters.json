@@ -11190,7 +11190,127 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "326 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "7ad0248f5af6",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "38 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "61e51d278718",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "6 STRATFIELD DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ec7565c8c9db",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "6 PADDOCK VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "350bd39112a7",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "15 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e857cdc028bd",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "14 THE AVENUE- COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "60b6b317e01a",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "11 LINKSIDE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "208786d628a9",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "7 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "dfbb0154d7f6",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "39 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a8a2ace095f9",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "7 CARTERS DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "da3e0e4d9b8c",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "234 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "667d2500b7f5",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "BLUEBELLS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1e5a5c0088c0",
+      "application": "stansted",
+      "date": "2025-12-14",
+      "description": "BLUEBELLS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-14T09:30:23.287879"
+  "last_updated": "2025-12-14T10:05:12.336725"
 }
