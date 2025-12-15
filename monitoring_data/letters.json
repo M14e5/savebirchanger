@@ -11981,20 +11981,22 @@
       "application": "stansted",
       "date": "2025-12-11",
       "description": "6 PADDOCK VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9014752,
+      "lng": 0.2032226,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "6 PADDOCK VIEW, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "a768cf91c8f3",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "15 BENTLEY DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 BENTLEY DRIVE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "73b5c9dfd049",
@@ -12004,37 +12006,40 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "95e9d2d75cd2",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "39 WALSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947868,
+      "lng": 0.2002768,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "39 WALSON WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "a3c975627bf6",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "38 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "38 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "d36a84e821a9",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "5 BANKS LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947364,
+      "lng": 0.1956747,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 BANKS LANE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "1a618c08a715",
@@ -12044,8 +12049,8 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2025-12-15T12:05:14.355636"
+  "last_updated": "2025-12-15T12:36:29.678844"
 }
