@@ -11338,60 +11338,66 @@
       "application": "birchanger",
       "date": "2025-12-15",
       "description": "7 BENTLEY DRIVE - COMMENTS PAGE 1 OF 2",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 BENTLEY DRIVE, Birchanger, Essex, UK"
     },
     {
       "id": "77270d252112",
       "application": "birchanger",
       "date": "2025-12-15",
       "description": "7 BENTLEY DRIVE - COMMENTS PAGE 2 OF 2",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 BENTLEY DRIVE, Birchanger, Essex, UK"
     },
     {
       "id": "22b40c6df05e",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "PARISH ROOM COTTAGE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "PARISH ROOM COTTAGE (approx: birchanger village)"
     },
     {
       "id": "ee2805ea9778",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "4 OZIERS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9168162,
+      "lng": 0.2302636,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "4 OZIERS, Essex, UK"
     },
     {
       "id": "d23a3a48eb40",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "69 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "69 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "8752ddab29ee",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "305 BIRCHANGER LANE",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "305 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "5566f4f983cf",
@@ -11401,7 +11407,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "f22f7ba9115c",
@@ -11411,58 +11417,63 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "c9c1399e98b7",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "37 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "37 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "b8bb245dca2a",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "213 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "213 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "91136784f385",
       "application": "stansted",
       "date": "2025-12-15",
       "description": "7 BENTLEY DRIVE - COMMENTS PAGE 1 OF 2",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 BENTLEY DRIVE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "4d49fb861cf1",
       "application": "stansted",
       "date": "2025-12-15",
       "description": "7 BENTLEY DRIVE - COMMENTS PAGE 2 OF 2",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 BENTLEY DRIVE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "57f126f70612",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "PARISH ROOM COTTAGE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "PARISH ROOM COTTAGE (approx: stansted village)"
     }
   ],
-  "last_updated": "2025-12-15T08:05:18.180543"
+  "last_updated": "2025-12-15T08:33:13.190134"
 }
