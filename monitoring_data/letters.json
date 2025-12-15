@@ -12066,11 +12066,12 @@
       "application": "stansted",
       "date": "2025-12-11",
       "description": "39 WOODFIELDS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9018639,
+      "lng": 0.1965533,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "39 WOODFIELDS, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-15T14:05:17.064966"
+  "last_updated": "2025-12-15T14:36:57.777820"
 }
