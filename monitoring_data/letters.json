@@ -11693,7 +11693,157 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "10 JORDON CLOSE, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "15afbe8445cf",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "71 BIRCHANGER LANE",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "72ea9b2baea5",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "KEEPERS COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c0bc5ace64a8",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "THE OAKS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d2b8a2059455",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "21 CHAPEL HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fd8ffbe34d2e",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "24 DEMANDEVILE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "06d739ba618a",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "1 BENTLEY CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4af47e777a5f",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "THE MALTINGS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "719afc92151e",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "2 TUCKER CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e346296c8158",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "37 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "597897e723d9",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "WREN HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ded33a14a8c4",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "18 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "82ea254478b2",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "266 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6e57185dcffd",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "FLAT 25 CASTLE WALK - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2b5e8a9555df",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "4 OZIERS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "afae7b29a9a8",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "26 HUDGELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-15T09:37:03.503775"
+  "last_updated": "2025-12-15T10:05:15.609120"
 }
