@@ -12060,7 +12060,17 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "22827aab4533",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "39 WOODFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-15T13:51:03.449518"
+  "last_updated": "2025-12-15T14:05:17.064966"
 }
