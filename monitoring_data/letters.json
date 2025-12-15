@@ -11862,10 +11862,11 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "71 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8862504,
+      "lng": 0.1868426,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "71 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "a83c9203bf12",
@@ -11875,67 +11876,73 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "599ae338d701",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "305 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "305 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "319d35a30873",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "12 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "e1cb6ffbadbc",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "213 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "213 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "55245105ca00",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "46 LOWER STREET - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9041704,
+      "lng": 0.2010893,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "46 LOWER STREET, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "698ff6c04d19",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "3 OZIERS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9168162,
+      "lng": 0.2302636,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 OZIERS, Essex, UK"
     },
     {
       "id": "768038b1ab9a",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "7 CARTERS DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8943642,
+      "lng": 0.1941488,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 CARTERS DRIVE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "cc2262e33219",
@@ -11945,28 +11952,30 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "77a726507446",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "14 THE AVENUE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 52.0150159,
+      "lng": 0.241578,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 THE AVENUE, Essex, UK"
     },
     {
       "id": "93a92cd1e236",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "11 LINKSIDE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.6120539,
+      "lng": 0.0810172,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "LINKSIDE ROAD, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-15T11:05:13.705981"
+  "last_updated": "2025-12-15T11:37:23.929901"
 }
