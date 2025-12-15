@@ -11975,7 +11975,77 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "LINKSIDE ROAD, Essex, UK"
+    },
+    {
+      "id": "142b959cedb1",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "6 PADDOCK VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a768cf91c8f3",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "15 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "73b5c9dfd049",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "6 STRATFIELD DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "95e9d2d75cd2",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "39 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a3c975627bf6",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "38 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d36a84e821a9",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "5 BANKS LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1a618c08a715",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "BIRCHANGER AND STANSTED GREEN BELT PRESERVATION GROUP - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-15T11:37:23.929901"
+  "last_updated": "2025-12-15T12:05:14.355636"
 }
