@@ -11321,7 +11321,17 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "BLUEBELLS (approx: stansted village)"
+    },
+    {
+      "id": "80843368739a",
+      "application": "birchanger",
+      "date": "2025-12-09",
+      "description": "2 STATION ROAD - COMMENTS / 2",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-15T06:30:40.661028"
+  "last_updated": "2025-12-15T07:05:15.285737"
 }
