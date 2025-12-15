@@ -11332,7 +11332,137 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "2 STATION ROAD, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "8fa6300b7267",
+      "application": "birchanger",
+      "date": "2025-12-15",
+      "description": "7 BENTLEY DRIVE - COMMENTS PAGE 1 OF 2",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "77270d252112",
+      "application": "birchanger",
+      "date": "2025-12-15",
+      "description": "7 BENTLEY DRIVE - COMMENTS PAGE 2 OF 2",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "22b40c6df05e",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "PARISH ROOM COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ee2805ea9778",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "4 OZIERS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d23a3a48eb40",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "69 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8752ddab29ee",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "305 BIRCHANGER LANE",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5566f4f983cf",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "12 BRICHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f22f7ba9115c",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "1 LORDS VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c9c1399e98b7",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "37 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b8bb245dca2a",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "213 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "91136784f385",
+      "application": "stansted",
+      "date": "2025-12-15",
+      "description": "7 BENTLEY DRIVE - COMMENTS PAGE 1 OF 2",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4d49fb861cf1",
+      "application": "stansted",
+      "date": "2025-12-15",
+      "description": "7 BENTLEY DRIVE - COMMENTS PAGE 2 OF 2",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "57f126f70612",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "PARISH ROOM COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-15T07:30:40.364701"
+  "last_updated": "2025-12-15T08:05:18.180543"
 }
