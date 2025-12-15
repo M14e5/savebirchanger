@@ -11699,40 +11699,44 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "71 BIRCHANGER LANE",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8862504,
+      "lng": 0.1868426,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "71 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "72ea9b2baea5",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "KEEPERS COTTAGE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "KEEPERS COTTAGE (approx: birchanger village)"
     },
     {
       "id": "c0bc5ace64a8",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "THE OAKS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE OAKS (approx: birchanger village)"
     },
     {
       "id": "d2b8a2059455",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "21 CHAPEL HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9037639,
+      "lng": 0.193283,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "21 CHAPEL HILL, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "fd8ffbe34d2e",
@@ -11742,77 +11746,84 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "06d739ba618a",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "1 BENTLEY CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8421037,
+      "lng": 1.0764575,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 BENTLEY CLOSE, Essex, UK"
     },
     {
       "id": "4af47e777a5f",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "THE MALTINGS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE MALTINGS (approx: birchanger village)"
     },
     {
       "id": "719afc92151e",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "2 TUCKER CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947109,
+      "lng": 0.1933509,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 TUCKER CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "e346296c8158",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "37 BENTFIELD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9047401,
+      "lng": 0.1918673,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "37 BENTFIELD ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "597897e723d9",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "WREN HOUSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "WREN HOUSE (approx: stansted village)"
     },
     {
       "id": "ded33a14a8c4",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "18 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "82ea254478b2",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "266 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "266 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "6e57185dcffd",
@@ -11822,28 +11833,30 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "2b5e8a9555df",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "4 OZIERS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9168162,
+      "lng": 0.2302636,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "4 OZIERS, Essex, UK"
     },
     {
       "id": "afae7b29a9a8",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "26 HUDGELL ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8958666,
+      "lng": 0.1950509,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "26 HUDGELL ROAD, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-15T10:05:15.609120"
+  "last_updated": "2025-12-15T10:33:55.286285"
 }
