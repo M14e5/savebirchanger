@@ -11473,7 +11473,207 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "PARISH ROOM COTTAGE (approx: stansted village)"
+    },
+    {
+      "id": "276791ec2a27",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "10 JORDAN CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ed46f7cfa1e9",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "16 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3eb6b0f06221",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "2 TUCKER CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cb3af3db9884",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "37 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9d7446360312",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "1 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "98261c5af647",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "71 BIRCHANGER - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a59281bce4e1",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "WREN HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d75fbdec4633",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "18 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "94501bce0a74",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "6 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e2ffb51c277b",
+      "application": "stansted",
+      "date": "2025-12-13",
+      "description": "THE MOUNT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "012ea472ac43",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "42 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ab77c3e90753",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "71 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d7454cdcf223",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "KEEPERS COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "833168b5ff14",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "34 CROASDAILE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c01d84fe24e1",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "7 CHURTON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "040d7ee949d1",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "21 CHAPEL HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c838ae3bccd4",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "6 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b692d3a55bad",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "24 DE MANDEVILLE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "067a1f843a25",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "1 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "aab1df9e5db5",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "10 JORDON CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-15T08:33:13.190134"
+  "last_updated": "2025-12-15T09:05:14.709770"
 }
