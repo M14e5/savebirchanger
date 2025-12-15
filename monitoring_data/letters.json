@@ -11856,7 +11856,117 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "26 HUDGELL ROAD, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "8c4675f25b89",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "71 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a83c9203bf12",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "26 HUDGELL BOAD",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "599ae338d701",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "305 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "319d35a30873",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "12 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e1cb6ffbadbc",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "213 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "55245105ca00",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "46 LOWER STREET - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "698ff6c04d19",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "3 OZIERS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "768038b1ab9a",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "7 CARTERS DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cc2262e33219",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "7 CHURCH HILL CORNER - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "77a726507446",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "14 THE AVENUE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "93a92cd1e236",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "11 LINKSIDE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-15T10:33:55.286285"
+  "last_updated": "2025-12-15T11:05:13.705981"
 }
