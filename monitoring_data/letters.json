@@ -12109,20 +12109,22 @@
       "application": "stansted",
       "date": "2025-12-11",
       "description": "34 OZIERS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9168162,
+      "lng": 0.2302636,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "34 OZIERS, Essex, UK"
     },
     {
       "id": "d61f07cea545",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "3 WILKINS CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8963988,
+      "lng": 0.1950158,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 WILKINS CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "83616c7caf09",
@@ -12132,18 +12134,19 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "4baa77d4159a",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "68 WEST ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8986462,
+      "lng": 0.1950323,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "68 WEST ROAD, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-15T17:05:15.181304"
+  "last_updated": "2025-12-15T17:33:46.484772"
 }
