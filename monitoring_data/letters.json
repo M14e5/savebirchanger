@@ -12222,7 +12222,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "2 FIVE ACRES, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "830854fefd8a",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "27 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c4a84521ce3e",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "16 OLD BELL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-16T10:49:53.104792"
+  "last_updated": "2025-12-16T11:05:12.286794"
 }
