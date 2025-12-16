@@ -12288,7 +12288,67 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "42 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "9d7de50fea4c",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "21 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "294bf7b1d224",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "1 THE MEADS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2d0826a7e5a3",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "114 NURSERY ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2fcb45188c60",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "3 MONT PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "42553155e789",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "18 MILL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "bff6316c5cee",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "211 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-16T14:37:15.885170"
+  "last_updated": "2025-12-16T15:05:12.362747"
 }
