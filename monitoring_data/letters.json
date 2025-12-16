@@ -12359,41 +12359,45 @@
       "application": "stansted",
       "date": "2025-12-12",
       "description": "58 CHAPEL HILL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9026878,
+      "lng": 0.1964086,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "58 CHAPEL HILL, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "712a6de7bc89",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "19 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "19 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "2d3cf74c530d",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "3 FELSTEAD CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8942693,
+      "lng": 0.1945805,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 FELSTEAD CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "728e17a1c2af",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "16 ROCHFORD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7288375,
+      "lng": 0.4767101,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 ROCHFORD ROAD, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-16T16:05:15.443110"
+  "last_updated": "2025-12-16T16:34:58.466038"
 }
