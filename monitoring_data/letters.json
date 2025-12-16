@@ -12272,21 +12272,23 @@
       "application": "stansted",
       "date": "2025-12-11",
       "description": "MALLOWS GREEN FARM - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9183037,
+      "lng": 0.1383271,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "MALLOWS GREEN FARM, Essex, UK"
     },
     {
       "id": "4f26e449c9ad",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "42 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "42 BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-16T13:05:14.088577"
+  "last_updated": "2025-12-16T13:59:25.710103"
 }
