@@ -12146,7 +12146,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "68 WEST ROAD, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "3e17da10b501",
+      "application": "stansted",
+      "date": "2025-12-15",
+      "description": "217A BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a48ebe1b1252",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "27 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-16T08:42:02.729974"
+  "last_updated": "2025-12-16T09:05:12.693374"
 }
