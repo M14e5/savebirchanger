@@ -12174,10 +12174,11 @@
       "application": "stansted",
       "date": "2025-12-11",
       "description": "25 BENTFIELD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9047401,
+      "lng": 0.1918673,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "25 BENTFIELD ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "4e7195c463a4",
@@ -12187,38 +12188,41 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "160ddbf57fdc",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "10 MAYFIELD PARK - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7856177,
+      "lng": 0.1530617,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "10 MAYFIELD PARK, Essex, UK"
     },
     {
       "id": "bd751f774020",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "46 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "46 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "d714d15d6bcf",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "2 FIVE ACRES - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9094369,
+      "lng": 0.1994391,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 FIVE ACRES, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-16T10:05:14.182456"
+  "last_updated": "2025-12-16T10:49:53.104792"
 }
