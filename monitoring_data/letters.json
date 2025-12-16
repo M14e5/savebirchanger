@@ -12168,7 +12168,57 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "27 LIVINGS WAY, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "0874525bf63f",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "25 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4e7195c463a4",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "4 HIGGS COURT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "160ddbf57fdc",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "10 MAYFIELD PARK - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "bd751f774020",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "46 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d714d15d6bcf",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "2 FIVE ACRES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-16T09:37:54.959530"
+  "last_updated": "2025-12-16T10:05:14.182456"
 }
