@@ -12397,7 +12397,57 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "16 ROCHFORD ROAD, Essex, UK"
+    },
+    {
+      "id": "c3e6bcc32a16",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "23 WEST ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "110b1fd73f0a",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "26 BENTFIELD CAUSEWAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c5e84d5e64f1",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "226 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9be98287e24d",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "351 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "df575e03c1d0",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "46 BLYTHWOOD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-16T16:34:58.466038"
+  "last_updated": "2025-12-16T17:05:16.214894"
 }
