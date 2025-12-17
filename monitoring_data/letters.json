@@ -12458,10 +12458,11 @@
       "application": "birchanger",
       "date": "2025-12-17",
       "description": "5 BANKS LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947364,
+      "lng": 0.1956747,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 BANKS LANE, Birchanger, Essex, UK"
     },
     {
       "id": "ee5db12529c5",
@@ -12471,47 +12472,51 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "6a28cd640949",
       "application": "birchanger",
       "date": "2025-12-17",
       "description": "39 WOODFIELDS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9018639,
+      "lng": 0.1965533,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "39 WOODFIELDS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "de3b028b9560",
       "application": "birchanger",
       "date": "2025-12-17",
       "description": "7 BENTLEY DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 BENTLEY DRIVE, Birchanger, Essex, UK"
     },
     {
       "id": "009728734cb5",
       "application": "birchanger",
       "date": "2025-12-17",
       "description": "24 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "24 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "3a9c0fcfa68d",
       "application": "birchanger",
       "date": "2025-12-17",
       "description": "75 HAVERS LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.4889458,
+      "lng": 0.3386946,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "HAVERS LANE, Essex, UK"
     },
     {
       "id": "603cf25f3bda",
@@ -12521,37 +12526,40 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "3afa4e8f624b",
       "application": "birchanger",
       "date": "2025-12-17",
       "description": "32 BENTFIELD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9047401,
+      "lng": 0.1918673,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "32 BENTFIELD ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "c109c099689b",
       "application": "birchanger",
       "date": "2025-12-17",
       "description": "34 OZIERS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9168162,
+      "lng": 0.2302636,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "34 OZIERS, Essex, UK"
     },
     {
       "id": "e12dbed4ea1c",
       "application": "birchanger",
       "date": "2025-12-17",
       "description": "3 WILKINS CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8963988,
+      "lng": 0.1950158,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 WILKINS CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "37d3deedaaf3",
@@ -12561,58 +12569,63 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "55294c3b29cf",
       "application": "birchanger",
       "date": "2025-12-17",
       "description": "3 HILLSIDE END - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8873788,
+      "lng": 0.1852741,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 HILLSIDE END, Birchanger, Essex, UK"
     },
     {
       "id": "23b6b9fc1f04",
       "application": "birchanger",
       "date": "2025-12-17",
       "description": "THE OLD SCHOOL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE OLD SCHOOL (approx: birchanger village)"
     },
     {
       "id": "68583780a464",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "15 BURNELLS WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9043697,
+      "lng": 0.1988096,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 BURNELLS WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "783ab3698277",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "4 SNOW LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8935201,
+      "lng": 0.1946223,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "4 SNOW LANE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "fd573dae208f",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "11 BENTLEY DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 BENTLEY DRIVE, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-17T09:05:15.677429"
+  "last_updated": "2025-12-17T09:36:16.837214"
 }
