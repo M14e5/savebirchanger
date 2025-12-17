@@ -12625,7 +12625,57 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "11 BENTLEY DRIVE, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "30a1167b2a9d",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "35 STONEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "853d8f6e14fc",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "5 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2246090e22d4",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "279 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0df02703094b",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "5 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "218a09996a18",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "6 BREWERY YARD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-17T09:36:16.837214"
+  "last_updated": "2025-12-17T10:05:15.084032"
 }
