@@ -12768,7 +12768,97 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "13-15 MILLFIELDS, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "a0d1250f3b4d",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "68 WEST ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1a51eb22b75b",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "27 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "32207c272bcb",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "25 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "84b0a8994ab3",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "4 HIGGS COURT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "95ce67fe46d9",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "10 MAYFIELD PARK - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "41cf616eb8b7",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "16 OLD BELL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "31af9694f736",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "46 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1bfd2de031ef",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "2 FIVE ACRES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4426b4e5edf4",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "THE OLD SCHOOL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-17T17:35:32.150738"
+  "last_updated": "2025-12-17T18:05:14.455482"
 }
