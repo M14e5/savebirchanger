@@ -12774,30 +12774,33 @@
       "application": "birchanger",
       "date": "2025-12-11",
       "description": "68 WEST ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8986462,
+      "lng": 0.1950323,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "68 WEST ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "1a51eb22b75b",
       "application": "birchanger",
       "date": "2025-12-11",
       "description": "27 LIVINGS WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8937267,
+      "lng": 0.1970356,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "27 LIVINGS WAY, Birchanger, Essex, UK"
     },
     {
       "id": "32207c272bcb",
       "application": "birchanger",
       "date": "2025-12-11",
       "description": "25 BENTFIELD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9047401,
+      "lng": 0.1918673,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "25 BENTFIELD ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "84b0a8994ab3",
@@ -12807,58 +12810,63 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "95ce67fe46d9",
       "application": "birchanger",
       "date": "2025-12-11",
       "description": "10 MAYFIELD PARK - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7856177,
+      "lng": 0.1530617,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "10 MAYFIELD PARK, Essex, UK"
     },
     {
       "id": "41cf616eb8b7",
       "application": "birchanger",
       "date": "2025-12-11",
       "description": "16 OLD BELL CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8992882,
+      "lng": 0.1928404,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 OLD BELL CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "31af9694f736",
       "application": "birchanger",
       "date": "2025-12-11",
       "description": "46 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "46 HIGH VIEW, Birchanger, Essex, UK"
     },
     {
       "id": "1bfd2de031ef",
       "application": "birchanger",
       "date": "2025-12-11",
       "description": "2 FIVE ACRES - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9094369,
+      "lng": 0.1994391,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 FIVE ACRES, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "4426b4e5edf4",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "THE OLD SCHOOL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "THE OLD SCHOOL (approx: stansted village)"
     }
   ],
-  "last_updated": "2025-12-17T18:05:14.455482"
+  "last_updated": "2025-12-17T18:36:40.634140"
 }
