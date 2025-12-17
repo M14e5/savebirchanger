@@ -12452,7 +12452,167 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "46 BLYTHWOOD GARDENS, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "3f8aabf96b9b",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "5 BANKS LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ee5db12529c5",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "BIRCHANGER & STANSTED GREEN BELT PRESERVATION GROUP - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6a28cd640949",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "39 WOODFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "de3b028b9560",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "7 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "009728734cb5",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "24 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3a9c0fcfa68d",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "75 HAVERS LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "603cf25f3bda",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "41 CHURCH MANOR - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3afa4e8f624b",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "32 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c109c099689b",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "34 OZIERS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e12dbed4ea1c",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "3 WILKINS CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "37d3deedaaf3",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "32 MILLSIDE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "55294c3b29cf",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "3 HILLSIDE END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "23b6b9fc1f04",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "THE OLD SCHOOL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "68583780a464",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "15 BURNELLS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "783ab3698277",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "4 SNOW LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fd573dae208f",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "11 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-17T08:35:21.566132"
+  "last_updated": "2025-12-17T09:05:15.677429"
 }
