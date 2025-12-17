@@ -12686,41 +12686,45 @@
       "application": "stansted",
       "date": "2025-12-12",
       "description": "18 ROCHFORD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7290672,
+      "lng": 0.4766879,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 ROCHFORD ROAD, Essex, UK"
     },
     {
       "id": "3430d5b365f4",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "35 REEVE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8948652,
+      "lng": 0.1974454,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "35 REEVE ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "b96cd629802e",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "28 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "28 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "9f90d5d7dc14",
       "application": "stansted",
       "date": "2025-12-11",
       "description": "234 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "234 BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-17T11:05:13.614125"
+  "last_updated": "2025-12-17T11:35:55.287194"
 }
