@@ -12631,51 +12631,56 @@
       "application": "stansted",
       "date": "2025-12-12",
       "description": "35 STONEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8975552,
+      "lng": 0.1956976,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "35 STONEY COMMON, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "853d8f6e14fc",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "5 BENTFIELD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9047401,
+      "lng": 0.1918673,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 BENTFIELD ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "2246090e22d4",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "279 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "279 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "0df02703094b",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "5 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "218a09996a18",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "6 BREWERY YARD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9034611,
+      "lng": 0.1998305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "6 BREWERY YARD, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-17T10:05:15.084032"
+  "last_updated": "2025-12-17T10:36:49.520405"
 }
