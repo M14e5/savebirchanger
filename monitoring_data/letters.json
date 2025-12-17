@@ -12866,7 +12866,97 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "THE OLD SCHOOL (approx: stansted village)"
+    },
+    {
+      "id": "017a6c738a33",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "21 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a63614878bf7",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "21 HAMPTON ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6d9dcad5d494",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "27 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "da450e4f43c4",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "1 DUCK END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3652f3400431",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "66 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6387b168771d",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "73 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f510154ee7ec",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "42 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ad3f68948d91",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "MALLOWS GREEN FARM - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e81b9a476321",
+      "application": "birchanger",
+      "date": "2025-12-11",
+      "description": "211 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-17T18:36:40.634140"
+  "last_updated": "2025-12-17T19:05:14.458275"
 }
