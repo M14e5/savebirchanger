@@ -12730,11 +12730,12 @@
       "application": "stansted",
       "date": "2025-12-12",
       "description": "43 REEVE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8949509,
+      "lng": 0.1950385,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "43 REEVE ROAD, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-17T12:05:13.980508"
+  "last_updated": "2025-12-17T12:36:19.564605"
 }
