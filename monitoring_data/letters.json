@@ -12680,7 +12680,47 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "6 BREWERY YARD, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "acf46afa17f7",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "18 ROCHFORD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3430d5b365f4",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "35 REEVE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b96cd629802e",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "28 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9f90d5d7dc14",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "234 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-17T10:36:49.520405"
+  "last_updated": "2025-12-17T11:05:13.614125"
 }
