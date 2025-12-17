@@ -12735,7 +12735,37 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "43 REEVE ROAD, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "10b8833cbce8",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "33 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "56525458d5b3",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "30 HUDGELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5271e7f224e6",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "13-15 MILLFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-17T12:36:19.564605"
+  "last_updated": "2025-12-17T13:05:16.372087"
 }
