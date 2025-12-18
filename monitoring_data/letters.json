@@ -12974,8 +12974,8 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2025-12-18T10:05:14.941650"
+  "last_updated": "2025-12-18T10:41:13.082640"
 }
