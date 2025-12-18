@@ -13101,31 +13101,34 @@
       "application": "stansted",
       "date": "2025-12-12",
       "description": "7 BLOSSOM HILL DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9349837,
+      "lng": 0.2608259,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 BLOSSOM HILL DRIVE, Essex, UK"
     },
     {
       "id": "96cbf8b8df39",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "3 BAYFORD WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 BAYFORD WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "63e5275ab342",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "66 CAMBRIDGE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9142232,
+      "lng": 0.1999713,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "66 CAMBRIDGE ROAD, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-18T15:05:15.059404"
+  "last_updated": "2025-12-18T15:36:03.646611"
 }
