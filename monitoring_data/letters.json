@@ -13008,7 +13008,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "21 WATSON WAY, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "e94f8df5e630",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "7 SPENCER CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "30471c169984",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "256 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-18T11:38:42.703210"
+  "last_updated": "2025-12-18T12:05:16.326428"
 }
