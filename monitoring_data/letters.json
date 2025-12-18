@@ -13014,21 +13014,23 @@
       "application": "stansted",
       "date": "2025-12-12",
       "description": "7 SPENCER CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9027324,
+      "lng": 0.1941959,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 SPENCER CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "30471c169984",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "256 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8738563,
+      "lng": 0.195856,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "256 BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-18T12:05:16.326428"
+  "last_updated": "2025-12-18T12:39:38.893527"
 }
