@@ -13134,21 +13134,23 @@
       "application": "stansted",
       "date": "2025-12-12",
       "description": "2 MULBERRY COTTAGE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9136304,
+      "lng": 1.0013425,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "MULBERRY COTTAGE, Essex, UK"
     },
     {
       "id": "5e0e3f402d9d",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "22 CLARENDON ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8683135,
+      "lng": 0.2837781,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "22 CLARENDON ROAD, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-18T16:05:17.275362"
+  "last_updated": "2025-12-18T16:36:31.839009"
 }
