@@ -12975,7 +12975,37 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "4412efaddac5",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "19 ST JOHNS CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ee1beff532cd",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "10 THE CAMPIONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ceb44839a3ff",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "21 WATSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-18T10:41:13.082640"
+  "last_updated": "2025-12-18T11:05:14.688750"
 }
