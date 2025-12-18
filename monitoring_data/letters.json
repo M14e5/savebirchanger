@@ -13030,7 +13030,67 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "256 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "caaaf0c73fcd",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "15 BURNELLS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4d0d57d7b190",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "3 MONT PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "020fee4a175c",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "18 MILL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e29f333f5594",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "226 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9951c7038635",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "21 HAMPTON ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "35d717b13a37",
+      "application": "stansted",
+      "date": "2025-12-11",
+      "description": "1 DUCK END - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-18T13:37:10.513031"
+  "last_updated": "2025-12-18T14:05:16.261503"
 }
