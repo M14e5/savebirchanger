@@ -13159,7 +13159,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "d642017e7a23",
@@ -13169,8 +13169,8 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2025-12-19T09:05:15.357897"
+  "last_updated": "2025-12-19T09:35:43.377186"
 }
