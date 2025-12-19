@@ -13225,7 +13225,57 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "3 FELSTEAD CRESCENT, Birchanger, Essex, UK"
+    },
+    {
+      "id": "c533e1954e71",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "19 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "70ad014aa0d4",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "16 ROCHFORD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8f829ceb9463",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "23 WEST ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e23185d798fe",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "40 BENTFIELD END CAUSEWAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a4935ae7a8cd",
+      "application": "stansted",
+      "date": "2025-12-10",
+      "description": "17 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-19T12:36:33.616054"
+  "last_updated": "2025-12-19T13:05:16.322453"
 }
