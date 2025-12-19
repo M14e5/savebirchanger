@@ -13181,7 +13181,37 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "3 WATSON WAY, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "4023c4b150e9",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "3 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cde5e4b4062f",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "1 CAWKELL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "35f8886b7395",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "255 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-19T10:35:51.892282"
+  "last_updated": "2025-12-19T11:05:14.340224"
 }
