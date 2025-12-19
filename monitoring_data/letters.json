@@ -13231,51 +13231,56 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "19 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "19 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "70ad014aa0d4",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "16 ROCHFORD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7288375,
+      "lng": 0.4767101,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 ROCHFORD ROAD, Essex, UK"
     },
     {
       "id": "8f829ceb9463",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "23 WEST ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8986462,
+      "lng": 0.1950323,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "23 WEST ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "e23185d798fe",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "40 BENTFIELD END CAUSEWAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9062617,
+      "lng": 0.1886992,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "40 BENTFIELD END CAUSEWAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "a4935ae7a8cd",
       "application": "stansted",
       "date": "2025-12-10",
       "description": "17 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "17 BRADLEY COMMON, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-19T13:05:16.322453"
+  "last_updated": "2025-12-19T13:38:48.414073"
 }
