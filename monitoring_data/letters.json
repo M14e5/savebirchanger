@@ -13286,70 +13286,77 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "351 BIRCHANGER - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8819193,
+      "lng": 0.1882454,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "351 BIRCHANGER, Birchanger, Essex, UK"
     },
     {
       "id": "93e827a5c149",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "26 BENTFIELD CAUSEWAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9062617,
+      "lng": 0.1886992,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "26 BENTFIELD CAUSEWAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "5b560e304259",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "29 BADGERS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8390378,
+      "lng": 0.3205636,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "BADGERS, Essex, UK"
     },
     {
       "id": "72e11e6c1d29",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "307 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "307 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "83b6dd65dc40",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "21 WOODFIELDS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9018639,
+      "lng": 0.1965533,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "21 WOODFIELDS, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "941057e8375b",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "1 STONEY PLACE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8969982,
+      "lng": 0.1977273,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 STONEY PLACE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "b852f14ca33f",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "11 BENTLEY DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "11 BENTLEY DRIVE, Birchanger, Essex, UK"
     },
     {
       "id": "4dc2e6f9fe62",
@@ -13359,138 +13366,151 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "6f2f09f5b280",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "1 GREY CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8965344,
+      "lng": 0.198094,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "1 GREY CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "e279571d290b",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "35 STONEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8975552,
+      "lng": 0.1956976,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "35 STONEY COMMON, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "aae12e634450",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "279 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "279 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "026d90bc9559",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "35 REEVE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8948652,
+      "lng": 0.1974454,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "35 REEVE ROAD, Birchanger, Essex, UK"
     },
     {
       "id": "fcbb49505af8",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "18 ROCHFORD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.7290672,
+      "lng": 0.4766879,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "18 ROCHFORD ROAD, Essex, UK"
     },
     {
       "id": "f5bb995b6f7d",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "57 FELSTEAD CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8942693,
+      "lng": 0.1945805,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "57 FELSTEAD CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "c4255ab5c2a0",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "16 LIVINGS WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8937267,
+      "lng": 0.1970356,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 LIVINGS WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "283952ab3801",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "78 MANOR ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.896877,
+      "lng": 0.2005029,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "78 MANOR ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "65646d7b5f9a",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "258 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "258 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "43cc02de2846",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "13 TUCKER CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947109,
+      "lng": 0.1933509,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "13 TUCKER CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "80d1da74d468",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "BUTTERFLIES PRE SCHOOL - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "BUTTERFLIES PRE SCHOOL (approx: stansted village)"
     },
     {
       "id": "8f805dd8a40a",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "67 CEDAR COURT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.916191,
+      "lng": 0.8478467,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "67 CEDAR COURT, Essex, UK"
     },
     {
       "id": "051034fe7f9b",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "9 NEW ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.784097,
+      "lng": 0.1390313,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "9 NEW ROAD, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-21T19:05:14.935497"
+  "last_updated": "2025-12-21T19:36:51.014688"
 }
