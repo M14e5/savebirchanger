@@ -13340,7 +13340,157 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": null
+    },
+    {
+      "id": "b852f14ca33f",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "11 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4dc2e6f9fe62",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "24 VILLIERS GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6f2f09f5b280",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "1 GREY CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e279571d290b",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "35 STONEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "aae12e634450",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "279 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "026d90bc9559",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "35 REEVE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fcbb49505af8",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "18 ROCHFORD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f5bb995b6f7d",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "57 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c4255ab5c2a0",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "16 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "283952ab3801",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "78 MANOR ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "65646d7b5f9a",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "258 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "43cc02de2846",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "13 TUCKER CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "80d1da74d468",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "BUTTERFLIES PRE SCHOOL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8f805dd8a40a",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "67 CEDAR COURT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "051034fe7f9b",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "9 NEW ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-19T14:05:16.038546"
+  "last_updated": "2025-12-21T19:05:14.935497"
 }
