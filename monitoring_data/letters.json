@@ -14255,41 +14255,45 @@
       "application": "stansted",
       "date": "2025-12-22",
       "description": "19 LEA CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 52.0627215,
+      "lng": 0.2051258,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "19 LEA CLOSE, Essex, UK"
     },
     {
       "id": "82dce85c4a89",
       "application": "stansted",
       "date": "2025-12-22",
       "description": "6 POULTENEY ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9105884,
+      "lng": 0.1968642,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "6 POULTENEY ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "ee7d03f09f20",
       "application": "stansted",
       "date": "2025-12-22",
       "description": "33 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882909,
+      "lng": 0.1903174,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "33 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "567cf96e2679",
       "application": "stansted",
       "date": "2025-12-20",
       "description": "21 HIGH VIEW - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "21 HIGH VIEW, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-22T17:05:13.806708"
+  "last_updated": "2025-12-22T17:38:39.353996"
 }
