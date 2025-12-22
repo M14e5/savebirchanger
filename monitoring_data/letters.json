@@ -13972,31 +13972,34 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "3 WATSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8952847,
+      "lng": 0.1943635,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 WATSON WAY, Birchanger, Essex, UK"
     },
     {
       "id": "ae678ad51fdb",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "40 BENTFIELD END CAUSEWAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9062617,
+      "lng": 0.1886992,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "40 BENTFIELD END CAUSEWAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "46f2005ec53f",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "255 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8738563,
+      "lng": 0.195856,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "255 BIRCHANGER LANE, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-22T14:05:12.491097"
+  "last_updated": "2025-12-22T14:41:08.509032"
 }
