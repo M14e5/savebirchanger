@@ -13747,7 +13747,137 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "8dac53e96555",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "10 CAMPIONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e053345d8fbe",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "20 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0bd21c4b2cc8",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "21 WATSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ca73a43aba7d",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "1 FOREST HALL COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "99a9db4d1a6d",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "256 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "56d284502fc6",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "7 BLOSSOM HILL DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "95ba72a2d773",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "3 BAYFORD WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1a0f05454836",
+      "application": "stansted",
+      "date": "2025-12-14",
+      "description": "4 HERRINGTON AVENUE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b5ddbd77bab4",
+      "application": "stansted",
+      "date": "2025-12-14",
+      "description": "GOLDFINCH - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4acbfa711127",
+      "application": "stansted",
+      "date": "2025-12-14",
+      "description": "4 SANDFORD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "27da2c9d3b21",
+      "application": "stansted",
+      "date": "2025-12-14",
+      "description": "7 CARTERS DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "39a90ce3828c",
+      "application": "stansted",
+      "date": "2025-12-13",
+      "description": "19 NEWELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5c5dd9eb721e",
+      "application": "stansted",
+      "date": "2025-12-13",
+      "description": "92 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-22T11:38:23.082023"
+  "last_updated": "2025-12-22T12:05:15.142002"
 }
