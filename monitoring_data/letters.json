@@ -13618,7 +13618,127 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "27 FELSTEAD CRESCENT, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "df166db1c4ef",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "33 BENTFIELD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8ed052f840a5",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "4 MAZOE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "af5068e9f2e4",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "7 SPENCER CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "706930edf56d",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "11 FULTON CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7e37c4bde682",
+      "application": "stansted",
+      "date": "2025-12-13",
+      "description": "CEDARS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b1258b28696d",
+      "application": "stansted",
+      "date": "2025-12-13",
+      "description": "14 GILBEY CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1592e03fbcc7",
+      "application": "stansted",
+      "date": "2025-12-13",
+      "description": "23 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e44a1b6e130e",
+      "application": "stansted",
+      "date": "2025-12-13",
+      "description": "21 BLUEBELL DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a0b29d0cb832",
+      "application": "stansted",
+      "date": "2025-12-13",
+      "description": "57 MOUNTFITCHET ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1e6dea6578f7",
+      "application": "stansted",
+      "date": "2025-12-13",
+      "description": "5 JORDON CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "37df5134c5d3",
+      "application": "stansted",
+      "date": "2025-12-13",
+      "description": "BELL LODGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "121c2f19d859",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "STANSTED RESIDENT ASSOCIATION - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-22T10:38:11.095339"
+  "last_updated": "2025-12-22T11:05:16.031957"
 }
