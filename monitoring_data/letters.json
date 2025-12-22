@@ -13510,7 +13510,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "9 NEW ROAD, Essex, UK"
+    },
+    {
+      "id": "faab96b76978",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "4 WILKINS CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0c1becd59b96",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "2 CHESTNUT COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-22T08:36:02.391379"
+  "last_updated": "2025-12-22T09:05:12.919731"
 }
