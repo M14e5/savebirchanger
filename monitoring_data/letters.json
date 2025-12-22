@@ -14005,50 +14005,55 @@
       "application": "birchanger",
       "date": "2025-12-15",
       "description": "217A BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "217A BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "914891a41d3f",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "3 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8832024,
+      "lng": 0.189964,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "3 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "e89329a12443",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "16 LIVINGS WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8937267,
+      "lng": 0.1970356,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "16 LIVINGS WAY, Birchanger, Essex, UK"
     },
     {
       "id": "3e5bff26f92c",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "307 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "307 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "853b1ce68e05",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "29 BADGERS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8390378,
+      "lng": 0.3205636,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "BADGERS, Essex, UK"
     },
     {
       "id": "f2f3133919a6",
@@ -14058,28 +14063,30 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "f8c328a9577c",
       "application": "stansted",
       "date": "2025-12-16",
       "description": "15 BEDWELL ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9209197,
+      "lng": 0.2193269,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "15 BEDWELL ROAD, Essex, UK"
     },
     {
       "id": "4d64ca5ad320",
       "application": "stansted",
       "date": "2025-12-16",
       "description": "6 PLEASANT ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 52.0169165,
+      "lng": 0.2433153,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "6 PLEASANT ROAD, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-22T15:05:12.688159"
+  "last_updated": "2025-12-22T15:39:29.531449"
 }
