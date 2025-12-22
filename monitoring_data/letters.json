@@ -13537,30 +13537,33 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "17 BRADLEY COMMON - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8864386,
+      "lng": 0.1852188,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "17 BRADLEY COMMON, Birchanger, Essex, UK"
     },
     {
       "id": "0a75a6cafea7",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "28 HARRISONS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.882497,
+      "lng": 0.1892625,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "28 HARRISONS, Birchanger, Essex, UK"
     },
     {
       "id": "84fc93ede9d0",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "43 REEVE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8948652,
+      "lng": 0.1974454,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "43 REEVE ROAD, Birchanger, Essex, UK"
     },
     {
       "id": "af636652d37f",
@@ -13570,48 +13573,52 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "c59ba880b3d4",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "2 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 BIRCHWOOD, Birchanger, Essex, UK"
     },
     {
       "id": "9e7a6112d74f",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "LABURNUM - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "LABURNUM (approx: stansted village)"
     },
     {
       "id": "a979d56d3780",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "252 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8738563,
+      "lng": 0.195856,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "252 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "74d2fb2facb9",
       "application": "stansted",
       "date": "2025-12-12",
       "description": "27 FELSTEAD CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8942693,
+      "lng": 0.1945805,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "27 FELSTEAD CRESCENT, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-22T10:05:15.748080"
+  "last_updated": "2025-12-22T10:38:11.095339"
 }
