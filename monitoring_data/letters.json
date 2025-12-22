@@ -13999,7 +13999,87 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "255 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "d8b03f6a77ae",
+      "application": "birchanger",
+      "date": "2025-12-15",
+      "description": "217A BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "914891a41d3f",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "3 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "e89329a12443",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "16 LIVINGS WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3e5bff26f92c",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "307 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "853b1ce68e05",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "29 BADGERS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f2f3133919a6",
+      "application": "birchanger",
+      "date": "2025-12-10",
+      "description": "36 ELMBROOK DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f8c328a9577c",
+      "application": "stansted",
+      "date": "2025-12-16",
+      "description": "15 BEDWELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4d64ca5ad320",
+      "application": "stansted",
+      "date": "2025-12-16",
+      "description": "6 PLEASANT ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-22T14:41:08.509032"
+  "last_updated": "2025-12-22T15:05:12.688159"
 }
