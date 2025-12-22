@@ -13531,7 +13531,87 @@
       "lng": null,
       "geocoded": false,
       "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "8385bacbf613",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "17 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0a75a6cafea7",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "28 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "84fc93ede9d0",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "43 REEVE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "af636652d37f",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "34 DOWNHAM WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c59ba880b3d4",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "2 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9e7a6112d74f",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "LABURNUM - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a979d56d3780",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "252 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "74d2fb2facb9",
+      "application": "stansted",
+      "date": "2025-12-12",
+      "description": "27 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-22T09:36:51.008778"
+  "last_updated": "2025-12-22T10:05:15.748080"
 }
