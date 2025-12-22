@@ -14249,7 +14249,47 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "351 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "1c09afbdbf07",
+      "application": "stansted",
+      "date": "2025-12-22",
+      "description": "19 LEA CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "82dce85c4a89",
+      "application": "stansted",
+      "date": "2025-12-22",
+      "description": "6 POULTENEY ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "ee7d03f09f20",
+      "application": "stansted",
+      "date": "2025-12-22",
+      "description": "33 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "567cf96e2679",
+      "application": "stansted",
+      "date": "2025-12-20",
+      "description": "21 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-22T16:39:00.575791"
+  "last_updated": "2025-12-22T17:05:13.806708"
 }
