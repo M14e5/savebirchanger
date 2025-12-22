@@ -13624,10 +13624,11 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "33 BENTFIELD ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9047401,
+      "lng": 0.1918673,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "33 BENTFIELD ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "8ed052f840a5",
@@ -13637,17 +13638,18 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "af5068e9f2e4",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "7 SPENCER CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9027324,
+      "lng": 0.1941959,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "7 SPENCER CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "706930edf56d",
@@ -13657,77 +13659,84 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "7e37c4bde682",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "CEDARS - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "CEDARS (approx: stansted village)"
     },
     {
       "id": "b1258b28696d",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "14 GILBEY CRESCENT - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9087612,
+      "lng": 0.1951104,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "14 GILBEY CRESCENT, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "1592e03fbcc7",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "23 BENTLEY DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8932585,
+      "lng": 0.1932305,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "23 BENTLEY DRIVE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "e44a1b6e130e",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "21 BLUEBELL DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9119898,
+      "lng": 0.1962199,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "21 BLUEBELL DRIVE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "a0b29d0cb832",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "57 MOUNTFITCHET ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8976685,
+      "lng": 0.1999619,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "57 MOUNTFITCHET ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "1e6dea6578f7",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "5 JORDON CLOSE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8950397,
+      "lng": 0.2034146,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 JORDON CLOSE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "37df5134c5d3",
       "application": "stansted",
       "date": "2025-12-13",
       "description": "BELL LODGE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "BELL LODGE (approx: stansted village)"
     },
     {
       "id": "121c2f19d859",
@@ -13737,8 +13746,8 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2025-12-22T11:05:16.031957"
+  "last_updated": "2025-12-22T11:38:23.082023"
 }
