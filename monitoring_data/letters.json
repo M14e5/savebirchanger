@@ -13895,71 +13895,78 @@
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "2 MULBERRY COTTAGES - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9136304,
+      "lng": 1.0013425,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "MULBERRY COTTAGES, Essex, UK"
     },
     {
       "id": "f276aa79b305",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "66 CAMBRIDGE ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9142232,
+      "lng": 0.1999713,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "66 CAMBRIDGE ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "6d5bbe7fcd84",
       "application": "birchanger",
       "date": "2025-12-12",
       "description": "22 CLARENDON ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8683135,
+      "lng": 0.2837781,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "22 CLARENDON ROAD, Essex, UK"
     },
     {
       "id": "1d95483c7556",
       "application": "stansted",
       "date": "2025-12-16",
       "description": "54A SILVER STREET - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8998668,
+      "lng": 0.1915481,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "54A SILVER STREET, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "10fd24965ae8",
       "application": "stansted",
       "date": "2025-12-15",
       "description": "5 SNOW LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8935201,
+      "lng": 0.1946223,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "5 SNOW LANE, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "4f7170fa6831",
       "application": "stansted",
       "date": "2025-12-15",
       "description": "12 WALSON WAY - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8947868,
+      "lng": 0.2002768,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 WALSON WAY, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "0cb7a3dd618d",
       "application": "stansted",
       "date": "2025-12-15",
       "description": "58 BENTFIELD GREEN - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9080017,
+      "lng": 0.1884445,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "58 BENTFIELD GREEN, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-22T13:05:14.104428"
+  "last_updated": "2025-12-22T13:39:40.813865"
 }
