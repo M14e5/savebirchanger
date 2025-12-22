@@ -13889,7 +13889,77 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "92 WALSON WAY, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "795dcacfcd5e",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "2 MULBERRY COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f276aa79b305",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "66 CAMBRIDGE ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6d5bbe7fcd84",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "22 CLARENDON ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1d95483c7556",
+      "application": "stansted",
+      "date": "2025-12-16",
+      "description": "54A SILVER STREET - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "10fd24965ae8",
+      "application": "stansted",
+      "date": "2025-12-15",
+      "description": "5 SNOW LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4f7170fa6831",
+      "application": "stansted",
+      "date": "2025-12-15",
+      "description": "12 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0cb7a3dd618d",
+      "application": "stansted",
+      "date": "2025-12-15",
+      "description": "58 BENTFIELD GREEN - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-22T12:39:33.506083"
+  "last_updated": "2025-12-22T13:05:14.104428"
 }
