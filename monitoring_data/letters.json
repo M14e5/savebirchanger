@@ -14086,7 +14086,157 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "6 PLEASANT ROAD, Essex, UK"
+    },
+    {
+      "id": "b5ddbf2f2292",
+      "application": "birchanger",
+      "date": "2025-12-22",
+      "description": "21 BRADLEY COMMON - COMMNETS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a5b5c0934be7",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "21 WOODFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "922a75b47e3f",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "1 STONEY PLACE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "df3f44d51b01",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "57 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "83d659b58684",
+      "application": "stansted",
+      "date": "2025-12-22",
+      "description": "21 BRADLEY COMMON - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6179a804161a",
+      "application": "stansted",
+      "date": "2025-12-19",
+      "description": "40 WETHERFIELD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "070354c9defc",
+      "application": "stansted",
+      "date": "2025-12-18",
+      "description": "1 OXLIP ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3daf2aedaaf1",
+      "application": "stansted",
+      "date": "2025-12-18",
+      "description": "17 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "8b8bf16a108a",
+      "application": "stansted",
+      "date": "2025-12-18",
+      "description": "PENROSE COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6f1901f897bd",
+      "application": "stansted",
+      "date": "2025-12-18",
+      "description": "THE OLD SCHOOL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f9cbe77bba55",
+      "application": "stansted",
+      "date": "2025-12-17",
+      "description": "71 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "71048bb49e35",
+      "application": "stansted",
+      "date": "2025-12-17",
+      "description": "12 MAITLAND ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "595396bf5e4a",
+      "application": "stansted",
+      "date": "2025-12-17",
+      "description": "GILBERTS WISH - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a7fc66c5a19c",
+      "application": "stansted",
+      "date": "2025-12-17",
+      "description": "18 DANE ACRES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9814081782fe",
+      "application": "stansted",
+      "date": "2025-12-16",
+      "description": "351 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-22T15:39:29.531449"
+  "last_updated": "2025-12-22T16:05:14.978952"
 }
