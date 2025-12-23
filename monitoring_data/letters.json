@@ -14359,7 +14359,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "57 MOUNTFITCHET ROAD, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "a7343ea351bd",
+      "application": "stansted",
+      "date": "2025-12-22",
+      "description": "HOLLY HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "09a21692c333",
+      "application": "stansted",
+      "date": "2025-12-15",
+      "description": "BISHOP'S STORTFORD CIVIC FEDERATION - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-23T10:40:27.122272"
+  "last_updated": "2025-12-23T11:05:15.070716"
 }
