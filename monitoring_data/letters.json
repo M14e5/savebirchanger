@@ -14315,7 +14315,47 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "37 PEACHEY WALK, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "5e4e763fc3d9",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "5 SNOW LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0e54a2593162",
+      "application": "birchanger",
+      "date": "2025-12-13",
+      "description": "CEDARS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0a44577c2b0e",
+      "application": "birchanger",
+      "date": "2025-12-13",
+      "description": "14 GILBEY CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0dc2e146ac00",
+      "application": "birchanger",
+      "date": "2025-12-13",
+      "description": "57 MOUNTFITCHET ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-23T09:39:17.918229"
+  "last_updated": "2025-12-23T10:05:15.955963"
 }
