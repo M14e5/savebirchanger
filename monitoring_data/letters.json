@@ -14381,7 +14381,157 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "BISHOP'S STORTFORD CIVIC FEDERATION (approx: stansted village)"
+    },
+    {
+      "id": "84249fc02ee3",
+      "application": "birchanger",
+      "date": "2025-12-22",
+      "description": "19 LEA CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5dae38e7f033",
+      "application": "birchanger",
+      "date": "2025-12-22",
+      "description": "279 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6c69921e5316",
+      "application": "birchanger",
+      "date": "2025-12-16",
+      "description": "46 BLYTHWOOD GARDENS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7ba22e7287d7",
+      "application": "birchanger",
+      "date": "2025-12-16",
+      "description": "HOLLY HOUSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "496330ae04de",
+      "application": "birchanger",
+      "date": "2025-12-16",
+      "description": "54A SILVER STREET - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6b0b3de56aca",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "266 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a6f128fac360",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "78 MANOR ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9e920b87d4ef",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "258 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "fda55d2b3c5b",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "BIRCHANGER BUTTERFLIES PRESCHOOL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "2ab9d541f2b2",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "13 TUCKER CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0c5e5029844f",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "67 CEDAR COURT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "cd90b7fc3bc5",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "BROOMLEA - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "db0c17a2c286",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "2 CHESTNUT COTTAGES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b5dc854a20ff",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "34 DOWNHAM WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5a35e84bdf7a",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "LABURNUM - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-23T11:41:11.950548"
+  "last_updated": "2025-12-23T12:05:15.862437"
 }
