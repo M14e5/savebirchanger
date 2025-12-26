@@ -14544,7 +14544,367 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "LABURNUM (approx: birchanger village)"
+    },
+    {
+      "id": "1cd94d3b9999",
+      "application": "birchanger",
+      "date": "2025-12-24",
+      "description": "13-15 MILLFIELDS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "16ebdf5d7a20",
+      "application": "birchanger",
+      "date": "2025-12-24",
+      "description": "6 POULTENEY ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "f5cdb4636042",
+      "application": "birchanger",
+      "date": "2025-12-24",
+      "description": "40 WEATHERFIELD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "614862ce2ce1",
+      "application": "birchanger",
+      "date": "2025-12-22",
+      "description": "HITCH LANE COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3cf3031820b5",
+      "application": "birchanger",
+      "date": "2025-12-22",
+      "description": "30 HUDGELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b1b6d2bc3450",
+      "application": "birchanger",
+      "date": "2025-12-22",
+      "description": "33 HARRISONS - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "c81d1dc416e0",
+      "application": "birchanger",
+      "date": "2025-12-22",
+      "description": "266 BIRCHANGER LANE- COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "aaca887d3082",
+      "application": "birchanger",
+      "date": "2025-12-22",
+      "description": "157 DUNMOW ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "932b26dcbf15",
+      "application": "birchanger",
+      "date": "2025-12-20",
+      "description": "21 HIGH VIEW - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6830346c0770",
+      "application": "birchanger",
+      "date": "2025-12-19",
+      "description": "4 SNOW LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "448aea25c91f",
+      "application": "birchanger",
+      "date": "2025-12-19",
+      "description": "9 LAVENDER CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "29ab3cb5cec2",
+      "application": "birchanger",
+      "date": "2025-12-19",
+      "description": "21 GROVE HILL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6d0ff0681b6e",
+      "application": "birchanger",
+      "date": "2025-12-18",
+      "description": "1 OXLIP ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4d290c110259",
+      "application": "birchanger",
+      "date": "2025-12-18",
+      "description": "114 NURSERY ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d4f940d20a41",
+      "application": "birchanger",
+      "date": "2025-12-18",
+      "description": "THE OLD SCHOOL - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "4b7e14a51f0d",
+      "application": "birchanger",
+      "date": "2025-12-18",
+      "description": "PENROSE COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "7e4314dd87eb",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "351 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0c2dba11b6b2",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "12 MAITLAND ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "a6ed97091b6d",
+      "application": "birchanger",
+      "date": "2025-12-17",
+      "description": "18 DANE ACRES - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "48244b59dca8",
+      "application": "birchanger",
+      "date": "2025-12-16",
+      "description": "6 PLEASANT ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "51cf6b418bd4",
+      "application": "birchanger",
+      "date": "2025-12-15",
+      "description": "58 BENTFIELD GREEN - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "3d1196987970",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "GOLDFINCH - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9ef8f1a7a73a",
+      "application": "birchanger",
+      "date": "2025-12-14",
+      "description": "4 SANDFORD ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "226eeac2cf08",
+      "application": "birchanger",
+      "date": "2025-12-13",
+      "description": "23 BENTLEY DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "60918fd7691b",
+      "application": "birchanger",
+      "date": "2025-12-13",
+      "description": "21 BLUEBELL DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "1cfe33d13e58",
+      "application": "birchanger",
+      "date": "2025-12-13",
+      "description": "BELL LODGE- COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0d131ec80e17",
+      "application": "birchanger",
+      "date": "2025-12-13",
+      "description": "271 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "b01198ffcf0a",
+      "application": "birchanger",
+      "date": "2025-12-13",
+      "description": "19 NEWELL ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "9f13b1a50003",
+      "application": "birchanger",
+      "date": "2025-12-13",
+      "description": "92 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "0d114eba7cae",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "1 CAWKELL CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "10d04cf164de",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "2 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "dbe4dba28014",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "252 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "64b4a50f17bd",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "27 FELSTEAD CRESCENT - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "15ee6ed1f96a",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "38 BAYFORD WAY (STANSTED RESIDENT ASSOCIATION) - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6e20e4f7b160",
+      "application": "birchanger",
+      "date": "2025-12-12",
+      "description": "351 BIRCHANGER LANE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "61cfdd853ca7",
+      "application": "stansted",
+      "date": "2025-12-24",
+      "description": "12 WALSON WAY - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-26T11:39:12.320818"
+  "last_updated": "2025-12-26T12:05:15.319375"
 }
