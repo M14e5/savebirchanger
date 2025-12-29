@@ -15017,21 +15017,23 @@
       "application": "birchanger",
       "date": "2025-12-29",
       "description": "12 CARTERS DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8943642,
+      "lng": 0.1941488,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 CARTERS DRIVE, Birchanger, Essex, UK"
     },
     {
       "id": "d5bbb07d3a49",
       "application": "stansted",
       "date": "2025-12-29",
       "description": "12 CARTERS DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8943642,
+      "lng": 0.1941488,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "12 CARTERS DRIVE, Stansted Mountfitchet, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-29T14:05:16.639247"
+  "last_updated": "2025-12-29T14:45:15.969460"
 }
