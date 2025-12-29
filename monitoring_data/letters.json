@@ -14989,7 +14989,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "56 BIRCHWOOD, Birchanger, Essex, UK"
+    },
+    {
+      "id": "2e4ab8a1b20a",
+      "application": "birchanger",
+      "date": "2025-12-24",
+      "description": "56 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "6f6a86e718ae",
+      "application": "stansted",
+      "date": "2025-12-24",
+      "description": "56 BIRCHWOOD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-29T11:43:22.436511"
+  "last_updated": "2025-12-29T12:05:16.886192"
 }
