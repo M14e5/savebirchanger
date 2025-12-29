@@ -14936,7 +14936,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "12 WALSON WAY, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "067b41bb3f15",
+      "application": "birchanger",
+      "date": "2025-12-27",
+      "description": "22 GATWICK CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "65146390bb37",
+      "application": "stansted",
+      "date": "2025-12-27",
+      "description": "22 GATWICK CLOSE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-29T09:42:33.334282"
+  "last_updated": "2025-12-29T10:05:15.479971"
 }
