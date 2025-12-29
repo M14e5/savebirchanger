@@ -14962,31 +14962,34 @@
       "application": "birchanger",
       "date": "2025-12-27",
       "description": "58 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "58 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "8d81e3db1bb5",
       "application": "stansted",
       "date": "2025-12-27",
       "description": "58 BIRCHANGER LANE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8730968,
+      "lng": 0.1959183,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "58 BIRCHANGER LANE, Birchanger, Essex, UK"
     },
     {
       "id": "474a2d0c7728",
       "application": "stansted",
       "date": "2025-12-27",
       "description": "56 BIRCHWOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8842103,
+      "lng": 0.1927045,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "56 BIRCHWOOD, Birchanger, Essex, UK"
     }
   ],
-  "last_updated": "2025-12-29T11:05:14.745690"
+  "last_updated": "2025-12-29T11:43:22.436511"
 }
