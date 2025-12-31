@@ -15033,7 +15033,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "12 CARTERS DRIVE, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "b7ce23758166",
+      "application": "birchanger",
+      "date": "2025-12-30",
+      "description": "PENROSE COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "d6b9a04afda9",
+      "application": "stansted",
+      "date": "2025-12-30",
+      "description": "PENROSE COTTAGE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2025-12-31T08:40:18.929097"
+  "last_updated": "2025-12-31T09:05:16.045530"
 }
