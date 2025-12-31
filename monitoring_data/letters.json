@@ -15039,21 +15039,23 @@
       "application": "birchanger",
       "date": "2025-12-30",
       "description": "PENROSE COTTAGE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "PENROSE COTTAGE (approx: birchanger village)"
     },
     {
       "id": "d6b9a04afda9",
       "application": "stansted",
       "date": "2025-12-30",
       "description": "PENROSE COTTAGE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "PENROSE COTTAGE (approx: stansted village)"
     }
   ],
-  "last_updated": "2025-12-31T09:05:16.045530"
+  "last_updated": "2025-12-31T09:41:09.310550"
 }
