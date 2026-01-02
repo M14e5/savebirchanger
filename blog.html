@@ -249,6 +249,63 @@
             margin-bottom: 0.5rem;
         }
 
+        /* Table styles */
+        .blog-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 1rem;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .blog-table th,
+        .blog-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: top;
+        }
+
+        .blog-table th {
+            background: #2c5f2d;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .blog-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .blog-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .blog-table tr:hover {
+            background: #f0f7f0;
+        }
+
+        @media (max-width: 768px) {
+            .blog-table {
+                font-size: 0.9rem;
+            }
+
+            .blog-table th,
+            .blog-table td {
+                padding: 0.5rem 0.75rem;
+            }
+
+            /* Make tables scrollable on mobile */
+            .blog-post-full-body {
+                overflow-x: auto;
+            }
+        }
+
         .blog-back-button {
             display: inline-flex;
             align-items: center;
@@ -653,6 +710,18 @@
 
                     case 'blockquote':
                         return `<blockquote>${node.content.map(nodeToHtml).join('')}</blockquote>`;
+
+                    case 'table':
+                        return `<table class="blog-table">${node.content.map(nodeToHtml).join('')}</table>`;
+
+                    case 'table-row':
+                        return `<tr>${node.content.map(nodeToHtml).join('')}</tr>`;
+
+                    case 'table-cell':
+                        return `<td>${node.content.map(nodeToHtml).join('')}</td>`;
+
+                    case 'table-header-cell':
+                        return `<th>${node.content.map(nodeToHtml).join('')}</th>`;
 
                     case 'embedded-asset-block':
                         // Handle embedded images from Contentful
