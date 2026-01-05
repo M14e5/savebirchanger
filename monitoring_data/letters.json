@@ -15064,7 +15064,7 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     },
     {
       "id": "5c8414d97879",
@@ -15074,8 +15074,8 @@
       "lat": null,
       "lng": null,
       "geocoded": false,
-      "geocode_error": null
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2026-01-05T16:05:16.736552"
+  "last_updated": "2026-01-05T16:41:09.120766"
 }
