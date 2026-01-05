@@ -15055,7 +15055,27 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "PENROSE COTTAGE (approx: stansted village)"
+    },
+    {
+      "id": "1c3b41143cdb",
+      "application": "birchanger",
+      "date": "2026-01-05",
+      "description": "51A THORLEY PARK - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
+    },
+    {
+      "id": "5c8414d97879",
+      "application": "stansted",
+      "date": "2026-01-05",
+      "description": "51A THORLEY PARK ROAD - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": null
     }
   ],
-  "last_updated": "2026-01-05T15:40:51.924797"
+  "last_updated": "2026-01-05T16:05:16.736552"
 }
