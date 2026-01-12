@@ -15103,61 +15103,67 @@
       "application": "birchanger",
       "date": "2026-01-12",
       "description": "46 HUDGELL ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8958666,
+      "lng": 0.1950509,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "46 HUDGELL ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "fdea10da42c4",
       "application": "birchanger",
       "date": "2026-01-11",
       "description": "30 LEIGH DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.914064,
+      "lng": 0.2271745,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "30 LEIGH DRIVE, Essex, UK"
     },
     {
       "id": "dfb6749f7661",
       "application": "birchanger",
       "date": "2026-01-10",
       "description": "61 HAILES WOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9163012,
+      "lng": 0.2347561,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "61 HAILES WOOD, Essex, UK"
     },
     {
       "id": "70209e915e9f",
       "application": "stansted",
       "date": "2026-01-12",
       "description": "46 HUDGELL ROAD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.8958666,
+      "lng": 0.1950509,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "46 HUDGELL ROAD, Stansted Mountfitchet, Essex, UK"
     },
     {
       "id": "18e7caa5f4e3",
       "application": "stansted",
       "date": "2026-01-11",
       "description": "30 LEIGH DRIVE - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.914064,
+      "lng": 0.2271745,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "30 LEIGH DRIVE, Essex, UK"
     },
     {
       "id": "bea72d8f8119",
       "application": "stansted",
       "date": "2026-01-10",
       "description": "61 HAILES WOOD - COMMENTS",
-      "lat": null,
-      "lng": null,
-      "geocoded": false,
-      "geocode_error": null
+      "lat": 51.9163012,
+      "lng": 0.2347561,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "61 HAILES WOOD, Essex, UK"
     }
   ],
-  "last_updated": "2026-01-12T17:05:18.590110"
+  "last_updated": "2026-01-12T17:41:35.662209"
 }
