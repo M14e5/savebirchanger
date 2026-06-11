@@ -15163,7 +15163,188 @@
       "geocoded": true,
       "geocode_error": null,
       "geocoded_location": "61 HAILES WOOD, Essex, UK"
+    },
+    {
+      "id": "3f0ff09e6a67",
+      "application": "birchanger",
+      "date": "2026-01-26",
+      "description": "4 HIGH VIEW - COMMENTS",
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "4 HIGH VIEW, Birchanger, Essex, UK"
+    },
+    {
+      "id": "91eb601702c4",
+      "application": "birchanger",
+      "date": "2026-01-26",
+      "description": "84 BIRCHANGER LANE - COMMENTS",
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "84 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "ef6e99310418",
+      "application": "stansted",
+      "date": "2026-01-27",
+      "description": "84 BIRCHANGER LANE - COMMENTS",
+      "lat": 51.8732119,
+      "lng": 0.1952944,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "84 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "c16e3121732b",
+      "application": "stansted",
+      "date": "2026-01-26",
+      "description": "4 HIGH VIEW - COMMENTS",
+      "lat": 51.885802,
+      "lng": 0.1855276,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "4 HIGH VIEW, Birchanger, Essex, UK"
+    },
+    {
+      "id": "2ce0bc6150ed",
+      "application": "birchanger",
+      "date": "2026-02-02",
+      "description": "67 MANSTON DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "1e731b1d518c",
+      "application": "stansted",
+      "date": "2026-02-02",
+      "description": "67 MANSTON DRIVE - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "617413017e7a",
+      "application": "birchanger",
+      "date": "2026-03-27",
+      "description": "2 GREENFIELDS - COMMENTS",
+      "lat": 51.9035085,
+      "lng": 0.1954159,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "2 GREENFIELDS, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "eb29dd34b9f9",
+      "application": "birchanger",
+      "date": "2026-03-31",
+      "description": "212 BIRCHANGER LANE - COMMENTS",
+      "lat": 51.8730983,
+      "lng": 0.19597,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "212 BIRCHANGER LANE, Birchanger, Essex, UK"
+    },
+    {
+      "id": "d4c6d548da10",
+      "application": "birchanger",
+      "date": "2026-04-03",
+      "description": "IRIS COTTAGE - COMMENTS",
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "IRIS COTTAGE (approx: birchanger village)"
+    },
+    {
+      "id": "ee8823f347d3",
+      "application": "birchanger",
+      "date": "2026-05-15",
+      "description": "38 BAYFORD WAY - COMMENTS",
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "38 BAYFORD WAY, Birchanger, Essex, UK"
+    },
+    {
+      "id": "bd8ebb3a5313",
+      "application": "stansted",
+      "date": "2026-05-15",
+      "description": "38 BAYFORD WAY - COMMENTS",
+      "lat": 51.8946072,
+      "lng": 0.1925026,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "38 BAYFORD WAY, Stansted Mountfitchet, Essex, UK"
+    },
+    {
+      "id": "05b0f48baabc",
+      "application": "birchanger",
+      "date": "2026-06-03",
+      "description": "GOSLING BARN - COMMENTS",
+      "lat": 51.8825,
+      "lng": 0.19,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "GOSLING BARN (approx: birchanger village)"
+    },
+    {
+      "id": "b287d60b8e37",
+      "application": "stansted",
+      "date": "2026-06-03",
+      "description": "GOSLING BARN - COMMENTS",
+      "lat": 51.898,
+      "lng": 0.197,
+      "geocoded": true,
+      "geocode_error": null,
+      "geocoded_location": "GOSLING BARN (approx: stansted village)"
+    },
+    {
+      "id": "4b9ee95d8d69",
+      "application": "birchanger",
+      "date": "2026-06-08",
+      "description": "5 HILLSIDE END (BEHALF OF B & S GREEN BELT PRESERVATION GROUP) - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "9868ff3e9c59",
+      "application": "birchanger",
+      "date": "2026-06-08",
+      "description": "5 HILLSIDE END (BEHALF OF B & S GREEN BELT PRESERVATION GROUP) - BSGBPG",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "699baa77c494",
+      "application": "stansted",
+      "date": "2026-06-08",
+      "description": "5 HILLSIDE END (BEHALF OF B & S GREEN BELT PRESERVATION GROUP) - COMMENTS",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": "geocoding_failed"
+    },
+    {
+      "id": "79e822f198d3",
+      "application": "stansted",
+      "date": "2026-06-08",
+      "description": "5 HILLSIDE END (BEHALF OF B & S GREEN BELT PRESERVATION GROUP) - BSGBPG",
+      "lat": null,
+      "lng": null,
+      "geocoded": false,
+      "geocode_error": "geocoding_failed"
     }
   ],
-  "last_updated": "2026-01-30T10:51:50.980229"
+  "last_updated": "2026-06-11T09:42:21.485179"
 }
