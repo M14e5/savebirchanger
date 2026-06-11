@@ -236,6 +236,20 @@ nav {
     content: "⚠️";
 }
 
+/* Victory variant for good-news announcements */
+.alert-banner.victory {
+    background: #e8f5e9;
+    border-left-color: #2c5f2d;
+}
+
+.alert-banner.victory h3 {
+    color: #2c5f2d;
+}
+
+.alert-banner.victory h3::before {
+    content: "🎉";
+}
+
 /* Main Content */
 .container {
     max-width: 1200px;
@@ -576,7 +590,7 @@ footer {
     padding: 2rem 0;
     position: relative;
     overflow-x: auto;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .timeline-horizontal::before {
@@ -593,7 +607,7 @@ footer {
 
 .timeline-phase {
     flex: 1;
-    min-width: 200px;
+    min-width: 170px;
     position: relative;
     z-index: 1;
 }
