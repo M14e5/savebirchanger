@@ -1258,8 +1258,8 @@
             const toast = document.createElement('div');
             toast.className = 'celebration-toast';
             toast.innerHTML = `
-                <h4><span>🎉</span> We Hit 1,000!</h4>
-                <p>Thank you for making history. Over 1,000 objections raised against this development. Every voice matters!</p>
+                <h4><span>🎉</span> Both Applications Rejected!!</h4>
+                <p>Uttlesford unanimously refused both City & Country applications. Your objections made a difference — thank you!</p>
             `;
             document.body.appendChild(toast);
 
@@ -1559,9 +1559,9 @@
                 document.getElementById('birchanger-count-hero').textContent = birchangerTotal;
                 document.getElementById('stansted-count-hero').textContent = stanstedTotal;
 
-                // Trigger 1000 milestone celebration (once per visitor)
-                if (totalObjections >= 1000 && !localStorage.getItem('celebrated1000')) {
-                    localStorage.setItem('celebrated1000', 'true');
+                // Trigger rejection celebration (once per visitor)
+                if (totalObjections >= 1000 && !localStorage.getItem('celebratedRejection')) {
+                    localStorage.setItem('celebratedRejection', 'true');
                     setTimeout(celebrate1000Milestone, 800); // Small delay after data loads
                 }
 
