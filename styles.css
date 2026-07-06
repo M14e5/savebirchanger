@@ -582,21 +582,32 @@ footer {
 }
 
 /* Horizontal Timeline Styles */
+.timeline-wrapper {
+    position: relative;
+    margin: 3rem 0;
+}
+
 .timeline-horizontal {
-    display: flex;
+    padding: 2rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.timeline-track {
+    display: inline-flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 3rem 0;
-    padding: 2rem 0;
+    min-width: 100%;
+    box-sizing: border-box;
     position: relative;
-    overflow-x: auto;
     gap: 1rem;
 }
 
-.timeline-horizontal::before {
+.timeline-track::before {
     content: '';
     position: absolute;
-    top: 40px;
+    top: 8px;
     left: 0;
     right: 0;
     height: 4px;
@@ -610,6 +621,46 @@ footer {
     min-width: 170px;
     position: relative;
     z-index: 1;
+}
+
+.timeline-arrow {
+    position: absolute;
+    top: 40px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #4a7c59;
+    color: #2c5f2d;
+    font-size: 1.5rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+    transition: opacity 0.2s, transform 0.2s, background 0.2s;
+}
+
+.timeline-arrow:hover {
+    background: #f0f7f0;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.timeline-arrow:disabled {
+    opacity: 0.3;
+    cursor: default;
+    transform: translateY(-50%);
+}
+
+.timeline-arrow-left {
+    left: -20px;
+}
+
+.timeline-arrow-right {
+    right: -20px;
 }
 
 .timeline-marker {
@@ -1116,17 +1167,27 @@ footer {
 
     /* Timeline mobile adjustments */
     .timeline-horizontal {
-        flex-direction: column;
-        gap: 1rem;
         padding: 1rem 0;
+        overflow-x: visible;
     }
 
-    .timeline-horizontal::before {
+    .timeline-track {
+        flex-direction: column;
+        gap: 1rem;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .timeline-track::before {
         top: 0;
         left: 30px;
         width: 4px;
         height: 100%;
         background: linear-gradient(180deg, #ff6b6b 0%, #4a7c59 100%);
+    }
+
+    .timeline-arrow {
+        display: none;
     }
 
     .timeline-phase {
