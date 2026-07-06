@@ -465,7 +465,10 @@
             <h2>The Story So Far - and What Happens Next</h2>
             <p style="font-size: 1.2rem; margin-bottom: 2rem; text-align: center;">How our community fought the applications to refusal - and the one stage still to watch</p>
 
-            <div class="timeline-horizontal">
+            <div class="timeline-wrapper">
+                <button type="button" class="timeline-arrow timeline-arrow-left" id="timeline-arrow-left" onclick="scrollTimeline(-1)" aria-label="Scroll timeline left">&#8249;</button>
+                <div class="timeline-horizontal" id="timeline-horizontal">
+                <div class="timeline-track">
                 <!-- Phase 1: Completed -->
                 <div class="timeline-phase">
                     <div class="timeline-marker">1</div>
@@ -588,6 +591,9 @@
                         </ul>
                     </div>
                 </div>
+                </div>
+                </div>
+                <button type="button" class="timeline-arrow timeline-arrow-right" id="timeline-arrow-right" onclick="scrollTimeline(1)" aria-label="Scroll timeline right">&#8250;</button>
             </div>
 
             <div class="timeline-key-message">
@@ -595,6 +601,44 @@
                 <p>On 10th June 2026 the planning committee unanimously refused both applications - but on 1st July 2026 the Secretary of State called them in, so the council will never issue that refusal. The whole case now goes to a public inquiry. This guarantees our evidence is heard and properly tested in public; it does not guarantee the outcome. We've won the first battle, but not the war.</p>
             </div>
         </section>
+
+        <script>
+            (function() {
+                const scrollContainer = document.getElementById('timeline-horizontal');
+                const leftArrow = document.getElementById('timeline-arrow-left');
+                const rightArrow = document.getElementById('timeline-arrow-right');
+                if (!scrollContainer || !leftArrow || !rightArrow) return;
+
+                function phaseScrollStep() {
+                    const phase = scrollContainer.querySelector('.timeline-phase');
+                    return phase ? phase.getBoundingClientRect().width + 16 : 200;
+                }
+
+                window.scrollTimeline = function(direction) {
+                    scrollContainer.scrollBy({ left: direction * phaseScrollStep(), behavior: 'smooth' });
+                };
+
+                function updateArrows() {
+                    const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+                    leftArrow.disabled = scrollContainer.scrollLeft <= 0;
+                    rightArrow.disabled = scrollContainer.scrollLeft >= maxScroll - 1;
+                }
+
+                scrollContainer.addEventListener('scroll', updateArrows);
+                window.addEventListener('resize', updateArrows);
+
+                function centerActivePhase() {
+                    const activePhase = scrollContainer.querySelector('.timeline-phase.active');
+                    if (!activePhase) return;
+                    const target = activePhase.offsetLeft - (scrollContainer.clientWidth / 2) + (activePhase.offsetWidth / 2);
+                    scrollContainer.scrollLeft = Math.max(0, target);
+                    updateArrows();
+                }
+
+                centerActivePhase();
+                window.addEventListener('resize', centerActivePhase);
+            })();
+        </script>
 
         <!-- Overview Section -->
         <section id="learn-more" class="section">
