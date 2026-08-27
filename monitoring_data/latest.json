@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-08-27T16:11:27.816164",
+  "last_updated": "2026-08-27T17:12:38.327165",
   "applications": {
     "birchanger": {
       "name": "Birchanger (UTT/25/3011/OP)",
       "total": 0,
       "by_date": {},
       "success": false,
-      "error": "Timeout after 3 attempts"
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
     },
     "stansted": {
       "name": "Stansted (UTT/25/3012/OP)",

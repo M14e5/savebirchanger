@@ -1,11 +1,11 @@
 {
-  "last_update": "2026-08-27T16:11:27.816164",
+  "last_update": "2026-08-27T17:12:38.327165",
   "last_success": false,
-  "total_scrapes": 5160,
+  "total_scrapes": 5161,
   "errors": [
     {
       "app": "birchanger",
-      "error": "Timeout after 3 attempts"
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
     }
   ]
 }
