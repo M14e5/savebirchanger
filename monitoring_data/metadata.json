@@ -1,6 +1,11 @@
 {
-  "last_update": "2026-08-25T18:05:22.618501",
-  "last_success": true,
-  "total_scrapes": 5158,
-  "errors": []
+  "last_update": "2026-08-27T14:13:49.811905",
+  "last_success": false,
+  "total_scrapes": 5159,
+  "errors": [
+    {
+      "app": "birchanger",
+      "error": "Timeout after 3 attempts"
+    }
+  ]
 }
