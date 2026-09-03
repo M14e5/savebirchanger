@@ -47,21 +47,31 @@ else
     exit 1
 fi
 
+# Reduce the private, full-precision letters file to the aggregated public feed.
+# letters.json is gitignored and must stay that way; only heatmap.json is served.
+log "Publishing aggregated public heatmap feed..."
+if python3.9 publish_heatmap.py; then
+    log "✅ Public feed published"
+else
+    log "❌ publish_heatmap.py failed with exit code $?"
+    exit 1
+fi
+
 # Change back to project root for git operations
 cd "$PROJECT_DIR" || exit 1
 
 # Check if there are changes to commit
-if git diff --quiet monitoring_data/letters.json; then
+if git diff --quiet monitoring_data/heatmap.json; then
     log "No changes to commit"
 else
-    log "Changes detected in letters.json, committing..."
+    log "Changes detected in heatmap.json, committing..."
 
     # Configure git (in case not already configured)
     git config user.name "Cron Geocoder" 2>/dev/null || true
     git config user.email "geocoder@local" 2>/dev/null || true
 
     # Add changes
-    git add monitoring_data/letters.json
+    git add monitoring_data/heatmap.json
 
     # Commit with timestamp
     COMMIT_MSG="Update geocoding data - $(date +'%Y-%m-%d %H:%M:%S')"

@@ -34,3 +34,8 @@ Thumbs.db
 
 # Node modules (if any)
 node_modules/
+
+# Private, full-precision objection data. Never commit: it geocodes objectors
+# to rooftop precision. The public site serves monitoring_data/heatmap.json,
+# which is generated from it by Monitoring/monitoring/publish_heatmap.py.
+monitoring_data/letters.json

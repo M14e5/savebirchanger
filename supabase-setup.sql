@@ -17,14 +17,36 @@ CREATE INDEX IF NOT EXISTS idx_roads_name ON roads USING gin(to_tsvector('englis
 CREATE INDEX IF NOT EXISTS idx_roads_status ON roads (status);
 CREATE INDEX IF NOT EXISTS idx_roads_last_checked ON roads (last_checked);
 
--- 3. Enable Row Level Security (RLS) but allow public access for MVP
+-- 3. Enable Row Level Security (RLS)
 ALTER TABLE roads ENABLE ROW LEVEL SECURITY;
 
--- 4. Create policy to allow anonymous read/write (for MVP - tighten later)
-CREATE POLICY "Allow anonymous access" ON roads
-    FOR ALL
+-- 4. Anonymous access: read the roads, and update canvassing progress on roads
+--    that already exist. Nothing more.
+--
+--    The anon key is embedded in heatmap.html, which is served from a public
+--    repository, so treat anon as "anyone on the internet". A single
+--    FOR ALL / USING (true) / WITH CHECK (true) policy therefore let anyone
+--    insert or delete rows in this table.
+--
+--    RLS policies cannot restrict which *columns* a role may write, so the
+--    column list is enforced with GRANTs below. Together: anon may read
+--    everything, may change only the four progress columns, and may not add or
+--    remove roads. Seeding is done by import_roads.py with the service_role
+--    key, which bypasses RLS.
+DROP POLICY IF EXISTS "Allow anonymous access" ON roads;
+
+CREATE POLICY "Anon can read roads" ON roads
+    FOR SELECT
+    USING (true);
+
+CREATE POLICY "Anon can update canvassing progress" ON roads
+    FOR UPDATE
     USING (true)
     WITH CHECK (true);
+
+REVOKE ALL ON roads FROM anon;
+GRANT SELECT ON roads TO anon;
+GRANT UPDATE (status, last_checked, updated_by, updated_at) ON roads TO anon;
 
 -- 5. Create a function to automatically update updated_at timestamp
 CREATE OR REPLACE FUNCTION update_updated_at_column()

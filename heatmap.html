@@ -747,7 +747,9 @@
         // ============================================
         const SUPABASE_URL = 'https://jwbjrgpcwwqrumstaqfi.supabase.co';
         const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YmpyZ3Bjd3dxcnVtc3RhcWZpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM5MDM2MDUsImV4cCI6MjA3OTQ3OTYwNX0.ZaN62Uhe09uheuzoLT1NWv4otrH0TI5XnKaDNwAFUUk';
-        const DATA_URL = 'monitoring_data/letters.json';
+        // Aggregated, grid-snapped feed published by Monitoring/monitoring/publish_heatmap.py.
+        // The per-letter file it derives from is private and never served.
+        const DATA_URL = 'monitoring_data/heatmap.json';
         // Center between Birchanger and Stansted Mountfitchet
         const MAP_CENTER = [51.893, 0.195];
         const MAP_ZOOM = 14;
@@ -857,11 +859,14 @@
             info.addTo(heatmapMap);
         }
 
-        function updateHeatmap(letters) {
-            const geocodedLetters = letters.filter(l => l.geocoded && l.lat && l.lng);
-            if (geocodedLetters.length === 0) return;
+        function updateHeatmap(points) {
+            const cells = points.filter(p => p.lat && p.lng && p.count);
+            if (cells.length === 0) return;
 
-            const heatData = geocodedLetters.map(l => [l.lat, l.lng, 1]);
+            // Each point is a grid cell holding `count` letters, so the count is
+            // the heat weight and the busiest cell sets the top of the scale.
+            const heatData = cells.map(p => [p.lat, p.lng, p.count]);
+            const maxCount = Math.max(...cells.map(p => p.count));
 
             if (heatLayer) heatmapMap.removeLayer(heatLayer);
 
@@ -869,7 +874,7 @@
                 radius: 25,
                 blur: 15,
                 maxZoom: 15,
-                max: 1.0,
+                max: maxCount,
                 gradient: { 0.0: 'green', 0.5: 'yellow', 1.0: 'red' }
             }).addTo(heatmapMap);
 
@@ -877,11 +882,12 @@
         }
 
         function updateHeatmapStats(data) {
-            const letters = data.letters || [];
-            const geocoded = letters.filter(l => l.geocoded && l.lat && l.lng);
+            // Totals come from the feed itself: letters in suppressed cells are
+            // counted here even though they are not drawn on the map.
+            const totals = data.totals || {};
 
-            document.getElementById('total-mapped').textContent = geocoded.length;
-            document.getElementById('total-objections').textContent = letters.length;
+            document.getElementById('total-mapped').textContent = totals.mapped || 0;
+            document.getElementById('total-objections').textContent = totals.objections || 0;
 
             if (data.last_updated) {
                 const date = new Date(data.last_updated);
@@ -904,11 +910,11 @@
             const data = await loadHeatmapData();
 
             if (!data) {
-                showHeatmapError('Could not fetch letters.json.');
+                showHeatmapError('Could not fetch heatmap.json.');
                 return;
             }
 
-            if (!data.letters || data.letters.length === 0) {
+            if (!data.points || data.points.length === 0) {
                 showHeatmapError('No objection letters found.');
                 return;
             }
@@ -917,7 +923,7 @@
             initHeatmapMap();
             addHeatmapInfoPanel();
             updateHeatmapStats(data);
-            updateHeatmap(data.letters);
+            updateHeatmap(data.points);
             heatmapInitialized = true;
         }
 
